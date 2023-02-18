@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="38E50E1E-DA75-0C04-EA35-403361BFC308" containerWithKeyObject="C4D6FA6A-2110-96E8-E56E-3B47C4C1FE70" localFKIndex="A29EA313-796C-A450-5C9B-4F55C6BABE14" name="VACINAS_COVID_DOSES_FK">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-13 12:53:38 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<referredTableLongName>DOSES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>DA9FA398-6568-8BBC-CCB3-B3E442AE4D94</referredTableID>
+<keyObject>B93ECBD1-51FB-22BA-61B7-32AD00EF5119</keyObject>
+<referredKeyID>B93ECBD1-51FB-22BA-61B7-32AD00EF5119</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>DOSE_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

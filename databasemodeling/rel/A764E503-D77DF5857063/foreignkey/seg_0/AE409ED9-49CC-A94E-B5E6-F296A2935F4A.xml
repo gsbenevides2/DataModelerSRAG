@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="AE409ED9-49CC-A94E-B5E6-F296A2935F4A" containerWithKeyObject="3C9B8190-0998-0B37-F45B-4A6FBD3753A4" localFKIndex="28972C68-87ED-B588-42DF-A5CF0B94C9FB" name="RAIOX_CASOS_RAIOX_FK">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-17 19:39:02 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<referredTableLongName>RAIOX</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>DA8A4C2D-4E46-7771-3732-AC0269710A17</referredTableID>
+<keyObject>9B28CC69-4783-C19E-48C0-0B478ABC4E88</keyObject>
+<referredKeyID>9B28CC69-4783-C19E-48C0-0B478ABC4E88</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>RAI_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7BF59001-E883-B705-B0DA-82BFF70BFCC8" containerWithKeyObject="895EA01F-EDAA-AF16-0BDE-ABB158B26DCB" localFKIndex="5FA195A1-AA3B-668B-2578-61A2338D1F0B" name="CASOS_SINTOMAS_SINTOMAS_FK">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:53:49 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<referredTableLongName>SINTOMAS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>4EC5E902-94D7-93B6-4DF5-B230309A56E3</referredTableID>
+<keyObject>5BD0D4BF-D696-8F39-0458-F3015AB25B03</keyObject>
+<referredKeyID>5BD0D4BF-D696-8F39-0458-F3015AB25B03</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>SINT_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

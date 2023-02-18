@@ -1,0 +1,898 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9632948B-46AB-9966-F913-564D22384263" name="CASOS">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:25:50 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CASO_ID" id="EF6A022B-0428-CF9A-75D6-339944A44290">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:53:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador autoincremental de cada caso de sindrome respiratória aguda grave]]></commentInRDBMS>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CASO_DT_NOTIFIC" id="1C3A436F-1CD5-2EFB-C049-24105E10FF40">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do preenchimento da ficha de notificação.]]></commentInRDBMS>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CASO_DT_SIN_PRI" id="2B7A434B-3745-3736-AA2C-7AD16D52528E">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de inicio dos primeiros sintomas do caso.]]></commentInRDBMS>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CASO_SG_UF_NOT" id="C84ADAD8-A2D6-925A-1913-53AAAC1EDBBF">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Sigla da Unidade Federativa onde está localizada a Unidade que realizou a notificação.]]></commentInRDBMS>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REGI_NOT_ID" id="7DF0AAD0-C016-0427-D4F1-0805C1A591FF">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador da Regional de Sáude onde estpa localizado o municipio que realizou a notificação]]></commentInRDBMS>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="55DBF9ED-73A5-214F-4E57-EBCB004BE4CA" referredColumn="EDA3A8AF-C630-F51A-FEB8-E7B7FAE5E6C2"/>
+</associations>
+</Column>
+<Column name="UNID_ID" id="D66FB4EB-24EE-DF5A-525D-66905694F850">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador da Unidade que realizou a notificação.]]></commentInRDBMS>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A94CD240-8A17-4F0C-F7C0-5C6958C279CB" referredColumn="1577F1DB-3C0C-B050-47F9-0A06ABC64304"/>
+</associations>
+</Column>
+<Column name="CASO_SEXO" id="E8BB9040-9FAC-3D15-F7ED-01BF1134B42D">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Sexo do Paciente.]]></commentInRDBMS>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CASO_DT_NASC" id="696E9932-537D-A4C5-36B2-7A4CEC9C708B">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de Nascimento do Paciente]]></commentInRDBMS>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CASO_IDADE_GESTACIONAL" id="49B5F238-8870-ECCC-DF36-C68D19716A42">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Idade Gestacional do Paciente caso o paciente seja purpera.
+Descrição:
+1-1o Trimestre
+2-2o Trimestre
+3-3o Trimestre
+4-Idade Gestacional Ignorada
+5-Não
+6-Não se aplica
+9-Ignorado]]></commentInRDBMS>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CASO_RACA" id="E2FD3E1A-A293-337E-7A94-95842D4539D6">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Raça declarada pelo paciente sendo:
+1 - Branca
+2 - Preta
+3 - Amarela
+4 - Parda
+5 - Indigena
+9 - Ignorado]]></commentInRDBMS>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CASO_ESCOLARIDADE" id="55E2C684-F86F-A655-8955-F85346917622">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nível de Escolaridade do Paciente 
+0-Sem escolaridade/ Analfabeto
+1-Fundamental 1o ciclo (1a a 5a série)
+2-Fundamental 2o ciclo (6a a 9a série)
+3- Médio (1o ao 3o ano)
+4-Superior
+5-Não se aplica
+9-Ignorado
+ ]]></commentInRDBMS>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REGI_RESI_ID" id="D8F3AED2-8FB7-EDE3-560E-4F84F347C64D">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador da regional onde o paciente reside.]]></commentInRDBMS>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C76CF09D-ABAD-6AD7-8942-25765F29CBB6" referredColumn="EDA3A8AF-C630-F51A-FEB8-E7B7FAE5E6C2"/>
+</associations>
+</Column>
+<Column name="MUNI_RESI_ID" id="EE31E511-CD93-010E-5A5B-91E4993F305F">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Id do municipio onde o paciente reside]]></commentInRDBMS>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="769E5787-FCCF-ADA0-B6A6-D2AA7D0D61B5" referredColumn="756F1C6B-E241-E967-8671-38C16A86C72A"/>
+</associations>
+</Column>
+<Column name="CASO_ZONA" id="6CC27DC3-4A1A-93C9-C4F0-91D1057B64EF">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Zona de geografica de endereço do Paciente
+1-Urbana
+2-Rural
+3-Periurbana
+9-Ignorado
+]]></commentInRDBMS>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CASO_NOSOCOMIAL" id="62384D15-C555-A1C1-D0E8-233A58F604CB">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Caso de Sindrome respiratória aguda grave adquirida após internação:
+1 - Sim
+2 - Não
+9 - Ignorado]]></commentInRDBMS>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CASO_AVE_SUINO" id="512FB6BC-E68B-30CF-0BEE-7EB6AFCFB9B5">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Caso com contato direto a aves ou suinos:
+1 - Sim
+2 - Não
+9 - Ignorado]]></commentInRDBMS>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CAS_SUPORTE_VENTILADOR" id="C118B6FB-823E-DA72-7B25-A019FF4264FC">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Se o caso teve necessidade de ventilador.]]></commentInRDBMS>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AMOSTRA" id="E66CBE53-9AE1-C311-369F-59993EF901ED">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT-COLETA" id="328FC308-6021-D68C-DB23-EBCAC13DB667">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TP-AMOSTRA" id="D5F67231-63EF-4B95-38A3-00F8E9312B7C">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OUT-AMOST" id="EA9E605F-0340-3BF3-399B-8A757FAB3FD5">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PCR-RESUL" id="17466D61-EB2A-7068-A2B3-903185B5CF74">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT-PCR" id="2F961759-FAD1-F263-25A4-FBD310B9DFC0">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POS-PCRFLU" id="2139DC55-888F-DB35-EF88-7913C1E02C70">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TP-FLU-PCR" id="C1D50F6B-1601-DE7B-96F8-33A2E71BA777">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PCR-FLUASU" id="8A7176A6-7E9D-61A6-E543-57D320E3A15F">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FLUASU-OUT" id="CECBAFF2-CDAB-3213-913D-2F517C3112C8">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PCR-FLUBLI" id="0551D5F0-9BFD-3398-DB2E-A461D77A7581">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FLUBLI-OUT" id="5DC4175D-45D5-51BF-1921-4E2E81754C99">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POS-PCROUT" id="47F04851-005C-3F6D-9632-3DF9178D4BB9">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PCR-VSR" id="787FFFB6-F632-91BA-FA51-7884B49BCF40">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PCR-PARA1" id="F55B41D7-5F76-D96C-FA9C-9AF256379FE8">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PCR-PARA2" id="9EE344B7-AB74-D42A-9E4D-8C1FBBC20F23">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PCR-PARA3" id="2929A058-1DEB-B44F-BCFF-A2C31221714C">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PCR-PARA4" id="D7C2A674-DD04-DB63-CB31-E67655C04BD6">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PCR-ADENO" id="FC57D867-00B4-39B4-963D-ABE3450D7EAE">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PCR-METAP" id="BF750FFC-B77B-BD59-A653-035CA7848569">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PCR-BOCA" id="5438F7C1-5A93-F32F-8646-11556560BE61">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PCR-RINO" id="3D670DA8-B8E7-EAB1-213D-80033A334B0B">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PCR-OUTRO" id="1AE3CB06-C889-2795-6051-15957D0B822E">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS-PCR-OUT" id="27E9970E-55DA-7A89-4D88-9B92CF81E858">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CLASSI-FIN" id="67287C2A-EC81-E70E-B741-D2ECF7131DF5">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CLASSI-OUT" id="5F4500FE-86F8-C46B-35C8-7EC6C9FB1411">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CRITERIO" id="CA353302-32D6-C75C-0B1B-76F0072EB049">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EVOLUCAO" id="C9072085-B50C-8918-EE3E-EE01D379943B">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT-EVOLUCA" id="8251C30C-2A46-D0B6-8A07-B89CC0D3718E">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT-ENCERRA" id="DADCFB36-5908-92FA-D376-6268C6A68D0D">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT-DIGITA" id="B985B523-F0FD-4559-9E07-2AE858B1085B">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HISTO-VGM" id="5CFBD904-B898-C888-72FA-8BCE03F6AAFA">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PAIS-VGM" id="8990124F-3250-81D2-7B7D-9807EBC4B9D9">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CO-PS-VGM" id="316EFF11-801D-D592-76B1-4439129DE6B7">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LO-PS-VGM" id="79A33262-CF79-DB7A-8922-6A9CF388BFD0">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT-VGM" id="CB0DFD47-A18A-412F-CBF4-C29E74E95533">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT-RT-VGM" id="9CB3F52C-841A-153A-BFC1-C5844E95A3A9">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PCR-SARS2" id="9238B867-4361-44F0-AD32-8D3AF4D007C3">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OUT-ANIM" id="5ED05E7C-6262-ED88-6D59-6D13A5BC4DBF">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TOMO-RES" id="C44C98D9-468C-DDBF-5D23-BFD7B9EDE613">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TOMO-OUT" id="BCE3F75E-B024-462A-EAA0-34AA6921F85B">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT-TOMO" id="554F708F-D338-D18C-5409-77E0387FA6C2">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TP-TES-AN" id="63B3434B-EBBF-0709-AE21-4651C47F898D">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT-RES-AN" id="DEA456BB-89CD-5B16-3931-F883FC63390F">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RES-AN" id="0F49BBB7-1788-7873-BAD4-8FCE8B0623EA">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POS-AN-FLU" id="E326A4B0-D39E-4F7D-C0E2-54C2484151E8">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TP-FLU-AN" id="6BEE0B83-A3F1-730C-2ACC-06AE6C25BCC8">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POS-AN-OUT" id="24778EF3-29EE-568C-91A5-3C327DAB8166">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AN-SARS2" id="445CA21A-6364-9387-C166-85E20CB93D09">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AN-VSR" id="678E0C29-631D-011C-7697-4218422C8A01">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AN-PARA1" id="F602E479-A0B8-CAD0-97FC-FE8A93A30164">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AN-PARA2" id="42B27EA6-5D41-0C15-BA7B-79681CA6A094">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AN-PARA3" id="46228C5E-C88D-558D-A08B-3DA1E6D12F4F">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AN-ADENO" id="C620743C-1494-69EB-A94F-E3BC1E24ABD5">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AN-OUTRO" id="8EDA331C-DEE8-5C48-863A-F2237C485C36">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS-AN-OUT" id="9A17B77F-B2CB-4465-350B-4E0312E49ED0">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TP-AM-SOR" id="FFEB3A54-5536-8B6B-EAAF-335A5F73BC6C">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SOR-OUT" id="03072580-ED64-2F38-E248-EEFCFB9F939E">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT-CO-SOR" id="AD0DCA7E-7635-AF4C-0CF3-15997E2E5F9D">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TP-SOR" id="20422B92-85B0-F1E4-2362-1FC1BAFB349B">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OUT-SOR" id="82EAB751-0386-F1FA-2D21-0649073A9D90">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT-RES" id="98D1EFA8-2AE4-AC9F-4CF4-A4ABAFE8D323">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RES-IGG" id="D9DB7C29-5935-90EA-087C-DA1EFB5E0828">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RES-IGM" id="86FAA665-EEF4-08B0-26C9-945904F8846A">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RES-IGA" id="20684D16-CCD8-82E9-72C5-E55B7434DC79">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESTRANG" id="DD29DCC2-CF8E-5DFC-BDF3-47C9E859651F">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8F4373CE-2653-7283-EF77-39351E9AC6DE" name="CASOS_PK">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:53:20 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EF6A022B-0428-CF9A-75D6-339944A44290"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FEA2E197-1C43-3A44-23FF-D28F17E10487" name="CASOS_REGIONAIS_FK">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-17 00:49:18 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7DF0AAD0-C016-0427-D4F1-0805C1A591FF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DE97EE00-7264-83EE-94D7-4D0CBCC06496" name="CASOS_UNIDADES_FK">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-17 01:22:12 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D66FB4EB-24EE-DF5A-525D-66905694F850"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="37D0130E-59C8-2BC3-0220-40BE380C6C0C" name="CASOS_REGIONAIS_FKv2">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-17 12:23:46 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D8F3AED2-8FB7-EDE3-560E-4F84F347C64D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="54EF9667-616A-112A-5D54-7AB1E8D201EC" name="CASOS_MUNICIPIOS_FKv2">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-17 12:26:29 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EE31E511-CD93-010E-5A5B-91E4993F305F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

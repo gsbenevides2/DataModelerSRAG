@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="298D0257-A672-AACB-A30D-DF1C21BE8031" name="CASOS_ANTIVIRAIS_COVID">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-17 19:01:18 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<ordsAlias>table_15</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CASO_ID" id="4FF756B6-4708-84DA-3BF4-B6FB0FF22638">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-17 19:01:18 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2F9557A0-2EAD-3E5E-4507-215E5AD596E6" referredColumn="EF6A022B-0428-CF9A-75D6-339944A44290"/>
+</associations>
+</Column>
+<Column name="ANTI_COV_ID" id="E2056D78-5D9F-3171-F396-13D04E1EC310">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-17 19:01:18 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="43275E95-460B-5301-218B-E04516D9D9EA" referredColumn="BA87922A-76F9-9A55-2625-DFB8A0D3D37E"/>
+</associations>
+</Column>
+<Column name="ANTI_DATA_DATA" id="17457C4E-AD35-ECE4-46D1-84A79F37D993">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-17 19:01:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data em que foi iniciado o tratamento com o antiviral. para covid]]></commentInRDBMS>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5D668793-79AE-4279-1E51-7AE34BB390CE" name="CASOS_ANTIVIRAISv1_PK">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-17 19:01:18 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4FF756B6-4708-84DA-3BF4-B6FB0FF22638"/>
+<colUsage columnID="E2056D78-5D9F-3171-F396-13D04E1EC310"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="05929847-AAF8-17ED-5D76-4F6DB9E81CB5" name="CASOS_ANTIVIRAISv1_ANTIVIRAISv1_FK">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-17 19:01:18 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E2056D78-5D9F-3171-F396-13D04E1EC310"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="460E243C-0750-457E-87FD-B6EED5E02600" name="CASOS_ANTIVIRAISv1_CASOS_FK">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-17 19:01:18 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4FF756B6-4708-84DA-3BF4-B6FB0FF22638"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

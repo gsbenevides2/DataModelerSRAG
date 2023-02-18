@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C2C524A0-26FD-A263-885F-1D166B312DE8" containerWithKeyObject="020FFABC-9E6E-0A39-DD80-B05BD8E12782" localFKIndex="F1A20BD5-0F2A-E762-AB0A-538EC4AF6CC9" name="CASOS_ANTIVIRAIS_ANTIVIRAIS_FK">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-17 18:36:02 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<referredTableLongName>ANTIVIRAIS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>9DE14E59-A1A9-D6C0-53BE-3822BFFF6F55</referredTableID>
+<keyObject>454FFEB8-03C7-8A44-F834-ADB6B0392338</keyObject>
+<referredKeyID>454FFEB8-03C7-8A44-F834-ADB6B0392338</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ANT_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

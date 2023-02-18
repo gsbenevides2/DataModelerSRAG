@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D08BFA00-89CA-C37C-D9CC-D6F150CCF455" name="ESTADOS">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-17 18:14:46 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<ordsAlias>table_16</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="EST_ID" id="B0CF68BF-B94B-11DC-952E-CAB53F6E2440">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-17 18:16:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do estado.]]></commentInRDBMS>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EST_NOME" id="76BD6C98-AAEC-0B49-8AC8-F7E0F2516A41">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-17 18:16:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome do estado.]]></commentInRDBMS>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F60647D5-233E-E3DE-3F84-83A1EF804F1E" name="ESTADOS_PK">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-17 18:16:57 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B0CF68BF-B94B-11DC-952E-CAB53F6E2440"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
