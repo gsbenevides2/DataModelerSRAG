@@ -247,248 +247,20 @@ Descrição:
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="AMOSTRA" id="E66CBE53-9AE1-C311-369F-59993EF901ED">
+<Column name="CLA_ID" id="67287C2A-EC81-E70E-B741-D2ECF7131DF5">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador da classificação do caso de SRAG]]></commentInRDBMS>
 <ownerDesignName>databasemodeling</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="DT-COLETA" id="328FC308-6021-D68C-DB23-EBCAC13DB667">
-<createdBy>gsbenevides2</createdBy>
-<createdTime>2023-02-12 14:40:04 UTC</createdTime>
-<ownerDesignName>databasemodeling</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="TP-AMOSTRA" id="D5F67231-63EF-4B95-38A3-00F8E9312B7C">
-<createdBy>gsbenevides2</createdBy>
-<createdTime>2023-02-12 14:40:04 UTC</createdTime>
-<ownerDesignName>databasemodeling</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="OUT-AMOST" id="EA9E605F-0340-3BF3-399B-8A757FAB3FD5">
-<createdBy>gsbenevides2</createdBy>
-<createdTime>2023-02-12 14:40:04 UTC</createdTime>
-<ownerDesignName>databasemodeling</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="PCR-RESUL" id="17466D61-EB2A-7068-A2B3-903185B5CF74">
-<createdBy>gsbenevides2</createdBy>
-<createdTime>2023-02-12 14:40:04 UTC</createdTime>
-<ownerDesignName>databasemodeling</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="DT-PCR" id="2F961759-FAD1-F263-25A4-FBD310B9DFC0">
-<createdBy>gsbenevides2</createdBy>
-<createdTime>2023-02-12 14:40:04 UTC</createdTime>
-<ownerDesignName>databasemodeling</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="POS-PCRFLU" id="2139DC55-888F-DB35-EF88-7913C1E02C70">
-<createdBy>gsbenevides2</createdBy>
-<createdTime>2023-02-12 14:40:04 UTC</createdTime>
-<ownerDesignName>databasemodeling</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="TP-FLU-PCR" id="C1D50F6B-1601-DE7B-96F8-33A2E71BA777">
-<createdBy>gsbenevides2</createdBy>
-<createdTime>2023-02-12 14:40:04 UTC</createdTime>
-<ownerDesignName>databasemodeling</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="PCR-FLUASU" id="8A7176A6-7E9D-61A6-E543-57D320E3A15F">
-<createdBy>gsbenevides2</createdBy>
-<createdTime>2023-02-12 14:40:04 UTC</createdTime>
-<ownerDesignName>databasemodeling</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="FLUASU-OUT" id="CECBAFF2-CDAB-3213-913D-2F517C3112C8">
-<createdBy>gsbenevides2</createdBy>
-<createdTime>2023-02-12 14:40:04 UTC</createdTime>
-<ownerDesignName>databasemodeling</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="PCR-FLUBLI" id="0551D5F0-9BFD-3398-DB2E-A461D77A7581">
-<createdBy>gsbenevides2</createdBy>
-<createdTime>2023-02-12 14:40:04 UTC</createdTime>
-<ownerDesignName>databasemodeling</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="FLUBLI-OUT" id="5DC4175D-45D5-51BF-1921-4E2E81754C99">
-<createdBy>gsbenevides2</createdBy>
-<createdTime>2023-02-12 14:40:04 UTC</createdTime>
-<ownerDesignName>databasemodeling</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="POS-PCROUT" id="47F04851-005C-3F6D-9632-3DF9178D4BB9">
-<createdBy>gsbenevides2</createdBy>
-<createdTime>2023-02-12 14:40:04 UTC</createdTime>
-<ownerDesignName>databasemodeling</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="PCR-VSR" id="787FFFB6-F632-91BA-FA51-7884B49BCF40">
-<createdBy>gsbenevides2</createdBy>
-<createdTime>2023-02-12 14:40:04 UTC</createdTime>
-<ownerDesignName>databasemodeling</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="PCR-PARA1" id="F55B41D7-5F76-D96C-FA9C-9AF256379FE8">
-<createdBy>gsbenevides2</createdBy>
-<createdTime>2023-02-12 14:40:04 UTC</createdTime>
-<ownerDesignName>databasemodeling</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="PCR-PARA2" id="9EE344B7-AB74-D42A-9E4D-8C1FBBC20F23">
-<createdBy>gsbenevides2</createdBy>
-<createdTime>2023-02-12 14:40:04 UTC</createdTime>
-<ownerDesignName>databasemodeling</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="PCR-PARA3" id="2929A058-1DEB-B44F-BCFF-A2C31221714C">
-<createdBy>gsbenevides2</createdBy>
-<createdTime>2023-02-12 14:40:04 UTC</createdTime>
-<ownerDesignName>databasemodeling</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="PCR-PARA4" id="D7C2A674-DD04-DB63-CB31-E67655C04BD6">
-<createdBy>gsbenevides2</createdBy>
-<createdTime>2023-02-12 14:40:04 UTC</createdTime>
-<ownerDesignName>databasemodeling</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="PCR-ADENO" id="FC57D867-00B4-39B4-963D-ABE3450D7EAE">
-<createdBy>gsbenevides2</createdBy>
-<createdTime>2023-02-12 14:40:04 UTC</createdTime>
-<ownerDesignName>databasemodeling</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="PCR-METAP" id="BF750FFC-B77B-BD59-A653-035CA7848569">
-<createdBy>gsbenevides2</createdBy>
-<createdTime>2023-02-12 14:40:04 UTC</createdTime>
-<ownerDesignName>databasemodeling</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="PCR-BOCA" id="5438F7C1-5A93-F32F-8646-11556560BE61">
-<createdBy>gsbenevides2</createdBy>
-<createdTime>2023-02-12 14:40:04 UTC</createdTime>
-<ownerDesignName>databasemodeling</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="PCR-RINO" id="3D670DA8-B8E7-EAB1-213D-80033A334B0B">
-<createdBy>gsbenevides2</createdBy>
-<createdTime>2023-02-12 14:40:04 UTC</createdTime>
-<ownerDesignName>databasemodeling</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="PCR-OUTRO" id="1AE3CB06-C889-2795-6051-15957D0B822E">
-<createdBy>gsbenevides2</createdBy>
-<createdTime>2023-02-12 14:40:04 UTC</createdTime>
-<ownerDesignName>databasemodeling</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="DS-PCR-OUT" id="27E9970E-55DA-7A89-4D88-9B92CF81E858">
-<createdBy>gsbenevides2</createdBy>
-<createdTime>2023-02-12 14:40:04 UTC</createdTime>
-<ownerDesignName>databasemodeling</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="CLASSI-FIN" id="67287C2A-EC81-E70E-B741-D2ECF7131DF5">
-<createdBy>gsbenevides2</createdBy>
-<createdTime>2023-02-12 14:40:04 UTC</createdTime>
-<ownerDesignName>databasemodeling</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="CLASSI-OUT" id="5F4500FE-86F8-C46B-35C8-7EC6C9FB1411">
-<createdBy>gsbenevides2</createdBy>
-<createdTime>2023-02-12 14:40:04 UTC</createdTime>
-<ownerDesignName>databasemodeling</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="CRITERIO" id="CA353302-32D6-C75C-0B1B-76F0072EB049">
-<createdBy>gsbenevides2</createdBy>
-<createdTime>2023-02-12 14:40:04 UTC</createdTime>
-<ownerDesignName>databasemodeling</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F47CD776-5EB2-3DF3-B543-7101796312DE" referredColumn="720C03C0-C5FD-1452-9C1C-8AD8C6C1C345"/>
+</associations>
 </Column>
 <Column name="EVOLUCAO" id="C9072085-B50C-8918-EE3E-EE01D379943B">
 <createdBy>gsbenevides2</createdBy>
@@ -500,15 +272,6 @@ Descrição:
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="DT-EVOLUCA" id="8251C30C-2A46-D0B6-8A07-B89CC0D3718E">
-<createdBy>gsbenevides2</createdBy>
-<createdTime>2023-02-12 14:40:04 UTC</createdTime>
-<ownerDesignName>databasemodeling</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="DT-ENCERRA" id="DADCFB36-5908-92FA-D376-6268C6A68D0D">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-12 14:40:04 UTC</createdTime>
 <ownerDesignName>databasemodeling</ownerDesignName>
@@ -580,169 +343,7 @@ Descrição:
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="PCR-SARS2" id="9238B867-4361-44F0-AD32-8D3AF4D007C3">
-<createdBy>gsbenevides2</createdBy>
-<createdTime>2023-02-12 14:40:04 UTC</createdTime>
-<ownerDesignName>databasemodeling</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="OUT-ANIM" id="5ED05E7C-6262-ED88-6D59-6D13A5BC4DBF">
-<createdBy>gsbenevides2</createdBy>
-<createdTime>2023-02-12 14:40:04 UTC</createdTime>
-<ownerDesignName>databasemodeling</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="TOMO-RES" id="C44C98D9-468C-DDBF-5D23-BFD7B9EDE613">
-<createdBy>gsbenevides2</createdBy>
-<createdTime>2023-02-12 14:40:04 UTC</createdTime>
-<ownerDesignName>databasemodeling</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="TOMO-OUT" id="BCE3F75E-B024-462A-EAA0-34AA6921F85B">
-<createdBy>gsbenevides2</createdBy>
-<createdTime>2023-02-12 14:40:04 UTC</createdTime>
-<ownerDesignName>databasemodeling</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="DT-TOMO" id="554F708F-D338-D18C-5409-77E0387FA6C2">
-<createdBy>gsbenevides2</createdBy>
-<createdTime>2023-02-12 14:40:04 UTC</createdTime>
-<ownerDesignName>databasemodeling</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="TP-TES-AN" id="63B3434B-EBBF-0709-AE21-4651C47F898D">
-<createdBy>gsbenevides2</createdBy>
-<createdTime>2023-02-12 14:40:04 UTC</createdTime>
-<ownerDesignName>databasemodeling</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="DT-RES-AN" id="DEA456BB-89CD-5B16-3931-F883FC63390F">
-<createdBy>gsbenevides2</createdBy>
-<createdTime>2023-02-12 14:40:04 UTC</createdTime>
-<ownerDesignName>databasemodeling</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="RES-AN" id="0F49BBB7-1788-7873-BAD4-8FCE8B0623EA">
-<createdBy>gsbenevides2</createdBy>
-<createdTime>2023-02-12 14:40:04 UTC</createdTime>
-<ownerDesignName>databasemodeling</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="POS-AN-FLU" id="E326A4B0-D39E-4F7D-C0E2-54C2484151E8">
-<createdBy>gsbenevides2</createdBy>
-<createdTime>2023-02-12 14:40:04 UTC</createdTime>
-<ownerDesignName>databasemodeling</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="TP-FLU-AN" id="6BEE0B83-A3F1-730C-2ACC-06AE6C25BCC8">
-<createdBy>gsbenevides2</createdBy>
-<createdTime>2023-02-12 14:40:04 UTC</createdTime>
-<ownerDesignName>databasemodeling</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="POS-AN-OUT" id="24778EF3-29EE-568C-91A5-3C327DAB8166">
-<createdBy>gsbenevides2</createdBy>
-<createdTime>2023-02-12 14:40:04 UTC</createdTime>
-<ownerDesignName>databasemodeling</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="AN-SARS2" id="445CA21A-6364-9387-C166-85E20CB93D09">
-<createdBy>gsbenevides2</createdBy>
-<createdTime>2023-02-12 14:40:04 UTC</createdTime>
-<ownerDesignName>databasemodeling</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="AN-VSR" id="678E0C29-631D-011C-7697-4218422C8A01">
-<createdBy>gsbenevides2</createdBy>
-<createdTime>2023-02-12 14:40:04 UTC</createdTime>
-<ownerDesignName>databasemodeling</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="AN-PARA1" id="F602E479-A0B8-CAD0-97FC-FE8A93A30164">
-<createdBy>gsbenevides2</createdBy>
-<createdTime>2023-02-12 14:40:04 UTC</createdTime>
-<ownerDesignName>databasemodeling</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="AN-PARA2" id="42B27EA6-5D41-0C15-BA7B-79681CA6A094">
-<createdBy>gsbenevides2</createdBy>
-<createdTime>2023-02-12 14:40:04 UTC</createdTime>
-<ownerDesignName>databasemodeling</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="AN-PARA3" id="46228C5E-C88D-558D-A08B-3DA1E6D12F4F">
-<createdBy>gsbenevides2</createdBy>
-<createdTime>2023-02-12 14:40:04 UTC</createdTime>
-<ownerDesignName>databasemodeling</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="AN-ADENO" id="C620743C-1494-69EB-A94F-E3BC1E24ABD5">
-<createdBy>gsbenevides2</createdBy>
-<createdTime>2023-02-12 14:40:04 UTC</createdTime>
-<ownerDesignName>databasemodeling</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="AN-OUTRO" id="8EDA331C-DEE8-5C48-863A-F2237C485C36">
-<createdBy>gsbenevides2</createdBy>
-<createdTime>2023-02-12 14:40:04 UTC</createdTime>
-<ownerDesignName>databasemodeling</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="DS-AN-OUT" id="9A17B77F-B2CB-4465-350B-4E0312E49ED0">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-12 14:40:04 UTC</createdTime>
 <ownerDesignName>databasemodeling</ownerDesignName>
@@ -892,6 +493,16 @@ Descrição:
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="EE31E511-CD93-010E-5A5B-91E4993F305F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CADFD464-EE22-680A-97A6-17B45B66F039" name="CASOS_CLASSIFICAÇÕES_FK">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 01:35:42 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="67287C2A-EC81-E70E-B741-D2ECF7131DF5"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

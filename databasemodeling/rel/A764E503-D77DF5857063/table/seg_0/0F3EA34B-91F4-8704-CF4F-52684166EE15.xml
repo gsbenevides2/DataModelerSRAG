@@ -1,17 +1,17 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DA8A4C2D-4E46-7771-3732-AC0269710A17" name="RESULTADOS_RAIOX">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0F3EA34B-91F4-8704-CF4F-52684166EE15" name="CRITERIOS_ENCERRAMENTO">
 <createdBy>gsbenevides2</createdBy>
-<createdTime>2023-02-17 19:33:44 UTC</createdTime>
+<createdTime>2023-02-21 01:37:28 UTC</createdTime>
 <ownerDesignName>databasemodeling</ownerDesignName>
-<ordsAlias>table_20</ordsAlias>
+<ordsAlias>table_34</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="RAI_ID" id="4BC587CA-31ED-1673-C76B-D2B99742A610">
+<Column name="CRI_ID" id="3D748579-A7D8-A7F6-06D1-2D820A626715">
 <createdBy>gsbenevides2</createdBy>
-<createdTime>2023-02-17 19:35:07 UTC</createdTime>
-<commentInRDBMS><![CDATA[Identificador do tipo de resultado para o raio-x]]></commentInRDBMS>
+<createdTime>2023-02-21 01:38:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do criterio de encerramento do caso.]]></commentInRDBMS>
 <ownerDesignName>databasemodeling</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -19,29 +19,29 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="RAI_DESC" id="404FE2F3-9DD1-A5FA-E673-106BCB9C2629">
+<Column name="CRI_DESC" id="F16197B3-B6DE-F2F5-E089-6986C8715481">
 <createdBy>gsbenevides2</createdBy>
-<createdTime>2023-02-17 19:35:07 UTC</createdTime>
-<commentInRDBMS><![CDATA[Descrição do tipo de resultado para o raiox.]]></commentInRDBMS>
+<createdTime>2023-02-21 01:38:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição do criterio de encerramento.]]></commentInRDBMS>
 <ownerDesignName>databasemodeling</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>30</dataTypeSize>
-<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="9B28CC69-4783-C19E-48C0-0B478ABC4E88" name="RAIOX_PK">
+<ind_PK_UK id="6A5FB727-F058-5DE4-9F67-89F1F788408B" name="CRITERIOS_ENCERRAMENTO_PK">
 <createdBy>gsbenevides2</createdBy>
-<createdTime>2023-02-17 19:35:07 UTC</createdTime>
+<createdTime>2023-02-21 01:38:50 UTC</createdTime>
 <ownerDesignName>databasemodeling</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="4BC587CA-31ED-1673-C76B-D2B99742A610"/>
+<colUsage columnID="3D748579-A7D8-A7F6-06D1-2D820A626715"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
