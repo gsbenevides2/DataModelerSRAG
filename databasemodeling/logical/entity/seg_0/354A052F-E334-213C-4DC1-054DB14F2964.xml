@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="354A052F-E334-213C-4DC1-054DB14F2964" name="TIPOS ANIMAIS">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 17:51:54 UTC</createdTime>
+<generatorID>44391DA7-9333-83FF-0FAF-AD719C3F9BA0</generatorID>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<engineerTo>
+<item key="A764E503-4088-3D57-01D4-D77DF5857063" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="TAN ID" id="F7B6C7CC-B810-D15F-8EB8-28E101714565">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 17:51:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do tipo de animal]]></commentInRDBMS>
+<generatorID>001A6FFE-3BAC-FBF8-43F2-F510B94DEED7</generatorID>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<engineerTo>
+<item key="A764E503-4088-3D57-01D4-D77DF5857063" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TAN DESC" id="0E5A03B6-DF57-4E13-5288-A1EAF97B4366">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 17:51:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição do tipo de animal.]]></commentInRDBMS>
+<generatorID>C741964E-66E6-8430-4381-98347322FE6F</generatorID>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<engineerTo>
+<item key="A764E503-4088-3D57-01D4-D77DF5857063" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="67A1357E-41A1-385A-7D16-14A18F3359F5" name="TIPOS ANIMAIS PK">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 17:51:54 UTC</createdTime>
+<generatorID>AC585465-E7C4-DCA5-8AF1-FF0C5653869B</generatorID>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<engineerTo>
+<item key="A764E503-4088-3D57-01D4-D77DF5857063" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F7B6C7CC-B810-D15F-8EB8-28E101714565</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A94CD240-8A17-4F0C-F7C0-5C6958C279CB" containerWithKeyObject="9632948B-46AB-9966-F913-564D22384263" localFKIndex="DE97EE00-7264-83EE-94D7-4D0CBCC06496" name="CASOS_UNIDADES_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A94CD240-8A17-4F0C-F7C0-5C6958C279CB" containerWithKeyObject="9632948B-46AB-9966-F913-564D22384263" localFKIndex="DE97EE00-7264-83EE-94D7-4D0CBCC06496" name="FK_CAS_UNI">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-17 01:22:12 UTC</createdTime>
 <ownerDesignName>databasemodeling</ownerDesignName>
@@ -9,7 +9,7 @@
 <keyObject>5B57BC7F-6BF1-C7E3-0004-A94ADB3215DA</keyObject>
 <referredKeyID>5B57BC7F-6BF1-C7E3-0004-A94ADB3215DA</referredKeyID>
 <mandatory>true</mandatory>
-<refColNames>UNID_ID</refColNames>
+<refColNames>UNI_ID</refColNames>
 <transferable>true</transferable>
 <rely>false</rely>
 <columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>

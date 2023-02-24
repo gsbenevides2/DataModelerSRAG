@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="715D29F8-CF88-BB9C-7FA7-C227DB56ABDB" name="UTI">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 17:51:54 UTC</createdTime>
+<generatorID>1D631899-3D1C-6B88-6F0D-88A39802126C</generatorID>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<engineerTo>
+<item key="A764E503-4088-3D57-01D4-D77DF5857063" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CASO ID" id="93872862-FA68-0BE1-6016-D78D3ABB010A">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 17:51:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Id do caso onde o paciente foi parar na UTI.]]></commentInRDBMS>
+<generatorID>87CB1D9D-92E7-FEF5-8F5E-7D8ED64ADCED</generatorID>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<engineerTo>
+<item key="A764E503-4088-3D57-01D4-D77DF5857063" value="true"/>
+</engineerTo>
+<referedAttribute>E943DCB7-3BD4-44CC-9E85-B74EA04EA184</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="UTI DT ENTRADA" id="63324CF9-C6C2-B8B4-5ECB-1C37B06C4F11">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 17:51:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de entrada na UTI.]]></commentInRDBMS>
+<generatorID>7B789FC0-D6D4-0E1C-3204-BF1B3764B2FC</generatorID>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<engineerTo>
+<item key="A764E503-4088-3D57-01D4-D77DF5857063" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="UTI DT SAIDA" id="2DE21FD9-85CB-4E5B-7ED9-338367E4BB7A">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 17:51:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de saída da UTI>]]></commentInRDBMS>
+<generatorID>243EC3C5-6850-C245-FFF9-5292DE577719</generatorID>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<engineerTo>
+<item key="A764E503-4088-3D57-01D4-D77DF5857063" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8B079732-6EE1-AEEF-7133-18DD58FF2975" name="UTI PK">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 17:51:54 UTC</createdTime>
+<generatorID>F8BFA9AA-0DE7-DE7E-B222-22ACCA001B42</generatorID>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<engineerTo>
+<item key="A764E503-4088-3D57-01D4-D77DF5857063" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>93872862-FA68-0BE1-6016-D78D3ABB010A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

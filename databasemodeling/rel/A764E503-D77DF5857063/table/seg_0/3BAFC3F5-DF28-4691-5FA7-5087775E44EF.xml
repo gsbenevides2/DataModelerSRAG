@@ -2,16 +2,17 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3BAFC3F5-DF28-4691-5FA7-5087775E44EF" name="MUNICIPIOS">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-16 12:20:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela contendo uma relação dos municípios do Brasil.]]></commentInRDBMS>
 <ownerDesignName>databasemodeling</ownerDesignName>
 <ordsAlias>table_9</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="MUNI_ID" id="756F1C6B-E241-E967-8671-38C16A86C72A">
+<Column name="MUN_ID" id="756F1C6B-E241-E967-8671-38C16A86C72A">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-16 12:20:47 UTC</createdTime>
-<commentInRDBMS><![CDATA[Código IBGE do Municipio]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Código IBGE do município.]]></commentInRDBMS>
 <ownerDesignName>databasemodeling</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -19,10 +20,10 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="MUNI_NOME" id="A8E39430-C3D7-8DE5-C8DA-9BDDD0ED8C97">
+<Column name="MUN_NOME" id="A8E39430-C3D7-8DE5-C8DA-9BDDD0ED8C97">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-16 12:22:22 UTC</createdTime>
-<commentInRDBMS><![CDATA[Nome da Cidade no IBGE]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Nome do município no IBGE.]]></commentInRDBMS>
 <ownerDesignName>databasemodeling</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -31,10 +32,10 @@
 <ownDataTypeParameters>30,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="EST_ID" id="F62AAA73-EF81-8A3E-98F9-4EC0DD3E854C">
+<Column name="MUN_EST_ID" id="F62AAA73-EF81-8A3E-98F9-4EC0DD3E854C">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-17 18:18:02 UTC</createdTime>
-<commentInRDBMS><![CDATA[Identificador do estado.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Identificador do estado que pertence aquele município.]]></commentInRDBMS>
 <ownerDesignName>databasemodeling</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -47,7 +48,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="21BFF94B-ECB6-FE0B-7D15-CFF0291E12C6" name="MUNICIPIOS_PK">
+<ind_PK_UK id="21BFF94B-ECB6-FE0B-7D15-CFF0291E12C6" name="PK_MUN">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-16 12:20:47 UTC</createdTime>
 <ownerDesignName>databasemodeling</ownerDesignName>
@@ -58,7 +59,7 @@
 <colUsage columnID="756F1C6B-E241-E967-8671-38C16A86C72A"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="716877C5-50B5-C15A-29D3-3AA5F6C11E11" name="MUNICIPIOS_ESTADOS_FK">
+<ind_PK_UK id="716877C5-50B5-C15A-29D3-3AA5F6C11E11" name="FK_MUN_EST">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-17 18:18:17 UTC</createdTime>
 <ownerDesignName>databasemodeling</ownerDesignName>

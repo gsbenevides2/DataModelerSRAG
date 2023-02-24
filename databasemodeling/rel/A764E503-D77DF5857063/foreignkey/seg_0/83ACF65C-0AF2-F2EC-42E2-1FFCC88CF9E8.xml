@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="83ACF65C-0AF2-F2EC-42E2-1FFCC88CF9E8" containerWithKeyObject="C4D6FA6A-2110-96E8-E56E-3B47C4C1FE70" localFKIndex="5D99CB45-0C64-8C95-D482-C035D58B2111" name="VACINAS_COVID_FABRICANTES_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="83ACF65C-0AF2-F2EC-42E2-1FFCC88CF9E8" containerWithKeyObject="C4D6FA6A-2110-96E8-E56E-3B47C4C1FE70" localFKIndex="5D99CB45-0C64-8C95-D482-C035D58B2111" name="FK_VAC_FAB">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-13 12:54:48 UTC</createdTime>
 <ownerDesignName>databasemodeling</ownerDesignName>
@@ -9,7 +9,7 @@
 <keyObject>153D1DFC-3CB0-993A-7A16-AC58717C0B61</keyObject>
 <referredKeyID>153D1DFC-3CB0-993A-7A16-AC58717C0B61</referredKeyID>
 <mandatory>false</mandatory>
-<refColNames>FABR_ID</refColNames>
+<refColNames>FAB_ID</refColNames>
 <transferable>true</transferable>
 <rely>false</rely>
 <columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>

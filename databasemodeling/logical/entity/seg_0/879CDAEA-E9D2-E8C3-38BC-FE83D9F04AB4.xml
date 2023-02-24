@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="879CDAEA-E9D2-E8C3-38BC-FE83D9F04AB4" name="TIPOS TESTES SOROLOGICOS">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 17:51:54 UTC</createdTime>
+<generatorID>5069C351-AC1C-A26C-2D1D-E513CFC93768</generatorID>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<engineerTo>
+<item key="A764E503-4088-3D57-01D4-D77DF5857063" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="TTS ID" id="9F9DB0CA-7A3E-CAAF-3E97-A9157951DD3F">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 17:51:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do tipo de teste sorológico.]]></commentInRDBMS>
+<generatorID>C336DE31-6B1A-8B52-BC36-8602BD745996</generatorID>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<engineerTo>
+<item key="A764E503-4088-3D57-01D4-D77DF5857063" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TTS NOME" id="E4B78A18-2EEE-1C65-5800-83611C3A9AE9">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 17:51:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome do tipo de teste sorológico.]]></commentInRDBMS>
+<generatorID>6BD43AFD-E124-CA1C-4A49-4ACFFBDC0CEF</generatorID>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<engineerTo>
+<item key="A764E503-4088-3D57-01D4-D77DF5857063" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0B771136-B2EC-5E02-72C9-66A648ECBF17" name="TIPOS AMOSTRAS SOROLOGICASv1 PK">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 17:51:54 UTC</createdTime>
+<generatorID>2D9082E8-FB29-A29C-E6FA-09C8543B3DFE</generatorID>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<engineerTo>
+<item key="A764E503-4088-3D57-01D4-D77DF5857063" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9F9DB0CA-7A3E-CAAF-3E97-A9157951DD3F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="VACINAS_COVID_DOSES_FK" directorySegmentName="seg_0" id="2DE435FD-EE2A-65B8-7611-A80ECF53E4D5">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 17:51:54 UTC</createdTime>
+<generatorID>38E50E1E-DA75-0C04-EA35-403361BFC308</generatorID>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<engineerTo>
+<item key="A764E503-4088-3D57-01D4-D77DF5857063" value="true"/>
+</engineerTo>
+<sourcePk>EB34236C-FADA-2794-964B-A873AA627806</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>5B0B7334-4101-ABC9-9406-86417F189AF5</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>68AF2C56-C862-01B5-E376-925A8197068E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

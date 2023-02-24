@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="UNIDADES_MUNICIPIOS_FK" directorySegmentName="seg_0" id="44143609-8165-8F7F-02B6-DA51451F2C3D">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 17:51:54 UTC</createdTime>
+<generatorID>EE9EC871-57C3-2401-4891-A33793ED95AF</generatorID>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<engineerTo>
+<item key="A764E503-4088-3D57-01D4-D77DF5857063" value="true"/>
+</engineerTo>
+<sourcePk>596EE6D2-C445-9750-436F-7C0FA07DA738</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E135E004-F464-DDAC-7F68-57C58C24AE0E</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>12F3B9E1-D0F3-0B91-EFD3-CBEAC4C08C9A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

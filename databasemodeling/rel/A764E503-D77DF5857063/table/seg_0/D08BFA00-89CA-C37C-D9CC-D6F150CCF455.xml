@@ -11,7 +11,7 @@
 <Column name="EST_ID" id="B0CF68BF-B94B-11DC-952E-CAB53F6E2440">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-17 18:16:57 UTC</createdTime>
-<commentInRDBMS><![CDATA[Identificador do estado.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Identificador único e autoincremental do estado.]]></commentInRDBMS>
 <ownerDesignName>databasemodeling</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -34,7 +34,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="F60647D5-233E-E3DE-3F84-83A1EF804F1E" name="ESTADOS_PK">
+<ind_PK_UK id="F60647D5-233E-E3DE-3F84-83A1EF804F1E" name="PK_EST">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-17 18:16:57 UTC</createdTime>
 <ownerDesignName>databasemodeling</ownerDesignName>

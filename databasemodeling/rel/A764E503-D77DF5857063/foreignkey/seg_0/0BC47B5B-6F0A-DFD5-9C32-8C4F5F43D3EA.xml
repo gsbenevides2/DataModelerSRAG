@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0BC47B5B-6F0A-DFD5-9C32-8C4F5F43D3EA" containerWithKeyObject="9632948B-46AB-9966-F913-564D22384263" localFKIndex="5389EE4F-BEF0-ED9A-02AB-B3FECA13D45C" name="FK_CAS_RAC">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-22 01:19:42 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<referredTableLongName>RACAS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>68F9D181-D11C-AB3E-5824-BE44154A5232</referredTableID>
+<keyObject>EEC1FC85-4D60-69EB-81CB-1868ED9BCC54</keyObject>
+<referredKeyID>EEC1FC85-4D60-69EB-81CB-1868ED9BCC54</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>RAC_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

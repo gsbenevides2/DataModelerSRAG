@@ -2,13 +2,14 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="212AAD52-95F8-C44D-078C-0EFF45F2EB6C" name="COMORBIDADES">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-12 14:55:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela com todas as comorbidades dos casos de SRAG.]]></commentInRDBMS>
 <ownerDesignName>databasemodeling</ownerDesignName>
 <ordsAlias>table_4</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="COMO_ID" id="BC3ED96E-2931-5B85-B7EF-6AC8EF10CA8E">
+<Column name="COM_ID" id="BC3ED96E-2931-5B85-B7EF-6AC8EF10CA8E">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-12 14:56:48 UTC</createdTime>
 <commentInRDBMS><![CDATA[Identificador autoincremental de cada comorbidade.]]></commentInRDBMS>
@@ -19,7 +20,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="COMO_NOME" id="D0555153-22D2-3A90-3F26-ED0816663942">
+<Column name="COM_NOME" id="D0555153-22D2-3A90-3F26-ED0816663942">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-12 14:56:48 UTC</createdTime>
 <commentInRDBMS><![CDATA[Nome de cada comorbidade.]]></commentInRDBMS>
@@ -33,7 +34,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="3207637E-B9B8-5B9F-CA7D-E5959B78D402" name="COMORBIDADES_PK">
+<ind_PK_UK id="3207637E-B9B8-5B9F-CA7D-E5959B78D402" name="PK_COM">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-12 14:56:48 UTC</createdTime>
 <ownerDesignName>databasemodeling</ownerDesignName>

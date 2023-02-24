@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="MUNICIPIOS_ESTADOS_FK" directorySegmentName="seg_0" id="B9040148-5712-530A-1CF4-2B4D600A4DB8">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 17:51:54 UTC</createdTime>
+<generatorID>74308182-277B-7525-3EAD-EB082A49896A</generatorID>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<engineerTo>
+<item key="A764E503-4088-3D57-01D4-D77DF5857063" value="true"/>
+</engineerTo>
+<sourcePk>B21226BE-A01B-8165-A24D-69A60823CE75</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>AC626D9D-594F-0B26-4E3C-C0A63D246DBF</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E135E004-F464-DDAC-7F68-57C58C24AE0E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

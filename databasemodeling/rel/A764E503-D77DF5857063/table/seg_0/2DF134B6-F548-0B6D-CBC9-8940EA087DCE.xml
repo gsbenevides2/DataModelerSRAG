@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2DF134B6-F548-0B6D-CBC9-8940EA087DCE" name="CASOS_ANIMAIS">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 17:42:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de relacionamentos muito para muitos entre os casos e os tipos de animais envolvidos em cada caso.]]></commentInRDBMS>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<ordsAlias>table_42</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CAN_CAS_ID" id="CF8E0042-7EFD-94FE-E3B3-ACE2F4316F53">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 17:43:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do caso.]]></commentInRDBMS>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="345CD2C5-BC16-5493-6FAC-186A6AA515A2" referredColumn="EF6A022B-0428-CF9A-75D6-339944A44290"/>
+</associations>
+</Column>
+<Column name="CAN_TAN_ID" id="B4D0EB5F-EE65-876D-95F2-FEAD3268D3A9">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 17:42:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do tipo de animal.]]></commentInRDBMS>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="19E4C8D7-693F-AE35-DF94-C374F89D42C5" referredColumn="001A6FFE-3BAC-FBF8-43F2-F510B94DEED7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3CA4C8E3-CEF8-91A7-F9E2-1CBC7190E3EB" name="PK_CAN">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 17:43:25 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CF8E0042-7EFD-94FE-E3B3-ACE2F4316F53"/>
+<colUsage columnID="B4D0EB5F-EE65-876D-95F2-FEAD3268D3A9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F2503194-5A5C-56FF-656E-0550D0214A1F" name="FK_CAN_CAS">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 17:45:34 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CF8E0042-7EFD-94FE-E3B3-ACE2F4316F53"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1D5320C0-714C-F509-1288-D6C3DCF24ACD" name="FK_CAN_TAN">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 17:45:34 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B4D0EB5F-EE65-876D-95F2-FEAD3268D3A9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

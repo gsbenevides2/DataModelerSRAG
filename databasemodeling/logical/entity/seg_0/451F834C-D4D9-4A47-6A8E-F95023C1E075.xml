@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="451F834C-D4D9-4A47-6A8E-F95023C1E075" name="CASOS ANIMAIS">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 17:51:54 UTC</createdTime>
+<generatorID>2DF134B6-F548-0B6D-CBC9-8940EA087DCE</generatorID>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<engineerTo>
+<item key="A764E503-4088-3D57-01D4-D77DF5857063" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CAS ID" id="6334BC52-F954-E940-312B-0344B1EA2548">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 17:51:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do caso.]]></commentInRDBMS>
+<generatorID>37347A12-1738-8E67-3990-9FDABE523604</generatorID>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<engineerTo>
+<item key="A764E503-4088-3D57-01D4-D77DF5857063" value="true"/>
+</engineerTo>
+<referedAttribute>E943DCB7-3BD4-44CC-9E85-B74EA04EA184</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TAN ID" id="888242A5-495C-6F9C-D085-A6A433B6B50B">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 17:51:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do tipo de animal.]]></commentInRDBMS>
+<generatorID>0EAC26DE-0062-8047-39F7-15F93B8F7B3B</generatorID>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<engineerTo>
+<item key="A764E503-4088-3D57-01D4-D77DF5857063" value="true"/>
+</engineerTo>
+<referedAttribute>F7B6C7CC-B810-D15F-8EB8-28E101714565</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3340A31C-FFCB-07EE-D553-3E8EA4FEAF06" name="CASOS ANIMAIS PK">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 17:51:54 UTC</createdTime>
+<generatorID>3CA4C8E3-CEF8-91A7-F9E2-1CBC7190E3EB</generatorID>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<engineerTo>
+<item key="A764E503-4088-3D57-01D4-D77DF5857063" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6334BC52-F954-E940-312B-0344B1EA2548</attributeRef>
+<attributeRef>888242A5-495C-6F9C-D085-A6A433B6B50B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C237F88E-7D3D-9CDF-F6A4-FC08F48FF39F" containerWithKeyObject="D6496F7F-47C9-BF8D-71EF-D3497AC5960A" localFKIndex="D7461E70-249E-FE05-D1CA-4D453DED2025" name="CASOS_EVOLUCOES_EVOLUCOES_FK">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 01:54:40 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<referredTableLongName>EVOLUCOES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>43BCE18E-41E2-621E-A8DB-81957172350D</referredTableID>
+<keyObject>332C7C37-F4AA-9B5A-63DD-D668480F3770</keyObject>
+<referredKeyID>332C7C37-F4AA-9B5A-63DD-D668480F3770</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>EVO_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

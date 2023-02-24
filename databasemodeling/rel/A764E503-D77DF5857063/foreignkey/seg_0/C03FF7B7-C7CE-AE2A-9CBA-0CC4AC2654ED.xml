@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C03FF7B7-C7CE-AE2A-9CBA-0CC4AC2654ED" containerWithKeyObject="020FFABC-9E6E-0A39-DD80-B05BD8E12782" localFKIndex="74502D3C-4C52-6981-1584-7F45D4033A5E" name="CASOS_ANTIVIRAIS_CASOS_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C03FF7B7-C7CE-AE2A-9CBA-0CC4AC2654ED" containerWithKeyObject="020FFABC-9E6E-0A39-DD80-B05BD8E12782" localFKIndex="74502D3C-4C52-6981-1584-7F45D4033A5E" name="FK_CAG_CAS">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-17 18:37:10 UTC</createdTime>
 <ownerDesignName>databasemodeling</ownerDesignName>
@@ -9,7 +9,7 @@
 <keyObject>8F4373CE-2653-7283-EF77-39351E9AC6DE</keyObject>
 <referredKeyID>8F4373CE-2653-7283-EF77-39351E9AC6DE</referredKeyID>
 <mandatory>true</mandatory>
-<refColNames>CASO_ID</refColNames>
+<refColNames>CAS_ID</refColNames>
 <transferable>true</transferable>
 <rely>false</rely>
 <columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>

@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="CASOS_REGIONAIS_FK" directorySegmentName="seg_0" id="C94FA1AE-BD4D-AFBF-EACA-2C4F625F344C">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 17:51:54 UTC</createdTime>
+<generatorID>55DBF9ED-73A5-214F-4E57-EBCB004BE4CA</generatorID>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<engineerTo>
+<item key="A764E503-4088-3D57-01D4-D77DF5857063" value="true"/>
+</engineerTo>
+<sourcePk>31E7EE0E-BF59-FA55-D23C-4D4ADC258401</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>A2840AD5-D6A9-458B-F678-7DDCBBE4F536</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>FC7E5717-9769-A830-8F28-B87457611476</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -2,6 +2,7 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="85A30D6B-0851-2BE8-4EC8-4E8EE9ABF90E" name="RESULTADOS_TESTE_ANTIGENO">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-20 20:29:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela que armazena os possiveis valores para resultados de testes antigenos.]]></commentInRDBMS>
 <ownerDesignName>databasemodeling</ownerDesignName>
 <ordsAlias>table_28</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
@@ -19,7 +20,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="RTA_DES" id="A55C3E3B-EE61-1965-E036-2F90CB834299">
+<Column name="RTA_DESCRICAO" id="A55C3E3B-EE61-1965-E036-2F90CB834299">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-20 20:33:27 UTC</createdTime>
 <commentInRDBMS><![CDATA[Descrição do tipo de resultado para testes antigenos.]]></commentInRDBMS>
@@ -33,7 +34,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="CC90B4E7-C936-455C-E611-67043751D6BE" name="TIPOS_RESULT_TESTE_ANTIGENO_PK">
+<ind_PK_UK id="CC90B4E7-C936-455C-E611-67043751D6BE" name="PK_RTA">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-20 20:33:27 UTC</createdTime>
 <ownerDesignName>databasemodeling</ownerDesignName>

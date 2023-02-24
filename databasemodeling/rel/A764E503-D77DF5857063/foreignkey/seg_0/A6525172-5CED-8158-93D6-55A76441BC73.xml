@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A6525172-5CED-8158-93D6-55A76441BC73" containerWithKeyObject="8A86BA11-C4CB-AC3D-B84E-BC8165519173" localFKIndex="D21D3971-6903-D8DB-A5A7-3E5B4C70A4CA" name="TESTES_ANTIGENO_VIRUS_RESPIRATÓRIOS_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A6525172-5CED-8158-93D6-55A76441BC73" containerWithKeyObject="8A86BA11-C4CB-AC3D-B84E-BC8165519173" localFKIndex="D21D3971-6903-D8DB-A5A7-3E5B4C70A4CA" name="FK_TEA_VIR">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-20 23:31:30 UTC</createdTime>
 <ownerDesignName>databasemodeling</ownerDesignName>

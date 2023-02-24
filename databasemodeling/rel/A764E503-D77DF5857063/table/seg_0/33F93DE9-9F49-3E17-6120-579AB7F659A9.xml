@@ -2,13 +2,14 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="33F93DE9-9F49-3E17-6120-579AB7F659A9" name="CASOS_TOMOGRAFIA">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-18 16:10:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de relação um para muitos entre os casos e os possiveis aspectos de tomografias.]]></commentInRDBMS>
 <ownerDesignName>databasemodeling</ownerDesignName>
 <ordsAlias>table_23</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="CAS_ID" id="D239279C-94EB-2802-BB83-588F227EE24F">
+<Column name="CTO_CAS_ID" id="D239279C-94EB-2802-BB83-588F227EE24F">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-18 16:13:32 UTC</createdTime>
 <commentInRDBMS><![CDATA[Identificador do caso que gerou a tomografia.]]></commentInRDBMS>
@@ -22,7 +23,7 @@
 <colAssociation fkAssociation="31E91D6E-EB00-51CB-1D50-B5D063325C5E" referredColumn="EF6A022B-0428-CF9A-75D6-339944A44290"/>
 </associations>
 </Column>
-<Column name="AST_ID" id="5995D41C-68EA-7B2C-C6E5-01960D36E66A">
+<Column name="CTO_AST_ID" id="5995D41C-68EA-7B2C-C6E5-01960D36E66A">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-18 16:14:46 UTC</createdTime>
 <commentInRDBMS><![CDATA[Identificação do resultado que define o aspecto da tomografia.]]></commentInRDBMS>
@@ -36,7 +37,7 @@
 <colAssociation fkAssociation="CADFAF80-67B3-3FD0-4037-761FEF73813B" referredColumn="0727815A-17E8-A57C-E84C-E69613C9250E"/>
 </associations>
 </Column>
-<Column name="AST_DATE" id="78003BD3-96DF-DDCA-348C-28A5C385A72C">
+<Column name="CTO_DATE" id="78003BD3-96DF-DDCA-348C-28A5C385A72C">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-18 16:15:07 UTC</createdTime>
 <commentInRDBMS><![CDATA[Data em que foi realizada a tomografia.]]></commentInRDBMS>
@@ -50,7 +51,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="D154A188-39DF-5D30-FE55-EAA1F67CD807" name="CASOS_TOMOGRAFIA_PK">
+<ind_PK_UK id="D154A188-39DF-5D30-FE55-EAA1F67CD807" name="PK_CTO">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-18 16:13:32 UTC</createdTime>
 <ownerDesignName>databasemodeling</ownerDesignName>
@@ -61,7 +62,7 @@
 <colUsage columnID="D239279C-94EB-2802-BB83-588F227EE24F"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="340A3E2E-83AB-BCB7-754F-E8E9139B454A" name="CASOS_TOMOGRAFIA_CASOS_FK">
+<ind_PK_UK id="340A3E2E-83AB-BCB7-754F-E8E9139B454A" name="FK_CTO_CAS">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-18 16:15:35 UTC</createdTime>
 <ownerDesignName>databasemodeling</ownerDesignName>
@@ -71,7 +72,7 @@
 <colUsage columnID="D239279C-94EB-2802-BB83-588F227EE24F"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="DD59EFC6-3E73-4912-A016-CF7B6778B967" name="CASOS_TOMOGRAFIA_ASPECTOS_TOMOGRAFIA_FK">
+<ind_PK_UK id="DD59EFC6-3E73-4912-A016-CF7B6778B967" name="FK_CTO_AST">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-18 16:15:35 UTC</createdTime>
 <ownerDesignName>databasemodeling</ownerDesignName>

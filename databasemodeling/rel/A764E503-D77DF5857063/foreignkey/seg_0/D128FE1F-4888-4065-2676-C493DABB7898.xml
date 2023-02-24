@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D128FE1F-4888-4065-2676-C493DABB7898" containerWithKeyObject="9632948B-46AB-9966-F913-564D22384263" localFKIndex="58742BE8-5AF2-274A-4891-6BCAF5D40717" name="FK_CAS_SEX">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-22 00:34:19 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<referredTableLongName>SEXOS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>7D2C4815-FDB1-0B54-9999-1B08697D8B2E</referredTableID>
+<keyObject>25711768-60CD-CD83-5A2C-F1B5E6CE99A3</keyObject>
+<referredKeyID>25711768-60CD-CD83-5A2C-F1B5E6CE99A3</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>SEX_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

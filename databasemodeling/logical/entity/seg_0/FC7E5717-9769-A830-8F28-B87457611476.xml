@@ -1,0 +1,344 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FC7E5717-9769-A830-8F28-B87457611476" name="CASOS">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 17:51:54 UTC</createdTime>
+<generatorID>9632948B-46AB-9966-F913-564D22384263</generatorID>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<engineerTo>
+<item key="A764E503-4088-3D57-01D4-D77DF5857063" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CASO ID" id="E943DCB7-3BD4-44CC-9E85-B74EA04EA184">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 17:51:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador autoincremental de cada caso de sindrome respiratória aguda grave]]></commentInRDBMS>
+<generatorID>EF6A022B-0428-CF9A-75D6-339944A44290</generatorID>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<engineerTo>
+<item key="A764E503-4088-3D57-01D4-D77DF5857063" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CASO DT NOTIFIC" id="D60BFFB3-6501-988A-B133-52780F9E9A3E">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 17:51:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do preenchimento da ficha de notificação.]]></commentInRDBMS>
+<generatorID>1C3A436F-1CD5-2EFB-C049-24105E10FF40</generatorID>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<engineerTo>
+<item key="A764E503-4088-3D57-01D4-D77DF5857063" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CASO DT SIN PRI" id="C00FA7D5-BFDF-5D61-CD44-3B5F32B5DBCB">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 17:51:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de inicio dos primeiros sintomas do caso.]]></commentInRDBMS>
+<generatorID>2B7A434B-3745-3736-AA2C-7AD16D52528E</generatorID>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<engineerTo>
+<item key="A764E503-4088-3D57-01D4-D77DF5857063" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CASO SG UF NOT" id="A6E8DC38-6BA0-74EE-BBED-BD784809E639">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 17:51:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Sigla da Unidade Federativa onde está localizada a Unidade que realizou a notificação.]]></commentInRDBMS>
+<generatorID>C84ADAD8-A2D6-925A-1913-53AAAC1EDBBF</generatorID>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<engineerTo>
+<item key="A764E503-4088-3D57-01D4-D77DF5857063" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="REGI NOT ID" id="E9E08F0C-769D-A0BF-681E-ED4AAFBA702A">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 17:51:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador da Regional de Sáude onde estpa localizado o municipio que realizou a notificação]]></commentInRDBMS>
+<generatorID>C94FA1AE-BD4D-AFBF-EACA-2C4F625F344C</generatorID>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<engineerTo>
+<item key="A764E503-4088-3D57-01D4-D77DF5857063" value="true"/>
+</engineerTo>
+<referedAttribute>A355E719-5D56-E865-B385-1A763C30A19A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="UNID ID" id="0C2602CE-ED63-FD5D-FD72-1CB9920D0858">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 17:51:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador da Unidade que realizou a notificação.]]></commentInRDBMS>
+<generatorID>C925BB22-B574-3CE8-A927-2B09577CE530</generatorID>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<engineerTo>
+<item key="A764E503-4088-3D57-01D4-D77DF5857063" value="true"/>
+</engineerTo>
+<referedAttribute>08173082-709E-CE65-E5EB-20D64B584B13</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CASO SEXO" id="BFD4A7D5-4BBB-04AE-4442-50D389CE7526">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 17:51:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Sexo do Paciente.]]></commentInRDBMS>
+<generatorID>E8BB9040-9FAC-3D15-F7ED-01BF1134B42D</generatorID>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<engineerTo>
+<item key="A764E503-4088-3D57-01D4-D77DF5857063" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CASO DT NASC" id="A731A44D-B78C-4E69-8856-B125A5352E4C">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 17:51:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de Nascimento do Paciente]]></commentInRDBMS>
+<generatorID>696E9932-537D-A4C5-36B2-7A4CEC9C708B</generatorID>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<engineerTo>
+<item key="A764E503-4088-3D57-01D4-D77DF5857063" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CASO IDADE GESTACIONAL" id="6BA9E338-B870-D02D-5A77-F682711F9140">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 17:51:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Idade Gestacional do Paciente caso o paciente seja purpera.
+Descrição:
+1-1o Trimestre
+2-2o Trimestre
+3-3o Trimestre
+4-Idade Gestacional Ignorada
+5-Não
+6-Não se aplica
+9-Ignorado]]></commentInRDBMS>
+<generatorID>49B5F238-8870-ECCC-DF36-C68D19716A42</generatorID>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<engineerTo>
+<item key="A764E503-4088-3D57-01D4-D77DF5857063" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CASO RACA" id="E45063CD-6B97-BBEB-59A9-E6079EC7723F">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 17:51:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Raça declarada pelo paciente sendo:
+1 - Branca
+2 - Preta
+3 - Amarela
+4 - Parda
+5 - Indigena
+9 - Ignorado]]></commentInRDBMS>
+<generatorID>E2FD3E1A-A293-337E-7A94-95842D4539D6</generatorID>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<engineerTo>
+<item key="A764E503-4088-3D57-01D4-D77DF5857063" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CASO ESCOLARIDADE" id="3C159F90-A805-5D7B-96C2-1B4CDFEC791D">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 17:51:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nível de Escolaridade do Paciente 
+0-Sem escolaridade/ Analfabeto
+1-Fundamental 1o ciclo (1a a 5a série)
+2-Fundamental 2o ciclo (6a a 9a série)
+3- Médio (1o ao 3o ano)
+4-Superior
+5-Não se aplica
+9-Ignorado
+ ]]></commentInRDBMS>
+<generatorID>55E2C684-F86F-A655-8955-F85346917622</generatorID>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<engineerTo>
+<item key="A764E503-4088-3D57-01D4-D77DF5857063" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="REGI RESI ID" id="CFA3876C-273E-8EEC-59FB-DC6814DB140C">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 17:51:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador da regional onde o paciente reside.]]></commentInRDBMS>
+<generatorID>48885F19-6790-AD2A-97F0-BA55C3C8CF02</generatorID>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<engineerTo>
+<item key="A764E503-4088-3D57-01D4-D77DF5857063" value="true"/>
+</engineerTo>
+<referedAttribute>A355E719-5D56-E865-B385-1A763C30A19A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MUNI RESI ID" id="BC94ADA4-42C6-52AF-269C-FFD77CE08A62">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 17:51:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Id do municipio onde o paciente reside]]></commentInRDBMS>
+<generatorID>480ACD54-EAE1-C1BA-D140-08787D799FF5</generatorID>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<engineerTo>
+<item key="A764E503-4088-3D57-01D4-D77DF5857063" value="true"/>
+</engineerTo>
+<referedAttribute>CCD45C36-5BAA-B6FF-B306-88EF15937AD8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CASO ZONA" id="280BAF85-12E4-2340-3FF2-A7B35CF03855">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 17:51:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Zona de geografica de endereço do Paciente
+1-Urbana
+2-Rural
+3-Periurbana
+9-Ignorado
+]]></commentInRDBMS>
+<generatorID>6CC27DC3-4A1A-93C9-C4F0-91D1057B64EF</generatorID>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<engineerTo>
+<item key="A764E503-4088-3D57-01D4-D77DF5857063" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CASO NOSOCOMIAL" id="5BD40AF4-C37D-8CAE-962B-4CD09D6204A2">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 17:51:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Caso de Sindrome respiratória aguda grave adquirida após internação:
+1 - Sim
+2 - Não
+9 - Ignorado]]></commentInRDBMS>
+<generatorID>62384D15-C555-A1C1-D0E8-233A58F604CB</generatorID>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<engineerTo>
+<item key="A764E503-4088-3D57-01D4-D77DF5857063" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CAS SUPORTE VENTILADOR" id="628ADF47-C06D-0849-F4BA-6AD874FB0CF0">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 17:51:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Se o caso teve necessidade de ventilador.]]></commentInRDBMS>
+<generatorID>C118B6FB-823E-DA72-7B25-A019FF4264FC</generatorID>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<engineerTo>
+<item key="A764E503-4088-3D57-01D4-D77DF5857063" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CLA ID" id="479166A2-7262-742A-67DA-76E1FA10E8E7">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 17:51:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador da classificação do caso de SRAG]]></commentInRDBMS>
+<generatorID>413BCC8B-F570-C4DD-320F-79D807ED6F66</generatorID>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<engineerTo>
+<item key="A764E503-4088-3D57-01D4-D77DF5857063" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>A944BCBC-ADDA-1469-7862-FF9D0B4F6D61</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CAS DATA DIGITACAO" id="04FD272F-FEA1-FF46-57BF-6D0AC48A9940">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 17:51:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de inserção do caso no sistema.]]></commentInRDBMS>
+<generatorID>B985B523-F0FD-4559-9E07-2AE858B1085B</generatorID>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<engineerTo>
+<item key="A764E503-4088-3D57-01D4-D77DF5857063" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CAS ESTRANGEIRO" id="77500D9F-850A-53BE-457B-0B90E995ECB0">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 17:51:54 UTC</createdTime>
+<generatorID>DD29DCC2-CF8E-5DFC-BDF3-47C9E859651F</generatorID>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<engineerTo>
+<item key="A764E503-4088-3D57-01D4-D77DF5857063" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="62295630-3395-0C7D-4B26-1415A32C91BA" name="CASOS PK">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 17:51:54 UTC</createdTime>
+<generatorID>8F4373CE-2653-7283-EF77-39351E9AC6DE</generatorID>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<engineerTo>
+<item key="A764E503-4088-3D57-01D4-D77DF5857063" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E943DCB7-3BD4-44CC-9E85-B74EA04EA184</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

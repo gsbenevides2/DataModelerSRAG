@@ -8,10 +8,10 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="UNID_ID" id="1577F1DB-3C0C-B050-47F9-0A06ABC64304">
+<Column name="UNI_ID" id="1577F1DB-3C0C-B050-47F9-0A06ABC64304">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-17 01:21:01 UTC</createdTime>
-<commentInRDBMS><![CDATA[Código do CNES(Cadastro Nacional de Estabelecimentos de Saúde)]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Código do CNES(Cadastro Nacional de Estabelecimentos de Saúde) da unidade de saúde.]]></commentInRDBMS>
 <ownerDesignName>databasemodeling</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -19,22 +19,22 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="UNIN_NOME" id="CDC3A385-7F57-E782-2574-BEA84D8A306A">
+<Column name="UNI_NOME" id="CDC3A385-7F57-E782-2574-BEA84D8A306A">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-17 01:21:01 UTC</createdTime>
-<commentInRDBMS><![CDATA[Nome da Unidade]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Nome da unidade de saúde.]]></commentInRDBMS>
 <ownerDesignName>databasemodeling</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>30</dataTypeSize>
-<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="MUNI_ID" id="618A376C-12B8-6698-D025-56FF6967DFC4">
+<Column name="UNI_MUN_ID" id="618A376C-12B8-6698-D025-56FF6967DFC4">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-17 18:33:07 UTC</createdTime>
-<commentInRDBMS><![CDATA[Id do municipio da unidade.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Identificador do município em que se encontra a unidade de saúde.]]></commentInRDBMS>
 <ownerDesignName>databasemodeling</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -47,7 +47,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="5B57BC7F-6BF1-C7E3-0004-A94ADB3215DA" name="UNIDADES_PK">
+<ind_PK_UK id="5B57BC7F-6BF1-C7E3-0004-A94ADB3215DA" name="PK_UNI">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-17 01:21:06 UTC</createdTime>
 <ownerDesignName>databasemodeling</ownerDesignName>
@@ -58,7 +58,7 @@
 <colUsage columnID="1577F1DB-3C0C-B050-47F9-0A06ABC64304"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="093A85D4-6688-12C3-5ED0-3CCCF1F0054A" name="UNIDADES_MUNICIPIOS_FK">
+<ind_PK_UK id="093A85D4-6688-12C3-5ED0-3CCCF1F0054A" name="FK_UNI_MUN">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-17 18:33:21 UTC</createdTime>
 <ownerDesignName>databasemodeling</ownerDesignName>

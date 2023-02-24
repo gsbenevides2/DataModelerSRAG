@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="VACINAS_GRIPE_CASOS_FK" directorySegmentName="seg_0" id="EBE4358B-92C3-D5F9-7B7F-A448F1070D60">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 17:51:54 UTC</createdTime>
+<generatorID>4B776EE0-AADA-C826-160A-6C233C6E2977</generatorID>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<engineerTo>
+<item key="A764E503-4088-3D57-01D4-D77DF5857063" value="true"/>
+</engineerTo>
+<sourcePk>62295630-3395-0C7D-4B26-1415A32C91BA</sourcePk>
+<dominantRole>FC7E5717-9769-A830-8F28-B87457611476</dominantRole>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>FC7E5717-9769-A830-8F28-B87457611476</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>B7482E6C-045D-AF1B-F90E-CEF90439BD78</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

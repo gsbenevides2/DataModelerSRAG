@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="TESTE_SOROLOGICOS_CASOS_FK" directorySegmentName="seg_0" id="E3972518-6669-338F-C43F-966A378B4A52">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 17:51:54 UTC</createdTime>
+<generatorID>6B6A3742-79A9-1F79-04D5-9F57CDAFCCF6</generatorID>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<engineerTo>
+<item key="A764E503-4088-3D57-01D4-D77DF5857063" value="true"/>
+</engineerTo>
+<sourcePk>62295630-3395-0C7D-4B26-1415A32C91BA</sourcePk>
+<dominantRole>FC7E5717-9769-A830-8F28-B87457611476</dominantRole>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>FC7E5717-9769-A830-8F28-B87457611476</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>727E2510-C4EE-BC9C-C32F-749415145FDC</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

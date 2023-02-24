@@ -2,6 +2,7 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5F17B897-A18C-0660-6319-84EC049B3069" name="CASOS_AMOSTRAS">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-20 01:02:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela que demonstra quais casos teve uma amostra coletada para exame diagnóstico.]]></commentInRDBMS>
 <ownerDesignName>databasemodeling</ownerDesignName>
 <ordsAlias>table_23</ordsAlias>
 <abbreviation>CAS_AMO</abbreviation>
@@ -9,7 +10,7 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="CASO_ID" id="9566BFB9-9276-52AE-BDDD-A292FBB8A969">
+<Column name="CAM_CAS_ID" id="9566BFB9-9276-52AE-BDDD-A292FBB8A969">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-20 01:02:54 UTC</createdTime>
 <commentInRDBMS><![CDATA[Caso relacionado a amostra coletada para teste diagnóstico.]]></commentInRDBMS>
@@ -23,11 +24,12 @@
 <colAssociation fkAssociation="91FF1CC9-009D-6B87-4178-8A87D819292B" referredColumn="EF6A022B-0428-CF9A-75D6-339944A44290"/>
 </associations>
 </Column>
-<Column name="TAM_ID" id="B66503D9-95B1-E72B-B75D-903B3E0AEB9D">
+<Column name="CAM_TAM_ID" id="B66503D9-95B1-E72B-B75D-903B3E0AEB9D">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-20 01:02:54 UTC</createdTime>
 <commentInRDBMS><![CDATA[Identificador do tipo de amostra.]]></commentInRDBMS>
 <ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -51,7 +53,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="76A27D2F-D0D6-C37F-06D3-35B33501F6D2" name="CASOS_AMOSTRAS_PK">
+<ind_PK_UK id="76A27D2F-D0D6-C37F-06D3-35B33501F6D2" name="PK_CAM">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-20 01:02:54 UTC</createdTime>
 <ownerDesignName>databasemodeling</ownerDesignName>
@@ -62,7 +64,7 @@
 <colUsage columnID="9566BFB9-9276-52AE-BDDD-A292FBB8A969"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="22F7944D-2FF4-54B5-EB0A-194656040956" name="CASOS_AMOSTRAS_TIPOS_AMOSTRA_FK">
+<ind_PK_UK id="22F7944D-2FF4-54B5-EB0A-194656040956" name="FK_CAM_TAM">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-20 01:02:55 UTC</createdTime>
 <ownerDesignName>databasemodeling</ownerDesignName>
@@ -72,7 +74,7 @@
 <colUsage columnID="B66503D9-95B1-E72B-B75D-903B3E0AEB9D"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="DBFC1A35-8DF0-E5D7-E0A4-4D1D743A6240" name="CASOS_AMOSTRAS_CASOS_FK">
+<ind_PK_UK id="DBFC1A35-8DF0-E5D7-E0A4-4D1D743A6240" name="FK_CAM_CAS">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-20 01:03:14 UTC</createdTime>
 <ownerDesignName>databasemodeling</ownerDesignName>

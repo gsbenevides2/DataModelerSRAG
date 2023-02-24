@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="CASOS_AMOSTRAS_TIPOS_AMOSTRA_FK" directorySegmentName="seg_0" id="93056EB5-20A8-15F5-B8F5-0423E04C7ED7">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 17:51:54 UTC</createdTime>
+<generatorID>79D0A75D-C961-216B-8521-A7DA37224AF5</generatorID>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<engineerTo>
+<item key="A764E503-4088-3D57-01D4-D77DF5857063" value="true"/>
+</engineerTo>
+<sourcePk>A343F9BF-7870-F59C-6273-D86F01798C81</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>FA4BFAFD-2E64-CE61-CA72-6F39A0898A42</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>73B946BA-23BB-DA90-6284-03573FDD6DA6</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

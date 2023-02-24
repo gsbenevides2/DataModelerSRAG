@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="TESTES_ANTIGENOv1_TIPOS_TESTE_ANTIGENOv1_FK" directorySegmentName="seg_0" id="F394A1D1-5F46-F44C-E91C-F0BB0C29B9CF">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 17:51:54 UTC</createdTime>
+<generatorID>4086E838-4D74-3476-E347-95273879F7CE</generatorID>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<engineerTo>
+<item key="A764E503-4088-3D57-01D4-D77DF5857063" value="true"/>
+</engineerTo>
+<sourcePk>C89EBF73-2851-D4AA-67A0-3E59EA563919</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>F288FFBB-E0EF-37DE-3D29-0AB1A847B3AA</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>3E93DE47-05B4-DCC4-EBED-24675F75D438</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

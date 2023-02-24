@@ -8,9 +8,10 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="CASO_ID" id="4FF756B6-4708-84DA-3BF4-B6FB0FF22638">
+<Column name="CAC_CAS_ID" id="4FF756B6-4708-84DA-3BF4-B6FB0FF22638">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-17 19:01:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do caso relacionado a aquele antiviral.]]></commentInRDBMS>
 <ownerDesignName>databasemodeling</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -21,10 +22,12 @@
 <colAssociation fkAssociation="2F9557A0-2EAD-3E5E-4507-215E5AD596E6" referredColumn="EF6A022B-0428-CF9A-75D6-339944A44290"/>
 </associations>
 </Column>
-<Column name="ANTI_COV_ID" id="E2056D78-5D9F-3171-F396-13D04E1EC310">
+<Column name="CAC_ANC_ID" id="E2056D78-5D9F-3171-F396-13D04E1EC310">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-17 19:01:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do antiviral utilizado.]]></commentInRDBMS>
 <ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -34,7 +37,7 @@
 <colAssociation fkAssociation="43275E95-460B-5301-218B-E04516D9D9EA" referredColumn="BA87922A-76F9-9A55-2625-DFB8A0D3D37E"/>
 </associations>
 </Column>
-<Column name="ANTI_DATA_DATA" id="17457C4E-AD35-ECE4-46D1-84A79F37D993">
+<Column name="CAC_DATA_INICIO" id="17457C4E-AD35-ECE4-46D1-84A79F37D993">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-17 19:01:18 UTC</createdTime>
 <commentInRDBMS><![CDATA[Data em que foi iniciado o tratamento com o antiviral. para covid]]></commentInRDBMS>
@@ -48,7 +51,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="5D668793-79AE-4279-1E51-7AE34BB390CE" name="CASOS_ANTIVIRAISv1_PK">
+<ind_PK_UK id="5D668793-79AE-4279-1E51-7AE34BB390CE" name="PK_CAC">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-17 19:01:18 UTC</createdTime>
 <ownerDesignName>databasemodeling</ownerDesignName>
@@ -57,10 +60,9 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="4FF756B6-4708-84DA-3BF4-B6FB0FF22638"/>
-<colUsage columnID="E2056D78-5D9F-3171-F396-13D04E1EC310"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="05929847-AAF8-17ED-5D76-4F6DB9E81CB5" name="CASOS_ANTIVIRAISv1_ANTIVIRAISv1_FK">
+<ind_PK_UK id="05929847-AAF8-17ED-5D76-4F6DB9E81CB5" name="FK_CAC_ANC">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-17 19:01:18 UTC</createdTime>
 <ownerDesignName>databasemodeling</ownerDesignName>
@@ -70,7 +72,7 @@
 <colUsage columnID="E2056D78-5D9F-3171-F396-13D04E1EC310"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="460E243C-0750-457E-87FD-B6EED5E02600" name="CASOS_ANTIVIRAISv1_CASOS_FK">
+<ind_PK_UK id="460E243C-0750-457E-87FD-B6EED5E02600" name="FK_CAC_CAS">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-17 19:01:18 UTC</createdTime>
 <ownerDesignName>databasemodeling</ownerDesignName>

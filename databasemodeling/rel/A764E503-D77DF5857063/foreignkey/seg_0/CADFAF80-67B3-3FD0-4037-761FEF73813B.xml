@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CADFAF80-67B3-3FD0-4037-761FEF73813B" containerWithKeyObject="33F93DE9-9F49-3E17-6120-579AB7F659A9" localFKIndex="DD59EFC6-3E73-4912-A016-CF7B6778B967" name="CASOS_TOMOGRAFIA_ASPECTOS_TOMOGRAFIA_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CADFAF80-67B3-3FD0-4037-761FEF73813B" containerWithKeyObject="33F93DE9-9F49-3E17-6120-579AB7F659A9" localFKIndex="DD59EFC6-3E73-4912-A016-CF7B6778B967" name="FK_CTO_AST">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-18 16:15:35 UTC</createdTime>
 <ownerDesignName>databasemodeling</ownerDesignName>

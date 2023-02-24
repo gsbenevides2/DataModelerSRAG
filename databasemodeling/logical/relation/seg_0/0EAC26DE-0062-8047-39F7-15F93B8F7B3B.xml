@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="CASOS_ANIMAIS_TIPOS_ANIMAIS_FK" directorySegmentName="seg_0" id="0EAC26DE-0062-8047-39F7-15F93B8F7B3B">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 17:51:54 UTC</createdTime>
+<generatorID>19E4C8D7-693F-AE35-DF94-C374F89D42C5</generatorID>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<engineerTo>
+<item key="A764E503-4088-3D57-01D4-D77DF5857063" value="true"/>
+</engineerTo>
+<sourcePk>67A1357E-41A1-385A-7D16-14A18F3359F5</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>354A052F-E334-213C-4DC1-054DB14F2964</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>451F834C-D4D9-4A47-6A8E-F95023C1E075</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

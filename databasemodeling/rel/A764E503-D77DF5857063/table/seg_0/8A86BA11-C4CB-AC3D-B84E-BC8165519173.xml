@@ -2,13 +2,14 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8A86BA11-C4CB-AC3D-B84E-BC8165519173" name="TESTES_ANTIGENO">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-20 01:22:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela que lista os casos emque foram realizado teste para pesquisa de antigeno.]]></commentInRDBMS>
 <ownerDesignName>databasemodeling</ownerDesignName>
 <ordsAlias>table_26</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="CASO_ID" id="1B611760-3BAC-E2BF-9FFA-1266EAAAD663">
+<Column name="TEA_CAS_ID" id="1B611760-3BAC-E2BF-9FFA-1266EAAAD663">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-20 20:44:18 UTC</createdTime>
 <commentInRDBMS><![CDATA[Identificador do caso para aquele teste antigeno.]]></commentInRDBMS>
@@ -22,7 +23,7 @@
 <colAssociation fkAssociation="0ADD792E-39B1-EF6D-8A09-B95F9206D4C4" referredColumn="EF6A022B-0428-CF9A-75D6-339944A44290"/>
 </associations>
 </Column>
-<Column name="TTA_ID" id="1359B9E6-3D59-9288-4F00-FD6BE53AD0BD">
+<Column name="TEA_TTA_ID" id="1359B9E6-3D59-9288-4F00-FD6BE53AD0BD">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-20 20:44:18 UTC</createdTime>
 <commentInRDBMS><![CDATA[Identificador do tipo de teste para pesquisa de antigenos que foi realizado.]]></commentInRDBMS>
@@ -37,7 +38,7 @@
 <colAssociation fkAssociation="28992ED2-AF71-ECD7-EE47-10E504E0C306" referredColumn="9EF2AE96-ACCF-7CF7-8D74-27FEBE59E978"/>
 </associations>
 </Column>
-<Column name="RTA_ID" id="CEB7DE3A-3401-33D1-196D-656D73F82AED">
+<Column name="TEA_RTA_ID" id="CEB7DE3A-3401-33D1-196D-656D73F82AED">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-20 20:44:18 UTC</createdTime>
 <commentInRDBMS><![CDATA[Identificador do resultado do teste para pesquisa de antigenos.]]></commentInRDBMS>
@@ -52,7 +53,7 @@
 <colAssociation fkAssociation="C9218297-ECF7-53DB-B763-ACCAC11E6CC6" referredColumn="41FEE791-05C4-AFAC-9B28-63EED79F936D"/>
 </associations>
 </Column>
-<Column name="VIR_ID" id="A837D7AA-8CFA-E116-463D-9EDABE4F4219">
+<Column name="TEA_VIR_ID" id="A837D7AA-8CFA-E116-463D-9EDABE4F4219">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-20 23:31:30 UTC</createdTime>
 <commentInRDBMS><![CDATA[Identificador do Virus respiratório encontrado no teste .]]></commentInRDBMS>
@@ -81,7 +82,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="F2D2DC0D-19D6-3E56-E179-E2A85958B287" name="TESTES_ANTIGENO_PK">
+<ind_PK_UK id="F2D2DC0D-19D6-3E56-E179-E2A85958B287" name="PK_TEA">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-20 20:44:18 UTC</createdTime>
 <ownerDesignName>databasemodeling</ownerDesignName>
@@ -92,7 +93,7 @@
 <colUsage columnID="1B611760-3BAC-E2BF-9FFA-1266EAAAD663"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="86821C31-1011-575E-9233-2C0F4710D942" name="TESTES_ANTIGENO_RESULTADOS_TESTE_ANTIGENO_FK">
+<ind_PK_UK id="86821C31-1011-575E-9233-2C0F4710D942" name="FK_TEA_RTA">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-20 20:45:27 UTC</createdTime>
 <ownerDesignName>databasemodeling</ownerDesignName>
@@ -102,7 +103,7 @@
 <colUsage columnID="CEB7DE3A-3401-33D1-196D-656D73F82AED"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="F357BB1A-E9A5-2DD2-96EB-A44BCDE58078" name="TESTES_ANTIGENO_CASOS_FK">
+<ind_PK_UK id="F357BB1A-E9A5-2DD2-96EB-A44BCDE58078" name="FK_TEA_CAS">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-20 20:45:27 UTC</createdTime>
 <ownerDesignName>databasemodeling</ownerDesignName>
@@ -112,7 +113,7 @@
 <colUsage columnID="1B611760-3BAC-E2BF-9FFA-1266EAAAD663"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="4E5468FA-1D35-E911-9FCB-F026F346B4A9" name="TESTES_ANTIGENO_TIPOS_TESTE_ANTIGENO_FK">
+<ind_PK_UK id="4E5468FA-1D35-E911-9FCB-F026F346B4A9" name="FK_TEA_TTA">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-20 20:46:37 UTC</createdTime>
 <ownerDesignName>databasemodeling</ownerDesignName>
@@ -122,7 +123,7 @@
 <colUsage columnID="1359B9E6-3D59-9288-4F00-FD6BE53AD0BD"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="D21D3971-6903-D8DB-A5A7-3E5B4C70A4CA" name="TESTES_ANTIGENO_VIRUS_RESPIRATÓRIOS_FK">
+<ind_PK_UK id="D21D3971-6903-D8DB-A5A7-3E5B4C70A4CA" name="FK_TEA_VIR">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-20 23:31:30 UTC</createdTime>
 <ownerDesignName>databasemodeling</ownerDesignName>

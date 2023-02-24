@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="CASOS_COMORBIDADES_CASOS_FK" directorySegmentName="seg_0" id="A7D83D64-EA85-962D-57DA-FC7A3F4C5C97">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 17:51:54 UTC</createdTime>
+<generatorID>65742474-9CCA-CFC8-29B2-18773EBF1993</generatorID>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<engineerTo>
+<item key="A764E503-4088-3D57-01D4-D77DF5857063" value="true"/>
+</engineerTo>
+<sourcePk>62295630-3395-0C7D-4B26-1415A32C91BA</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>FC7E5717-9769-A830-8F28-B87457611476</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>5FC60432-D2AD-E8A4-615A-F38DA191795C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

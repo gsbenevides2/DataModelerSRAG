@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4086E838-4D74-3476-E347-95273879F7CE" containerWithKeyObject="682B0BA1-060A-306E-E68F-C0A9BA90D6B0" localFKIndex="6925FC20-0B95-43A4-88A0-C8D132741944" name="TESTES_ANTIGENOv1_TIPOS_TESTE_ANTIGENOv1_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4086E838-4D74-3476-E347-95273879F7CE" containerWithKeyObject="682B0BA1-060A-306E-E68F-C0A9BA90D6B0" localFKIndex="6925FC20-0B95-43A4-88A0-C8D132741944" name="FK_TER_TTR">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-20 23:35:47 UTC</createdTime>
 <ownerDesignName>databasemodeling</ownerDesignName>
@@ -9,7 +9,7 @@
 <keyObject>BD68DF96-3F6A-640F-F287-7B945507CBFB</keyObject>
 <referredKeyID>BD68DF96-3F6A-640F-F287-7B945507CBFB</referredKeyID>
 <mandatory>false</mandatory>
-<refColNames>TTA_ID</refColNames>
+<refColNames>TTR_ID</refColNames>
 <transferable>true</transferable>
 <rely>false</rely>
 <columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
