@@ -2,13 +2,14 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="461B9791-5AEF-7FA6-322E-101EA35750C6" name="ENCERRAMENTOS">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-21 01:41:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela que listas quais casos possuem um encerramento.]]></commentInRDBMS>
 <ownerDesignName>databasemodeling</ownerDesignName>
 <ordsAlias>table_35</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="CAS_ID" id="A3CCC5D4-9B21-0FEC-1BC7-684996461B19">
+<Column name="ENC_CAS_ID" id="A3CCC5D4-9B21-0FEC-1BC7-684996461B19">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-21 01:43:22 UTC</createdTime>
 <commentInRDBMS><![CDATA[Identificador do caso que foi encerrado.]]></commentInRDBMS>
@@ -22,7 +23,7 @@
 <colAssociation fkAssociation="A2617934-A2D0-CCE4-F174-3E76A2000FC1" referredColumn="EF6A022B-0428-CF9A-75D6-339944A44290"/>
 </associations>
 </Column>
-<Column name="CRI_ID" id="89D8D609-5550-23F2-EBF8-849466F46320">
+<Column name="ENC_CRI_ID" id="89D8D609-5550-23F2-EBF8-849466F46320">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-21 01:43:22 UTC</createdTime>
 <commentInRDBMS><![CDATA[Identificador do criterio utilizado no encerramento do caso.]]></commentInRDBMS>
@@ -42,7 +43,6 @@
 <createdTime>2023-02-21 01:43:22 UTC</createdTime>
 <commentInRDBMS><![CDATA[Data de encerramento do caso.]]></commentInRDBMS>
 <ownerDesignName>databasemodeling</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
@@ -51,7 +51,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="6A64B903-127E-E064-41CE-DB77D1A77ED9" name="ENCERRAMENTOS_PK">
+<ind_PK_UK id="6A64B903-127E-E064-41CE-DB77D1A77ED9" name="PK_ENC">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-21 01:43:22 UTC</createdTime>
 <ownerDesignName>databasemodeling</ownerDesignName>
@@ -62,7 +62,7 @@
 <colUsage columnID="A3CCC5D4-9B21-0FEC-1BC7-684996461B19"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="B63D2E69-839B-A30E-192C-119998A4B9FC" name="ENCERRAMENTOS_CRITERIOS_ENCERRAMENTO_FK">
+<ind_PK_UK id="B63D2E69-839B-A30E-192C-119998A4B9FC" name="FK_ENC_CRI">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-21 01:43:42 UTC</createdTime>
 <ownerDesignName>databasemodeling</ownerDesignName>
@@ -72,7 +72,7 @@
 <colUsage columnID="89D8D609-5550-23F2-EBF8-849466F46320"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="44A147F3-C053-35F2-AF2C-95C249156A64" name="ENCERRAMENTOS_CASOS_FK">
+<ind_PK_UK id="44A147F3-C053-35F2-AF2C-95C249156A64" name="FK_ENC_CAS">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-21 01:43:42 UTC</createdTime>
 <ownerDesignName>databasemodeling</ownerDesignName>

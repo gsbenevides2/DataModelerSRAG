@@ -200,12 +200,11 @@
 <colAssociation fkAssociation="25F956E6-BE2D-1DDA-8DE7-E3662D3C4FEE" referredColumn="E7B244F3-6781-1DBB-6A83-D57230A73C4C"/>
 </associations>
 </Column>
-<Column name="CLA_ID" id="67287C2A-EC81-E70E-B741-D2ECF7131DF5">
+<Column name="CAS_CLA_ID" id="67287C2A-EC81-E70E-B741-D2ECF7131DF5">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-12 14:40:04 UTC</createdTime>
 <commentInRDBMS><![CDATA[Identificador da classificação do caso de SRAG]]></commentInRDBMS>
 <ownerDesignName>databasemodeling</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -260,7 +259,7 @@
 <colUsage columnID="D8F3AED2-8FB7-EDE3-560E-4F84F347C64D"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="CADFD464-EE22-680A-97A6-17B45B66F039" name="CASOS_CLASSIFICAÇÕES_FK">
+<ind_PK_UK id="CADFD464-EE22-680A-97A6-17B45B66F039" name="FK_CAS_CLA">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-21 01:35:42 UTC</createdTime>
 <ownerDesignName>databasemodeling</ownerDesignName>
@@ -300,7 +299,7 @@
 <colUsage columnID="E2FD3E1A-A293-337E-7A94-95842D4539D6"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="2A58D029-84C1-2309-0A46-B743FC1AEF3C" name="CASOS_ESCOLARIDADES_FK">
+<ind_PK_UK id="2A58D029-84C1-2309-0A46-B743FC1AEF3C" name="FK_CAS_ESC">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-22 21:16:36 UTC</createdTime>
 <ownerDesignName>databasemodeling</ownerDesignName>
@@ -310,7 +309,7 @@
 <colUsage columnID="55E2C684-F86F-A655-8955-F85346917622"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="869B454D-220F-5283-7D3D-FD4D8BEF56CB" name="CASOS_ZONAS_FK">
+<ind_PK_UK id="869B454D-220F-5283-7D3D-FD4D8BEF56CB" name="FK_CAS_ZON">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-22 22:15:12 UTC</createdTime>
 <ownerDesignName>databasemodeling</ownerDesignName>

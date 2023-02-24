@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="BBB5F3F7-2F15-D532-BF79-AA7BDA0707C3" containerWithKeyObject="AEF00D89-7A55-1430-A5B4-8B219C08B2EA" localFKIndex="9EF4C542-669B-DD7E-53A8-691EF0CBFB6F" name="TESTE_SOROLOGICOS_RESULTADOS_TESTE_SOROLOGICO_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="BBB5F3F7-2F15-D532-BF79-AA7BDA0707C3" containerWithKeyObject="AEF00D89-7A55-1430-A5B4-8B219C08B2EA" localFKIndex="9EF4C542-669B-DD7E-53A8-691EF0CBFB6F" name="FK_RTS_IGG">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-21 15:14:18 UTC</createdTime>
 <ownerDesignName>databasemodeling</ownerDesignName>

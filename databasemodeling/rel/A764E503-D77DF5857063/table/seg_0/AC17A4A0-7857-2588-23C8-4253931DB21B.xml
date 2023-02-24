@@ -2,6 +2,7 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AC17A4A0-7857-2588-23C8-4253931DB21B" name="CLASSIFICAÇÕES">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-21 01:31:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de metadados que lista as possiveis classificações finais para os casos.]]></commentInRDBMS>
 <ownerDesignName>databasemodeling</ownerDesignName>
 <ordsAlias>table_33</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
@@ -33,7 +34,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="B75D871E-8169-6DD3-81A6-7E1ABD83F730" name="CLASSIFICAÇÕES_PK">
+<ind_PK_UK id="B75D871E-8169-6DD3-81A6-7E1ABD83F730" name="PK_CLA">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-21 01:33:12 UTC</createdTime>
 <ownerDesignName>databasemodeling</ownerDesignName>

@@ -2,6 +2,7 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1E20E0DF-C3D3-6F21-2BE4-2BCA9D3573F2" name="RESULTADOS_TESTE_SOROLOGICO">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-21 14:33:36 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de metadados que lista os resultados de um teste sorológico.]]></commentInRDBMS>
 <ownerDesignName>databasemodeling</ownerDesignName>
 <ordsAlias>table_41</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
@@ -34,7 +35,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="A6F4C6F0-9099-BF6E-6DEC-D864A7C24F42" name="RESULTADOS_TESTE_SOROLOGICO_PK">
+<ind_PK_UK id="A6F4C6F0-9099-BF6E-6DEC-D864A7C24F42" name="PK_RTS">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-21 14:35:07 UTC</createdTime>
 <ownerDesignName>databasemodeling</ownerDesignName>

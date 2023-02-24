@@ -2,6 +2,7 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0F3EA34B-91F4-8704-CF4F-52684166EE15" name="CRITERIOS_ENCERRAMENTO">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-21 01:37:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela que lista os critérios de encerrameto.]]></commentInRDBMS>
 <ownerDesignName>databasemodeling</ownerDesignName>
 <ordsAlias>table_34</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
@@ -33,7 +34,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="6A5FB727-F058-5DE4-9F67-89F1F788408B" name="CRITERIOS_ENCERRAMENTO_PK">
+<ind_PK_UK id="6A5FB727-F058-5DE4-9F67-89F1F788408B" name="PK_CRI">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-21 01:38:50 UTC</createdTime>
 <ownerDesignName>databasemodeling</ownerDesignName>
