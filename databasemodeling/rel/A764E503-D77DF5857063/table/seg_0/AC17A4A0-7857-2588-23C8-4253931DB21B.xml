@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AC17A4A0-7857-2588-23C8-4253931DB21B" name="CLASSIFICAÇÕES">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AC17A4A0-7857-2588-23C8-4253931DB21B" name="CLASSIFICACOES">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-21 01:31:49 UTC</createdTime>
 <commentInRDBMS><![CDATA[Tabela de metadados que lista as possiveis classificações finais para os casos.]]></commentInRDBMS>

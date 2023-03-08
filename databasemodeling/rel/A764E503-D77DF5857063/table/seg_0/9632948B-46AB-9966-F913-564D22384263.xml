@@ -68,10 +68,10 @@
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="CAS_SEX_ID" id="E8BB9040-9FAC-3D15-F7ED-01BF1134B42D">
+<Column name="CAS_GEN_ID" id="E8BB9040-9FAC-3D15-F7ED-01BF1134B42D">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-12 14:40:04 UTC</createdTime>
-<commentInRDBMS><![CDATA[Sexo do paciente.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Genero do paciente.]]></commentInRDBMS>
 <ownerDesignName>databasemodeling</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -269,7 +269,7 @@
 <colUsage columnID="67287C2A-EC81-E70E-B741-D2ECF7131DF5"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="58742BE8-5AF2-274A-4891-6BCAF5D40717" name="FK_CAS_SEX">
+<ind_PK_UK id="58742BE8-5AF2-274A-4891-6BCAF5D40717" name="FK_CAS_GEN">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-22 00:34:19 UTC</createdTime>
 <ownerDesignName>databasemodeling</ownerDesignName>

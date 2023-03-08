@@ -1,18 +1,18 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7D2C4815-FDB1-0B54-9999-1B08697D8B2E" name="SEXOS">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7D2C4815-FDB1-0B54-9999-1B08697D8B2E" name="GENERO">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-22 00:30:00 UTC</createdTime>
-<commentInRDBMS><![CDATA[Tabela de metadados contendo os sexos informados pelos pacientes.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Tabela de metadados contendo dos generos informados pelos pacientes.]]></commentInRDBMS>
 <ownerDesignName>databasemodeling</ownerDesignName>
 <ordsAlias>table_44</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="SEX_ID" id="E7FC02CC-C1F6-8862-907F-7B0324EF9FCB">
+<Column name="GEN_ID" id="E7FC02CC-C1F6-8862-907F-7B0324EF9FCB">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-22 00:31:56 UTC</createdTime>
-<commentInRDBMS><![CDATA[Identificador do sexo.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Identificador do genero.]]></commentInRDBMS>
 <ownerDesignName>databasemodeling</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -21,10 +21,10 @@
 <ownDataTypeParameters>,1,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="SEX_DESCRICAO" id="3DB8584F-17C8-390F-1CE5-93BFB88B0D4A">
+<Column name="GEN_DESCRICAO" id="3DB8584F-17C8-390F-1CE5-93BFB88B0D4A">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-22 00:31:56 UTC</createdTime>
-<commentInRDBMS><![CDATA[Descrição do sexo.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Descrição do genero.]]></commentInRDBMS>
 <ownerDesignName>databasemodeling</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -35,7 +35,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="25711768-60CD-CD83-5A2C-F1B5E6CE99A3" name="PK_SEX">
+<ind_PK_UK id="25711768-60CD-CD83-5A2C-F1B5E6CE99A3" name="PK_GEN">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-22 00:31:56 UTC</createdTime>
 <ownerDesignName>databasemodeling</ownerDesignName>

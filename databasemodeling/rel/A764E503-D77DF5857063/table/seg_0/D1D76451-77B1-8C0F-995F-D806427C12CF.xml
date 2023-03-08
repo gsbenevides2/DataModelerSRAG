@@ -2,6 +2,7 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D1D76451-77B1-8C0F-995F-D806427C12CF" name="UNIDADES">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-17 01:19:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela que lista as unidades de saúde.]]></commentInRDBMS>
 <ownerDesignName>databasemodeling</ownerDesignName>
 <ordsAlias>table_11</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
@@ -11,7 +12,18 @@
 <Column name="UNI_ID" id="1577F1DB-3C0C-B050-47F9-0A06ABC64304">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-17 01:21:01 UTC</createdTime>
-<commentInRDBMS><![CDATA[Código do CNES(Cadastro Nacional de Estabelecimentos de Saúde) da unidade de saúde.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Identificador autoincremental da unidade de saúde.]]></commentInRDBMS>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UNI_COD_CNES" id="747CC72D-A146-EE3D-E3C6-82FD3DBD0D5C">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-03-03 16:26:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código do CNES(Cadastro Nacional de Estabelecimentos de Saúde)]]></commentInRDBMS>
 <ownerDesignName>databasemodeling</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -56,6 +68,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="1577F1DB-3C0C-B050-47F9-0A06ABC64304"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="45D02569-0FF8-4EB1-A45E-9F090CCB0C12" name="UN_UNI_COD_CNES">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-03-03 16:26:55 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="747CC72D-A146-EE3D-E3C6-82FD3DBD0D5C"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="093A85D4-6688-12C3-5ED0-3CCCF1F0054A" name="FK_UNI_MUN">

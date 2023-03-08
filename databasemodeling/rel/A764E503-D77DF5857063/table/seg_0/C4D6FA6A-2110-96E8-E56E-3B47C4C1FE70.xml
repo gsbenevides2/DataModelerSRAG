@@ -2,6 +2,7 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C4D6FA6A-2110-96E8-E56E-3B47C4C1FE70" name="VACINAS_COVID">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-13 10:40:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela que as vacinas que cada caso venha possuir.]]></commentInRDBMS>
 <ownerDesignName>databasemodeling</ownerDesignName>
 <ordsAlias>table_8</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>

@@ -23,21 +23,6 @@
 <colAssociation fkAssociation="9F342760-9CF3-518F-3528-1334FB4B3CA9" referredColumn="EF6A022B-0428-CF9A-75D6-339944A44290"/>
 </associations>
 </Column>
-<Column name="TER_TTR_ID" id="3769ECE9-63D7-1947-25BF-8919A3E4A0F7">
-<createdBy>gsbenevides2</createdBy>
-<createdTime>2023-02-20 23:35:47 UTC</createdTime>
-<commentInRDBMS><![CDATA[Identificador do tipo de teste de RT/PCR que foi realizado.]]></commentInRDBMS>
-<ownerDesignName>databasemodeling</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="4086E838-4D74-3476-E347-95273879F7CE" referredColumn="AD2DC4BB-0992-77F9-33E1-95A325482D81"/>
-</associations>
-</Column>
 <Column name="TER_RTR_ID" id="AF844E96-27B3-C0F0-B285-D3EAEC635419">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-20 23:35:47 UTC</createdTime>
@@ -111,16 +96,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="4B158508-8688-0E46-E7BD-528C26920309"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="6925FC20-0B95-43A4-88A0-C8D132741944" name="FK_TER_TTR">
-<createdBy>gsbenevides2</createdBy>
-<createdTime>2023-02-20 23:35:47 UTC</createdTime>
-<ownerDesignName>databasemodeling</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="3769ECE9-63D7-1947-25BF-8919A3E4A0F7"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="500C4B67-4F64-2C3D-F559-B449D604FE13" name="FK_TER_VIR">

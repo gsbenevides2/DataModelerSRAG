@@ -2,6 +2,7 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D08BFA00-89CA-C37C-D9CC-D6F150CCF455" name="ESTADOS">
 <createdBy>gsbenevides2</createdBy>
 <createdTime>2023-02-17 18:14:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela que lista todos os estados do território nacional.]]></commentInRDBMS>
 <ownerDesignName>databasemodeling</ownerDesignName>
 <ordsAlias>table_16</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
