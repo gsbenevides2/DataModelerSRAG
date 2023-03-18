@@ -2,3 +2,6 @@
 **/*.local
 **/*.git
 **/*.DS_Store
+/NodeScripts/.env
+/NodeScripts/data/*
+/NodeScripts/node_modules/

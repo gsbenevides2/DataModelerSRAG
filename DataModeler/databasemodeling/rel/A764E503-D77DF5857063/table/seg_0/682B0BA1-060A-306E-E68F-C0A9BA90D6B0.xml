@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="682B0BA1-060A-306E-E68F-C0A9BA90D6B0" name="TESTES_RTPCR">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-20 23:35:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela que lista os casos emque foram realizado teste de RT/PCR.]]></commentInRDBMS>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<ordsAlias>table_26</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TER_CAS_ID" id="4B158508-8688-0E46-E7BD-528C26920309">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-20 23:35:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do caso para aquele teste de RT/PCR.]]></commentInRDBMS>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9F342760-9CF3-518F-3528-1334FB4B3CA9" referredColumn="EF6A022B-0428-CF9A-75D6-339944A44290"/>
+</associations>
+</Column>
+<Column name="TER_RTR_ID" id="AF844E96-27B3-C0F0-B285-D3EAEC635419">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-20 23:35:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do resultado do teste de RT/PCR.]]></commentInRDBMS>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A1841AF0-964E-2B78-6A58-BF3BC35E3D00" referredColumn="BEDEA047-EBEB-77EF-B5CF-1DB9DBECDA39"/>
+</associations>
+</Column>
+<Column name="TER_DATA_RESULTADO" id="B52326B3-0BBB-9D78-A877-2F5AD9777F8C">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-20 23:35:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do resultado de teste de RT/PCR.]]></commentInRDBMS>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="34540BA1-EB7C-B68A-4757-6CB0DDAE27F6" name="PK_TER">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-20 23:35:47 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4B158508-8688-0E46-E7BD-528C26920309"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="85924E80-7765-C0C9-BB12-13629A2025FC" name="FK_TER_RTR">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-20 23:35:47 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AF844E96-27B3-C0F0-B285-D3EAEC635419"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="400787AE-55F8-AFC9-FA20-B5A821239496" name="FK_TER_CAS">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-20 23:35:47 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4B158508-8688-0E46-E7BD-528C26920309"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

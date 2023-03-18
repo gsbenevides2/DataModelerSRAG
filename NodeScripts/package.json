@@ -1,0 +1,43 @@
+{
+  "name": "node-scripts-for-oracle",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "testConnection": "ts-node --transpileOnly ./src/scripts/testConnection.ts",
+    "dropDatabase": "ts-node --transpileOnly ./src/scripts/dropDatabase.ts",
+    "insertMunicipios": "ts-node --transpileOnly ./src/scripts/insertMunicipios.ts",
+    "insertUnidades": "ts-node --transpileOnly ./src/scripts/insertUnidades.ts",
+    "resetSequence": "ts-node --transpileOnly ./src/scripts/resetSequence.ts",
+    "createComorbidadesMap": "ts-node --transpileOnly ./src/scripts/createComorbidadesMap.ts",
+    "improveComorbidades": "ts-node --transpileOnly ./src/scripts/improveComorbidades.ts",
+    "casos": "ts-node --transpileOnly ./src/scripts/casos.ts"
+  },
+  "dependencies": {
+    "@types/cli-progress": "^3.11.0",
+    "@types/dotenv": "^8.2.0",
+    "@types/inquirer": "^9.0.3",
+    "@types/inquirer-autocomplete-prompt": "^3.0.0",
+    "@types/node": "^18.15.0",
+    "@types/oracledb": "^5.2.4",
+    "@types/readline-sync": "^1.4.4",
+    "cli-progress": "^3.12.0",
+    "csv": "^6.2.8",
+    "dotenv": "^16.0.3",
+    "inquirer": "8.0.0",
+    "inquirer-autocomplete-prompt": "^2.0.0",
+    "oracledb": "^5.5.0",
+    "readline-sync": "^1.4.10",
+    "ts-node": "^10.9.1",
+    "typescript": "*"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "eslint": "^8.0.1",
+    "eslint-config-prettier": "^8.7.0",
+    "eslint-config-standard-with-typescript": "^34.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "prettier": "2.8.4"
+  }
+}

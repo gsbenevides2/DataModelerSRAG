@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E2BE6C88-0961-2917-2A6C-A6A74572D674" containerWithKeyObject="3E9220E0-CA5C-ABE8-511B-1518F1B4EA72" localFKIndex="901B21DD-6582-EDF8-C3D2-714D1480E508" name="FK_TSA_TEA">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-03-17 16:46:20 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<referredTableLongName>TESTES_ANTIGENO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>8A86BA11-C4CB-AC3D-B84E-BC8165519173</referredTableID>
+<keyObject>F2D2DC0D-19D6-3E56-E179-E2A85958B287</keyObject>
+<referredKeyID>F2D2DC0D-19D6-3E56-E179-E2A85958B287</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>TEA_CAS_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

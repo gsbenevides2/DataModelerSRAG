@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CEF38D1C-4529-12F2-7DFE-5656161F66C8" containerWithKeyObject="73D0D467-1BA6-344B-FBEA-C43473F7D8F4" localFKIndex="727BF4EE-74B5-8261-B365-FF43463BFD46" name="FK_TSR_VIR">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-03-17 16:44:27 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<referredTableLongName>VIRUS_RESPIRATORIOS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>59771F3F-F1F0-1E02-F1AC-6FDCF1F88584</referredTableID>
+<keyObject>53195283-B8E0-ADED-0C4B-90DF20AEB813</keyObject>
+<referredKeyID>53195283-B8E0-ADED-0C4B-90DF20AEB813</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>VIR_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

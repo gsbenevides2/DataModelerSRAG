@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3E9220E0-CA5C-ABE8-511B-1518F1B4EA72" name="TESTES_ANTIGENOS_VIRUS">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-03-17 16:46:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de muitos para muitos onde os testes podem identificar muitos virus.]]></commentInRDBMS>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<ordsAlias>table_48</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TSA_TEA_ID" id="850E3DE5-AAEF-40C4-6E8D-CC59E0E80BEC">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-03-17 16:46:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do Teste.]]></commentInRDBMS>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E2BE6C88-0961-2917-2A6C-A6A74572D674" referredColumn="1B611760-3BAC-E2BF-9FFA-1266EAAAD663"/>
+<colAssociation fkAssociation="47CE1740-CC95-7C82-45D2-459D0E680C36" referredColumn="8889A4F1-84FD-9EA4-C7D1-C7E2A59E2606"/>
+</associations>
+</Column>
+<Column name="TSA_VIR_ID" id="3EFF5C9F-F672-D09E-2820-5A14D1268593">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-03-17 16:46:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do Virus.]]></commentInRDBMS>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2C06AC51-D4A6-6928-8634-992169D440A9" name="PK_TSA">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-03-17 16:46:20 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="850E3DE5-AAEF-40C4-6E8D-CC59E0E80BEC"/>
+<colUsage columnID="3EFF5C9F-F672-D09E-2820-5A14D1268593"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="901B21DD-6582-EDF8-C3D2-714D1480E508" name="FK_TSA_TEA">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-03-17 16:46:20 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="850E3DE5-AAEF-40C4-6E8D-CC59E0E80BEC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3CC11A18-6DAB-EC71-2BFD-E71CD04419C5" name="FK_TSA_VIR">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-03-17 16:46:20 UTC</createdTime>
+<ownerDesignName>databasemodeling</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="850E3DE5-AAEF-40C4-6E8D-CC59E0E80BEC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
