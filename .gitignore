@@ -5,3 +5,4 @@
 /NodeScripts/.env
 /NodeScripts/data/*
 /NodeScripts/node_modules/
+/ScriptsSQL/logs.txt

@@ -10,7 +10,7 @@
     "resetSequence": "ts-node --transpileOnly ./src/scripts/resetSequence.ts",
     "createComorbidadesMap": "ts-node --transpileOnly ./src/scripts/createComorbidadesMap.ts",
     "improveComorbidades": "ts-node --transpileOnly ./src/scripts/improveComorbidades.ts",
-    "casos": "ts-node --transpileOnly ./src/scripts/casos.ts"
+    "casos": "ts-node --transpileOnly ./src/scripts/casos/casos.ts"
   },
   "dependencies": {
     "@types/cli-progress": "^3.11.0",

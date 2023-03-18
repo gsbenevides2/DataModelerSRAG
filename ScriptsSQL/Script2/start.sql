@@ -25,5 +25,5 @@
 @tables/comorbidades.sql
 @tables/racas.sql
 @tables/tipos_teste_antigeno.sql
-@tables/virus_respiratórios.sql
+@tables/virus_respiratorios.sql
 COMMIT;
