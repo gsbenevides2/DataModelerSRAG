@@ -17,4 +17,3 @@ COMMENT ON COLUMN encerramentos.enc_data IS
     'Data de encerramento do caso.';
 
 ALTER TABLE encerramentos ADD CONSTRAINT pk_enc PRIMARY KEY ( enc_cas_id );
-ALTER TABLE encerramentos ADD CONSTRAINT ck_enc_01 CHECK (enc_data IS NOT NULL)

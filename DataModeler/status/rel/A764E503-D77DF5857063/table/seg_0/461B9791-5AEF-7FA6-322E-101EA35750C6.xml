@@ -43,6 +43,7 @@
 <createdTime>2023-02-21 01:43:22 UTC</createdTime>
 <commentInRDBMS><![CDATA[Data de encerramento do caso.]]></commentInRDBMS>
 <ownerDesignName>status</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
