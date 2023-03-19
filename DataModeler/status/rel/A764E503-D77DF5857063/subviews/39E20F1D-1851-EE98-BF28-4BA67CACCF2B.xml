@@ -27,7 +27,7 @@
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="0F3EA34B-91F4-8704-CF4F-52684166EE15" otype="Table" vid="0F418C20-F12E-AD95-8A09-63004939CDCA">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="419" y="805" width="177" height="74"/>
+<bounds x="423" y="789" width="177" height="74"/>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-6684775</backgroundColor>
 <foregroundColor>-16776961</foregroundColor>
@@ -67,6 +67,9 @@
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="298D0257-A672-AACB-A30D-DF1C21BE8031" otype="Table" vid="FBE99EA8-308E-D9CE-DB8D-34F9807FA903">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="763" y="943" width="183" height="122"/>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-52480</backgroundColor>
+<foregroundColor>-16776961</foregroundColor>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="33F93DE9-9F49-3E17-6120-579AB7F659A9" otype="Table" vid="41677CB3-3A68-A7ED-E5C1-A10BA97AF2DA">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -116,7 +119,7 @@
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="461B9791-5AEF-7FA6-322E-101EA35750C6" otype="Table" vid="76750F42-E582-23A1-E9C9-350D432D7CB4">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="704" y="787" width="156" height="122"/>
+<bounds x="762" y="783" width="156" height="122"/>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3355393</backgroundColor>
 <foregroundColor>-16776961</foregroundColor>
@@ -171,6 +174,13 @@
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="73D0D467-1BA6-344B-FBEA-C43473F7D8F4" otype="Table" vid="6A88E9A8-0C5A-54F9-B036-5DC764633184">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="1380" y="1641" width="186" height="108"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="7CDDAC08-3A16-C28F-06CC-3ECC677F5E10" otype="Note" vid="1D301263-CA1B-2536-3BE5-8B2FAA1C61E5">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="14" y="1586" width="418" height="237"/>
+<comment>CASOS_ANITIVIRAIS_COVID!!!!!
+Não foi encontrado as colunas no CSV referente as informações do antivirais para covid ministrados para os pacientes!
+O Dicionario da dados do SUS diz que as colunas são: TRAT_COV, TIPO_TRAT, OUT_TRAT, DT_TRT_COV. Essas colunas não está presentes no CSV talvez seja de anos posteriores.</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="7D2C4815-FDB1-0B54-9999-1B08697D8B2E" otype="Table" vid="5563BF7D-CE03-AE6F-AE19-BC6278C7EEEA">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -597,8 +607,8 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="596" y="842"/>
-<point x="704" y="842"/>
+<point x="600" y="826"/>
+<point x="762" y="826"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="9F342760-9CF3-518F-3528-1334FB4B3CA9" otype="FKIndexAssociation" vid_source="280DBAED-4C73-AAA3-BF26-04F03B6BB043" vid_target="CD1CEF05-4C4D-28EC-BE9B-8109B9E51217">
@@ -624,8 +634,8 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="1058" y="848"/>
-<point x="860" y="848"/>
+<point x="1058" y="844"/>
+<point x="918" y="844"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="A94CD240-8A17-4F0C-F7C0-5C6958C279CB" otype="FKIndexAssociation" vid_source="9AF37185-DF97-CC08-2B4B-7D0B89001DF9" vid_target="280DBAED-4C73-AAA3-BF26-04F03B6BB043">
