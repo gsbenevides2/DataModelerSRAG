@@ -5,7 +5,7 @@
 @tables/evolucoes.sql
 @tables/zonas.sql
 @tables/aspectos_tomografia.sql
-@tables/tipos_animais.sql
+@tables/trabalha_animais.sql
 @tables/criterios_encerramento.sql
 @tables/classificacoes.sql
 @tables/antivirais_covid.sql

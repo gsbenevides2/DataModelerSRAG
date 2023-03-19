@@ -77,7 +77,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>1</dataTypePrecision>
-<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="D128FE1F-4888-4065-2676-C493DABB7898" referredColumn="E7FC02CC-C1F6-8862-907F-7B0324EF9FCB"/>
@@ -104,7 +104,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>1</dataTypePrecision>
-<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="688C9FCF-0059-F7FB-1B8B-6B343991BDE0" referredColumn="E8BFF996-3A21-08DF-113A-7E08243540AC"/>
@@ -119,7 +119,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>1</dataTypePrecision>
-<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="0BC47B5B-6F0A-DFD5-9C32-8C4F5F43D3EA" referredColumn="902774FE-4E84-A92A-964A-7FDA8C472137"/>
@@ -135,7 +135,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>1</dataTypePrecision>
-<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="E67F1BCA-EE9E-B245-5A50-9535AD751CE1" referredColumn="A182389B-88C5-60BB-52B6-1F90B579A896"/>
@@ -165,7 +165,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>1</dataTypePrecision>
-<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="D7BCD521-CFB6-1C97-8CBC-085DA967002D" referredColumn="6A7AAECC-598A-344D-1CD4-EBE352613E97"/>
@@ -194,7 +194,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>1</dataTypePrecision>
-<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="25F956E6-BE2D-1DDA-8DE7-E3662D3C4FEE" referredColumn="E7B244F3-6781-1DBB-6A83-D57230A73C4C"/>
@@ -225,6 +225,21 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CAS_TAN_ID" id="8079D9C4-577E-D460-B0DE-87D4F88D869B">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-03-19 16:06:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[O paciente do caso trabalha com algum tipo de animal.]]></commentInRDBMS>
+<ownerDesignName>status</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="60ACA500-42F8-C2B6-9388-130C0F8C1947" referredColumn="001A6FFE-3BAC-FBF8-43F2-F510B94DEED7"/>
+</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
@@ -327,6 +342,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="C118B6FB-823E-DA72-7B25-A019FF4264FC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="391B47C9-9487-F88F-A9AA-E4B33E9E513D" name="FK_CAS_TAN">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-03-19 16:07:27 UTC</createdTime>
+<ownerDesignName>status</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8079D9C4-577E-D460-B0DE-87D4F88D869B"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

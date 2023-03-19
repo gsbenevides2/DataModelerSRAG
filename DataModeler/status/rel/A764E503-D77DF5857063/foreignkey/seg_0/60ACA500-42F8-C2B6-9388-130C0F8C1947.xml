@@ -1,14 +1,14 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="19E4C8D7-693F-AE35-DF94-C374F89D42C5" containerWithKeyObject="2DF134B6-F548-0B6D-CBC9-8940EA087DCE" localFKIndex="1D5320C0-714C-F509-1288-D6C3DCF24ACD" name="FK_CAN_TAN">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="60ACA500-42F8-C2B6-9388-130C0F8C1947" containerWithKeyObject="9632948B-46AB-9966-F913-564D22384263" localFKIndex="391B47C9-9487-F88F-A9AA-E4B33E9E513D" name="FK_CAS_TAN">
 <createdBy>gsbenevides2</createdBy>
-<createdTime>2023-02-21 17:45:34 UTC</createdTime>
+<createdTime>2023-03-19 16:07:27 UTC</createdTime>
 <ownerDesignName>status</ownerDesignName>
-<referredTableLongName>TIPOS_ANIMAIS</referredTableLongName>
+<referredTableLongName>TRABALHA_ANIMAIS</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
 <referredTableID>44391DA7-9333-83FF-0FAF-AD719C3F9BA0</referredTableID>
 <keyObject>AC585465-E7C4-DCA5-8AF1-FF0C5653869B</keyObject>
 <referredKeyID>AC585465-E7C4-DCA5-8AF1-FF0C5653869B</referredKeyID>
-<mandatory>true</mandatory>
+<mandatory>false</mandatory>
 <refColNames>TAN_ID</refColNames>
 <transferable>true</transferable>
 <rely>false</rely>

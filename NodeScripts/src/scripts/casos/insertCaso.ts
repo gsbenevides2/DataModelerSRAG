@@ -25,6 +25,8 @@ export async function insertCaso(
   const suporteVentilatorio = row.SUPORT_VEN ? Number(row.SUPORT_VEN) : 9;
   const classificacaoFinal = row.CLASSI_FIN ? Number(row.CLASSI_FIN) : 4;
   const dataDigitacao = row.DT_DIGITA;
+  let animal = null;
+  if (row.AVE_SUINO?.length > 0) animal = row.AVE_SUINO;
 
   const result = await connection.execute(
     `INSERT INTO CASOS (
@@ -42,7 +44,8 @@ export async function insertCaso(
             CAS_NOSOCOMIAL,
             CAS_SVE_ID,
             CAS_CLA_ID,
-            CAS_DATA_DIGITACAO
+            CAS_DATA_DIGITACAO,
+            CAS_TAN_ID
         ) VALUES (
             :dataNotificacao,
             :dataPrimeirosSintomas,
@@ -58,7 +61,8 @@ export async function insertCaso(
             :nosocomial,
             :suporteVentilatorio,
             :classificacaoFinal,
-            :dataDigitacao
+            :dataDigitacao,
+            :animal
         )`,
     {
       dataNotificacao: dataNotificacao,
@@ -76,6 +80,7 @@ export async function insertCaso(
       suporteVentilatorio: suporteVentilatorio,
       classificacaoFinal: classificacaoFinal,
       dataDigitacao: dataDigitacao,
+      animal: animal,
     }
   );
   const lastRowId = result.lastRowid;

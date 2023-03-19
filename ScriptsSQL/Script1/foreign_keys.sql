@@ -22,14 +22,6 @@ ALTER TABLE casos_amostras
     ADD CONSTRAINT fk_cam_tam FOREIGN KEY ( cam_tam_id )
         REFERENCES tipos_amostra ( tam_id );
 
-ALTER TABLE casos_animais
-    ADD CONSTRAINT fk_can_cas FOREIGN KEY ( can_cas_id )
-        REFERENCES casos ( cas_id );
-
-ALTER TABLE casos_animais
-    ADD CONSTRAINT fk_can_tan FOREIGN KEY ( can_tan_id )
-        REFERENCES tipos_animais ( tan_id );
-
 ALTER TABLE casos
     ADD CONSTRAINT fk_cas_cla FOREIGN KEY ( cas_cla_id )
         REFERENCES classificacoes ( cla_id );
@@ -57,6 +49,10 @@ ALTER TABLE casos
 ALTER TABLE casos
     ADD CONSTRAINT fk_cas_sve FOREIGN KEY ( cas_sve_id )
         REFERENCES suporte_ventilador ( sve_id );
+
+ALTER TABLE casos
+    ADD CONSTRAINT fk_cas_tan FOREIGN KEY ( cas_tan_id )
+        REFERENCES trabalha_animais ( tan_id );
 
 ALTER TABLE casos
     ADD CONSTRAINT fk_cas_uni FOREIGN KEY ( cas_uni_id )
@@ -142,6 +138,14 @@ ALTER TABLE testes_antigeno
     ADD CONSTRAINT fk_tea_tta FOREIGN KEY ( tea_tta_id )
         REFERENCES tipos_teste_antigeno ( tta_id );
 
+ALTER TABLE testes_antigenos_virus
+    ADD CONSTRAINT fk_tsa_tea FOREIGN KEY ( tsa_tea_id )
+        REFERENCES testes_antigeno ( tea_cas_id );
+
+ALTER TABLE testes_antigenos_virus
+    ADD CONSTRAINT fk_tsa_vir FOREIGN KEY ( tsa_tea_id )
+        REFERENCES virus_respiratorios ( vir_id );
+
 ALTER TABLE testes_rtpcr
     ADD CONSTRAINT fk_ter_cas FOREIGN KEY ( ter_cas_id )
         REFERENCES casos ( cas_id );
@@ -149,6 +153,14 @@ ALTER TABLE testes_rtpcr
 ALTER TABLE testes_rtpcr
     ADD CONSTRAINT fk_ter_rtr FOREIGN KEY ( ter_rtr_id )
         REFERENCES resultados_teste_rtpc ( rtr_id );
+
+ALTER TABLE testes_rtpcr_virus
+    ADD CONSTRAINT fk_tsr_ter FOREIGN KEY ( tsr_ter_id )
+        REFERENCES testes_rtpcr ( ter_cas_id );
+
+ALTER TABLE testes_rtpcr_virus
+    ADD CONSTRAINT fk_tsr_vir FOREIGN KEY ( tsr_ter_id )
+        REFERENCES virus_respiratorios ( vir_id );
 
 ALTER TABLE teste_sorologicos
     ADD CONSTRAINT fk_tso_cas FOREIGN KEY ( tso_cas_id )
@@ -193,19 +205,3 @@ ALTER TABLE vacinas_covid
 ALTER TABLE vacinas_gripe
     ADD CONSTRAINT fk_vag_cas FOREIGN KEY ( vag_cas_id )
         REFERENCES casos ( cas_id );
-
-ALTER TABLE testes_antigenos_virus
-    ADD CONSTRAINT fk_tsa_tea FOREIGN KEY ( tsa_tea_id )
-        REFERENCES testes_antigeno ( tea_cas_id );
-
-ALTER TABLE testes_antigenos_virus
-    ADD CONSTRAINT fk_tsa_vir FOREIGN KEY ( tsa_tea_id )
-        REFERENCES virus_respiratorios ( vir_id );
-
-ALTER TABLE testes_rtpcr_virus
-    ADD CONSTRAINT fk_tsr_ter FOREIGN KEY ( tsr_ter_id )
-        REFERENCES testes_rtpcr ( ter_cas_id );
-
-ALTER TABLE testes_rtpcr_virus
-    ADD CONSTRAINT fk_tsr_vir FOREIGN KEY ( tsr_ter_id )
-        REFERENCES virus_respiratorios ( vir_id );

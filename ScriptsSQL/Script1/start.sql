@@ -3,7 +3,6 @@
 @@tables/antivirais_gripe.sql
 @@tables/aspectos_tomografia.sql
 @@tables/casos_amostras.sql
-@@tables/casos_animais.sql
 @@tables/casos_antivirais_covid.sql
 @@tables/casos_antivirais_gripe.sql
 @@tables/casos_comorbidades.sql
@@ -37,9 +36,9 @@
 @@tables/testes_rtpcr.sql
 @@tables/tipos_amostra_sorologica.sql
 @@tables/tipos_amostra.sql
-@@tables/tipos_animais.sql
 @@tables/tipos_teste_antigeno.sql
 @@tables/tipos_testes_sorologicos.sql
+@@tables/trabalha_animais.sql
 @@tables/testes_rtpcr_virus.sql
 @@tables/testes_antigenos_virus.sql
 @@tables/unidades.sql

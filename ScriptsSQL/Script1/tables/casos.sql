@@ -14,7 +14,8 @@ CREATE TABLE casos (
     cas_nosocomial              CHAR(1),
     cas_sve_id                  NUMBER(1),
     cas_cla_id                  INTEGER,
-    cas_data_digitacao          DATE
+    cas_data_digitacao          DATE,
+    cas_tan_id                  INTEGER
 );
 
 COMMENT ON TABLE casos IS
@@ -67,6 +68,9 @@ COMMENT ON COLUMN casos.cas_cla_id IS
 
 COMMENT ON COLUMN casos.cas_data_digitacao IS
     'Data de inserção do caso no sistema.';
+
+COMMENT ON COLUMN casos.cas_tan_id IS
+    'O paciente do caso trabalha com algum tipo de animal.';
 
 ALTER TABLE casos ADD CONSTRAINT pk_cas PRIMARY KEY ( cas_id );
 ALTER TABLE casos ADD CONSTRAINT ck_cas_01 CHECK (cas_data_notificacao IS NOT NULL);
