@@ -8,6 +8,7 @@ import { insertEncerramento } from "./insertEncerramentos";
 import { insertEvolucoes } from "./insertEvolucoes";
 import { insertRaioX } from "./insertRaioX";
 import { insertTomografias } from "./insertTomografias";
+import { insertUti } from "./insertUti";
 import { insertVacinaGripe } from "./insertVacinaGripe";
 
 async function main() {
@@ -32,6 +33,7 @@ async function main() {
       await insertVacinaGripe(connection, row, casId);
       await insertEncerramento(connection, row, casId);
       await insertAntiviraisGripe(connection, row, casId);
+      await insertUti(connection, row, casId);
 
       await connection.commit();
 
