@@ -5,6 +5,8 @@ import { readCSVFile } from "../../helpers/readCSVFile";
 import { getMunicipioId } from "./getMunicipioId";
 import { getUnidadeId } from "./getUnidadeId";
 import { insertCaso } from "./insertCaso";
+import { insertEvolucoes } from "./insertEvolucoes";
+import { insertRaioX } from "./insertRaioX";
 
 async function main() {
   const connection = await connectToDatabase();
@@ -55,9 +57,10 @@ async function main() {
         dataDigitacao,
       });
 
-      connection.commit();
+      await insertRaioX(connection, row, casId);
+      await insertEvolucoes(connection, row, casId);
 
-      console.log(casId);
+      connection.commit();
 
       actualLine++;
 
