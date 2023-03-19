@@ -2,6 +2,7 @@ import path from "path";
 import { connectToDatabase } from "../../helpers/connectToDatabase";
 
 import { readCSVFile } from "../../helpers/readCSVFile";
+import { insertAntiviraisGripe } from "./insertAntiviraisGripe";
 import { insertCaso } from "./insertCaso";
 import { insertEncerramento } from "./insertEncerramentos";
 import { insertEvolucoes } from "./insertEvolucoes";
@@ -30,6 +31,7 @@ async function main() {
       await insertTomografias(connection, row, casId);
       await insertVacinaGripe(connection, row, casId);
       await insertEncerramento(connection, row, casId);
+      await insertAntiviraisGripe(connection, row, casId);
 
       await connection.commit();
 
