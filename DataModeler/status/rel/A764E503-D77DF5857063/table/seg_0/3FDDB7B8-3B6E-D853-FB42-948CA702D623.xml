@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3FDDB7B8-3B6E-D853-FB42-948CA702D623" name="ANTIVIRAIS_COVID">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-17 19:01:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela com a lista de antivirais para Covid.]]></commentInRDBMS>
+<ownerDesignName>status</ownerDesignName>
+<ordsAlias>table_14</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ANC_ID" id="BA87922A-76F9-9A55-2625-DFB8A0D3D37E">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-17 19:01:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do antiviral para covid.]]></commentInRDBMS>
+<ownerDesignName>status</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ANC_NOME" id="AA46F9AD-ABC5-2C3E-AB1B-DFE7933E55FB">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-17 19:01:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome do Antiviral para covid.]]></commentInRDBMS>
+<ownerDesignName>status</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<ownDataTypeParameters>32,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3A418802-2BF2-AD29-C380-AE9BF8D773E2" name="PK_ANC">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-17 19:01:18 UTC</createdTime>
+<ownerDesignName>status</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BA87922A-76F9-9A55-2625-DFB8A0D3D37E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

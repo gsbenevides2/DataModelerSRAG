@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="73D0D467-1BA6-344B-FBEA-C43473F7D8F4" name="TESTES_RTPCR_VIRUS">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-03-17 16:41:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de muitos para muitos onde os testes podem identificar muitos virus.]]></commentInRDBMS>
+<ownerDesignName>status</ownerDesignName>
+<ordsAlias>table_48</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TSR_TER_ID" id="0547DB36-ABED-A200-7F40-7F2D3C113072">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-03-17 16:42:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do Teste.]]></commentInRDBMS>
+<ownerDesignName>status</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CEF38D1C-4529-12F2-7DFE-5656161F66C8" referredColumn="8889A4F1-84FD-9EA4-C7D1-C7E2A59E2606"/>
+<colAssociation fkAssociation="93599543-9346-E226-6C32-9EFCAFD29589" referredColumn="4B158508-8688-0E46-E7BD-528C26920309"/>
+</associations>
+</Column>
+<Column name="TSR_VIR_ID" id="2B80072D-CC0E-2BAC-DFB3-1FE2F42A01B8">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-03-17 16:42:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do Virus.]]></commentInRDBMS>
+<ownerDesignName>status</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="61DAAC13-6474-05C1-CC54-2D0B66068A6F" name="PK_TSR">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-03-17 16:42:22 UTC</createdTime>
+<ownerDesignName>status</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0547DB36-ABED-A200-7F40-7F2D3C113072"/>
+<colUsage columnID="2B80072D-CC0E-2BAC-DFB3-1FE2F42A01B8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="79D70E58-401B-0BD5-7863-D29CC2B285E9" name="FK_TSR_TER">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-03-17 16:43:22 UTC</createdTime>
+<ownerDesignName>status</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0547DB36-ABED-A200-7F40-7F2D3C113072"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="727BF4EE-74B5-8261-B365-FF43463BFD46" name="FK_TSR_VIR">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-03-17 16:44:27 UTC</createdTime>
+<ownerDesignName>status</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0547DB36-ABED-A200-7F40-7F2D3C113072"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

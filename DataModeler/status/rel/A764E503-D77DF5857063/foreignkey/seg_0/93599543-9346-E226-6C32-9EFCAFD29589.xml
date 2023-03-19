@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="93599543-9346-E226-6C32-9EFCAFD29589" containerWithKeyObject="73D0D467-1BA6-344B-FBEA-C43473F7D8F4" localFKIndex="79D70E58-401B-0BD5-7863-D29CC2B285E9" name="FK_TSR_TER">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-03-17 16:43:22 UTC</createdTime>
+<ownerDesignName>status</ownerDesignName>
+<referredTableLongName>TESTES_RTPCR</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>682B0BA1-060A-306E-E68F-C0A9BA90D6B0</referredTableID>
+<keyObject>34540BA1-EB7C-B68A-4757-6CB0DDAE27F6</keyObject>
+<referredKeyID>34540BA1-EB7C-B68A-4757-6CB0DDAE27F6</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>TER_CAS_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A1841AF0-964E-2B78-6A58-BF3BC35E3D00" containerWithKeyObject="682B0BA1-060A-306E-E68F-C0A9BA90D6B0" localFKIndex="85924E80-7765-C0C9-BB12-13629A2025FC" name="FK_TER_RTR">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-20 23:35:47 UTC</createdTime>
+<ownerDesignName>status</ownerDesignName>
+<referredTableLongName>RESULTADOS_TESTE_RTPC</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A779956E-FB35-93F7-6DE0-BBA917FBFBA0</referredTableID>
+<keyObject>82B53F49-4CB5-3277-C236-0D69E2C9138C</keyObject>
+<referredKeyID>82B53F49-4CB5-3277-C236-0D69E2C9138C</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>RTR_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

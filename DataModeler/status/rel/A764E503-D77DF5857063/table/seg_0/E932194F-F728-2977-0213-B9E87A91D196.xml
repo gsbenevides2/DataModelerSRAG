@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E932194F-F728-2977-0213-B9E87A91D196" name="IDADES_GESTACIONAIS">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-22 01:05:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de metadados de idades gestacionais.]]></commentInRDBMS>
+<ownerDesignName>status</ownerDesignName>
+<ordsAlias>table_45</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IDG_ID" id="E8BFF996-3A21-08DF-113A-7E08243540AC">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-22 01:07:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do tipo de idade gestacional do paciente.]]></commentInRDBMS>
+<ownerDesignName>status</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IDG_DESCRICAO" id="117E0612-30D8-E7D1-C02A-48016BB6B6D7">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-22 01:07:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição da idade gestacional do paciente.]]></commentInRDBMS>
+<ownerDesignName>status</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7747E43D-A3FA-9D9D-6AB0-88BD9321037C" name="PK_IDG">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-22 01:07:20 UTC</createdTime>
+<ownerDesignName>status</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E8BFF996-3A21-08DF-113A-7E08243540AC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

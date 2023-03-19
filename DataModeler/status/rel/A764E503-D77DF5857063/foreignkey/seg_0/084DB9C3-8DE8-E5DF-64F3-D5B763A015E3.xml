@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="084DB9C3-8DE8-E5DF-64F3-D5B763A015E3" containerWithKeyObject="AEF00D89-7A55-1430-A5B4-8B219C08B2EA" localFKIndex="B7DA2A0F-A6B7-951D-8278-E6025F978C40" name="FK_TSO_TAS">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 15:10:12 UTC</createdTime>
+<ownerDesignName>status</ownerDesignName>
+<referredTableLongName>TIPOS_AMOSTRAS_SOROLOGICAS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C1FB91DC-8A98-C4C6-061D-0F66DEF166BB</referredTableID>
+<keyObject>C0B4F39D-D7E9-7C43-C01F-363D9AAAFF65</keyObject>
+<referredKeyID>C0B4F39D-D7E9-7C43-C01F-363D9AAAFF65</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>TAS_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

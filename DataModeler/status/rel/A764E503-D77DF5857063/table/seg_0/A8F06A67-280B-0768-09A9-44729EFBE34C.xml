@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A8F06A67-280B-0768-09A9-44729EFBE34C" name="VACINAS_GRIPE">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-17 13:06:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela que listas quais casos o paciente tomou alguma vacina da gripe.]]></commentInRDBMS>
+<ownerDesignName>status</ownerDesignName>
+<ordsAlias>table_13</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="VAG_CAS_ID" id="D59A8837-5CF9-EC08-B875-227813AC09E4">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-17 13:09:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Caso que identifica a vacina da gripe.]]></commentInRDBMS>
+<ownerDesignName>status</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4B776EE0-AADA-C826-160A-6C233C6E2977" referredColumn="EF6A022B-0428-CF9A-75D6-339944A44290"/>
+</associations>
+</Column>
+<Column name="VAG_DATA" id="78A1464A-9857-9C8A-B2B4-76DF83A1DE95">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-17 13:09:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data da ultima dose de vacina contra gripe que o paciente tomou.]]></commentInRDBMS>
+<ownerDesignName>status</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BF9FF012-ED8D-3133-A596-451EAFE13DE1" name="PK_VAG">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-17 13:10:12 UTC</createdTime>
+<ownerDesignName>status</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D59A8837-5CF9-EC08-B875-227813AC09E4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="051155D2-8D24-22B3-9145-8892EF1F005F" name="FK_VAG_CAS">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-17 13:10:12 UTC</createdTime>
+<ownerDesignName>status</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D59A8837-5CF9-EC08-B875-227813AC09E4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

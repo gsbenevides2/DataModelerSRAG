@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3BAFC3F5-DF28-4691-5FA7-5087775E44EF" name="MUNICIPIOS">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-16 12:20:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela contendo uma relação dos municípios do Brasil.]]></commentInRDBMS>
+<ownerDesignName>status</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MUN_ID" id="756F1C6B-E241-E967-8671-38C16A86C72A">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-16 12:20:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador autoincremental do município.]]></commentInRDBMS>
+<ownerDesignName>status</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MUN_COD_IBGE" id="235C1723-D36A-A0A0-935F-FF12B5EA3257">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-03-03 16:23:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código IBGE do Múnicipio.]]></commentInRDBMS>
+<ownerDesignName>status</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MUN_NOME" id="A8E39430-C3D7-8DE5-C8DA-9BDDD0ED8C97">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-16 12:22:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome do município no IBGE.]]></commentInRDBMS>
+<ownerDesignName>status</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MUN_EST_ID" id="F62AAA73-EF81-8A3E-98F9-4EC0DD3E854C">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-17 18:18:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do estado que pertence aquele município.]]></commentInRDBMS>
+<ownerDesignName>status</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="74308182-277B-7525-3EAD-EB082A49896A" referredColumn="B0CF68BF-B94B-11DC-952E-CAB53F6E2440"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="21BFF94B-ECB6-FE0B-7D15-CFF0291E12C6" name="PK_MUN">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-16 12:20:47 UTC</createdTime>
+<ownerDesignName>status</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="756F1C6B-E241-E967-8671-38C16A86C72A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D9C2E07D-F2A8-25E2-7938-7D29A8A775E7" name="UN_MUN_COD_IBGE">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-03-03 16:23:06 UTC</createdTime>
+<ownerDesignName>status</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="235C1723-D36A-A0A0-935F-FF12B5EA3257"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="716877C5-50B5-C15A-29D3-3AA5F6C11E11" name="FK_MUN_EST">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-17 18:18:17 UTC</createdTime>
+<ownerDesignName>status</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F62AAA73-EF81-8A3E-98F9-4EC0DD3E854C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1D631899-3D1C-6B88-6F0D-88A39802126C" name="UTI">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-17 19:25:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela onde fica os casos que foram parar na UTI.]]></commentInRDBMS>
+<ownerDesignName>status</ownerDesignName>
+<ordsAlias>table_19</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="UTI_CAS_ID" id="6F20645D-6BA2-3274-5B3C-BAFBBEB841EC">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-17 19:28:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Id do caso onde o paciente foi parar na UTI.]]></commentInRDBMS>
+<ownerDesignName>status</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="29E81B29-46EE-054F-11DD-3F166024589D" referredColumn="EF6A022B-0428-CF9A-75D6-339944A44290"/>
+</associations>
+</Column>
+<Column name="UTI_DATA_ENTRADA" id="7B789FC0-D6D4-0E1C-3204-BF1B3764B2FC">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-17 19:28:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de entrada na UTI.]]></commentInRDBMS>
+<ownerDesignName>status</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UTI_DATA_SAIDA" id="243EC3C5-6850-C245-FFF9-5292DE577719">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-17 19:28:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de saída da UTI>]]></commentInRDBMS>
+<ownerDesignName>status</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F8BFA9AA-0DE7-DE7E-B222-22ACCA001B42" name="PK_UTI">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-17 19:28:27 UTC</createdTime>
+<ownerDesignName>status</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6F20645D-6BA2-3274-5B3C-BAFBBEB841EC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="24158F94-D388-2C6B-5CB8-4BDD4401866D" name="FK_UTI_CAS">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-17 19:28:43 UTC</createdTime>
+<ownerDesignName>status</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6F20645D-6BA2-3274-5B3C-BAFBBEB841EC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

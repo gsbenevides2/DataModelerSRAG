@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8F90939C-A3ED-E561-5BCD-F6A6F521A80E" name="ASPECTOS_TOMOGRAFIA">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-18 16:07:36 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela que contem todos os aspectos de tomografias possiveis.]]></commentInRDBMS>
+<ownerDesignName>status</ownerDesignName>
+<ordsAlias>table_22</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="AST_ID" id="0727815A-17E8-A57C-E84C-E69613C9250E">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-18 16:08:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do aspecto da tomografia.]]></commentInRDBMS>
+<ownerDesignName>status</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AST_DESCRICAO" id="E4767867-25BF-BD24-8897-4B6152F4C58D">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-18 16:09:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição do aspecto da tomografia.]]></commentInRDBMS>
+<ownerDesignName>status</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="218C197A-BDBC-BD95-EA42-EC935BFAAE98" name="PK_AST">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-18 16:08:35 UTC</createdTime>
+<ownerDesignName>status</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0727815A-17E8-A57C-E84C-E69613C9250E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
