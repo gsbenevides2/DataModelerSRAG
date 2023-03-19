@@ -176,6 +176,9 @@
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="6B9CB11D-B9F1-3B93-E154-2E9FE5505E8A" otype="Table" vid="FD40116B-3667-0DE3-23DF-ABEE95BC232D">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="783" y="1281" width="202" height="108"/>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3355393</backgroundColor>
+<foregroundColor>-16776961</foregroundColor>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="73D0D467-1BA6-344B-FBEA-C43473F7D8F4" otype="Table" vid="6A88E9A8-0C5A-54F9-B036-5DC764633184">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>

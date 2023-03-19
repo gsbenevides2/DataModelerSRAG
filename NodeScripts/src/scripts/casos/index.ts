@@ -4,6 +4,7 @@ import { connectToDatabase } from "../../helpers/connectToDatabase";
 import { readCSVFile } from "../../helpers/readCSVFile";
 import { insertAntiviraisGripe } from "./insertAntiviraisGripe";
 import { insertCaso } from "./insertCaso";
+import { insertComorbidades } from "./insertComorbidades";
 import { insertEncerramento } from "./insertEncerramentos";
 import { insertEvolucoes } from "./insertEvolucoes";
 import { insertRaioX } from "./insertRaioX";
@@ -34,6 +35,7 @@ async function main() {
       await insertEncerramento(connection, row, casId);
       await insertAntiviraisGripe(connection, row, casId);
       await insertUti(connection, row, casId);
+      await insertComorbidades(connection, row, casId);
 
       await connection.commit();
 
