@@ -8,6 +8,7 @@ import { insertCaso } from "./insertCaso";
 import { insertComorbidades } from "./insertComorbidades";
 import { insertEncerramento } from "./insertEncerramentos";
 import { insertEvolucoes } from "./insertEvolucoes";
+import { insertInternacoes } from "./insertInternacoes";
 import { insertRaioX } from "./insertRaioX";
 import { insertSintomas } from "./insertSintomas";
 import { insertTomografias } from "./insertTomografias";
@@ -40,6 +41,7 @@ async function main() {
       await insertComorbidades(connection, row, casId);
       await insertSintomas(connection, row, casId);
       await insertAmostras(connection, row, casId);
+      await insertInternacoes(connection, row, casId);
 
       await connection.commit();
 

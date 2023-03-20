@@ -28,6 +28,7 @@
 <createdTime>2023-02-17 18:44:10 UTC</createdTime>
 <commentInRDBMS><![CDATA[Data da internação.]]></commentInRDBMS>
 <ownerDesignName>status</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>

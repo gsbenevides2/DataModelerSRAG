@@ -229,6 +229,9 @@ O Dicionario da dados do SUS diz que as colunas são: TRAT_COV, TIPO_TRAT, OUT_T
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="93B1F6FF-00C7-8FF1-4917-BB6EFBDB4A47" otype="Table" vid="F6ADA642-68F1-80E8-5B06-9935313B9890">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="1691" y="433" width="153" height="122"/>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3355393</backgroundColor>
+<foregroundColor>-16776961</foregroundColor>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="9632948B-46AB-9966-F913-564D22384263" otype="Table" vid="280DBAED-4C73-AAA3-BF26-04F03B6BB043">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
