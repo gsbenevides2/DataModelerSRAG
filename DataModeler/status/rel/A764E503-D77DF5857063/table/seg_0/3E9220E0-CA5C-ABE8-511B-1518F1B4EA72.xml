@@ -21,7 +21,6 @@
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="E2BE6C88-0961-2917-2A6C-A6A74572D674" referredColumn="1B611760-3BAC-E2BF-9FFA-1266EAAAD663"/>
-<colAssociation fkAssociation="47CE1740-CC95-7C82-45D2-459D0E680C36" referredColumn="8889A4F1-84FD-9EA4-C7D1-C7E2A59E2606"/>
 </associations>
 </Column>
 <Column name="TSA_VIR_ID" id="3EFF5C9F-F672-D09E-2820-5A14D1268593">
@@ -34,6 +33,9 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="47CE1740-CC95-7C82-45D2-459D0E680C36" referredColumn="8889A4F1-84FD-9EA4-C7D1-C7E2A59E2606"/>
+</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
@@ -66,7 +68,7 @@
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="850E3DE5-AAEF-40C4-6E8D-CC59E0E80BEC"/>
+<colUsage columnID="3EFF5C9F-F672-D09E-2820-5A14D1268593"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

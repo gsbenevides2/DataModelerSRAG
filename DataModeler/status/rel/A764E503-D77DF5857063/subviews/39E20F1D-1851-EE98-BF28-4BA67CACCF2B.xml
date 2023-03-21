@@ -101,6 +101,9 @@
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="3E9220E0-CA5C-ABE8-511B-1518F1B4EA72" otype="Table" vid="78FB1C39-D1D1-CC45-6A4E-5A0C61085E13">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="836" y="1697" width="186" height="108"/>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3355393</backgroundColor>
+<foregroundColor>-16776961</foregroundColor>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="3FDDB7B8-3B6E-D853-FB42-948CA702D623" otype="Table" vid="F4D0C913-65E3-0BEA-6B6E-97D41A40ABDB">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -189,7 +192,7 @@
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="7CDDAC08-3A16-C28F-06CC-3ECC677F5E10" otype="Note" vid="1D301263-CA1B-2536-3BE5-8B2FAA1C61E5">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="14" y="1586" width="418" height="237"/>
+<bounds x="14" y="1586" width="399" height="232"/>
 <comment>CASOS_ANITIVIRAIS_COVID!!!!!
 Não foi encontrado as colunas no CSV referente as informações do antivirais para covid ministrados para os pacientes!
 O Dicionario da dados do SUS diz que as colunas são: TRAT_COV, TIPO_TRAT, OUT_TRAT, DT_TRT_COV. Essas colunas não está presentes no CSV talvez seja de anos posteriores.</comment>
@@ -218,6 +221,9 @@ O Dicionario da dados do SUS diz que as colunas são: TRAT_COV, TIPO_TRAT, OUT_T
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="8A86BA11-C4CB-AC3D-B84E-BC8165519173" otype="Table" vid="96738CE1-5D11-E093-38BC-DE14D2A414AE">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="938" y="1445" width="208" height="178"/>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3355393</backgroundColor>
+<foregroundColor>-16776961</foregroundColor>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="8F90939C-A3ED-E561-5BCD-F6A6F521A80E" otype="Table" vid="C9F19658-4005-BCA6-9EEA-8A8C410BCE0D">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -334,7 +340,7 @@ O Dicionario da dados do SUS diz que as colunas são: TRAT_COV, TIPO_TRAT, OUT_T
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="FAE6C434-E1E1-E58F-0CEB-F6A2AB83C4A0" otype="Table" vid="DF455889-90BE-7D24-8074-4A8238418452">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="611" y="1433" width="157" height="74"/>
+<bounds x="611" y="1433" width="182" height="74"/>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-6684775</backgroundColor>
 <foregroundColor>-16776961</foregroundColor>
@@ -391,7 +397,7 @@ O Dicionario da dados do SUS diz que as colunas são: TRAT_COV, TIPO_TRAT, OUT_T
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="768" y="1476"/>
+<point x="793" y="1476"/>
 <point x="938" y="1476"/>
 </points>
 </Connector>

@@ -143,7 +143,7 @@ ALTER TABLE testes_antigenos_virus
         REFERENCES testes_antigeno ( tea_cas_id );
 
 ALTER TABLE testes_antigenos_virus
-    ADD CONSTRAINT fk_tsa_vir FOREIGN KEY ( tsa_tea_id )
+    ADD CONSTRAINT fk_tsa_vir FOREIGN KEY ( tsa_vir_id )
         REFERENCES virus_respiratorios ( vir_id );
 
 ALTER TABLE testes_rtpcr
@@ -159,7 +159,7 @@ ALTER TABLE testes_rtpcr_virus
         REFERENCES testes_rtpcr ( ter_cas_id );
 
 ALTER TABLE testes_rtpcr_virus
-    ADD CONSTRAINT fk_tsr_vir FOREIGN KEY ( tsr_ter_id )
+    ADD CONSTRAINT fk_tsr_vir FOREIGN KEY ( tsr_vir_id )
         REFERENCES virus_respiratorios ( vir_id );
 
 ALTER TABLE teste_sorologicos
