@@ -97,7 +97,7 @@ async function insertOthers(
   }
 
   if (values.length === 0) return;
-  console.log("oi", values);
+
   await connection.executeMany(
     `INSERT INTO TESTES_ANTIGENOS_VIRUS (TSA_TEA_ID, TSA_VIR_ID)
             VALUES(:tsaCasId, :tsaVirId)`,
