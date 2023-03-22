@@ -26,4 +26,5 @@
 @tables/racas.sql
 @tables/tipos_teste_antigeno.sql
 @tables/virus_respiratorios.sql
+@tables/fabricantes.sql
 COMMIT;

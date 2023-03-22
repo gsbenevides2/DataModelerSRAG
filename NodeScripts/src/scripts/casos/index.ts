@@ -17,6 +17,7 @@ import { insertTesteSorologico } from "./insertTesteSorologico";
 import { insertTomografias } from "./insertTomografias";
 import { insertUti } from "./insertUti";
 import { insertVacinaGripe } from "./insertVacinaGripe";
+import { insertVacinas } from "./insertVacinas";
 
 async function main() {
   const connection = await connectToDatabase();
@@ -48,6 +49,7 @@ async function main() {
       await insertTesteAntigeno(connection, row, casId);
       await insertTesteRtpcr(connection, row, casId);
       await insertTesteSorologico(connection, row, casId);
+      await insertVacinas(connection, row, casId);
 
       await connection.commit();
 
