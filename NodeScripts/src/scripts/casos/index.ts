@@ -12,6 +12,7 @@ import { insertInternacoes } from "./insertInternacoes";
 import { insertRaioX } from "./insertRaioX";
 import { insertSintomas } from "./insertSintomas";
 import { insertTesteAntigeno } from "./insertTesteAntigeno";
+import { insertTesteRtpcr } from "./insertTesteRtpcr";
 import { insertTomografias } from "./insertTomografias";
 import { insertUti } from "./insertUti";
 import { insertVacinaGripe } from "./insertVacinaGripe";
@@ -44,6 +45,7 @@ async function main() {
       await insertAmostras(connection, row, casId);
       await insertInternacoes(connection, row, casId);
       await insertTesteAntigeno(connection, row, casId);
+      await insertTesteRtpcr(connection, row, casId);
 
       await connection.commit();
 
