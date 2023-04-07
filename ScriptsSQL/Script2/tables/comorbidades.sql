@@ -1,8 +1,3 @@
---------------------------------------------------------
---  Arquivo criado - sexta-feira-março-17-2023   
---------------------------------------------------------
-REM INSERTING into APP.COMORBIDADES
-SET DEFINE OFF;
 Insert into APP.COMORBIDADES (COM_ID,COM_NOME) values ('1','Puérpera (até 45 dias do parto)');
 Insert into APP.COMORBIDADES (COM_ID,COM_NOME) values ('2','Doença Cardiovascular Crônica');
 Insert into APP.COMORBIDADES (COM_ID,COM_NOME) values ('3','Doença Hematológica Crônica');

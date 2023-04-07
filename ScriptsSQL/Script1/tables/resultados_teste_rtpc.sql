@@ -4,13 +4,13 @@ CREATE TABLE resultados_teste_rtpc (
 );
 
 COMMENT ON TABLE resultados_teste_rtpc IS
-    'Tabela que lista os tipos de resultados possiveis para testes de RT/PCR.';
+    'Tabela de metadados que lista os possíveis resultados para testes RT/PCR.';
 
 COMMENT ON COLUMN resultados_teste_rtpc.rtr_id IS
-    'Identificador do Tipo de Resultado para testes de RT/PCR.';
+    'Identificador do tipo de Resultado para um teste de RT/PCR.';
 
 COMMENT ON COLUMN resultados_teste_rtpc.rtr_des IS
-    'Descrição do tipo de resultado para testes de RT/PCR.';
+    'Descrição do tipo de resultado para um teste de RT/PCR.';
 
 ALTER TABLE resultados_teste_rtpc ADD CONSTRAINT pk_rtr PRIMARY KEY ( rtr_id );
 ALTER TABLE resultados_teste_rtpc ADD CONSTRAINT ck_rtr_01 CHECK ( rtr_des IS NOT NULL );

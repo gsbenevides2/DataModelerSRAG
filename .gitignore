@@ -4,5 +4,6 @@
 **/*.DS_Store
 /NodeScripts/.env
 /NodeScripts/data/*
+/NodeScripts/dist/*
 /NodeScripts/node_modules/
 /ScriptsSQL/logs.txt

@@ -1,4 +1,6 @@
 import OracleDB from "oracledb";
+import { OracleError } from "../../helpers/OracleError";
+import { validateDateFormat } from "../../helpers/validateDateFormat";
 
 type DoseIdentifier = {
   doseId: number;
@@ -79,8 +81,7 @@ export async function insertVacinas(
     const vacFab = identifyFab(row[dose.fabColum]);
     const vacLote =
       row[dose.loteColum]?.length > 0 ? row[dose.loteColum] : null;
-    const vacDataAplicacao =
-      row[dose.dataColum]?.length > 0 ? row[dose.dataColum] : null;
+    const vacDataAplicacao = validateDateFormat(row[dose.dataColum]);
 
     if ((vacFab || vacLote || vacDataAplicacao) == null) continue;
     else
@@ -110,6 +111,9 @@ export async function insertVacinas(
             :vacDataAplicacao
         )
     `;
-
-  await connection.executeMany(sql, values);
+  try {
+    await connection.executeMany(sql, values);
+  } catch (e) {
+    throw new OracleError("insertVacinas", e, values);
+  }
 }

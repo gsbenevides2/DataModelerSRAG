@@ -5,15 +5,15 @@ CREATE TABLE casos_raiosx (
 );
 
 COMMENT ON TABLE casos_raiosx IS
-    'Tabela de relacionamento um para um entre um caso e um raio x.';
+    'Tabela que demonstra relação de quais casos realizaram exame de raios X.';
 
 COMMENT ON COLUMN casos_raiosx.crx_cas_id IS
-    'Identificador do caso do resultado do raiox.';
+    'Identificador do caso que realizou um exame de raios X.';
 
 COMMENT ON COLUMN casos_raiosx.crx_rai_id IS
-    'Identificador do tipo de resultado para o raiox realizado.';
+    'Identificador do tipo de resultado do exame de raios X realizado.';
 
 COMMENT ON COLUMN casos_raiosx.crx_date IS
-    'Data da realização do raio x.';
+    'Data em que foi realizado o exame de raios X.';
 
 ALTER TABLE casos_raiosx ADD CONSTRAINT pk_crx PRIMARY KEY ( crx_cas_id );

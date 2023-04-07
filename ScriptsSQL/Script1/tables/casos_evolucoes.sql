@@ -5,16 +5,16 @@ CREATE TABLE casos_evolucoes (
 );
 
 COMMENT ON TABLE casos_evolucoes IS
-    'Tabela que indica quais casos possuem um evolução.';
+    'Tabela que demonstra relação dos casos e suas evoluções.';
 
 COMMENT ON COLUMN casos_evolucoes.cev_cas_id IS
-    'Identificador do caso que evoluiu.';
+    'Identificador do caso que teve uma evolução.';
 
 COMMENT ON COLUMN casos_evolucoes.cev_evo_id IS
-    'Identificador do tipo de evolução do caso.';
+    'Identificador do tipo de evolução que o caso teve.';
 
 COMMENT ON COLUMN casos_evolucoes.cev_date IS
-    'Data da evolução do caso.';
+    'Data em que ocorreu aquela evolução.';
 
 ALTER TABLE casos_evolucoes ADD CONSTRAINT pk_cev PRIMARY KEY ( cev_cas_id );
 ALTER TABLE casos_evolucoes ADD CONSTRAINT ck_cev_01 CHECK (cev_evo_id IS NOT NULL);

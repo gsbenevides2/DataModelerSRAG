@@ -4,7 +4,7 @@ CREATE TABLE doses (
 );
 
 COMMENT ON TABLE doses IS
-    'Tabela de metadados de doses da vacina de covid-19: Primeira, segunda e etc.';
+    'Tabela de metadados que lista as doses da vacina de COVID-19.';
 
 COMMENT ON COLUMN doses.dos_id IS
     'Identificador unico e autoincremental do tipo de dose de vacina.';

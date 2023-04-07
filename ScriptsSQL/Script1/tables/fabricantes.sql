@@ -4,7 +4,7 @@ CREATE TABLE fabricantes (
 );
 
 COMMENT ON TABLE fabricantes IS
-    'Tabela contendo os fabricantes de vacina para covid-19.';
+    'Tabela de metadados que lista os fabricantes da vacina para COVID-19.';
 
 COMMENT ON COLUMN fabricantes.fab_id IS
     'Identificador do fabricante da vacina.';

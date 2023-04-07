@@ -4,7 +4,7 @@ CREATE TABLE sintomas (
 );
 
 COMMENT ON TABLE sintomas IS
-    'Tabela de sintomas que os pacientes podem ter.';
+    'Tabela de metadados que lista os possíveis sintomas que os pacientes podem ter.';
 
 COMMENT ON COLUMN sintomas.sin_id IS
     'Identificador único e autoincremental do sintoma.';

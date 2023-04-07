@@ -1,4 +1,5 @@
 import OracleDB from "oracledb";
+import { OracleError } from "../../helpers/OracleError";
 
 type RowsToInsert = {
   csiCasId: number;
@@ -39,9 +40,15 @@ export async function insertSintomas(
     }
   }
 
-  await connection.executeMany(
-    `INSERT INTO CASOS_SINTOMAS (CSI_CAS_ID, CSI_SIN_ID)
+  if (rowsToInsert.length === 0) return;
+
+  try {
+    await connection.executeMany(
+      `INSERT INTO CASOS_SINTOMAS (CSI_CAS_ID, CSI_SIN_ID)
         VALUES (:csiCasId, :csiSinId)`,
-    rowsToInsert
-  );
+      rowsToInsert
+    );
+  } catch (e: any) {
+    throw new OracleError("insertSintomas", e, rowsToInsert);
+  }
 }

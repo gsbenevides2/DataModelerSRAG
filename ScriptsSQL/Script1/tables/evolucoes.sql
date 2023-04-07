@@ -4,13 +4,13 @@ CREATE TABLE evolucoes (
 );
 
 COMMENT ON TABLE evolucoes IS
-    'Tabela de metadados que possui os indica alta ou obito.';
+    'Tabela de metadados que lista as possíveis evoluções de um caso.';
 
 COMMENT ON COLUMN evolucoes.evo_id IS
-    'Identificador da evolução do caso';
+    'Identificador da evolução do caso que um caso possa possuir.';
 
 COMMENT ON COLUMN evolucoes.evo_desc IS
-    'Descrição da evolução do caso.';
+    'Descrição da evolução que um caso possa possuir.';
 
 ALTER TABLE evolucoes ADD CONSTRAINT pk_evo PRIMARY KEY ( evo_id );
 ALTER TABLE evolucoes ADD CONSTRAINT ck_evo_01 CHECK (evo_desc IS NOT NULL);

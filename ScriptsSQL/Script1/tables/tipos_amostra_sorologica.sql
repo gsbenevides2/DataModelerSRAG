@@ -4,7 +4,7 @@ CREATE TABLE tipos_amostras_sorologicas (
 );
 
 COMMENT ON TABLE tipos_amostras_sorologicas IS
-    'Tabela que lista todos os tipos de amostra disponíveis.';
+    'Tabela de metadados que lista todos os tipos de amostra disponíveis para testes sorológicos.';
 
 COMMENT ON COLUMN tipos_amostras_sorologicas.tas_id IS
     'Identificador do tipo de amostra sorológica.';

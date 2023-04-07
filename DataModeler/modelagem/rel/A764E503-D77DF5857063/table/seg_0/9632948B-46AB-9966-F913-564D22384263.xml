@@ -1,0 +1,358 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9632948B-46AB-9966-F913-564D22384263" name="CASOS">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:25:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela que contem todos os casos de SRAG Síndrome Respiratória Aguda Grave, registrada pelo Sistema Único de Saúde(SUS).]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CAS_ID" id="EF6A022B-0428-CF9A-75D6-339944A44290">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:53:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador autoincremental de cada caso de síndrome respiratória aguda grave.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CAS_DATA_NOTIFICACAO" id="1C3A436F-1CD5-2EFB-C049-24105E10FF40">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do preenchimento da ficha de notificação.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CAS_DATA_PRIMEIROS_SINTOMAS" id="2B7A434B-3745-3736-AA2C-7AD16D52528E">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de inicio dos primeiros sintomas do caso.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CAS_UNI_ID" id="D66FB4EB-24EE-DF5A-525D-66905694F850">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador da unidade de saúde que realizou a notificação.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A94CD240-8A17-4F0C-F7C0-5C6958C279CB" referredColumn="1577F1DB-3C0C-B050-47F9-0A06ABC64304"/>
+</associations>
+</Column>
+<Column name="CAS_ESTRANGEIRO" id="DD29DCC2-CF8E-5DFC-BDF3-47C9E859651F">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Boleano que representa se o paciente é ou não estrangeiro.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CAS_GEN_ID" id="E8BB9040-9FAC-3D15-F7ED-01BF1134B42D">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do gênero do paciente.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D128FE1F-4888-4065-2676-C493DABB7898" referredColumn="E7FC02CC-C1F6-8862-907F-7B0324EF9FCB"/>
+</associations>
+</Column>
+<Column name="CAS_DATA_NASCIMENTO" id="696E9932-537D-A4C5-36B2-7A4CEC9C708B">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de nascimento do paciente.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CAS_IDG_ID" id="49B5F238-8870-ECCC-DF36-C68D19716A42">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador da idade gestacional do paciente.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="688C9FCF-0059-F7FB-1B8B-6B343991BDE0" referredColumn="E8BFF996-3A21-08DF-113A-7E08243540AC"/>
+</associations>
+</Column>
+<Column name="CAS_RAC_ID" id="E2FD3E1A-A293-337E-7A94-95842D4539D6">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador da raça declarada pelo paciente.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0BC47B5B-6F0A-DFD5-9C32-8C4F5F43D3EA" referredColumn="902774FE-4E84-A92A-964A-7FDA8C472137"/>
+</associations>
+</Column>
+<Column name="CAS_ESC_ID" id="55E2C684-F86F-A655-8955-F85346917622">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do nível de escolaridade do paciente.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E67F1BCA-EE9E-B245-5A50-9535AD751CE1" referredColumn="A182389B-88C5-60BB-52B6-1F90B579A896"/>
+</associations>
+</Column>
+<Column name="CAS_MUN_ID" id="D8F3AED2-8FB7-EDE3-560E-4F84F347C64D">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do município de residencia do paciente.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="769E5787-FCCF-ADA0-B6A6-D2AA7D0D61B5" referredColumn="756F1C6B-E241-E967-8671-38C16A86C72A"/>
+</associations>
+</Column>
+<Column name="CAS_ZON_ID" id="6CC27DC3-4A1A-93C9-C4F0-91D1057B64EF">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador da zona geográfica do endereço do paciente.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D7BCD521-CFB6-1C97-8CBC-085DA967002D" referredColumn="6A7AAECC-598A-344D-1CD4-EBE352613E97"/>
+</associations>
+</Column>
+<Column name="CAS_NOSOCOMIAL" id="62384D15-C555-A1C1-D0E8-233A58F604CB">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Boleano que diz se o caso de síndrome respiratória aguda grave adquirida em atendimento hospitalar.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CAS_SVE_ID" id="C118B6FB-823E-DA72-7B25-A019FF4264FC">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do nível de suporte ventilatório utilizado.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="25F956E6-BE2D-1DDA-8DE7-E3662D3C4FEE" referredColumn="E7B244F3-6781-1DBB-6A83-D57230A73C4C"/>
+</associations>
+</Column>
+<Column name="CAS_CLA_ID" id="67287C2A-EC81-E70E-B741-D2ECF7131DF5">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador da classificação do caso de síndrome respiratória aguda grave.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F47CD776-5EB2-3DF3-B543-7101796312DE" referredColumn="720C03C0-C5FD-1452-9C1C-8AD8C6C1C345"/>
+</associations>
+</Column>
+<Column name="CAS_DATA_DIGITACAO" id="B985B523-F0FD-4559-9E07-2AE858B1085B">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:40:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de inserção do caso no sistema.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CAS_TAN_ID" id="8079D9C4-577E-D460-B0DE-87D4F88D869B">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-03-19 16:06:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador se o paciente do caso trabalha com algum tipo de animal.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="60ACA500-42F8-C2B6-9388-130C0F8C1947" referredColumn="001A6FFE-3BAC-FBF8-43F2-F510B94DEED7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8F4373CE-2653-7283-EF77-39351E9AC6DE" name="PK_CAS">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:53:20 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EF6A022B-0428-CF9A-75D6-339944A44290"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DE97EE00-7264-83EE-94D7-4D0CBCC06496" name="FK_CAS_UNI">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-17 01:22:12 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D66FB4EB-24EE-DF5A-525D-66905694F850"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="54EF9667-616A-112A-5D54-7AB1E8D201EC" name="FK_CAS_MUN">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-17 12:26:29 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D8F3AED2-8FB7-EDE3-560E-4F84F347C64D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CADFD464-EE22-680A-97A6-17B45B66F039" name="FK_CAS_CLA">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 01:35:42 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="67287C2A-EC81-E70E-B741-D2ECF7131DF5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="58742BE8-5AF2-274A-4891-6BCAF5D40717" name="FK_CAS_GEN">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-22 00:34:19 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E8BB9040-9FAC-3D15-F7ED-01BF1134B42D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5D3D4AC3-E620-1BF4-42D4-DBC717D2DC49" name="FK_CAS_IDG">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-22 01:08:31 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="49B5F238-8870-ECCC-DF36-C68D19716A42"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5389EE4F-BEF0-ED9A-02AB-B3FECA13D45C" name="FK_CAS_RAC">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-22 01:19:42 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E2FD3E1A-A293-337E-7A94-95842D4539D6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2A58D029-84C1-2309-0A46-B743FC1AEF3C" name="FK_CAS_ESC">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-22 21:16:36 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="55E2C684-F86F-A655-8955-F85346917622"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="869B454D-220F-5283-7D3D-FD4D8BEF56CB" name="FK_CAS_ZON">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-22 22:15:12 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6CC27DC3-4A1A-93C9-C4F0-91D1057B64EF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="772B4D29-2924-AE2F-D6C5-3A53920698FE" name="FK_CAS_SVE">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-24 00:50:59 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C118B6FB-823E-DA72-7B25-A019FF4264FC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="391B47C9-9487-F88F-A9AA-E4B33E9E513D" name="FK_CAS_TAN">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-03-19 16:07:27 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8079D9C4-577E-D460-B0DE-87D4F88D869B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -4,13 +4,13 @@ CREATE TABLE casos_sintomas (
 );
 
 COMMENT ON TABLE casos_sintomas IS
-    'Tabela de relacionamento de muitos para muitos entre casos e sintomas.';
+    'Tabela que demonstra relação de entre casos e sintomas.';
 
 COMMENT ON COLUMN casos_sintomas.csi_sin_id IS
-    'Identificador do Sintoma.';
+    'Identificador do sintoma relacionado à aquele caso.';
 
 COMMENT ON COLUMN casos_sintomas.csi_cas_id IS
-    'Identificador do Caso';
+    'Identificador do caso que teve aquele sintoma.';
 
 ALTER TABLE casos_sintomas ADD CONSTRAINT pk_csi PRIMARY KEY ( csi_sin_id,
                                                                csi_cas_id );

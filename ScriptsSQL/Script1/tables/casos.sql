@@ -19,10 +19,10 @@ CREATE TABLE casos (
 );
 
 COMMENT ON TABLE casos IS
-    'Tabela que contem todos os casos de SRAG Síndrome Respiratória Aguda Grave, registrada pelo Sistema Único de Saúde(SUS).';
+    'Tabela que contem todos os casos de SRAG síndrome respiratória aguda grave, registrada pelo sistema único de saúde(SUS).';
 
 COMMENT ON COLUMN casos.cas_id IS
-    'Identificador autoincremental de cada caso de sindrome respiratória aguda grave.';
+    'Identificador autoincremental de cada caso de síndrome respiratória aguda grave.';
 
 COMMENT ON COLUMN casos.cas_data_notificacao IS
     'Data do preenchimento da ficha de notificação.';
@@ -37,7 +37,7 @@ COMMENT ON COLUMN casos.cas_estrangeiro IS
     'Boleano que representa se o paciente é ou não estrangeiro.';
 
 COMMENT ON COLUMN casos.cas_gen_id IS
-    'Genero do paciente.';
+    'Identificador do gênero do paciente.';
 
 COMMENT ON COLUMN casos.cas_data_nascimento IS
     'Data de nascimento do paciente.';
@@ -49,28 +49,28 @@ COMMENT ON COLUMN casos.cas_rac_id IS
     'Identificador da raça declarada pelo paciente.';
 
 COMMENT ON COLUMN casos.cas_esc_id IS
-    'Idetificador do nível de escolaridade do paciente.';
+    'Identificador do nível de escolaridade do paciente.';
 
 COMMENT ON COLUMN casos.cas_mun_id IS
     'Identificador do município de residencia do paciente.';
 
 COMMENT ON COLUMN casos.cas_zon_id IS
-    'Zona de geografica de endereço do Paciente.';
+    'Identificador da zona geográfica do endereço do paciente.';
 
 COMMENT ON COLUMN casos.cas_nosocomial IS
-    'Caso de Sindrome respiratória aguda grave adquirida em atendimento hospitalar.';
+    'Boleano que diz se o caso de síndrome respiratória aguda grave adquirida em atendimento hospitalar.';
 
 COMMENT ON COLUMN casos.cas_sve_id IS
     'Identificador do nível de suporte ventilatório utilizado.';
 
 COMMENT ON COLUMN casos.cas_cla_id IS
-    'Identificador da classificação do caso de SRAG';
+    'Identificador da classificação do caso de síndrome respiratória aguda grave.';
 
 COMMENT ON COLUMN casos.cas_data_digitacao IS
     'Data de inserção do caso no sistema.';
 
 COMMENT ON COLUMN casos.cas_tan_id IS
-    'O paciente do caso trabalha com algum tipo de animal.';
+    'Identificador se o paciente do caso trabalha com algum tipo de animal.';
 
 ALTER TABLE casos ADD CONSTRAINT pk_cas PRIMARY KEY ( cas_id );
 ALTER TABLE casos ADD CONSTRAINT ck_cas_01 CHECK (cas_data_notificacao IS NOT NULL);
@@ -83,7 +83,7 @@ ALTER TABLE casos ADD CONSTRAINT ck_cas_07 CHECK (cas_rac_id IS NOT NULL);
 ALTER TABLE casos ADD CONSTRAINT ck_cas_08 CHECK (cas_mun_id IS NOT NULL);
 ALTER TABLE casos ADD CONSTRAINT ck_cas_09 CHECK (cas_cla_id IS NOT NULL);
 
-CREATE SEQUENCE seq_cas START WITH 10 NOCACHE;
+CREATE SEQUENCE seq_cas NOCACHE;
 
 CREATE TRIGGER tg_seq_cas
 BEFORE INSERT

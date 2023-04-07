@@ -1,4 +1,5 @@
 import OracleDB from "oracledb";
+import { OracleError } from "./OracleError";
 
 export async function getMunicipioId(
   connection: OracleDB.Connection,
@@ -8,14 +9,19 @@ export async function getMunicipioId(
     MUN_ID: number;
   };
 
-  const result = await connection.execute<OraReturn>(
-    `SELECT mun_id FROM municipios WHERE mun_cod_ibge = :muniCodIbge`,
-    [muniCodIbge]
-  );
+  let result: OracleDB.Result<OraReturn>;
 
-  if (result.rows?.length == null) {
-    console.log(`Município não encontrado Cod. IBGE: ${muniCodIbge}`);
-    process.exit(1);
+  try {
+    result = await connection.execute<OraReturn>(
+      `SELECT mun_id FROM municipios WHERE mun_cod_ibge = :muniCodIbge`,
+      [muniCodIbge]
+    );
+  } catch (e: any) {
+    throw new OracleError("getMunicipioId", e, [muniCodIbge]);
+  }
+
+  if (result.rows?.length === 0 || result.rows === undefined) {
+    throw new Error(`Município não encontrado Cod. IBGE: ${muniCodIbge}`);
   }
 
   return result.rows[0].MUN_ID;

@@ -4,13 +4,13 @@ CREATE TABLE resultados_teste_antigeno (
 );
 
 COMMENT ON TABLE resultados_teste_antigeno IS
-    'Tabela que armazena os possiveis valores para resultados de testes antigenos.';
+    'Tabela de metadados que lista os possíveis resultados para testes antígenos.';
 
 COMMENT ON COLUMN resultados_teste_antigeno.rta_id IS
-    'Identificador do Tipo de Resultado para testes antigenos.';
+    'Identificador do tipo de resultado para um teste antígeno.';
 
 COMMENT ON COLUMN resultados_teste_antigeno.rta_descricao IS
-    'Descrição do tipo de resultado para testes antigenos.';
+    'Descrição do tipo de resultado para um teste antígenos';
 
 ALTER TABLE resultados_teste_antigeno ADD CONSTRAINT pk_rta PRIMARY KEY ( rta_id );
 ALTER TABLE resultados_teste_antigeno ADD CONSTRAINT ck_rta_01 CHECK ( rta_descricao IS NOT NULL );

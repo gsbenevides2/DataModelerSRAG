@@ -1,6 +1,4 @@
 @tables/estados.sql
-@tables/municipios.sql
-@tables/unidades.sql
 @tables/resultados_raiox.sql
 @tables/evolucoes.sql
 @tables/zonas.sql

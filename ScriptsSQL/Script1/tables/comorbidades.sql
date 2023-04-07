@@ -1,10 +1,11 @@
+--- Continuar daqui 
 CREATE TABLE comorbidades (
     com_id   INTEGER,
     com_nome VARCHAR2(50)
 );
 
 COMMENT ON TABLE comorbidades IS
-    'Tabela com todas as comorbidades dos casos de SRAG.';
+    'Tabela de metadados que lista as possíveis comorbidades dos casos de SRAG.';
 
 COMMENT ON COLUMN comorbidades.com_id IS
     'Identificador autoincremental de cada comorbidade.';

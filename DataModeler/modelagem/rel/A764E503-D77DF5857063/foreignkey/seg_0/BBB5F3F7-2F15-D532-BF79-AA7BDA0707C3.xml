@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="BBB5F3F7-2F15-D532-BF79-AA7BDA0707C3" containerWithKeyObject="AEF00D89-7A55-1430-A5B4-8B219C08B2EA" localFKIndex="9EF4C542-669B-DD7E-53A8-691EF0CBFB6F" name="FK_RTS_IGG">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 15:14:18 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<referredTableLongName>RESULTADOS_TESTE_SOROLOGICO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1E20E0DF-C3D3-6F21-2BE4-2BCA9D3573F2</referredTableID>
+<keyObject>A6F4C6F0-9099-BF6E-6DEC-D864A7C24F42</keyObject>
+<referredKeyID>A6F4C6F0-9099-BF6E-6DEC-D864A7C24F42</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>RTS_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

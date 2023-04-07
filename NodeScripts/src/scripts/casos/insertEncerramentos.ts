@@ -1,4 +1,6 @@
 import OracleDB from "oracledb";
+import { OracleError } from "../../helpers/OracleError";
+import { validateDateFormat } from "../../helpers/validateDateFormat";
 
 export async function insertEncerramento(
   connection: OracleDB.Connection,
@@ -7,10 +9,17 @@ export async function insertEncerramento(
 ): Promise<void> {
   if (row.CRITERIO?.length > 0 || row.DT_ENCERRA?.length > 0) {
     const encCriId = row.CRITERIO ? Number(row.CRITERIO) : null;
-    const encData = row.DT_ENCERRA ? row.DT_ENCERRA : null;
+    const encData = validateDateFormat(row.DT_ENCERRA);
 
-    await connection.execute(
-      `INSERT INTO ENCERRAMENTOS (
+    const params = {
+      casId: casId,
+      criterio: encCriId,
+      data: encData,
+    };
+
+    try {
+      await connection.execute(
+        `INSERT INTO ENCERRAMENTOS (
                 ENC_CAS_ID,
                 ENC_CRI_ID,
                 ENC_DATA
@@ -19,11 +28,10 @@ export async function insertEncerramento(
                 :criterio,
                 :data
             )`,
-      {
-        casId: casId,
-        criterio: encCriId,
-        data: encData,
-      }
-    );
+        params
+      );
+    } catch (e: any) {
+      throw new OracleError("insertEncerramento", e, params);
+    }
   }
 }

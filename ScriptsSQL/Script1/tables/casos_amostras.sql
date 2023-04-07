@@ -5,16 +5,16 @@ CREATE TABLE casos_amostras (
 );
 
 COMMENT ON TABLE casos_amostras IS
-    'Tabela que demonstra quais casos teve uma amostra coletada para exame diagnóstico.';
+    'Tabela que demonstra relação de quais casos tiveram amostra coletada para exame diagnóstico.';
 
 COMMENT ON COLUMN casos_amostras.cam_cas_id IS
-    'Caso relacionado a amostra coletada para teste diagnóstico.';
+    'Identificador do caso que está relacionado a amostra coletada no teste diagnóstico.';
 
 COMMENT ON COLUMN casos_amostras.cam_tam_id IS
-    'Identificador do tipo de amostra.';
+    'Identificador do tipo de amostra que foi coletada.';
 
 COMMENT ON COLUMN casos_amostras.cam_data IS
-    'Data da Coleta da amostra para realização do teste diagnóstico.';
+    'Data da coleta da amostra para realização de teste diagnóstico.';
 
 ALTER TABLE casos_amostras ADD CONSTRAINT pk_cam PRIMARY KEY ( cam_cas_id );
 

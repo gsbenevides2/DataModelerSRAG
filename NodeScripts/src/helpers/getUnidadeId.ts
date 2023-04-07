@@ -1,4 +1,5 @@
 import OracleDB from "oracledb";
+import { OracleError } from "./OracleError";
 
 export async function getUnidadeId(
   connection: OracleDB.Connection,
@@ -7,14 +8,20 @@ export async function getUnidadeId(
   type OraReturn = {
     UNI_ID: number;
   };
-  const result = await connection.execute<OraReturn>(
-    `SELECT uni_id FROM unidades WHERE uni_cod_cnes = :uniCodCnesId`,
-    [uniCodCnesId]
-  );
 
-  if (result.rows?.length == null) {
-    console.log(`Unidade não encontrada Cod. CNES: ${uniCodCnesId}`);
-    process.exit(1);
+  let result: OracleDB.Result<OraReturn>;
+
+  try {
+    result = await connection.execute<OraReturn>(
+      `SELECT uni_id FROM unidades WHERE uni_cod_cnes = :uniCodCnesId`,
+      [uniCodCnesId]
+    );
+  } catch (e: any) {
+    throw new OracleError("getUnidadeId", e, [uniCodCnesId]);
+  }
+
+  if (result.rows?.length === 0 || result.rows === undefined) {
+    throw new Error(`Unidade não encontrada Cod. CNES: ${uniCodCnesId}`);
   }
 
   return result.rows[0].UNI_ID;

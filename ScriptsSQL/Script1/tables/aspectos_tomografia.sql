@@ -4,10 +4,10 @@ CREATE TABLE aspectos_tomografia (
 );
 
 COMMENT ON TABLE aspectos_tomografia IS
-    'Tabela que contem todos os aspectos de tomografias possiveis.';
+    'Tabela de metadados que lista os possíveis aspectos de tomografia.';
 
 COMMENT ON COLUMN aspectos_tomografia.ast_id IS
-    'Identificador do aspecto da tomografia.';
+    'Identificador do tipo de aspecto da tomografia.';
 
 COMMENT ON COLUMN aspectos_tomografia.ast_descricao IS
     'Descrição do aspecto da tomografia.';

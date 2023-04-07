@@ -4,13 +4,13 @@ CREATE TABLE criterios_encerramento (
 );
 
 COMMENT ON TABLE criterios_encerramento IS
-    'Tabela que lista os critérios de encerrameto.';
+    'Tabela de metadados que lista os possíveis critérios de encerramento do caso.';
 
 COMMENT ON COLUMN criterios_encerramento.cri_id IS
-    'Identificador do criterio de encerramento do caso.';
+    'Identificador do critério de encerramento do caso.';
 
 COMMENT ON COLUMN criterios_encerramento.cri_desc IS
-    'Descrição do criterio de encerramento.';
+    'Descrição do critério de encerramento.';
 
 ALTER TABLE criterios_encerramento ADD CONSTRAINT pk_cri PRIMARY KEY ( cri_id );
 ALTER TABLE criterios_encerramento ADD CONSTRAINT ck_cri_01 CHECK (cri_desc IS NOT NULL);

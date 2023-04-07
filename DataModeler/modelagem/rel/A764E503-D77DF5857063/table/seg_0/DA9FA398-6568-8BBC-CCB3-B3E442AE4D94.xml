@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DA9FA398-6568-8BBC-CCB3-B3E442AE4D94" name="DOSES">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-13 10:39:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de metadados que lista as doses da vacina de COVID-19.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DOS_ID" id="2DE0E64E-827D-522F-94CC-DBA12C271392">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-13 10:40:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único e autoincremental do tipo de dose de vacina.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DOS_DES" id="7D7C287F-FDC8-8E27-1C27-10B1E469261D">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-13 10:40:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição do tipo de dose da vacina.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B93ECBD1-51FB-22BA-61B7-32AD00EF5119" name="PK_DOS">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-13 10:40:27 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2DE0E64E-827D-522F-94CC-DBA12C271392"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

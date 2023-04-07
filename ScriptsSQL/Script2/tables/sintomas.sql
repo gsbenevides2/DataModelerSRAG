@@ -1,8 +1,3 @@
---------------------------------------------------------
---  Arquivo criado - sexta-feira-março-17-2023   
---------------------------------------------------------
-REM INSERTING into APP.SINTOMAS
-SET DEFINE OFF;
 Insert into APP.SINTOMAS (SIN_ID,SIN_NOME) values ('1','Febre');
 Insert into APP.SINTOMAS (SIN_ID,SIN_NOME) values ('2','Tosse');
 Insert into APP.SINTOMAS (SIN_ID,SIN_NOME) values ('3','Dor de Garganta');

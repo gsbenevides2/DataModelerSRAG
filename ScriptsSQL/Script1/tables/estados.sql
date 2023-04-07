@@ -4,7 +4,7 @@ CREATE TABLE estados (
 );
 
 COMMENT ON TABLE estados IS
-    'Tabela que lista todos os estados do território nacional.';
+    'Tabela de metadados que lista os estados do Brasil.';
 
 COMMENT ON COLUMN estados.est_id IS
     'Identificador único e autoincremental do estado.';

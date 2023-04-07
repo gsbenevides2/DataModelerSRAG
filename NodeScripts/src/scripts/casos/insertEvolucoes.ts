@@ -1,4 +1,7 @@
 import OracleDB from "oracledb";
+import { OracleError } from "../../helpers/OracleError";
+import { validateDateFormat } from "../../helpers/validateDateFormat";
+
 export async function insertEvolucoes(
   connection: OracleDB.Connection,
   row: Columns,
@@ -7,15 +10,20 @@ export async function insertEvolucoes(
   const cevCasId = casId;
   if (!row.EVOLUCAO || row.EVOLUCAO === "") return;
   const cevEvoId = Number(row.EVOLUCAO);
-  const cevDate = row.DT_EVOLUCA ? row.DT_EVOLUCA : null;
+  const cevDate = validateDateFormat(row.DT_EVOLUCA);
 
-  await connection.execute(
-    `INSERT INTO CASOS_EVOLUCOES (CEV_CAS_ID, CEV_EVO_ID, CEV_DATE)
+  const params = {
+    cevCasId: cevCasId,
+    cevEvoId: cevEvoId,
+    cevDate: cevDate,
+  };
+  try {
+    await connection.execute(
+      `INSERT INTO CASOS_EVOLUCOES (CEV_CAS_ID, CEV_EVO_ID, CEV_DATE)
         VALUES (:cevCasId, :cevEvoId, :cevDate)`,
-    {
-      cevCasId: cevCasId,
-      cevEvoId: cevEvoId,
-      cevDate: cevDate,
-    }
-  );
+      params
+    );
+  } catch (e: any) {
+    throw new OracleError("insertEvolucoes", e, params);
+  }
 }

@@ -4,13 +4,13 @@ CREATE TABLE genero (
 );
 
 COMMENT ON TABLE genero IS
-    'Tabela de metadados contendo dos generos informados pelos pacientes.';
+    'Tabela de metadados que lista os possíveis gêneros do paciente.';
 
 COMMENT ON COLUMN genero.gen_id IS
-    'Identificador do genero.';
+    'Identificador do gênero.';
 
 COMMENT ON COLUMN genero.gen_descricao IS
-    'Descrição do genero.';
+    'Descrição do gênero.';
 
 ALTER TABLE genero ADD CONSTRAINT pk_gen PRIMARY KEY ( gen_id );
 ALTER TABLE genero ADD CONSTRAINT ck_gen_01 CHECK (gen_descricao IS NOT NULL);

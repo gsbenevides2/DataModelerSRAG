@@ -1,4 +1,6 @@
 import OracleDB from "oracledb";
+import { OracleError } from "../../helpers/OracleError";
+import { validateDateFormat } from "../../helpers/validateDateFormat";
 
 export async function insertUti(
   connection: OracleDB.Connection,
@@ -7,16 +9,22 @@ export async function insertUti(
 ): Promise<void> {
   if (row.UTI !== "1") return;
 
-  const utiDataEntrada = row.DT_ENTUTI.length > 0 ? row.DT_ENTUTI : null;
-  const utiDataSaida = row.DT_SAIDUTI.length > 0 ? row.DT_SAIDUTI : null;
+  const utiDataEntrada = validateDateFormat(row.DT_ENTUTI);
+  const utiDataSaida = validateDateFormat(row.DT_SAIDUTI);
 
-  await connection.execute(
-    `INSERT INTO UTI (UTI_CAS_ID, UTI_DATA_ENTRADA, UTI_DATA_SAIDA)
+  const params = {
+    casId: casId,
+    utiDataEntrada: utiDataEntrada,
+    utiDataSaida: utiDataSaida,
+  };
+
+  try {
+    await connection.execute(
+      `INSERT INTO UTI (UTI_CAS_ID, UTI_DATA_ENTRADA, UTI_DATA_SAIDA)
         VALUES (:casId, :utiDataEntrada, :utiDataSaida)`,
-    {
-      casId: casId,
-      utiDataEntrada: utiDataEntrada,
-      utiDataSaida: utiDataSaida,
-    }
-  );
+      params
+    );
+  } catch (e: any) {
+    throw new OracleError("insertUti", e, params);
+  }
 }

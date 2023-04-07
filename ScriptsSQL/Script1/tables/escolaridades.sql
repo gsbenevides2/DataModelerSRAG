@@ -4,13 +4,13 @@ CREATE TABLE escolaridades (
 );
 
 COMMENT ON TABLE escolaridades IS
-    'Tabela de metadados dos tipos de escolariades possiveis que de uma pessoa  possa possuir.';
+    'Tabela de metadados que lista possíveis tipos de escolaridade que o paciente pode possuir.';
 
 COMMENT ON COLUMN escolaridades.esc_id IS
-    'Identificador único do tipo de escolaridade do paciente.';
+    'Identificador único do tipo de escolaridade.';
 
 COMMENT ON COLUMN escolaridades.esc_descricao IS
-    'Descrição do tipo de escolaridade do paciente.';
+    'Descrição do tipo de escolaridade.';
 
 ALTER TABLE escolaridades ADD CONSTRAINT pk_esc PRIMARY KEY ( esc_id );
 ALTER TABLE escolaridades ADD CONSTRAINT ck_esc_01 CHECK (esc_descricao IS NOT NULL);

@@ -4,13 +4,13 @@ CREATE TABLE tipos_teste_antigeno (
 );
 
 COMMENT ON TABLE tipos_teste_antigeno IS
-    'Tabela que armazena os tipos de teste antigeno existentes.';
+    'Tabela de metadados que lista os tipos de testes antígenos existentes.';
 
 COMMENT ON COLUMN tipos_teste_antigeno.tta_id IS
-    'Identificador do tipo de teste para pesquisa de antigenos.';
+    'Identificador do tipo de teste para pesquisa de antígenos.';
 
 COMMENT ON COLUMN tipos_teste_antigeno.tta_nome IS
-    'Nome do tipo de teste para pesquisa de antigenos.		';
+    'Nome do tipo de teste para pesquisa de antígenos.';
 
 ALTER TABLE tipos_teste_antigeno ADD CONSTRAINT pk_tta PRIMARY KEY ( tta_id );
 ALTER TABLE tipos_teste_antigeno ADD CONSTRAINT ck_tta_01 CHECK ( tta_nome IS NOT NULL );

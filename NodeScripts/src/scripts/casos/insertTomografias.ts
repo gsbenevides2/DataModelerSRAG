@@ -1,4 +1,6 @@
 import OracleDB from "oracledb";
+import { OracleError } from "../../helpers/OracleError";
+import { validateDateFormat } from "../../helpers/validateDateFormat";
 
 export async function insertTomografias(
   connection: OracleDB.Connection,
@@ -10,16 +12,21 @@ export async function insertTomografias(
   if (row.TOMO_RES === undefined) return;
   if (row.TOMO_RES === "") return;
   const ctoAstId = Number(row.TOMO_RES);
-  let ctoDate = null;
-  if (row.DT_TOMO?.length > 0) ctoDate = row.DT_TOMO;
+  const ctoDate = validateDateFormat(row.DT_TOMO);
 
-  await connection.execute(
-    `INSERT INTO CASOS_TOMOGRAFIA (CTO_CAS_ID, CTO_AST_ID, CTO_DATE)
+  const params = {
+    ctoCasId: ctoCasId,
+    ctoAstId: ctoAstId,
+    ctoDate: ctoDate,
+  };
+
+  try {
+    await connection.execute(
+      `INSERT INTO CASOS_TOMOGRAFIA (CTO_CAS_ID, CTO_AST_ID, CTO_DATE)
     VALUES (:ctoCasId, :ctoAstId, :ctoDate)`,
-    {
-      ctoCasId: ctoCasId,
-      ctoAstId: ctoAstId,
-      ctoDate: ctoDate,
-    }
-  );
+      params
+    );
+  } catch (e: any) {
+    throw new OracleError("insertTomografias", e, params);
+  }
 }

@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="93B1F6FF-00C7-8FF1-4917-BB6EFBDB4A47" name="INTERNACOES">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-17 18:43:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela contendo os casos em que ocorreram internações.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<ordsAlias>table_16</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="INT_CAS_ID" id="04288BA7-FE3E-6EE6-2F52-175F3EBC57BF">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-17 18:44:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador autoincremental do caso da internação.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CF29FBDE-3E51-3525-C626-B4F5E3148459" referredColumn="EF6A022B-0428-CF9A-75D6-339944A44290"/>
+</associations>
+</Column>
+<Column name="INT_DATA" id="43987F7A-DAA6-FD1E-D00F-D2314D41631B">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-17 18:44:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data da internação.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INT_MUN_ID" id="F5571AF2-8351-23FA-C682-079789476ABE">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-17 18:44:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[Município em que ocorreu internação do paciente.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CAEB6B4C-4F0B-BFE4-AC0F-7D9425D579E5" referredColumn="756F1C6B-E241-E967-8671-38C16A86C72A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="53144653-2444-0E35-1C7F-29B728879C0B" name="PK_INT">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-17 18:44:10 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="04288BA7-FE3E-6EE6-2F52-175F3EBC57BF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5019F0D5-F413-91F0-6D7D-D36E1ECFE7C7" name="FK_INT_MUN">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-17 18:48:08 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F5571AF2-8351-23FA-C682-079789476ABE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="21FC856B-956A-2967-4AF0-FC2466FFA1FF" name="FK_INT_CAS">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-17 18:49:06 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="04288BA7-FE3E-6EE6-2F52-175F3EBC57BF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

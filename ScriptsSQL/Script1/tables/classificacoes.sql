@@ -4,7 +4,7 @@ CREATE TABLE classificacoes (
 );
 
 COMMENT ON TABLE classificacoes IS
-    'Tabela de metadados que lista as possiveis classificações finais para os casos.';
+    'Tabela de metadados que lista as possíveis classificações finais para os casos.';
 
 COMMENT ON COLUMN classificacoes.cla_id IS
     'Identificador da classficação final do caso.';

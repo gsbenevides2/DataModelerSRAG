@@ -4,7 +4,7 @@ CREATE TABLE racas (
 );
 
 COMMENT ON TABLE racas IS
-    'Tabela de metadados de cada raça.';
+    'Tabela de metadados que lista os tipos de raça.';
 
 COMMENT ON COLUMN racas.rac_id IS
     'Identificador único de cada raça.';

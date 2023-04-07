@@ -1,0 +1,51 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DA8A4C2D-4E46-7771-3732-AC0269710A17" name="RESULTADOS_RAIOX">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-17 19:33:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de metadados que lista os possíveis resultados para exame de raios X.
+
+]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<ordsAlias>table_20</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="RAI_ID" id="4BC587CA-31ED-1673-C76B-D2B99742A610">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-17 19:35:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do tipo de resultado para um exame de raios X.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RAI_DESC" id="404FE2F3-9DD1-A5FA-E673-106BCB9C2629">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-17 19:35:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição do tipo de resultado para um exame de raios X.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9B28CC69-4783-C19E-48C0-0B478ABC4E88" name="PK_RAI">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-17 19:35:07 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4BC587CA-31ED-1673-C76B-D2B99742A610"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

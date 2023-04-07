@@ -1,20 +1,23 @@
 import OracleDB from "oracledb";
 import { getMunicipioId } from "../../helpers/getMunicipioId";
 import { getUnidadeId } from "../../helpers/getUnidadeId";
+import { OracleError } from "../../helpers/OracleError";
+import { validateDateFormat } from "../../helpers/validateDateFormat";
 
 export async function insertCaso(
   connection: OracleDB.Connection,
   row: Columns
 ): Promise<number> {
-  const dataNotificacao = row.DT_NOTIFIC;
-  const dataPrimeirosSintomas = row.DT_SIN_PRI;
+  const dataNotificacao = validateDateFormat(row.DT_NOTIFIC);
+  const dataPrimeirosSintomas = validateDateFormat(row.DT_SIN_PRI);
   const unidadeId = await getUnidadeId(connection, row.CO_UNI_NOT);
   const estrangeiro = row.ESTRANG === "1" ? 1 : 0;
   let genId: number = 9;
   if (row.CS_SEXO === "M") genId = 1;
   else if (row.CS_SEXO === "F") genId = 2;
-  const dataNascimento = row.DT_NASC;
-  const idadeGestacional = row.CS_GESTANT ? Number(row.CS_GESTANT) : 6;
+  const dataNascimento = validateDateFormat(row.DT_NASC);
+  let idadeGestacional = row.CS_GESTANT ? Number(row.CS_GESTANT) : 6;
+  if (idadeGestacional === 0) idadeGestacional = 6;
   const racaCor = row.CS_RACA ? Number(row.CS_RACA) : 9;
   const escolaridade = row.CS_ESCOL_N ? Number(row.CS_ESCOL_N) : 9;
   const municipioId = await getMunicipioId(connection, row.CO_MUN_RES);
@@ -24,12 +27,33 @@ export async function insertCaso(
   else if (row.NOSOCOMIAL === "0") nosocomial = 0;
   const suporteVentilatorio = row.SUPORT_VEN ? Number(row.SUPORT_VEN) : 9;
   const classificacaoFinal = row.CLASSI_FIN ? Number(row.CLASSI_FIN) : 4;
-  const dataDigitacao = row.DT_DIGITA;
+  const dataDigitacao = validateDateFormat(row.DT_DIGITA);
   let animal = null;
   if (row.AVE_SUINO?.length > 0) animal = row.AVE_SUINO;
 
-  const result = await connection.execute(
-    `INSERT INTO CASOS (
+  const params = {
+    dataNotificacao: dataNotificacao,
+    dataPrimeirosSintomas: dataPrimeirosSintomas,
+    unidadeId: unidadeId,
+    estrangeiro: estrangeiro,
+    genId: genId,
+    dataNascimento: dataNascimento,
+    idadeGestacional: idadeGestacional,
+    racaCor: racaCor,
+    escolaridade: escolaridade,
+    municipioId: municipioId,
+    zona: zona,
+    nosocomial: nosocomial,
+    suporteVentilatorio: suporteVentilatorio,
+    classificacaoFinal: classificacaoFinal,
+    dataDigitacao: dataDigitacao,
+    animal: animal,
+  };
+
+  let result: OracleDB.Result<any>;
+  try {
+    result = await connection.execute(
+      `INSERT INTO CASOS (
             CAS_DATA_NOTIFICACAO,
             CAS_DATA_PRIMEIROS_SINTOMAS,
             CAS_UNI_ID,
@@ -64,25 +88,12 @@ export async function insertCaso(
             :dataDigitacao,
             :animal
         )`,
-    {
-      dataNotificacao: dataNotificacao,
-      dataPrimeirosSintomas: dataPrimeirosSintomas,
-      unidadeId: unidadeId,
-      estrangeiro: estrangeiro,
-      genId: genId,
-      dataNascimento: dataNascimento,
-      idadeGestacional: idadeGestacional,
-      racaCor: racaCor,
-      escolaridade: escolaridade,
-      municipioId: municipioId,
-      zona: zona,
-      nosocomial: nosocomial,
-      suporteVentilatorio: suporteVentilatorio,
-      classificacaoFinal: classificacaoFinal,
-      dataDigitacao: dataDigitacao,
-      animal: animal,
-    }
-  );
+      params
+    );
+  } catch (e: any) {
+    throw new OracleError("insertCaso", e, params);
+  }
+
   const lastRowId = result.lastRowid;
 
   if (!lastRowId) {
@@ -95,12 +106,20 @@ export async function insertCaso(
   type OraReturn = {
     CAS_ID: number;
   };
-  const result2 = await connection.execute<OraReturn>(
-    `SELECT CAS_ID FROM CASOS WHERE ROWID = :id`,
-    {
-      id: lastRowId,
-    }
-  );
+  let result2: OracleDB.Result<OraReturn>;
+
+  const params2 = {
+    id: lastRowId,
+  };
+
+  try {
+    result2 = await connection.execute<OraReturn>(
+      `SELECT CAS_ID FROM CASOS WHERE ROWID = :id`,
+      params2
+    );
+  } catch (e: any) {
+    throw new OracleError("retriveCasoId", e, params2);
+  }
 
   if (!result2.rows || result2.rows.length === 0) {
     console.error(

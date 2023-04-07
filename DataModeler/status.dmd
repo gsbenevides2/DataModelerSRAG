@@ -1,8 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="status" id="367F7A20-972B-02F6-FBD8-F69DFC1AE954" version="3.5">
-<createdBy>gsbenevides2</createdBy>
-<createdTime>2023-02-12 14:25:30 UTC</createdTime>
-<ownerDesignName>srag</ownerDesignName>
-<capitalNames>false</capitalNames>
-<designId>367F7A20-972B-02F6-FBD8-F69DFC1AE954</designId>
-</OSDM_Design>

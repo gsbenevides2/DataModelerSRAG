@@ -4,13 +4,13 @@ CREATE TABLE resultados_teste_sorologico (
 );
 
 COMMENT ON TABLE resultados_teste_sorologico IS
-    'Tabela de metadados que lista os resultados de um teste sorológico.';
+    'Tabela de metadados que lista os possíveis resultados para testes sorológicos.';
 
 COMMENT ON COLUMN resultados_teste_sorologico.rts_id IS
-    'Identificador do tipo de resultado para teste de sorologia para SARS-Cov-2';
+    'Identificador do tipo de resultado para um teste de sorologia para SARS-Cov-2';
 
 COMMENT ON COLUMN resultados_teste_sorologico.rts_desc IS
-    'Descrição do tipo de resultado para teste sorológico de SARS-Cov-2';
+    'Descrição do tipo de resultado para um teste sorológico de SARS-Cov-2';
 
 ALTER TABLE resultados_teste_sorologico ADD CONSTRAINT pk_rts PRIMARY KEY ( rts_id );
 ALTER TABLE resultados_teste_sorologico ADD CONSTRAINT ck_rts_01 CHECK ( rts_desc IS NOT NULL);

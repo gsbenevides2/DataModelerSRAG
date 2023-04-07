@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C1FB91DC-8A98-C4C6-061D-0F66DEF166BB" name="TIPOS_AMOSTRAS_SOROLOGICAS">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 02:33:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de metadados que lista todos os tipos de amostra disponíveis para testes sorológicos.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<ordsAlias>table_39</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TAS_ID" id="D1862578-978A-89BF-EB73-262628E86CD9">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 14:33:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do tipo de amostra sorológica.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TAS_NOME" id="7498A2EA-E187-FFCF-3EF8-127EB6D8DA49">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 14:33:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome do tipo de amostra sorológica.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C0B4F39D-D7E9-7C43-C01F-363D9AAAFF65" name="PK_TAS">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-21 14:33:25 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D1862578-978A-89BF-EB73-262628E86CD9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -4,13 +4,13 @@ CREATE TABLE resultados_raiox (
 );
 
 COMMENT ON TABLE resultados_raiox IS
-    'Tabela de metadados que indica os possiveis resultados para um exame de raio x.';
+    'Tabela de metadados que lista os possíveis resultados para exame de raios X.';
 
 COMMENT ON COLUMN resultados_raiox.rai_id IS
-    'Identificador do tipo de resultado para o raio-x';
+    'Identificador do tipo de resultado para um exame de raios X';
 
 COMMENT ON COLUMN resultados_raiox.rai_desc IS
-    'Descrição do tipo de resultado para o raiox.';
+    'Descrição do tipo de resultado para um exame de raios X.';
 
 ALTER TABLE resultados_raiox ADD CONSTRAINT pk_rai PRIMARY KEY ( rai_id );
 ALTER TABLE resultados_raiox ADD CONSTRAINT ck_rai_01 CHECK ( rai_desc IS NOT NULL );

@@ -4,13 +4,13 @@ CREATE TABLE testes_antigenos_virus (
 );
 
 COMMENT ON TABLE testes_antigenos_virus IS
-    'Tabela de muitos para muitos onde os testes podem identificar muitos virus.';
+    'Tabela que lista os vírus encontrados pelo teste antígeno.';
 
 COMMENT ON COLUMN testes_antigenos_virus.tsa_tea_id IS
-    'Identificador do Teste.';
+    'Identificador do teste antígeno.';
 
 COMMENT ON COLUMN testes_antigenos_virus.tsa_vir_id IS
-    'Identificador do Virus.';
+    'Identificador do vírus encontrado no teste antígeno.';
 
 ALTER TABLE testes_antigenos_virus ADD CONSTRAINT pk_tsa PRIMARY KEY ( tsa_tea_id,
                                                                         tsa_vir_id );

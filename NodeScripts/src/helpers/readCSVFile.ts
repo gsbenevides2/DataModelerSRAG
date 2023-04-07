@@ -6,7 +6,12 @@ import { countLines } from "./countLines";
 
 export async function readCSVFile<T>(
   filePath: string,
-  onLine: (row: T, index: number) => Promise<void>,
+  onLine: (
+    row: T,
+    index: number,
+    length: number,
+    pure: string
+  ) => Promise<void>,
   options: { encoding?: BufferEncoding; delimiter?: string } = {}
 ) {
   let headers: Array<keyof T> = [];
@@ -40,7 +45,7 @@ export async function readCSVFile<T>(
         acc[header] = row[index];
         return acc;
       }, {} as T);
-      await onLine(obj, lineCount);
+      await onLine(obj, lineCount, allLinesCount, line);
     }
     lineCount++;
   }

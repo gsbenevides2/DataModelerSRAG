@@ -1,4 +1,6 @@
 import OracleDB from "oracledb";
+import { OracleError } from "../../helpers/OracleError";
+import { validateDateFormat } from "../../helpers/validateDateFormat";
 
 // 1 - Influenza A
 // 2 - Influenza B
@@ -22,20 +24,26 @@ export async function insertTesteAntigeno(
   const teaCasId = casId;
   const teaTtaId = row.TP_TES_AN?.length ? row.TP_TES_AN : null;
   const teaRtaId = row.RES_AN?.length ? row.RES_AN : null;
-  const teaDataResultado = row.DT_RES_AN?.length ? row.DT_RES_AN : null;
+  const teaDataResultado = validateDateFormat(row.DT_RES_AN);
 
   if ((teaTtaId || teaRtaId || teaDataResultado) === null) return;
 
-  await connection.execute(
-    `INSERT INTO TESTES_ANTIGENO (TEA_CAS_ID, TEA_TTA_ID, TEA_RTA_ID, TEA_DATA_RESULTADO)
+  const params = {
+    teaCasId: teaCasId,
+    teaRtaId: teaRtaId,
+    teaTtaId: teaTtaId,
+    teaDataResultado: teaDataResultado,
+  };
+
+  try {
+    await connection.execute(
+      `INSERT INTO TESTES_ANTIGENO (TEA_CAS_ID, TEA_TTA_ID, TEA_RTA_ID, TEA_DATA_RESULTADO)
      VALUES(:teaCasId, :teaTtaId, :teaRtaId, :teaDataResultado)`,
-    {
-      teaCasId: teaCasId,
-      teaRtaId: teaRtaId,
-      teaTtaId: teaTtaId,
-      teaDataResultado: teaDataResultado,
-    }
-  );
+      params
+    );
+  } catch (e: any) {
+    throw new OracleError("insertTesteAntigeno", e, params);
+  }
 
   await insertInfluenza(connection, row, casId);
   await insertOthers(connection, row, casId);
@@ -53,14 +61,20 @@ async function insertInfluenza(
 
   if (tsaVirId === null) return;
 
-  await connection.execute(
-    `INSERT INTO TESTES_ANTIGENOS_VIRUS (TSA_TEA_ID, TSA_VIR_ID)
+  const params = {
+    tsaCasId: casId,
+    tsaVirId: tsaVirId,
+  };
+
+  try {
+    await connection.execute(
+      `INSERT INTO TESTES_ANTIGENOS_VIRUS (TSA_TEA_ID, TSA_VIR_ID)
          VALUES(:tsaCasId, :tsaVirId)`,
-    {
-      tsaCasId: casId,
-      tsaVirId: tsaVirId,
-    }
-  );
+      params
+    );
+  } catch (e: any) {
+    throw new OracleError("insertAntigenosInfluenza", e, params);
+  }
 }
 
 async function insertOthers(
@@ -98,9 +112,13 @@ async function insertOthers(
 
   if (values.length === 0) return;
 
-  await connection.executeMany(
-    `INSERT INTO TESTES_ANTIGENOS_VIRUS (TSA_TEA_ID, TSA_VIR_ID)
+  try {
+    await connection.executeMany(
+      `INSERT INTO TESTES_ANTIGENOS_VIRUS (TSA_TEA_ID, TSA_VIR_ID)
             VALUES(:tsaCasId, :tsaVirId)`,
-    values
-  );
+      values
+    );
+  } catch (e: any) {
+    throw new OracleError("insertAntigenosOthers", e, values);
+  }
 }

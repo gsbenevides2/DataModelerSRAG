@@ -5,15 +5,15 @@ CREATE TABLE casos_antivirais_covid (
 );
 
 COMMENT ON TABLE casos_antivirais_covid IS
-    'Tabela de relação um para um com atributos. Um caso pode ter usado um antiviral. ';
+    'Tabela que demonstra relação de quais casos utilizaram antiviral para COVID.';
 
 COMMENT ON COLUMN casos_antivirais_covid.cac_cas_id IS
-    'Identificador do caso relacionado a aquele antiviral.';
+    'Identificador do caso que fez uso de antiviral para COVID.';
 
 COMMENT ON COLUMN casos_antivirais_covid.cac_anc_id IS
-    'Identificador do antiviral utilizado.';
+    'Identificador do antiviral para COVID utilizado naquele caso.';
 
 COMMENT ON COLUMN casos_antivirais_covid.cac_data_inicio IS
-    'Data em que foi iniciado o tratamento com o antiviral. para covid';
+    'Data em que foi iniciado o tratamento com aquele antiviral para COVID.';
 
 ALTER TABLE casos_antivirais_covid ADD CONSTRAINT pk_cac PRIMARY KEY ( cac_cas_id );

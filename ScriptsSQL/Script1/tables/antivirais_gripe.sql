@@ -4,13 +4,13 @@ CREATE TABLE antivirais_gripe (
 );
 
 COMMENT ON TABLE antivirais_gripe IS
-    'Tabela contendo os antivirais para gripe.';
+    'Tabela de metadados que lista os tipos de antivirais para gripe.';
 
 COMMENT ON COLUMN antivirais_gripe.ang_id IS
-    'Identificador do antiviral.';
+    'Identificador do antiviral para gripe.';
 
 COMMENT ON COLUMN antivirais_gripe.ang_nome IS
-    'Nome do Antiviral.';
+    'Nome do antiviral para gripe.';
 
 ALTER TABLE antivirais_gripe ADD CONSTRAINT pk_ang PRIMARY KEY ( ang_id );
 ALTER TABLE antivirais_gripe ADD CONSTRAINT ck_ang_01 CHECK (ang_nome IS NOT NULL);

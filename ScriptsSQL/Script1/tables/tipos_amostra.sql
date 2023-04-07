@@ -4,7 +4,7 @@ CREATE TABLE tipos_amostra (
 );
 
 COMMENT ON TABLE tipos_amostra IS
-    'Tabela em que lista os tipos de amostra que podem ser coletadas para exame diagnóstico.';
+    'Tabela de metadados que lista os tipos de amostra que podem ser coletadas para exame diagnóstico.';
 
 COMMENT ON COLUMN tipos_amostra.tam_id IS
     'Identificador do tipo de amostra coletada para o teste diagnóstico.';

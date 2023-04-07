@@ -4,13 +4,13 @@ CREATE TABLE suporte_ventilador (
 );
 
 COMMENT ON TABLE suporte_ventilador IS
-    'Tabela de metadados que lista todos os suportes ventilatórios utilizados.';
+    'Tabela de metadados que lista os possíveis suportes ventilatórios utilizados.';
 
 COMMENT ON COLUMN suporte_ventilador.sve_id IS
-    'Indentificador do suporte ventilatório utilizado.';
+    'Identificador do tipo de suporte ventilatório.';
 
 COMMENT ON COLUMN suporte_ventilador.sve_descricao IS
-    'Descrição do tipo de suporte ventilatório utilizado.';
+    'Descrição do tipo de suporte ventilatório.';
 
 ALTER TABLE suporte_ventilador ADD CONSTRAINT pk_sve PRIMARY KEY ( sve_id );
 ALTER TABLE suporte_ventilador ADD CONSTRAINT ck_sve_01 CHECK ( sve_descricao IS NOT NULL );

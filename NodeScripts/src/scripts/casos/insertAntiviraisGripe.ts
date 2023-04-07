@@ -1,4 +1,6 @@
 import OracleDB from "oracledb";
+import { OracleError } from "../../helpers/OracleError";
+import { validateDateFormat } from "../../helpers/validateDateFormat";
 
 export async function insertAntiviraisGripe(
   connection: OracleDB.Connection,
@@ -8,15 +10,20 @@ export async function insertAntiviraisGripe(
   if (row.ANTIVIRAL !== "1") return;
 
   const cagAngId = row.TP_ANTIVIR.length > 0 ? row.TP_ANTIVIR : null;
-  const cagData = row.DT_ANTIVIR.length > 0 ? row.DT_ANTIVIR : null;
+  const cagData = validateDateFormat(row.DT_ANTIVIR);
 
-  await connection.execute(
-    `INSERT INTO CASOS_ANTIVIRAIS_GRIPE (CAG_ANG_ID, CAG_CAS_ID, CAG_DATA) 
+  const params = {
+    cagAngId: cagAngId,
+    casId: casId,
+    cagData: cagData,
+  };
+  try {
+    await connection.execute(
+      `INSERT INTO CASOS_ANTIVIRAIS_GRIPE (CAG_ANG_ID, CAG_CAS_ID, CAG_DATA) 
     VALUES (:cagAngId, :casId, :cagData)`,
-    {
-      cagAngId: cagAngId,
-      casId: casId,
-      cagData: cagData,
-    }
-  );
+      params
+    );
+  } catch (e: any) {
+    throw new OracleError("insertAntiviraisGripe", e, params);
+  }
 }

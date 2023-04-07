@@ -1,61 +1,79 @@
-import path from "path";
-import { connectToDatabase } from "../helpers/connectToDatabase";
-import { readCSVFile } from "../helpers/readCSVFile";
+import OracleDB from "oracledb";
+import { OracleError } from "../helpers/OracleError";
 
-type MunCSV = {
-  UF: string;
-  IBGE: string;
-  NOME: string;
+const municipioExists = async (
+  codIBGE: string,
+  connection: OracleDB.Connection
+) => {
+  const sql = "SELECT mun_id FROM municipios WHERE mun_cod_ibge = :muniCodIbge";
+  const params = [codIBGE];
+
+  const result = await connection.execute(sql, params);
+
+  return Boolean(result.rows?.length);
 };
-const municipiosCSVPath = path.resolve(process.cwd(), "data", "municipios.csv");
 
-import cliProgress from "cli-progress";
-import { countLines } from "../helpers/countLines";
-
-const insertMunicipios = async () => {
-  const connection = await connectToDatabase();
-  const progressBar = new cliProgress.SingleBar(
-    {},
-    cliProgress.Presets.shades_classic
+const insertMunicipio = async (
+  uf: string,
+  ibge: string,
+  nome: string,
+  connection: OracleDB.Connection
+) => {
+  type State = {
+    EST_ID: number;
+  };
+  const stateId = await connection.execute<State>(
+    `SELECT est_id FROM ESTADOS WHERE est_nome = :est_nome`,
+    [uf]
   );
 
-  console.log("Inserting municipios...");
-
-  progressBar.start(await countLines(municipiosCSVPath), 0);
-
-  await readCSVFile<MunCSV>(municipiosCSVPath, async (row, index) => {
-    const { UF, IBGE, NOME } = row;
-
-    type State = {
-      EST_ID: number;
-    };
-    const stateId = await connection.execute<State>(
-      `SELECT est_id FROM ESTADOS WHERE est_nome = :est_nome`,
-      [UF]
+  if (stateId.rows?.length == null) {
+    throw new Error("State not found: " + uf);
+  }
+  const { EST_ID } = stateId.rows[0];
+  const params = [ibge, nome, EST_ID];
+  try {
+    await connection.execute(
+      `INSERT INTO MUNICIPIOS(mun_cod_ibge, mun_nome, mun_est_id) 
+         VALUES(:mun_cod_ibge, :mun_nome, :mun_est_id)`,
+      params
     );
-
-    if (stateId.rows?.length == null) {
-      console.log("State not found:", UF);
-      process.exit(1);
-    }
-    const { EST_ID } = stateId.rows[0];
-    try {
-      await connection.execute(
-        `INSERT INTO MUNICIPIOS(mun_cod_ibge, mun_nome, mun_est_id) 
-      VALUES(:mun_cod_ibge, :mun_nome, :mun_est_id)`,
-        [IBGE, NOME, EST_ID]
-      );
-    } catch (e) {
-      console.log("Error on line", index, ":", row);
-      console.log("Error:", e);
-      process.exit(1);
-    }
-    progressBar.update(index);
-  });
-  progressBar.stop();
-  await connection.commit();
-  await connection.close();
-  console.log("Done inserting municipios.");
+  } catch (e) {
+    throw new OracleError("insertMunicipio", e, params);
+  }
 };
 
-insertMunicipios();
+export async function insertMunicipios(
+  row: Columns,
+  connection: OracleDB.Connection
+): Promise<void> {
+  if (row.CO_MUN_NOT && !(await municipioExists(row.CO_MUN_NOT, connection))) {
+    await insertMunicipio(
+      row.SG_UF_NOT,
+      row.CO_MUN_NOT,
+      row.ID_MUNICIP,
+      connection
+    );
+  }
+  await connection.commit();
+
+  if (row.CO_MUN_RES && !(await municipioExists(row.CO_MUN_RES, connection))) {
+    await insertMunicipio(
+      row.SG_UF,
+      row.CO_MUN_RES,
+      row.ID_MN_RESI,
+      connection
+    );
+  }
+  await connection.commit();
+
+  if (row.CO_MU_INTE && !(await municipioExists(row.CO_MU_INTE, connection))) {
+    await insertMunicipio(
+      row.SG_UF_INTE,
+      row.CO_MU_INTE,
+      row.ID_MN_INTE,
+      connection
+    );
+  }
+  await connection.commit();
+}

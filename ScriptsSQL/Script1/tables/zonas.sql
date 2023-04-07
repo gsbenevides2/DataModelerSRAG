@@ -4,10 +4,10 @@ CREATE TABLE zonas (
 );
 
 COMMENT ON TABLE zonas IS
-    'Tabela de metadados que contem todas as zonas possiveis que uma pessoa pode morar: Urbana, Rural etc.';
+    'Tabela de metadados que lista as possíveis zonas residenciais que um paciente pode morar.';
 
 COMMENT ON COLUMN zonas.zon_id IS
-    'Identificador únicoda zona de residencias.';
+    'Identificador único da zona de residencias.';
 
 COMMENT ON COLUMN zonas.zon_descricao IS
     'Descrição do tipo de zona de residencias.';

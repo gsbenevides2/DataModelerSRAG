@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A779956E-FB35-93F7-6DE0-BBA917FBFBA0" name="RESULTADOS_TESTE_RTPC">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-20 23:35:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de metadados que lista os possíveis resultados para testes RT/PCR.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<ordsAlias>table_28</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="RTR_ID" id="BEDEA047-EBEB-77EF-B5CF-1DB9DBECDA39">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-20 23:35:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do tipo de resultado para um teste de RT/PCR.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RTR_DES" id="4592FDA8-D435-45AD-6B2F-7FFB4304142F">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-20 23:35:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição do tipo de resultado para um teste de RT/PCR.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="82B53F49-4CB5-3277-C236-0D69E2C9138C" name="PK_RTR">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-20 23:35:47 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BEDEA047-EBEB-77EF-B5CF-1DB9DBECDA39"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

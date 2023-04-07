@@ -4,13 +4,13 @@ CREATE TABLE virus_respiratorios (
 );
 
 COMMENT ON TABLE virus_respiratorios IS
-    'Tabela que lista os virus repiratórios disponíveis.';
+    'Tabela de metadados que lista os possíveis vírus respiratórios.';
 
 COMMENT ON COLUMN virus_respiratorios.vir_id IS
-    'Identificador do virus respiratório identificado.';
+    'Identificador do vírus respiratório.';
 
 COMMENT ON COLUMN virus_respiratorios.vir_des IS
-    'Descrição do virus respiratório identificador.';
+    'Descrição do vírus respiratório.';
 
 ALTER TABLE virus_respiratorios ADD CONSTRAINT pk_vir PRIMARY KEY ( vir_id );
 ALTER TABLE virus_respiratorios ADD CONSTRAINT ck_vir_01 CHECK ( vir_des IS NOT NULL );

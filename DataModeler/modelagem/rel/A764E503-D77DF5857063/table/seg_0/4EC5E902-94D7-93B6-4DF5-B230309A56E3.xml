@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4EC5E902-94D7-93B6-4DF5-B230309A56E3" name="SINTOMAS">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:49:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de metadados que lista os possíveis sintomas que os pacientes podem ter.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SIN_ID" id="6367DEB7-1359-02F3-7C05-3A2CCED2C610">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:50:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único e autoincremental do sintoma.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SIN_NOME" id="2EC7EDAB-9A8E-39B5-6961-B860C2A55681">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:50:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome do sintoma.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5BD0D4BF-D696-8F39-0458-F3015AB25B03" name="PK_SIN">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-12 14:50:01 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6367DEB7-1359-02F3-7C05-3A2CCED2C610"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

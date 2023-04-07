@@ -4,7 +4,7 @@ CREATE TABLE tipos_testes_sorologicos (
 );
 
 COMMENT ON TABLE tipos_testes_sorologicos IS
-    'Tabela em que estão listados todos os tipos de resultados possiveis.';
+    'Tabela de metadados que lista todos os tipos de resultados possiveis.';
 
 COMMENT ON COLUMN tipos_testes_sorologicos.tts_id IS
     'Identificador do tipo de teste sorológico.';

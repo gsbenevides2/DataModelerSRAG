@@ -1,4 +1,6 @@
 import OracleDB from "oracledb";
+import { OracleError } from "../../helpers/OracleError";
+import { validateDateFormat } from "../../helpers/validateDateFormat";
 
 export async function insertAmostras(
   connection: OracleDB.Connection,
@@ -7,16 +9,22 @@ export async function insertAmostras(
 ): Promise<void> {
   if (row.AMOSTRA !== "1") return;
 
-  const camData = row.DT_COLETA?.length > 0 ? row.DT_COLETA : null;
+  const camData = validateDateFormat(row.DT_COLETA);
   const camTamId = row.TP_AMOSTRA?.length > 0 ? row.TP_AMOSTRA : null;
 
-  await connection.execute(
-    `INSERT INTO CASOS_AMOSTRAS (CAM_CAS_ID, CAM_DATA, CAM_TAM_ID)
+  const params = {
+    camCasId: casId,
+    camData: camData,
+    camTamId: camTamId,
+  };
+
+  try {
+    await connection.execute(
+      `INSERT INTO CASOS_AMOSTRAS (CAM_CAS_ID, CAM_DATA, CAM_TAM_ID)
             VALUES (:camCasId, :camData, :camTamId)`,
-    {
-      camCasId: casId,
-      camData: camData,
-      camTamId: camTamId,
-    }
-  );
+      params
+    );
+  } catch (e: any) {
+    throw new OracleError("insertAmostras", e, params);
+  }
 }

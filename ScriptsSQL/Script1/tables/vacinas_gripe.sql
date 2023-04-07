@@ -7,7 +7,7 @@ COMMENT ON TABLE vacinas_gripe IS
     'Tabela que listas quais casos o paciente tomou alguma vacina da gripe.';
 
 COMMENT ON COLUMN vacinas_gripe.vag_cas_id IS
-    'Caso que identifica a vacina da gripe.';
+    'Identificador do caso que foi vacinado contra gripe.';
 
 COMMENT ON COLUMN vacinas_gripe.vag_data IS
     'Data da ultima dose de vacina contra gripe que o paciente tomou.';

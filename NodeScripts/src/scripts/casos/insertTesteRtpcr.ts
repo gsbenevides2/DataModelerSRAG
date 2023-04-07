@@ -1,4 +1,6 @@
 import OracleDB from "oracledb";
+import { OracleError } from "../../helpers/OracleError";
+import { validateDateFormat } from "../../helpers/validateDateFormat";
 
 export async function insertTesteRtpcr(
   connection: OracleDB.Connection,
@@ -7,19 +9,25 @@ export async function insertTesteRtpcr(
 ) {
   const terCasId = casId;
   const terRtrId = row.PCR_RESUL?.length ? row.PCR_RESUL : null;
-  const terDataResultado = row.DT_PCR?.length ? row.DT_PCR : null;
+  const terDataResultado = validateDateFormat(row.DT_PCR);
 
   if ((terRtrId || terDataResultado) === null) return;
 
-  await connection.execute(
-    `INSERT INTO TESTES_RTPCR (TER_CAS_ID, TER_RTR_ID, TER_DATA_RESULTADO)
+  const params = {
+    terCasId: terCasId,
+    terRtrId: terRtrId,
+    terDataResultado: terDataResultado,
+  };
+
+  try {
+    await connection.execute(
+      `INSERT INTO TESTES_RTPCR (TER_CAS_ID, TER_RTR_ID, TER_DATA_RESULTADO)
        VALUES(:terCasId, :terRtrId, :terDataResultado)`,
-    {
-      terCasId: terCasId,
-      terRtrId: terRtrId,
-      terDataResultado: terDataResultado,
-    }
-  );
+      params
+    );
+  } catch (e: any) {
+    throw new OracleError("insertTesteRtpcr", e, params);
+  }
 
   await insertInfluenza(connection, row, casId);
   await insertOthers(connection, row, casId);
@@ -37,14 +45,20 @@ async function insertInfluenza(
 
   if (tsrVirId === null) return;
 
-  await connection.execute(
-    `INSERT INTO TESTES_RTPCR_VIRUS (TSR_TER_ID, TSR_VIR_ID)
+  const params = {
+    tsrCasId: casId,
+    tsrVirId: tsrVirId,
+  };
+
+  try {
+    await connection.execute(
+      `INSERT INTO TESTES_RTPCR_VIRUS (TSR_TER_ID, TSR_VIR_ID)
          VALUES(:tsrCasId, :tsrVirId)`,
-    {
-      tsrCasId: casId,
-      tsrVirId: tsrVirId,
-    }
-  );
+      params
+    );
+  } catch (e: any) {
+    throw new OracleError("insertRtpcrInfluenza", e, params);
+  }
 }
 
 async function insertOthers(
@@ -85,9 +99,13 @@ async function insertOthers(
 
   if (values.length === 0) return;
 
-  await connection.executeMany(
-    `INSERT INTO TESTES_RTPCR_VIRUS (TSR_TER_ID, TSR_VIR_ID)
+  try {
+    await connection.executeMany(
+      `INSERT INTO TESTES_RTPCR_VIRUS (TSR_TER_ID, TSR_VIR_ID)
           VALUES(:tsrCasId, :tsrVirId)`,
-    values
-  );
+      values
+    );
+  } catch (e: any) {
+    throw new OracleError("insertRtpcrOthers", e, values);
+  }
 }

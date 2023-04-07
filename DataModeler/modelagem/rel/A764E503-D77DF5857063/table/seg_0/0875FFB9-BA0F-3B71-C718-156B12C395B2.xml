@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0875FFB9-BA0F-3B71-C718-156B12C395B2" name="ESCOLARIDADES">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-22 21:11:16 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de metadados que lista possíveis tipos de escolaridade que o paciente pode possuir.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<ordsAlias>table_46</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ESC_ID" id="A182389B-88C5-60BB-52B6-1F90B579A896">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-22 21:12:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único do tipo de escolaridade.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESC_DESCRICAO" id="05B8F3E8-B348-A353-5FBD-53406B1613D4">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-22 21:12:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição do tipo de escolaridade.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="73ECD76A-3872-5931-D79F-047B10EBAF7E" name="PK_ESC">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-22 21:12:52 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A182389B-88C5-60BB-52B6-1F90B579A896"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

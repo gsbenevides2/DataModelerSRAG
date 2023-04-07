@@ -1,7 +1,6 @@
+import OracleDB from "oracledb";
 import path from "path";
-import { connectToDatabase } from "../../helpers/connectToDatabase";
 
-import { readCSVFile } from "../../helpers/readCSVFile";
 import { insertAmostras } from "./insertAmostras";
 import { insertAntiviraisGripe } from "./insertAntiviraisGripe";
 import { insertCaso } from "./insertCaso";
@@ -18,45 +17,164 @@ import { insertTomografias } from "./insertTomografias";
 import { insertUti } from "./insertUti";
 import { insertVacinaGripe } from "./insertVacinaGripe";
 import { insertVacinas } from "./insertVacinas";
+import fs from "fs";
+import { insertMunicipios } from "../insertMunicipios";
+import { insertUnidade } from "../insertUnidade";
+
+const dataPath = path.resolve(process.cwd(), "data");
+const errorFolderPath = path.resolve(dataPath, "errors");
+
+export async function insertLine(
+  row: Columns,
+  connection: OracleDB.Connection
+) {
+  if (row.SG_UF !== "SP") return;
+  await insertMunicipios(row, connection);
+  await insertUnidade(row, connection);
+
+  const casId = await insertCaso(connection, row);
+
+  await Promise.all([
+    insertRaioX(connection, row, casId),
+    insertEvolucoes(connection, row, casId),
+    insertTomografias(connection, row, casId),
+    insertVacinaGripe(connection, row, casId),
+    insertEncerramento(connection, row, casId),
+    insertAntiviraisGripe(connection, row, casId),
+    insertUti(connection, row, casId),
+    insertComorbidades(connection, row, casId),
+    insertSintomas(connection, row, casId),
+    insertAmostras(connection, row, casId),
+    insertInternacoes(connection, row, casId),
+    insertTesteAntigeno(connection, row, casId),
+    insertTesteRtpcr(connection, row, casId),
+    insertTesteSorologico(connection, row, casId),
+    insertVacinas(connection, row, casId),
+  ]);
+
+  await connection.commit();
+}
+
+export async function handleError(
+  error: any,
+  connection: OracleDB.Connection,
+  row: Columns,
+  lineIndex: number,
+  pureRow: string
+) {
+  await connection.rollback();
+
+  if (!fs.existsSync(errorFolderPath)) fs.mkdirSync(errorFolderPath);
+
+  const errorsCsv = path.resolve(errorFolderPath, "errors.csv");
+  const errorLog = path.resolve(errorFolderPath, `error-${lineIndex}.txt`);
+  fs.appendFileSync(errorsCsv, `${pureRow}\n`);
+
+  const errorObject = {
+    name: error.name,
+    message: error.message,
+    stack: error.stack,
+    cause: error.cause,
+  };
+
+  Object.keys(error).forEach((key) => {
+    if (
+      key !== "name" &&
+      key !== "message" &&
+      key !== "stack" &&
+      key !== "cause"
+    ) {
+      const key2 = key as keyof typeof error;
+      const key3 = key2 as keyof typeof errorObject;
+      errorObject[key3] = error[key2];
+    }
+  });
+
+  const errorToFile = {
+    error: errorObject,
+    row: row,
+    lineIndex: lineIndex,
+    pureRow: pureRow,
+  };
+
+  fs.writeFileSync(errorLog, JSON.stringify(errorToFile, null, 2));
+}
+/*
+async function handleError(
+  error: any,
+  connection: OracleDB.Connection,
+  row: Columns,
+  lineIndex: number,
+  pureRow: string
+) {
+  await connection.rollback();
+
+  if (!fs.existsSync(errorFolderPath)) fs.mkdirSync(errorFolderPath);
+
+  const errorsCsv = path.resolve(errorFolderPath, "errors.csv");
+  const errorLog = path.resolve(errorFolderPath, `error-${lineIndex}.txt`);
+  fs.appendFileSync(errorsCsv, `${pureRow}\n`);
+
+  const errorObject = {
+    name: error.name,
+    message: error.message,
+    stack: error.stack,
+    cause: error.cause,
+  };
+
+  Object.keys(error).forEach((key) => {
+    if (
+      key !== "name" &&
+      key !== "message" &&
+      key !== "stack" &&
+      key !== "cause"
+    ) {
+      const key2 = key as keyof typeof error;
+      const key3 = key2 as keyof typeof errorObject;
+      errorObject[key3] = error[key2];
+    }
+  });
+
+  const errorToFile = {
+    error: errorObject,
+    row: row,
+    lineIndex: lineIndex,
+    pureRow: pureRow,
+  };
+
+  fs.writeFileSync(errorLog, JSON.stringify(errorToFile, null, 2));
+}
 
 async function main() {
-  const connection = await connectToDatabase();
 
-  await connection.execute("ALTER SESSION SET NLS_DATE_FORMAT = 'DD/MM/YYYY'");
+  await defineDateToThisSession(connection);
 
-  let actualLine = 0;
-  const filePath = path.resolve(
-    process.cwd(),
-    "data",
-    "Dataset Filtrado - 2021.csv"
+  const bar = new cliProgress.SingleBar(
+    {
+      format: "Progresso [{bar}] {percentage}% | {value}/{total}",
+    },
+    cliProgress.Presets.shades_classic
   );
+
+  let allLinesCounted = false;
+  let errorsCounted = 0;
+  let lineOkCounted = 0;
+
   await readCSVFile<Columns>(
-    filePath,
-    async (row) => {
-      const casId = await insertCaso(connection, row);
-
-      await insertRaioX(connection, row, casId);
-      await insertEvolucoes(connection, row, casId);
-      await insertTomografias(connection, row, casId);
-      await insertVacinaGripe(connection, row, casId);
-      await insertEncerramento(connection, row, casId);
-      await insertAntiviraisGripe(connection, row, casId);
-      await insertUti(connection, row, casId);
-      await insertComorbidades(connection, row, casId);
-      await insertSintomas(connection, row, casId);
-      await insertAmostras(connection, row, casId);
-      await insertInternacoes(connection, row, casId);
-      await insertTesteAntigeno(connection, row, casId);
-      await insertTesteRtpcr(connection, row, casId);
-      await insertTesteSorologico(connection, row, casId);
-      await insertVacinas(connection, row, casId);
-
-      await connection.commit();
-
-      actualLine++;
-
-      if (actualLine == 100) {
-        process.exit();
+    fileCsvPath,
+    async (row, index, length, pureRow) => {
+      if (!allLinesCounted) {
+        bar.start(length, 1);
+        allLinesCounted = true;
+      } else {
+        bar.update(index);
+      }
+      try {
+        await readLineData(row, connection);
+        lineOkCounted++;
+      } catch (e: any) {
+        errorsCounted++;
+        await handleError(e, connection, row, index, pureRow);
       }
     },
     {
@@ -64,6 +182,14 @@ async function main() {
       encoding: "utf8",
     }
   );
+
+  bar.stop();
+
+  await connection.close();
+
+  console.log("Linhas com erro: ", errorsCounted);
+  console.log("Linhas ok: ", lineOkCounted);
 }
 
 main();
+*/

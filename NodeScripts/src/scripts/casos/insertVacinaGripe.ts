@@ -1,4 +1,6 @@
 import OracleDB from "oracledb";
+import { OracleError } from "../../helpers/OracleError";
+import { validateDateFormat } from "../../helpers/validateDateFormat";
 
 export async function insertVacinaGripe(
   connection: OracleDB.Connection,
@@ -12,17 +14,19 @@ export async function insertVacinaGripe(
 
   const vagCasId = casId;
 
-  let vagData = null;
-  if (row.DT_UT_DOSE?.length > 0) {
-    vagData = row.DT_UT_DOSE;
-  }
+  let vagData = validateDateFormat(row.DT_UT_DOSE);
 
-  await connection.execute(
-    `INSERT INTO VACINAS_GRIPE (VAG_CAS_ID, VAG_DATA)
+  const params = {
+    vagCasId: vagCasId,
+    vagData: vagData,
+  };
+  try {
+    await connection.execute(
+      `INSERT INTO VACINAS_GRIPE (VAG_CAS_ID, VAG_DATA)
     VALUES (:vagCasId, :vagData)`,
-    {
-      vagCasId: vagCasId,
-      vagData: vagData,
-    }
-  );
+      params
+    );
+  } catch (e: any) {
+    throw new OracleError("insertVacinaGripe", e, params);
+  }
 }

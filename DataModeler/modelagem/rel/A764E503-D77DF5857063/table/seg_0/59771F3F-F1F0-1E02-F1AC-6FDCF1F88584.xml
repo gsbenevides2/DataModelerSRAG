@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="59771F3F-F1F0-1E02-F1AC-6FDCF1F88584" name="VIRUS_RESPIRATORIOS">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-20 21:17:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de metadados que lista os possíveis vírus respiratórios.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<ordsAlias>table_30</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="VIR_ID" id="8889A4F1-84FD-9EA4-C7D1-C7E2A59E2606">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-20 23:15:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do vírus respiratório.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VIR_DES" id="214303AA-6752-0FCB-5AA0-A41393A68BC0">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-20 23:16:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição do vírus respiratório.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="53195283-B8E0-ADED-0C4B-90DF20AEB813" name="PK_VIR">
+<createdBy>gsbenevides2</createdBy>
+<createdTime>2023-02-20 23:15:50 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8889A4F1-84FD-9EA4-C7D1-C7E2A59E2606"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

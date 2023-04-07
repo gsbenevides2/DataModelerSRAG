@@ -5,13 +5,13 @@ CREATE TABLE casos_tomografia (
 );
 
 COMMENT ON TABLE casos_tomografia IS
-    'Tabela de relação um para muitos entre os casos e os possiveis aspectos de tomografias.';
+    'Tabela que demonstra relação de entre casos e tomografia.';
 
 COMMENT ON COLUMN casos_tomografia.cto_cas_id IS
-    'Identificador do caso que gerou a tomografia.';
+    'Identificador do casos onde foi realizado uma tomografia.';
 
 COMMENT ON COLUMN casos_tomografia.cto_ast_id IS
-    'Identificação do resultado que define o aspecto da tomografia.';
+    'Identificador do tipo de resultado da tomografia do caso.';
 
 COMMENT ON COLUMN casos_tomografia.cto_date IS
     'Data em que foi realizada a tomografia.';

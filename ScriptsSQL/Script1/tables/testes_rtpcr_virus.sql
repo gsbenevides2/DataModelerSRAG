@@ -4,13 +4,13 @@ CREATE TABLE testes_rtpcr_virus (
 );
 
 COMMENT ON TABLE testes_rtpcr_virus IS
-    'Tabela de muitos para muitos onde os testes podem identificar muitos virus.';
+    'Tabela que lista os vírus encontrados pelo teste RT/PCR.';
 
 COMMENT ON COLUMN testes_rtpcr_virus.tsr_ter_id IS
-    'Identificador do Teste.';
+    'Identificador do teste RT/PCR.';
 
 COMMENT ON COLUMN testes_rtpcr_virus.tsr_vir_id IS
-    'Identificador do Virus.';
+    'Identificador do vírus encontrado no teste RT/PCR.';
 
 ALTER TABLE testes_rtpcr_virus ADD CONSTRAINT pk_tsr PRIMARY KEY ( tsr_ter_id,
                                                                    tsr_vir_id );

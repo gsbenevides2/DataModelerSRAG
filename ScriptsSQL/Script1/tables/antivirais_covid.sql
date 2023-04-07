@@ -4,13 +4,13 @@ CREATE TABLE antivirais_covid (
 );
 
 COMMENT ON TABLE antivirais_covid IS
-    'Tabela com a lista de antivirais para Covid.';
+    'Tabela de metadados que lista os tipos de antivirais para COVID.';
 
 COMMENT ON COLUMN antivirais_covid.anc_id IS
-    'Identificador do antiviral para covid.';
+    'Identificador do antiviral para COVID.';
 
 COMMENT ON COLUMN antivirais_covid.anc_nome IS
-    'Nome do Antiviral para covid.';
+    'Nome do antiviral para COVID.';
 
 ALTER TABLE antivirais_covid ADD CONSTRAINT pk_anc PRIMARY KEY ( anc_id );
 ALTER TABLE antivirais_covid ADD CONSTRAINT ck_anc_01 CHECK (anc_nome IS NOT NULL);

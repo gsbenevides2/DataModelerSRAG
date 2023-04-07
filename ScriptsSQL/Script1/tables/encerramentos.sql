@@ -5,13 +5,13 @@ CREATE TABLE encerramentos (
 );
 
 COMMENT ON TABLE encerramentos IS
-    'Tabela que listas quais casos possuem um encerramento.';
+    'Tabela que demonstra relação entre os casos e o critério de encerramento.';
 
 COMMENT ON COLUMN encerramentos.enc_cas_id IS
     'Identificador do caso que foi encerrado.';
 
 COMMENT ON COLUMN encerramentos.enc_cri_id IS
-    'Identificador do criterio utilizado no encerramento do caso.';
+    'Identificador do critério utilizado no encerramento do caso.';
 
 COMMENT ON COLUMN encerramentos.enc_data IS
     'Data de encerramento do caso.';

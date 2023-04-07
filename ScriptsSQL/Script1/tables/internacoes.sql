@@ -5,7 +5,7 @@ CREATE TABLE internacoes (
 );
 
 COMMENT ON TABLE internacoes IS
-    'Tabela contendo os casos em que ocorrerão internações.';
+    'Tabela contendo os casos em que ocorreram internações.';
 
 COMMENT ON COLUMN internacoes.int_cas_id IS
     'Identificador autoincremental do caso da internação.';
