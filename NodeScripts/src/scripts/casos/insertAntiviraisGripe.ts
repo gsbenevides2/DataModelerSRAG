@@ -1,6 +1,7 @@
-import OracleDB from "oracledb";
+import type OracleDB from "oracledb";
 import { OracleError } from "../../helpers/OracleError";
 import { validateDateFormat } from "../../helpers/validateDateFormat";
+import { type Columns } from "./types";
 
 export async function insertAntiviraisGripe(
   connection: OracleDB.Connection,
@@ -13,9 +14,9 @@ export async function insertAntiviraisGripe(
   const cagData = validateDateFormat(row.DT_ANTIVIR);
 
   const params = {
-    cagAngId: cagAngId,
-    casId: casId,
-    cagData: cagData,
+    cagAngId,
+    casId,
+    cagData,
   };
   try {
     await connection.execute(

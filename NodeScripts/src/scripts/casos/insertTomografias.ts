@@ -1,6 +1,7 @@
-import OracleDB from "oracledb";
+import type OracleDB from "oracledb";
 import { OracleError } from "../../helpers/OracleError";
 import { validateDateFormat } from "../../helpers/validateDateFormat";
+import { type Columns } from "./types";
 
 export async function insertTomografias(
   connection: OracleDB.Connection,
@@ -15,9 +16,9 @@ export async function insertTomografias(
   const ctoDate = validateDateFormat(row.DT_TOMO);
 
   const params = {
-    ctoCasId: ctoCasId,
-    ctoAstId: ctoAstId,
-    ctoDate: ctoDate,
+    ctoCasId,
+    ctoAstId,
+    ctoDate,
   };
 
   try {

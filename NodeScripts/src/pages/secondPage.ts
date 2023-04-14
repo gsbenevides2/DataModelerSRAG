@@ -1,4 +1,4 @@
-import OracleDB from "oracledb";
+import type OracleDB from "oracledb";
 import {
   createCentralWidgetAndLayout,
   createTitle,
@@ -11,19 +11,19 @@ import runSQLScript from "../helpers/runSQLScript";
 import { connectToDatabase } from "../helpers/connectToDatabase";
 import { thirdPage } from "./thirdPage";
 
-async function criarUsuário(connection: OracleDB.Connection) {
+async function criarUsuário(connection: OracleDB.Connection): Promise<void> {
   const sqlPath = path.resolve(
     process.cwd(),
     "..",
     "ScriptsSQL",
-    //"Script1",
-    //"tables",
+    // "Script1",
+    // "tables",
     "createUser.sql"
   );
   await runSQLScript(connection, sqlPath);
 }
 
-async function runDDL(connection: OracleDB.Connection) {
+async function runDDL(connection: OracleDB.Connection): Promise<void> {
   const sqlPath = path.resolve(
     process.cwd(),
     "..",
@@ -33,7 +33,7 @@ async function runDDL(connection: OracleDB.Connection) {
   );
   await runSQLScript(connection, sqlPath);
 }
-async function runDML(connection: OracleDB.Connection) {
+async function runDML(connection: OracleDB.Connection): Promise<void> {
   const sqlPath = path.resolve(
     process.cwd(),
     "..",
@@ -47,9 +47,9 @@ async function runDML(connection: OracleDB.Connection) {
 async function start(
   connection: OracleDB.Connection,
   connectionString: string
-) {
+): Promise<OracleDB.Connection> {
   await criarUsuário(connection);
-  connection.close();
+  await connection.close();
   const newConnection = await connectToDatabase(
     "APP",
     "APP123",
@@ -60,10 +60,10 @@ async function start(
   return newConnection;
 }
 
-export function secondPage(
+export async function secondPage(
   connection: OracleDB.Connection,
   connectionString: string
-) {
+): Promise<void> {
   const { centralWidget, rootLayout } = createCentralWidgetAndLayout();
   const title = createTitle("Aguarde uns instantes!");
   const subTitle = createTextLabel("Estamos preparando o banco para você!");
@@ -84,9 +84,9 @@ export function secondPage(
       progressBar.setVisible(false);
       thirdPage(newConnection);
     })
-    .catch((err) => {
+    .catch((err: Error) => {
       statusLabel.setText(
-        "Erro ao preparar o banco de dados.\nDetalhes: " + err
+        `Erro ao preparar o banco de dados.\nDetalhes: ${String(err)}`
       );
       progressBar.setVisible(false);
     });

@@ -1,6 +1,7 @@
-import OracleDB from "oracledb";
+import type OracleDB from "oracledb";
 import { OracleError } from "../../helpers/OracleError";
 import { validateDateFormat } from "../../helpers/validateDateFormat";
+import { type Columns } from "./types";
 
 // 1 - Influenza A
 // 2 - Influenza B
@@ -22,17 +23,18 @@ export async function insertTesteAntigeno(
   casId: number
 ): Promise<void> {
   const teaCasId = casId;
-  const teaTtaId = row.TP_TES_AN?.length ? row.TP_TES_AN : null;
-  const teaRtaId = row.RES_AN?.length ? row.RES_AN : null;
+  const teaTtaId = row.TP_TES_AN?.length !== 0 ? row.TP_TES_AN : null;
+  const teaRtaId = row.RES_AN?.length !== 0 ? row.RES_AN : null;
   const teaDataResultado = validateDateFormat(row.DT_RES_AN);
 
-  if ((teaTtaId || teaRtaId || teaDataResultado) === null) return;
+  if ((teaTtaId != null || teaRtaId != null || teaDataResultado) === null)
+    return;
 
   const params = {
-    teaCasId: teaCasId,
-    teaRtaId: teaRtaId,
-    teaTtaId: teaTtaId,
-    teaDataResultado: teaDataResultado,
+    teaCasId,
+    teaRtaId,
+    teaTtaId,
+    teaDataResultado,
   };
 
   try {
@@ -63,7 +65,7 @@ async function insertInfluenza(
 
   const params = {
     tsaCasId: casId,
-    tsaVirId: tsaVirId,
+    tsaVirId,
   };
 
   try {
@@ -85,10 +87,10 @@ async function insertOthers(
   type HashMap = {
     [key in keyof Columns]: number;
   };
-  type Values = {
+  type Values = Array<{
     tsaCasId: number;
     tsaVirId: number;
-  }[];
+  }>;
 
   const values: Values = [];
 

@@ -1,22 +1,24 @@
-import OracleDB from "oracledb";
+import type OracleDB from "oracledb";
 import { OracleError } from "../../helpers/OracleError";
 import { validateDateFormat } from "../../helpers/validateDateFormat";
+import { type Columns } from "./types";
+import { type BindParameters } from "oracledb";
 
 export async function insertTesteRtpcr(
   connection: OracleDB.Connection,
   row: Columns,
   casId: number
-) {
+): Promise<void> {
   const terCasId = casId;
-  const terRtrId = row.PCR_RESUL?.length ? row.PCR_RESUL : null;
+  const terRtrId = row.PCR_RESUL?.length !== 0 ? row.PCR_RESUL : null;
   const terDataResultado = validateDateFormat(row.DT_PCR);
 
-  if ((terRtrId || terDataResultado) === null) return;
+  if ((terRtrId != null || terDataResultado) === null) return;
 
   const params = {
-    terCasId: terCasId,
-    terRtrId: terRtrId,
-    terDataResultado: terDataResultado,
+    terCasId,
+    terRtrId,
+    terDataResultado,
   };
 
   try {
@@ -47,7 +49,7 @@ async function insertInfluenza(
 
   const params = {
     tsrCasId: casId,
-    tsrVirId: tsrVirId,
+    tsrVirId,
   };
 
   try {
@@ -69,10 +71,10 @@ async function insertOthers(
   type HashMap = {
     [key in keyof Columns]: number;
   };
-  type Values = {
+  interface Values {
     tsrCasId: number;
     tsrVirId: number;
-  };
+  }
   const values: Values[] = [];
 
   const hasMap: Partial<HashMap> = {
@@ -103,7 +105,7 @@ async function insertOthers(
     await connection.executeMany(
       `INSERT INTO TESTES_RTPCR_VIRUS (TSR_TER_ID, TSR_VIR_ID)
           VALUES(:tsrCasId, :tsrVirId)`,
-      values
+      values as unknown as BindParameters[]
     );
   } catch (e: any) {
     throw new OracleError("insertRtpcrOthers", e, values);

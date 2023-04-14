@@ -1,13 +1,14 @@
-import OracleDB from "oracledb";
+import type OracleDB from "oracledb";
 import { getMunicipioId } from "../../helpers/getMunicipioId";
 import { OracleError } from "../../helpers/OracleError";
 import { validateDateFormat } from "../../helpers/validateDateFormat";
+import { type Columns } from "./types";
 
 export async function insertInternacoes(
   connection: OracleDB.Connection,
   row: Columns,
   casId: number
-) {
+): Promise<void> {
   if (row.HOSPITAL !== "1") return;
 
   const intCasId = casId;
@@ -19,9 +20,9 @@ export async function insertInternacoes(
   }
 
   const params = {
-    intCasId: intCasId,
-    intData: intData,
-    intMunId: intMunId,
+    intCasId,
+    intData,
+    intMunId,
   };
 
   try {

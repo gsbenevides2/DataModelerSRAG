@@ -1,4 +1,4 @@
-import OracleDB from "oracledb";
+import type OracleDB from "oracledb";
 import path from "path";
 
 import { insertAmostras } from "./insertAmostras";
@@ -20,21 +20,23 @@ import { insertVacinas } from "./insertVacinas";
 import fs from "fs";
 import { insertMunicipios } from "../insertMunicipios";
 import { insertUnidade } from "../insertUnidade";
+import { type SuportedYears, type Columns } from "./types";
+import { insertAntiviraisCovid } from "./insertAntiviraisCovid";
 
 const dataPath = path.resolve(process.cwd(), "data");
-const errorFolderPath = path.resolve(dataPath, "errors");
 
 export async function insertLine(
   row: Columns,
-  connection: OracleDB.Connection
-) {
+  connection: OracleDB.Connection,
+  year: SuportedYears
+): Promise<void> {
   if (row.SG_UF !== "SP") return;
   await insertMunicipios(row, connection);
   await insertUnidade(row, connection);
 
   const casId = await insertCaso(connection, row);
 
-  await Promise.all([
+  const promises = [
     insertRaioX(connection, row, casId),
     insertEvolucoes(connection, row, casId),
     insertTomografias(connection, row, casId),
@@ -49,9 +51,17 @@ export async function insertLine(
     insertTesteAntigeno(connection, row, casId),
     insertTesteRtpcr(connection, row, casId),
     insertTesteSorologico(connection, row, casId),
-    insertVacinas(connection, row, casId),
-  ]);
+  ];
+  const notSuportedYearsForVacinas: SuportedYears[] = ["2020"];
+  const notSuportedYearsForAntiviraisCovid: SuportedYears[] = ["2020", "2021"];
 
+  if (!notSuportedYearsForVacinas.includes(year))
+    promises.push(insertVacinas(connection, row, casId));
+
+  if (!notSuportedYearsForAntiviraisCovid.includes(year))
+    promises.push(insertAntiviraisCovid(connection, row, casId));
+
+  await Promise.all(promises);
   await connection.commit();
 }
 
@@ -60,10 +70,11 @@ export async function handleError(
   connection: OracleDB.Connection,
   row: Columns,
   lineIndex: number,
-  pureRow: string
-) {
+  pureRow: string,
+  year: SuportedYears
+): Promise<void> {
   await connection.rollback();
-
+  const errorFolderPath = path.resolve(dataPath, `errors-${year}`);
   if (!fs.existsSync(errorFolderPath)) fs.mkdirSync(errorFolderPath);
 
   const errorsCsv = path.resolve(errorFolderPath, "errors.csv");
@@ -92,104 +103,10 @@ export async function handleError(
 
   const errorToFile = {
     error: errorObject,
-    row: row,
-    lineIndex: lineIndex,
-    pureRow: pureRow,
+    row,
+    lineIndex,
+    pureRow,
   };
 
   fs.writeFileSync(errorLog, JSON.stringify(errorToFile, null, 2));
 }
-/*
-async function handleError(
-  error: any,
-  connection: OracleDB.Connection,
-  row: Columns,
-  lineIndex: number,
-  pureRow: string
-) {
-  await connection.rollback();
-
-  if (!fs.existsSync(errorFolderPath)) fs.mkdirSync(errorFolderPath);
-
-  const errorsCsv = path.resolve(errorFolderPath, "errors.csv");
-  const errorLog = path.resolve(errorFolderPath, `error-${lineIndex}.txt`);
-  fs.appendFileSync(errorsCsv, `${pureRow}\n`);
-
-  const errorObject = {
-    name: error.name,
-    message: error.message,
-    stack: error.stack,
-    cause: error.cause,
-  };
-
-  Object.keys(error).forEach((key) => {
-    if (
-      key !== "name" &&
-      key !== "message" &&
-      key !== "stack" &&
-      key !== "cause"
-    ) {
-      const key2 = key as keyof typeof error;
-      const key3 = key2 as keyof typeof errorObject;
-      errorObject[key3] = error[key2];
-    }
-  });
-
-  const errorToFile = {
-    error: errorObject,
-    row: row,
-    lineIndex: lineIndex,
-    pureRow: pureRow,
-  };
-
-  fs.writeFileSync(errorLog, JSON.stringify(errorToFile, null, 2));
-}
-
-async function main() {
-
-  await defineDateToThisSession(connection);
-
-  const bar = new cliProgress.SingleBar(
-    {
-      format: "Progresso [{bar}] {percentage}% | {value}/{total}",
-    },
-    cliProgress.Presets.shades_classic
-  );
-
-  let allLinesCounted = false;
-  let errorsCounted = 0;
-  let lineOkCounted = 0;
-
-  await readCSVFile<Columns>(
-    fileCsvPath,
-    async (row, index, length, pureRow) => {
-      if (!allLinesCounted) {
-        bar.start(length, 1);
-        allLinesCounted = true;
-      } else {
-        bar.update(index);
-      }
-      try {
-        await readLineData(row, connection);
-        lineOkCounted++;
-      } catch (e: any) {
-        errorsCounted++;
-        await handleError(e, connection, row, index, pureRow);
-      }
-    },
-    {
-      delimiter: ";",
-      encoding: "utf8",
-    }
-  );
-
-  bar.stop();
-
-  await connection.close();
-
-  console.log("Linhas com erro: ", errorsCounted);
-  console.log("Linhas ok: ", lineOkCounted);
-}
-
-main();
-*/

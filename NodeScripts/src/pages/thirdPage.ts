@@ -1,46 +1,71 @@
-import { QFileDialog, FileMode, AcceptMode } from "@nodegui/nodegui";
+import { QFileDialog, FileMode, AcceptMode, QComboBox } from "@nodegui/nodegui";
 import {
   createCentralWidgetAndLayout,
   createTitle,
   createTextLabel,
   createButton,
 } from "../helpers/uiHelpers";
-import OracleDB from "oracledb";
+import type OracleDB from "oracledb";
 import { fourthPage } from "./fourthPage";
+import { type SuportedYears, suportedYears } from "../scripts/casos/types";
 
-export function thirdPage(connection: OracleDB.Connection) {
+export function thirdPage(connection: OracleDB.Connection): void {
   const { centralWidget, rootLayout } = createCentralWidgetAndLayout();
+
+  let fileUrl: string = "";
+  let selectedYear: SuportedYears = suportedYears[0];
 
   const title = createTitle("Vamos Continuar!");
 
   const subTitle = createTextLabel("Você já possui um arquivo de carga?");
 
-  const buttonFile = createButton("Selecionar Arquivo");
+  const selectFileButtonFile = createButton("Selecionar Arquivo");
+
+  const continueButton = createButton("Continuar");
+  continueButton.setEnabled(false);
 
   const fileDialog = new QFileDialog();
   fileDialog.setFileMode(FileMode.ExistingFile);
   fileDialog.setNameFilter("Arquivos de Carga (*.csv)");
   fileDialog.setAcceptMode(AcceptMode.AcceptOpen);
 
+  const selectLabel = createTextLabel("Selecione o ano de referência:");
+
   const statusLabel = createTextLabel("");
 
-  buttonFile.addEventListener("clicked", () => {
+  selectFileButtonFile.addEventListener("clicked", () => {
     fileDialog.exec();
   });
 
+  const comboBox = new QComboBox();
+
+  comboBox.addItems(suportedYears as unknown as string[]);
+
+  comboBox.setInlineStyle(
+    "font-size: 14px; font-weight: bold; margin-horizontal:8px;"
+  );
+
+  comboBox.addEventListener("currentTextChanged", (text: string) => {
+    selectedYear = text as SuportedYears;
+  });
+
   fileDialog.addEventListener("fileSelected", (fileName: string) => {
-    buttonFile.setDisabled(true);
-    statusLabel.setText("Estamos processando o arquivo de carga.");
-    console.log(fileName);
-    statusLabel.setText("Arquivo de carga processado.");
-    buttonFile.setDisabled(false);
-    fourthPage(connection, fileName);
+    fileUrl = fileName;
+    statusLabel.setText(`Arquivo selecionado: ${fileName}`);
+    continueButton.setEnabled(true);
+  });
+
+  continueButton.addEventListener("clicked", () => {
+    fourthPage(connection, fileUrl, selectedYear);
   });
 
   rootLayout.addWidget(title);
   rootLayout.addWidget(subTitle);
-  rootLayout.addWidget(buttonFile);
+  rootLayout.addWidget(selectFileButtonFile);
   rootLayout.addWidget(statusLabel);
+  rootLayout.addWidget(selectLabel);
+  rootLayout.addWidget(comboBox);
+  rootLayout.addWidget(continueButton);
 
   win.setCentralWidget(centralWidget);
 }

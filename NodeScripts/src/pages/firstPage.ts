@@ -9,7 +9,7 @@ import {
 } from "../helpers/uiHelpers";
 import { secondPage } from "./secondPage";
 
-export function firstPage() {
+export function firstPage(): void {
   const { centralWidget, rootLayout } = createCentralWidgetAndLayout();
 
   const title = createTitle("Olá seja bem vindo.");
@@ -26,6 +26,7 @@ export function firstPage() {
   const nextButton = createButton("Próximo");
   const progressBar = createInderteminateProgressBar();
 
+  // eslint-disable-next-line @typescript-eslint/no-misused-promises
   nextButton.addEventListener("clicked", async () => {
     progressBar.setVisible(true);
     nextButton.setDisabled(true);
@@ -34,7 +35,11 @@ export function firstPage() {
     const password = textEditPassword.text();
     const connectionString = textEditConnectionString.text();
 
-    if (!user || !password || !connectionString) {
+    if (
+      user.length === 0 ||
+      password.length === 0 ||
+      connectionString.length === 0
+    ) {
       statusLabel.setText("Preencha todos os campos.");
       nextButton.setDisabled(false);
       progressBar.setVisible(false);
@@ -49,9 +54,10 @@ export function firstPage() {
         connectionString
       );
       statusLabel.setText("Conectado ao banco de dados.");
-      secondPage(connection, connectionString);
+      void secondPage(connection, connectionString);
     } catch (err) {
       statusLabel.setText(
+        // eslint-disable-next-line @typescript-eslint/restrict-plus-operands
         "Erro ao conectar ao banco de dados.\nDetalhes: " + err
       );
     } finally {

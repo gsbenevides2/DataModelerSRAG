@@ -1,4 +1,4 @@
-type Columns = {
+export interface Columns {
   DT_NOTIFIC: string;
   SEM_NOT: string;
   DT_SIN_PRI: string;
@@ -152,17 +152,23 @@ type Columns = {
   RES_IGG: string;
   RES_IGM: string;
   RES_IGA: string;
-  ESTRANG: string;
-  VACINA_COV: string;
-  DOSE_1_COV: string;
-  DOSE_2_COV: string;
-  DOSE_REF: string;
-  FAB_COV_1: string;
-  FAB_COV_2: string;
-  FAB_COVREF: string;
-  LOTE_REF: string;
-  LAB_PR_COV: string;
-  LOTE_1_COV: string;
-  LOTE_2_COV: string;
-  FNT_IN_COV: string;
-};
+  ESTRANG?: string;
+  VACINA_COV?: string;
+  DOSE_1_COV?: string;
+  DOSE_2_COV?: string;
+  DOSE_REF?: string;
+  FAB_COV_1?: string;
+  FAB_COV_2?: string;
+  FAB_COVREF?: string;
+  LOTE_REF?: string;
+  LAB_PR_COV?: string;
+  LOTE_1_COV?: string;
+  LOTE_2_COV?: string;
+  FNT_IN_COV?: string;
+  TRAT_COV?: string;
+  TIPO_TRAT?: string;
+  OUT_TRAT?: string;
+  DT_TRT_COV?: string;
+}
+export const suportedYears = ["2020", "2021", "2022", "2023"] as const;
+export type SuportedYears = (typeof suportedYears)[number];

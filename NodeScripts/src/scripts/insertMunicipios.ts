@@ -1,10 +1,11 @@
-import OracleDB from "oracledb";
+import type OracleDB from "oracledb";
 import { OracleError } from "../helpers/OracleError";
+import { type Columns } from "./casos/types";
 
 const municipioExists = async (
   codIBGE: string,
   connection: OracleDB.Connection
-) => {
+): Promise<boolean> => {
   const sql = "SELECT mun_id FROM municipios WHERE mun_cod_ibge = :muniCodIbge";
   const params = [codIBGE];
 
@@ -18,10 +19,10 @@ const insertMunicipio = async (
   ibge: string,
   nome: string,
   connection: OracleDB.Connection
-) => {
-  type State = {
+): Promise<void> => {
+  interface State {
     EST_ID: number;
-  };
+  }
   const stateId = await connection.execute<State>(
     `SELECT est_id FROM ESTADOS WHERE est_nome = :est_nome`,
     [uf]
@@ -47,7 +48,10 @@ export async function insertMunicipios(
   row: Columns,
   connection: OracleDB.Connection
 ): Promise<void> {
-  if (row.CO_MUN_NOT && !(await municipioExists(row.CO_MUN_NOT, connection))) {
+  if (
+    row.CO_MUN_NOT.length > 0 &&
+    !(await municipioExists(row.CO_MUN_NOT, connection))
+  ) {
     await insertMunicipio(
       row.SG_UF_NOT,
       row.CO_MUN_NOT,
@@ -57,7 +61,10 @@ export async function insertMunicipios(
   }
   await connection.commit();
 
-  if (row.CO_MUN_RES && !(await municipioExists(row.CO_MUN_RES, connection))) {
+  if (
+    row.CO_MUN_RES.length > 0 &&
+    !(await municipioExists(row.CO_MUN_RES, connection))
+  ) {
     await insertMunicipio(
       row.SG_UF,
       row.CO_MUN_RES,
@@ -67,7 +74,10 @@ export async function insertMunicipios(
   }
   await connection.commit();
 
-  if (row.CO_MU_INTE && !(await municipioExists(row.CO_MU_INTE, connection))) {
+  if (
+    row.CO_MU_INTE.length > 0 &&
+    !(await municipioExists(row.CO_MU_INTE, connection))
+  ) {
     await insertMunicipio(
       row.SG_UF_INTE,
       row.CO_MU_INTE,

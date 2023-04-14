@@ -1,6 +1,7 @@
-import OracleDB from "oracledb";
+import type OracleDB from "oracledb";
 import { OracleError } from "../../helpers/OracleError";
 import { validateDateFormat } from "../../helpers/validateDateFormat";
+import { type Columns } from "./types";
 
 export async function insertVacinaGripe(
   connection: OracleDB.Connection,
@@ -14,11 +15,11 @@ export async function insertVacinaGripe(
 
   const vagCasId = casId;
 
-  let vagData = validateDateFormat(row.DT_UT_DOSE);
+  const vagData = validateDateFormat(row.DT_UT_DOSE);
 
   const params = {
-    vagCasId: vagCasId,
-    vagData: vagData,
+    vagCasId,
+    vagData,
   };
   try {
     await connection.execute(

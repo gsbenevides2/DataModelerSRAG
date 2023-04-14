@@ -26,6 +26,7 @@ export async function connectToDatabase(
       password,
       connectString,
     });
+    // eslint-disable-next-line @typescript-eslint/strict-boolean-expressions
     if (!connection) throw new Error("Connection is null");
     console.log("Connected to Oracle Database");
 

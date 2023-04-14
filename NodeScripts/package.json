@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "tsc && qode ./dist/index.js"
+    "start": "tsc && qode ./dist/index.js",
+    "build": "tsc",
+    "startWithoutTsc": "qode ./dist/index.js"
   },
   "dependencies": {
     "@nodegui/nodegui": "^0.59.0",

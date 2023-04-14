@@ -1,10 +1,11 @@
-import OracleDB from "oracledb";
+import type OracleDB from "oracledb";
 import { OracleError } from "../../helpers/OracleError";
+import { type Columns } from "./types";
 
-type RowsToInsert = {
+type RowsToInsert = Array<{
   csiCasId: number;
   csiSinId: number;
-}[];
+}>;
 
 type ColumnsKeys = Array<keyof Columns>;
 

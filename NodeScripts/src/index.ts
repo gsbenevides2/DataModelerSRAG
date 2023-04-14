@@ -7,6 +7,7 @@ win.resize(700, 500);
 win.show();
 
 declare global {
+  // eslint-disable-next-line no-var
   var win: QMainWindow;
 }
 

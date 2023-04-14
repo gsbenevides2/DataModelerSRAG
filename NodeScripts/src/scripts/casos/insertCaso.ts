@@ -1,8 +1,9 @@
-import OracleDB from "oracledb";
+import type OracleDB from "oracledb";
 import { getMunicipioId } from "../../helpers/getMunicipioId";
 import { getUnidadeId } from "../../helpers/getUnidadeId";
 import { OracleError } from "../../helpers/OracleError";
 import { validateDateFormat } from "../../helpers/validateDateFormat";
+import { type Columns } from "./types";
 
 export async function insertCaso(
   connection: OracleDB.Connection,
@@ -16,38 +17,40 @@ export async function insertCaso(
   if (row.CS_SEXO === "M") genId = 1;
   else if (row.CS_SEXO === "F") genId = 2;
   const dataNascimento = validateDateFormat(row.DT_NASC);
-  let idadeGestacional = row.CS_GESTANT ? Number(row.CS_GESTANT) : 6;
+  let idadeGestacional = row.CS_GESTANT.length > 0 ? Number(row.CS_GESTANT) : 6;
   if (idadeGestacional === 0) idadeGestacional = 6;
-  const racaCor = row.CS_RACA ? Number(row.CS_RACA) : 9;
-  const escolaridade = row.CS_ESCOL_N ? Number(row.CS_ESCOL_N) : 9;
+  const racaCor = row.CS_RACA.length > 0 ? Number(row.CS_RACA) : 9;
+  const escolaridade = row.CS_ESCOL_N.length > 0 ? Number(row.CS_ESCOL_N) : 9;
   const municipioId = await getMunicipioId(connection, row.CO_MUN_RES);
-  const zona = row.CS_ZONA ? Number(row.CS_ZONA) : 9;
+  const zona = row.CS_ZONA.length > 0 ? Number(row.CS_ZONA) : 9;
   let nosocomial: number | null = null;
   if (row.NOSOCOMIAL === "1") nosocomial = 1;
   else if (row.NOSOCOMIAL === "0") nosocomial = 0;
-  const suporteVentilatorio = row.SUPORT_VEN ? Number(row.SUPORT_VEN) : 9;
-  const classificacaoFinal = row.CLASSI_FIN ? Number(row.CLASSI_FIN) : 4;
+  const suporteVentilatorio =
+    row.SUPORT_VEN.length > 0 ? Number(row.SUPORT_VEN) : 9;
+  const classificacaoFinal =
+    row.CLASSI_FIN.length > 0 ? Number(row.CLASSI_FIN) : 4;
   const dataDigitacao = validateDateFormat(row.DT_DIGITA);
   let animal = null;
   if (row.AVE_SUINO?.length > 0) animal = row.AVE_SUINO;
 
   const params = {
-    dataNotificacao: dataNotificacao,
-    dataPrimeirosSintomas: dataPrimeirosSintomas,
-    unidadeId: unidadeId,
-    estrangeiro: estrangeiro,
-    genId: genId,
-    dataNascimento: dataNascimento,
-    idadeGestacional: idadeGestacional,
-    racaCor: racaCor,
-    escolaridade: escolaridade,
-    municipioId: municipioId,
-    zona: zona,
-    nosocomial: nosocomial,
-    suporteVentilatorio: suporteVentilatorio,
-    classificacaoFinal: classificacaoFinal,
-    dataDigitacao: dataDigitacao,
-    animal: animal,
+    dataNotificacao,
+    dataPrimeirosSintomas,
+    unidadeId,
+    estrangeiro,
+    genId,
+    dataNascimento,
+    idadeGestacional,
+    racaCor,
+    escolaridade,
+    municipioId,
+    zona,
+    nosocomial,
+    suporteVentilatorio,
+    classificacaoFinal,
+    dataDigitacao,
+    animal,
   };
 
   let result: OracleDB.Result<any>;
@@ -96,16 +99,16 @@ export async function insertCaso(
 
   const lastRowId = result.lastRowid;
 
-  if (!lastRowId) {
+  if (lastRowId == null) {
     console.error(
       "Ocorreu um erro ao inserir o caso não consegui obter o ID da linha inserida"
     );
     process.exit(1);
   }
 
-  type OraReturn = {
+  interface OraReturn {
     CAS_ID: number;
-  };
+  }
   let result2: OracleDB.Result<OraReturn>;
 
   const params2 = {
@@ -121,7 +124,7 @@ export async function insertCaso(
     throw new OracleError("retriveCasoId", e, params2);
   }
 
-  if (!result2.rows || result2.rows.length === 0) {
+  if (result2.rows == null || result2.rows.length === 0) {
     console.error(
       "Ocorreu um erro ao inserir o caso não consegui obter o ID do caso a apartir do id da linha inserida"
     );

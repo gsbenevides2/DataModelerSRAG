@@ -1,13 +1,13 @@
-import OracleDB from "oracledb";
+import type OracleDB from "oracledb";
 import { OracleError } from "./OracleError";
 
 export async function getUnidadeId(
   connection: OracleDB.Connection,
   uniCodCnesId: string
 ): Promise<number> {
-  type OraReturn = {
+  interface OraReturn {
     UNI_ID: number;
-  };
+  }
 
   let result: OracleDB.Result<OraReturn>;
 

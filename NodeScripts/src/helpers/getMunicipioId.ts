@@ -1,13 +1,13 @@
-import OracleDB from "oracledb";
+import type OracleDB from "oracledb";
 import { OracleError } from "./OracleError";
 
 export async function getMunicipioId(
   connection: OracleDB.Connection,
   muniCodIbge: string
 ): Promise<number> {
-  type OraReturn = {
+  interface OraReturn {
     MUN_ID: number;
-  };
+  }
 
   let result: OracleDB.Result<OraReturn>;
 

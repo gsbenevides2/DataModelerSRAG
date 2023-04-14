@@ -1,6 +1,7 @@
-import OracleDB from "oracledb";
+import type OracleDB from "oracledb";
 import { OracleError } from "../../helpers/OracleError";
 import { validateDateFormat } from "../../helpers/validateDateFormat";
+import { type Columns } from "./types";
 
 export async function insertAmostras(
   connection: OracleDB.Connection,
@@ -14,8 +15,8 @@ export async function insertAmostras(
 
   const params = {
     camCasId: casId,
-    camData: camData,
-    camTamId: camTamId,
+    camData,
+    camTamId,
   };
 
   try {

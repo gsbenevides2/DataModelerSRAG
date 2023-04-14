@@ -8,7 +8,7 @@ import {
   QWidget,
 } from "@nodegui/nodegui";
 
-export function createTextLabel(text: string) {
+export function createTextLabel(text: string): QLabel {
   const label = new QLabel();
   label.setText(text);
   label.setInlineStyle(
@@ -17,7 +17,7 @@ export function createTextLabel(text: string) {
   label.setWordWrap(true);
   return label;
 }
-export function createTextEditor(placeholder: string) {
+export function createTextEditor(placeholder: string): QLineEdit {
   const textEdit = new QLineEdit();
   textEdit.setInlineStyle(
     "font-size: 14px; font-weight: bold; margin-horizontal:8px; padding-vertical: 8px;"
@@ -25,14 +25,14 @@ export function createTextEditor(placeholder: string) {
   textEdit.setPlaceholderText(placeholder);
   return textEdit;
 }
-export function createTitle(text: string) {
+export function createTitle(text: string): QLabel {
   const title = new QLabel();
   title.setText(text);
   title.setInlineStyle("font-size: 16px; font-weight: bold; padding-top:8px;");
   title.setAlignment(AlignmentFlag.AlignCenter);
   return title;
 }
-export function createButton(text: string) {
+export function createButton(text: string): QPushButton {
   const button = new QPushButton();
   button.setText(text);
   button.setInlineStyle(
@@ -40,21 +40,25 @@ export function createButton(text: string) {
   );
   return button;
 }
-export function createCentralWidgetAndLayout() {
+interface CreateCentralWidgetAndLayout {
+  centralWidget: QWidget;
+  rootLayout: FlexLayout;
+}
+export function createCentralWidgetAndLayout(): CreateCentralWidgetAndLayout {
   const centralWidget = new QWidget();
   centralWidget.setObjectName("myroot");
   const rootLayout = new FlexLayout();
   centralWidget.setLayout(rootLayout);
   return { centralWidget, rootLayout };
 }
-export function createProgressBar() {
+export function createProgressBar(): QProgressBar {
   const progressBar = new QProgressBar();
   progressBar.setInlineStyle(
     "font-size: 14px; font-weight: bold; margin-horizontal:8px;"
   );
   return progressBar;
 }
-export function createInderteminateProgressBar() {
+export function createInderteminateProgressBar(): QProgressBar {
   const progressBar = createProgressBar();
   progressBar.setRange(0, 0);
   return progressBar;

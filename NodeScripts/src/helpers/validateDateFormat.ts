@@ -1,7 +1,7 @@
 export function validateDateFormat(date: string): string | null {
-  if (date.length == 0) return null;
-  if (date.length != 10) return null;
-  if (date[2] != "/" || date[5] != "/") return null;
+  if (date.length === 0) return null;
+  if (date.length !== 10) return null;
+  if (date[2] !== "/" || date[5] !== "/") return null;
   const day = date.substring(0, 2);
   const month = date.substring(3, 5);
   const year = date.substring(6, 10);

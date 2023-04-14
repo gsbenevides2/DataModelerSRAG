@@ -1,6 +1,7 @@
-import OracleDB from "oracledb";
+import type OracleDB from "oracledb";
 import { OracleError } from "../../helpers/OracleError";
 import { validateDateFormat } from "../../helpers/validateDateFormat";
+import { type Columns } from "./types";
 
 export async function insertEvolucoes(
   connection: OracleDB.Connection,
@@ -8,14 +9,14 @@ export async function insertEvolucoes(
   casId: number
 ): Promise<void> {
   const cevCasId = casId;
-  if (!row.EVOLUCAO || row.EVOLUCAO === "") return;
+  if (row.EVOLUCAO.length === 0 || row.EVOLUCAO === "") return;
   const cevEvoId = Number(row.EVOLUCAO);
   const cevDate = validateDateFormat(row.DT_EVOLUCA);
 
   const params = {
-    cevCasId: cevCasId,
-    cevEvoId: cevEvoId,
-    cevDate: cevDate,
+    cevCasId,
+    cevEvoId,
+    cevDate,
   };
   try {
     await connection.execute(

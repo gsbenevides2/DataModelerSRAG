@@ -1,13 +1,14 @@
-import OracleDB from "oracledb";
+import type OracleDB from "oracledb";
 import { OracleError } from "../../helpers/OracleError";
 import { validateDateFormat } from "../../helpers/validateDateFormat";
+import { type Columns } from "./types";
 
-type DoseIdentifier = {
+interface DoseIdentifier {
   doseId: number;
   fabColum: keyof Columns;
   loteColum: keyof Columns;
   dataColum: keyof Columns;
-};
+}
 
 const dose1: DoseIdentifier = {
   doseId: 1,
@@ -43,20 +44,18 @@ const doseRef2: DoseIdentifier = {
 
 const doses: DoseIdentifier[] = [dose1, dose2, doseRef1];
 
-type InsertValues = {
+type InsertValues = Array<{
   vacCasId: number;
   vacDoseId: number;
   vacFab: number | null;
   vacLote: string | null;
   vacDataAplicacao: string | null;
-}[];
+}>;
 
 function identifyFab(fabText: string): number | null {
-  if (fabText.length == 0) {
+  if (fabText.length === 0) {
     return null;
   }
-
-  const start = fabText.substring(0, 2);
   const coders = {
     "85": 1,
     "86": 2,
@@ -64,26 +63,31 @@ function identifyFab(fabText: string): number | null {
     "88": 3,
     "89": 1,
   };
+  const start = fabText.substring(0, 2);
 
-  const result = coders[start as keyof typeof coders] || null;
-
-  return result || 5;
+  if (start in coders) return coders[start as keyof typeof coders];
+  else return null;
 }
 
 export async function insertVacinas(
   connection: OracleDB.Connection,
   row: Columns,
   vacCasId: number
-) {
+): Promise<void> {
   const values: InsertValues = [];
 
   for (const dose of doses) {
-    const vacFab = identifyFab(row[dose.fabColum]);
-    const vacLote =
-      row[dose.loteColum]?.length > 0 ? row[dose.loteColum] : null;
-    const vacDataAplicacao = validateDateFormat(row[dose.dataColum]);
+    const rowFab = row[dose.fabColum];
+    const vacFab = rowFab != null ? identifyFab(rowFab) : null;
+    const rowLote = row[dose.loteColum];
+    const vacLote = rowLote != null && rowLote.length > 0 ? rowLote : null;
+    const rowData = row[dose.dataColum];
 
-    if ((vacFab || vacLote || vacDataAplicacao) == null) continue;
+    const vacDataAplicacao =
+      rowData != null ? validateDateFormat(rowData) : null;
+
+    if ((vacFab != null || vacLote != null || vacDataAplicacao) == null)
+      continue;
     else
       values.push({
         vacCasId,
@@ -94,7 +98,7 @@ export async function insertVacinas(
       });
   }
 
-  if (values.length == 0) return;
+  if (values.length === 0) return;
 
   const sql = `
         INSERT INTO VACINAS_COVID (

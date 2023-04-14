@@ -1,19 +1,19 @@
 import fs from "fs";
-import OracleDB from "oracledb";
+import type OracleDB from "oracledb";
 import path from "path";
 
 export default async function runSQLScript(
   connection: OracleDB.Connection,
   filePath: string
-  //callback: (err: Error | null, result?: any) => void
-) {
+  // callback: (err: Error | null, result?: any) => void
+): Promise<void> {
   console.log("runSQLScript", filePath);
   const file = fs.readFileSync(filePath, "utf8");
   const statements: string[] = [];
   let statement = "";
   let inComment = false;
   let beginBlock = false;
-  let openedQuotes: string[] = [];
+  const openedQuotes: string[] = [];
   for (let i = 0; i < file.length; i++) {
     const character = file[i];
     if (character === "'" || character === '"') {
@@ -49,7 +49,7 @@ export default async function runSQLScript(
 
     if (
       (character === "\n" || i === file.length - 1) &&
-      statement.length &&
+      statement.length !== 0 &&
       statement[0] === "@" &&
       statement[1] === "@"
     ) {
@@ -61,7 +61,7 @@ export default async function runSQLScript(
     }
     if (
       (character === "\n" || i === file.length - 1) &&
-      statement.length &&
+      statement.length !== 0 &&
       statement[0] === "@"
     ) {
       if (file.length - 1 === i) statement += character;
@@ -90,7 +90,7 @@ export default async function runSQLScript(
     }
   }
 
-  //console.log(statements);
+  // console.log(statements);
   for (const statement of statements) {
     try {
       if (statement.toUpperCase() === "COMMIT") await connection.commit();

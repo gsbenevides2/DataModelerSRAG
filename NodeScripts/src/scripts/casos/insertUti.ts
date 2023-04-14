@@ -1,6 +1,7 @@
-import OracleDB from "oracledb";
+import type OracleDB from "oracledb";
 import { OracleError } from "../../helpers/OracleError";
 import { validateDateFormat } from "../../helpers/validateDateFormat";
+import { type Columns } from "./types";
 
 export async function insertUti(
   connection: OracleDB.Connection,
@@ -13,9 +14,9 @@ export async function insertUti(
   const utiDataSaida = validateDateFormat(row.DT_SAIDUTI);
 
   const params = {
-    casId: casId,
-    utiDataEntrada: utiDataEntrada,
-    utiDataSaida: utiDataSaida,
+    casId,
+    utiDataEntrada,
+    utiDataSaida,
   };
 
   try {

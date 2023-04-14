@@ -1,7 +1,6 @@
 import { parse } from "csv/sync";
 import fs from "fs";
 import readline from "readline";
-import events from "events";
 import { countLines } from "./countLines";
 
 export async function readCSVFile<T>(
@@ -13,13 +12,13 @@ export async function readCSVFile<T>(
     pure: string
   ) => Promise<void>,
   options: { encoding?: BufferEncoding; delimiter?: string } = {}
-) {
+): Promise<void> {
   let headers: Array<keyof T> = [];
   let lineCount = 1;
-  const allLinesCount = await countLines(filePath);
+  const allLinesCount = (await countLines(filePath)) - 1;
   const { encoding = "utf8", delimiter = ";" } = options;
 
-  let readlineInterface = readline.createInterface({
+  const readlineInterface = readline.createInterface({
     input: fs.createReadStream(filePath, { encoding }),
     crlfDelay: Infinity,
   });
@@ -41,10 +40,12 @@ export async function readCSVFile<T>(
       console.log("Pure line:", line);
       process.exit(1);
     } else {
+      // eslint-disable-next-line @typescript-eslint/consistent-type-assertions
+      const emptyObj = {} as T;
       const obj = headers.reduce<T>((acc, header, index) => {
         acc[header] = row[index];
         return acc;
-      }, {} as T);
+      }, emptyObj);
       await onLine(obj, lineCount, allLinesCount, line);
     }
     lineCount++;

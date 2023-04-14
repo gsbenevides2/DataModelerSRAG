@@ -1,6 +1,7 @@
-import OracleDB from "oracledb";
+import type OracleDB from "oracledb";
 import { OracleError } from "../../helpers/OracleError";
 import { validateDateFormat } from "../../helpers/validateDateFormat";
+import { type Columns } from "./types";
 
 export async function insertTesteSorologico(
   connection: OracleDB.Connection,
@@ -9,34 +10,34 @@ export async function insertTesteSorologico(
 ): Promise<void> {
   const tsoCasId = casId;
 
-  const tsoTasId = row.TP_AM_SOR?.length ? row.TP_AM_SOR : null;
-  const tsoTtsId = row.TP_SOR?.length ? row.TP_SOR : null;
-  let tsoDataColeta = validateDateFormat(row.DT_CO_SOR);
-  let tsoDataResultado = validateDateFormat(row.DT_RES);
-  const tsoRtsIgg = row.RES_IGG?.length ? row.RES_IGG : null;
-  const tsoRtsIgm = row.RES_IGM?.length ? row.RES_IGM : null;
-  const tsoRtsIga = row.RES_IGA?.length ? row.RES_IGA : null;
+  const tsoTasId = row.TP_AM_SOR?.length !== 0 ? row.TP_AM_SOR : null;
+  const tsoTtsId = row.TP_SOR?.length !== 0 ? row.TP_SOR : null;
+  const tsoDataColeta = validateDateFormat(row.DT_CO_SOR);
+  const tsoDataResultado = validateDateFormat(row.DT_RES);
+  const tsoRtsIgg = row.RES_IGG?.length !== 0 ? row.RES_IGG : null;
+  const tsoRtsIgm = row.RES_IGM?.length !== 0 ? row.RES_IGM : null;
+  const tsoRtsIga = row.RES_IGA?.length !== 0 ? row.RES_IGA : null;
 
   if (
-    (tsoTasId ||
-      tsoTtsId ||
-      tsoDataColeta ||
-      tsoDataResultado ||
-      tsoRtsIgg ||
-      tsoRtsIgm ||
+    (tsoTasId != null ||
+      tsoTtsId != null ||
+      tsoDataColeta != null ||
+      tsoDataResultado != null ||
+      tsoRtsIgg != null ||
+      tsoRtsIgm != null ||
       tsoRtsIga) === null
   )
     return;
 
   const params = {
-    tsoCasId: tsoCasId,
-    tsoTasId: tsoTasId,
-    tsoTtsId: tsoTtsId,
-    tsoDataColeta: tsoDataColeta,
-    tsoDataResultado: tsoDataResultado,
-    tsoRtsIgg: tsoRtsIgg,
-    tsoRtsIgm: tsoRtsIgm,
-    tsoRtsIga: tsoRtsIga,
+    tsoCasId,
+    tsoTasId,
+    tsoTtsId,
+    tsoDataColeta,
+    tsoDataResultado,
+    tsoRtsIgg,
+    tsoRtsIgm,
+    tsoRtsIga,
   };
 
   try {
