@@ -1,8 +1,8 @@
 import { QMainWindow } from "@nodegui/nodegui";
-import { firstPage } from "./pages/firstPage";
+import { homePage } from "./pages/homePage";
 
 const win = new QMainWindow();
-win.setWindowTitle("Carga de Banco");
+
 win.resize(700, 500);
 win.show();
 
@@ -12,4 +12,4 @@ declare global {
 }
 
 global.win = win;
-firstPage();
+homePage();

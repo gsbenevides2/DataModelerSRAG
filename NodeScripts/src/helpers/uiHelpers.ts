@@ -1,6 +1,8 @@
 import {
   AlignmentFlag,
   FlexLayout,
+  QComboBox,
+  QFileDialog,
   QLabel,
   QLineEdit,
   QProgressBar,
@@ -62,4 +64,17 @@ export function createInderteminateProgressBar(): QProgressBar {
   const progressBar = createProgressBar();
   progressBar.setRange(0, 0);
   return progressBar;
+}
+
+export function createFileDialog(): QFileDialog {
+  return new QFileDialog();
+}
+
+export function createComboBox(texts: string[]): QComboBox {
+  const comboBox = new QComboBox();
+  comboBox.setInlineStyle(
+    "font-size: 14px; font-weight: bold; margin-horizontal:8px;"
+  );
+  comboBox.addItems(texts);
+  return comboBox;
 }
