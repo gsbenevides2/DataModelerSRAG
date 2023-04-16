@@ -1,6 +1,6 @@
 <h1 align="center"> 🏥Banco de Dados de SRAG🤧 </h1>
 
-Projeto de criação de um bancoa e Análise e Desenvolvimento de Sistemas de dados de casos de Síndrome Respiratória Aguda Grave do Sistema Único de Saúde Brasileiro do ano de 2021 a 2023. Este projeto foi realizado para a Disciplina de Laboratório de Banco de Dados do curso superior de Tecnologia Fatec de Mogi das Cruzes.
+Projeto de criação de um banco de dados de casos de Síndrome Respiratória Aguda Grave do Sistema Único de Saúde Brasileiro do ano de 2021 a 2023 para a disciplina de Laboratório de Banco de Dados do curso superior de Análise e Desenvolvimento de Sistemas da <a href="https://www.fatecmogidascruzes.com.br/">Faculdade de Tecnologia Fatec de Mogi das Cruzes</a>.
 
 ## 📂Estrutura de Pastas
 
@@ -46,5 +46,5 @@ npm run startWithoutTsc
 ```
 
 <p align="center">
-Construido com 💛 por Guilherme da Silva Benevides e Ewerton
+Construido com 💛 por <a href="https://github.com/gsbenevides2">Guilherme da Silva Benevides</a> e <a href="https://github.com/akioew">Ewerton Akio Sato Antonio</a>
 </p>
