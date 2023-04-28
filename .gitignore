@@ -7,3 +7,6 @@
 /NodeScripts/dist/*
 /NodeScripts/node_modules/
 /ScriptsSQL/logs.txt
+/NodeScripts/yarn.lock
+/NodeScripts/package-lock.json
+/DataModeler/modelagem/rdbms/
