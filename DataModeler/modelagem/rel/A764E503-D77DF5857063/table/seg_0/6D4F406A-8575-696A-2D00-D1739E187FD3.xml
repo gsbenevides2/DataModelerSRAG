@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6D4F406A-8575-696A-2D00-D1739E187FD3" name="H_ENCERRAMENTOS">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>H_ENCERRAMENTOS</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de historiamento da tabela H_ENCERRAMENTOS]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>551EF743-0C02-CF9B-935F-DCCE0951F5A5</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ENC_CAS_ID" id="A449F10D-428F-1571-CB10-8662E345115D">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_ENCERRAMENTOS</sourceObjSchema>
+<sourceObjName>ENC_CAS_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do caso que foi encerrado.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>2E732760-AC00-57EC-2BA3-5598D341FD3D</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ENC_CRI_ID" id="2EC6B92A-4E2D-895E-DF43-569842B066A8">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_ENCERRAMENTOS</sourceObjSchema>
+<sourceObjName>ENC_CRI_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do critério utilizado no encerramento do caso.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>DAE43EA3-6595-8074-4EE0-0CC9F01C1A09</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ENC_DATA" id="B6B12B35-64E2-70BE-DF50-5E0FB89394E4">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_ENCERRAMENTOS</sourceObjSchema>
+<sourceObjName>ENC_DATA</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de encerramento do caso.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>E3D05CCD-03B8-EC5D-0AE3-635848DD9788</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ENC_DT_HIST" id="FD16B346-9C48-8140-90FB-552C4C4FF706">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_ENCERRAMENTOS</sourceObjSchema>
+<sourceObjName>ENC_DT_HIST</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do historiamento.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>1C3ECE6A-B11B-CCC5-1CDB-C8B3CB4D20F9</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="47189642-5088-7541-677D-FF1E65D11F8A" name="PK_H_ENC">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_ENC</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>9CCA94F4-CE14-3FF3-516C-60486EC13E09</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A449F10D-428F-1571-CB10-8662E345115D"/>
+<colUsage columnID="FD16B346-9C48-8140-90FB-552C4C4FF706"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="68732FFF-2C5C-3247-7E79-44F8EC2C635D" schemaObject="7295380A-F22E-5F1C-6AD7-D17304FD0531" name="PK_H_ENC">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_ENC</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>10AF3127-B3C9-D6E5-9C3F-8900C8EBD6D2</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A449F10D-428F-1571-CB10-8662E345115D"/>
+<colUsage columnID="FD16B346-9C48-8140-90FB-552C4C4FF706"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

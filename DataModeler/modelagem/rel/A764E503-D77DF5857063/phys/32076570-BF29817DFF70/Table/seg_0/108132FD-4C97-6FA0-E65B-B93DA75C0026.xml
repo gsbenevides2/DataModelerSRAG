@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="TIPOS_AMOSTRA" directorySegmentName="seg_0" id="108132FD-4C97-6FA0-E65B-B93DA75C0026">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:10:57 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="TAM_NOME" id="53AC6E3B-04C4-AA04-4177-7C436F65FA23">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:10:57 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TAM_ID" id="F4D72479-4AA9-A1BD-0ECB-BCA3E52E006A">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:10:57 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_TAM" id="29471BFD-8F30-1776-5BB8-5C1CE458606C">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:10:57 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

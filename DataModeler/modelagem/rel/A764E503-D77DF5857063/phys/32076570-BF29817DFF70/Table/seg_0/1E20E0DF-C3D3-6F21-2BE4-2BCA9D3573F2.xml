@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="RESULTADOS_TESTE_SOROLOGICO" directorySegmentName="seg_0" id="1E20E0DF-C3D3-6F21-2BE4-2BCA9D3573F2">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:10:57 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="RTS_DESC" id="47D7F9D9-D1A0-1857-DBAE-AA91A33AA5FC">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:10:57 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="RTS_ID" id="86AD148B-BE2D-134D-751C-C5E44B6E8BF9">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:10:57 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_RTS" id="A6F4C6F0-9099-BF6E-6DEC-D864A7C24F42">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:10:57 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

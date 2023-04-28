@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="4F07297A-A832-C64B-54BA-B86DBA879351" name="H_TESTES_RTPCR">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>H_TESTES_RTPCR</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de historiamento da tabela H_TESTES_RTPCR]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>457047F9-B311-ACD3-EA35-C8B0A1755837</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TER_CAS_ID" id="C6A6D096-F82A-FCB5-4518-885E1CFE7132">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_TESTES_RTPCR</sourceObjSchema>
+<sourceObjName>TER_CAS_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do caso para aquele teste de RT/PCR.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>D84E7653-7756-E6B0-E3EE-ADE733A932E2</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TER_RTR_ID" id="7FC0D01F-9338-8599-528E-373FF24C635D">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_TESTES_RTPCR</sourceObjSchema>
+<sourceObjName>TER_RTR_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do resultado do teste de RT/PCR.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>232F3D27-5032-E531-87B0-D66DFB90BE81</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TER_DATA_RESULTADO" id="92B6F2FE-004D-626A-6D20-3EBD3756D18B">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_TESTES_RTPCR</sourceObjSchema>
+<sourceObjName>TER_DATA_RESULTADO</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do resultado do teste de RT/PCR.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>3AEBCB00-6F05-2D87-0A8D-5BEA402ADAAB</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TER_DT_HIST" id="3554AE1B-485D-F39B-5349-7174955D515E">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_TESTES_RTPCR</sourceObjSchema>
+<sourceObjName>TER_DT_HIST</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do historiamento.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>0E21BAF0-69FB-9DFC-C4CB-4CD05DEF9CC6</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F054B8C8-60DC-1C0E-844A-A957AF7BD8D8" name="PK_H_TER">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_TER</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>8401FD04-38E8-DB5A-0F6B-C8B0A2466D23</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C6A6D096-F82A-FCB5-4518-885E1CFE7132"/>
+<colUsage columnID="3554AE1B-485D-F39B-5349-7174955D515E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="836EE345-55C3-DED4-0E65-13F6621CAB7D" schemaObject="7295380A-F22E-5F1C-6AD7-D17304FD0531" name="PK_H_TER">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_TER</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>74A06AA1-9EA4-54FB-D348-4E18852C745F</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C6A6D096-F82A-FCB5-4518-885E1CFE7132"/>
+<colUsage columnID="3554AE1B-485D-F39B-5349-7174955D515E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

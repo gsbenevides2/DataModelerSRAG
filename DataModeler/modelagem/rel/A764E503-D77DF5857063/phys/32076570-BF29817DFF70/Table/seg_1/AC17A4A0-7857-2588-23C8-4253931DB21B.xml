@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="CLASSIFICACOES" directorySegmentName="seg_1" id="AC17A4A0-7857-2588-23C8-4253931DB21B">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:10:57 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="CLA_ID" id="720C03C0-C5FD-1452-9C1C-8AD8C6C1C345">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:10:57 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CLA_DESC" id="B1839AB9-65D6-E00D-6C39-F280EAED4ABB">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:10:57 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_CLA" id="B75D871E-8169-6DD3-81A6-7E1ABD83F730">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:10:57 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

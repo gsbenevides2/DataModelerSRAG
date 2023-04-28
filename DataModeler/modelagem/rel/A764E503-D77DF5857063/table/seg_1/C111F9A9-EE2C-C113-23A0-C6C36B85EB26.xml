@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="C111F9A9-EE2C-C113-23A0-C6C36B85EB26" name="H_RESULTADOS_TESTE_SOROLOGICO">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>H_RESULTADOS_TESTE_SOROLOGICO</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de historiamento da tabela H_RESULTADOS_TESTE_SOROLOGICO]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>FF62AE1D-8FB1-C67D-711B-421A728EA666</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="RTS_ID" id="CD8F6CEC-1E7B-FF72-8969-8E9DE207D260">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_RESULTADOS_TESTE_SOROLOGICO</sourceObjSchema>
+<sourceObjName>RTS_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do tipo de resultado para um teste de sorologia para SARS-Cov-2]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>BE5399A6-5264-2622-D799-A19C72A07C8A</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RTS_DESC" id="9EED7520-BCDE-A172-D0F9-2DE873213B2C">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_RESULTADOS_TESTE_SOROLOGICO</sourceObjSchema>
+<sourceObjName>RTS_DESC</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição do tipo de resultado para um teste sorológico de SARS-Cov-2]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>2CBDF2E0-00E1-39D9-3DFA-AAB637F972C7</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RTS_DT_HIST" id="9B7360E3-5913-8A7E-8D98-E16AACBA0F0F">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_RESULTADOS_TESTE_SOROLOGICO</sourceObjSchema>
+<sourceObjName>RTS_DT_HIST</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do historiamento.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>94C9F670-FB9D-9B3E-12E1-553263B21E83</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="81B19661-02FD-81B1-FF73-FBA26C600A14" name="PK_H_RTS">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_RTS</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>7EF7FF4F-C47C-FACE-13BE-B34E5A51DC26</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CD8F6CEC-1E7B-FF72-8969-8E9DE207D260"/>
+<colUsage columnID="9B7360E3-5913-8A7E-8D98-E16AACBA0F0F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C3690E3E-21DA-F088-ECA4-52D93ABEBD61" schemaObject="7295380A-F22E-5F1C-6AD7-D17304FD0531" name="PK_H_RTS">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_RTS</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>9542894B-EC99-E795-E766-F2BC716F048B</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CD8F6CEC-1E7B-FF72-8969-8E9DE207D260"/>
+<colUsage columnID="9B7360E3-5913-8A7E-8D98-E16AACBA0F0F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

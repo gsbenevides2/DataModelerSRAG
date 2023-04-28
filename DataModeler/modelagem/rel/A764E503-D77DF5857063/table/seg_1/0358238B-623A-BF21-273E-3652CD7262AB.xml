@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="0358238B-623A-BF21-273E-3652CD7262AB" name="H_TIPOS_AMOSTRA">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>H_TIPOS_AMOSTRA</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de historiamento da tabela H_TIPOS_AMOSTRA]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>36DD1FCF-4370-29D0-6390-0B3693FF8049</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TAM_ID" id="660C7C1E-DBB9-3648-78B7-A1DDFC15DFDA">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_TIPOS_AMOSTRA</sourceObjSchema>
+<sourceObjName>TAM_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do tipo de amostra coletada para o teste diagnóstico.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>32543E49-F333-85B2-C337-AB4AAA8ECCE6</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TAM_NOME" id="6965BC01-1590-51E6-BA12-A3BD621F49BC">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_TIPOS_AMOSTRA</sourceObjSchema>
+<sourceObjName>TAM_NOME</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome do tipo de amostra.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>D356C87D-BCD4-7497-FEB2-C1F3E8A420D8</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TAM_DT_HIST" id="5148B422-D45E-AAFF-F41C-E0006304E7D3">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_TIPOS_AMOSTRA</sourceObjSchema>
+<sourceObjName>TAM_DT_HIST</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do historiamento.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>E087396F-22B6-97AA-97D4-A83DD2FD7406</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="74752915-863F-2433-303B-0F89F7C8A3AB" name="PK_H_TAM">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_TAM</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>A765F526-860F-0E09-49B8-D391BCF6EAF8</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="660C7C1E-DBB9-3648-78B7-A1DDFC15DFDA"/>
+<colUsage columnID="5148B422-D45E-AAFF-F41C-E0006304E7D3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="125DC055-D9C2-3EC5-3A5E-CB580D5B1E33" schemaObject="7295380A-F22E-5F1C-6AD7-D17304FD0531" name="PK_H_TAM">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_TAM</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>536C9899-3859-A2FB-1500-7EDB756E076F</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="660C7C1E-DBB9-3648-78B7-A1DDFC15DFDA"/>
+<colUsage columnID="5148B422-D45E-AAFF-F41C-E0006304E7D3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

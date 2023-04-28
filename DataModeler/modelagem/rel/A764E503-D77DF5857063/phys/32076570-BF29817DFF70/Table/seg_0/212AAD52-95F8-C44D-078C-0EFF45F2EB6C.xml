@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="COMORBIDADES" directorySegmentName="seg_0" id="212AAD52-95F8-C44D-078C-0EFF45F2EB6C">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:10:57 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="COM_ID" id="BC3ED96E-2931-5B85-B7EF-6AC8EF10CA8E">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:10:57 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COM_NOME" id="D0555153-22D2-3A90-3F26-ED0816663942">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:10:57 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_COM" id="3207637E-B9B8-5B9F-CA7D-E5959B78D402">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:10:57 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

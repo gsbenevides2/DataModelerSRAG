@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0981C927-8849-6E8B-6597-C49E68D18D5A" name="H_CASOS_COMORBIDADES">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>H_CASOS_COMORBIDADES</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de historiamento da tabela H_CASOS_COMORBIDADES]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>E3119B1F-6F3E-2751-E0C4-F168073FCD8C</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CCO_CAS_ID" id="7F2BBA26-18C8-652C-C0AF-076781790EA7">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_CASOS_COMORBIDADES</sourceObjSchema>
+<sourceObjName>CCO_CAS_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do caso que possuí aquela comorbidade relacionada.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>B82EB110-6336-4AC9-9062-155578648D25</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CCO_COM_ID" id="49A34F4F-41F0-7008-7C06-6C2E43E93454">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_CASOS_COMORBIDADES</sourceObjSchema>
+<sourceObjName>CCO_COM_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador da comorbidade relacionada à aquele caso.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>087106AE-97EC-7CAC-D1CB-F9C215658B66</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CCO_DT_HIST" id="BE17B38A-CA1F-E7CD-C25E-FA5E9C22A4B5">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_CASOS_COMORBIDADES</sourceObjSchema>
+<sourceObjName>CCO_DT_HIST</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do historiamento.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>8B3542D5-2008-C5F2-E2CE-E8573F196F0E</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="79F811A7-9DEB-8B84-8444-5365DF717013" name="PK_H_CCO">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_CCO</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>67882128-C254-0920-4825-5A0EEC342FBD</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7F2BBA26-18C8-652C-C0AF-076781790EA7"/>
+<colUsage columnID="49A34F4F-41F0-7008-7C06-6C2E43E93454"/>
+<colUsage columnID="BE17B38A-CA1F-E7CD-C25E-FA5E9C22A4B5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1CFC3FDE-48D2-0D28-10CC-F76F13DC6BBA" schemaObject="7295380A-F22E-5F1C-6AD7-D17304FD0531" name="PK_H_CCO">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_CCO</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>7B9B146C-A1F7-802B-6129-3E857398A7AC</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7F2BBA26-18C8-652C-C0AF-076781790EA7"/>
+<colUsage columnID="49A34F4F-41F0-7008-7C06-6C2E43E93454"/>
+<colUsage columnID="BE17B38A-CA1F-E7CD-C25E-FA5E9C22A4B5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

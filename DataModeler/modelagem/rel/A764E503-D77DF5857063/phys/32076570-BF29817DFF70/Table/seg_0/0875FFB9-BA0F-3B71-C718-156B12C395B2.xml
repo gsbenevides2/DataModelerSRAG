@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="ESCOLARIDADES" directorySegmentName="seg_0" id="0875FFB9-BA0F-3B71-C718-156B12C395B2">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:10:57 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ESC_DESCRICAO" id="05B8F3E8-B348-A353-5FBD-53406B1613D4">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:10:57 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ESC_ID" id="A182389B-88C5-60BB-52B6-1F90B579A896">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:10:57 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_ESC" id="73ECD76A-3872-5931-D79F-047B10EBAF7E">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:10:57 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

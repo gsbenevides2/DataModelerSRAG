@@ -1,0 +1,129 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="H_CASOS" directorySegmentName="seg_0" id="20CB65A4-9F6F-FE61-1854-DE8C249C506D">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<schemaObject>7295380A-F22E-5F1C-6AD7-D17304FD0531</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>B9FD8609-2167-0A43-827F-335B6AAE0E71</segment>
+<tableSpace>C9DA92AE-06F3-8A51-2384-182B5251CD84</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="CAS_ZON_ID" id="0105F1BE-AB82-356A-64CF-EF3CE8EA2931">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CAS_ESC_ID" id="0B6E0D19-B50A-D9AD-50A3-732C12093825">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CAS_UNI_ID" id="201DDD92-39F1-2FA4-1EBB-274011BCBFBB">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CAS_DT_HIST" id="22135F79-53B7-59B2-32E8-6FE2E12CB640">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CAS_CLA_ID" id="41755686-C02D-98E2-0E1D-66DAB6A81F7A">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CAS_SVE_ID" id="5061ABE8-D319-C2CE-4F8E-89F4FF2DEB3D">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CAS_DATA_NOTIFICACAO" id="5B2EA1CF-BC03-6414-D908-5D5959D230B3">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CAS_DATA_NASCIMENTO" id="629CDB75-0F75-BFA9-8DE9-083CE8FD0C55">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CAS_ESTRANGEIRO" id="6B7481B5-C344-E77B-D692-D21E2088E3B1">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CAS_ID" id="71657D42-A147-A1EF-D779-D8C1BD231951">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CAS_IDG_ID" id="881EAD9F-E364-7DA3-D5B1-BAF12DFDA84E">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CAS_MUN_ID" id="A1CAC925-AF35-46E9-4CAD-FC010AA6EDB1">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CAS_GEN_ID" id="AD93A7E8-4F1C-0F4E-CF66-5FAD9096516C">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CAS_DATA_DIGITACAO" id="B7847737-D3EE-94BB-799B-52E295E54E61">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CAS_NOSOCOMIAL" id="BAAEC4AE-23E3-E6C9-9B33-1D7EC539BFDC">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CAS_DATA_PRIMEIROS_SINTOMAS" id="BD8774E4-B5A3-2F1B-B4DC-CC5FF377C372">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CAS_TAN_ID" id="C49845F4-870A-B33C-503E-944A611D0106">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CAS_RAC_ID" id="FA516A10-A1D5-D9FA-377E-B5DB4C0AA650">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_H_CAS" id="BFE56DFA-EBCD-2455-6071-E069EB3405DA">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<schemaObject>7295380A-F22E-5F1C-6AD7-D17304FD0531</schemaObject>
+<segment>BF7D5DD6-C9B3-9256-B3B6-E5F7EDA876B7</segment>
+<tableSpace>C9DA92AE-06F3-8A51-2384-182B5251CD84</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_H_CAS" id="F7AF2CD3-95B9-8646-6CBC-222F8B06B255">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<segment>BF7D5DD6-C9B3-9256-B3B6-E5F7EDA876B7</segment>
+<tableSpace>C9DA92AE-06F3-8A51-2384-182B5251CD84</tableSpace>
+<existingIndex>BFE56DFA-EBCD-2455-6071-E069EB3405DA</existingIndex>
+<indexSegment>BF7D5DD6-C9B3-9256-B3B6-E5F7EDA876B7</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

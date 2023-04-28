@@ -1,0 +1,54 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="H_TRABALHA_ANIMAIS" directorySegmentName="seg_0" id="CC720559-97A0-B2DE-A539-33F471AC4DE2">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<schemaObject>7295380A-F22E-5F1C-6AD7-D17304FD0531</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>B9FD8609-2167-0A43-827F-335B6AAE0E71</segment>
+<tableSpace>C9DA92AE-06F3-8A51-2384-182B5251CD84</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="TAN_DESCRICAO" id="159E6CA9-855B-CC52-4265-AC111DA9409A">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TAN_DT_HIST" id="6F2DBCC2-885E-EDC2-9A77-6B6EE2FA173A">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TAN_ID" id="EC0B3784-499F-ED3C-070E-92E3EB32850C">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_H_TAN" id="CD563BE8-EB5F-DF61-1385-800DD606B265">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<schemaObject>7295380A-F22E-5F1C-6AD7-D17304FD0531</schemaObject>
+<segment>BF7D5DD6-C9B3-9256-B3B6-E5F7EDA876B7</segment>
+<tableSpace>C9DA92AE-06F3-8A51-2384-182B5251CD84</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_H_TAN" id="26ED28CB-CA14-837C-73F4-472257BFCC7B">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<segment>BF7D5DD6-C9B3-9256-B3B6-E5F7EDA876B7</segment>
+<tableSpace>C9DA92AE-06F3-8A51-2384-182B5251CD84</tableSpace>
+<existingIndex>CD563BE8-EB5F-DF61-1385-800DD606B265</existingIndex>
+<indexSegment>BF7D5DD6-C9B3-9256-B3B6-E5F7EDA876B7</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

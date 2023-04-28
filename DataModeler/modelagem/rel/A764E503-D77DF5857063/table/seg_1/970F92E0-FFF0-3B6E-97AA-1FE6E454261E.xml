@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="970F92E0-FFF0-3B6E-97AA-1FE6E454261E" name="H_TIPOS_TESTES_SOROLOGICOS">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>H_TIPOS_TESTES_SOROLOGICOS</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de historiamento da tabela H_TIPOS_TESTES_SOROLOGICOS]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>2067F81A-537D-5568-90C4-D7BC33973CF4</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TTS_ID" id="822F3F79-BF08-0961-D2CF-58E89BF7F5A7">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_TIPOS_TESTES_SOROLOGICOS</sourceObjSchema>
+<sourceObjName>TTS_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do tipo de teste sorológico.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>ADC1BA5A-6B80-CE2F-BBEB-392923FDA107</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TTS_NOME" id="4E46CA1A-D112-BD4E-D20B-BA8F8DC30B56">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_TIPOS_TESTES_SOROLOGICOS</sourceObjSchema>
+<sourceObjName>TTS_NOME</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome do tipo de teste sorológico.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>44AE5537-14C0-F45D-8901-B9C70A92705F</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TTS_DT_HIST" id="8A8C2884-B09E-9CA4-5F95-C182F239419E">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_TIPOS_TESTES_SOROLOGICOS</sourceObjSchema>
+<sourceObjName>TTS_DT_HIST</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do historiamento.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>1CA22CC6-0092-F614-3736-6C8CF4F7E729</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E649F2C7-3732-E246-C2AF-A899C36A44F6" name="PK_H_TTS">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_TTS</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>99B79BB0-ECBE-6C92-14F1-6B00FF4F5CCE</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="822F3F79-BF08-0961-D2CF-58E89BF7F5A7"/>
+<colUsage columnID="8A8C2884-B09E-9CA4-5F95-C182F239419E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F583E994-A116-B3E0-33C3-6E762BD1AEB8" schemaObject="7295380A-F22E-5F1C-6AD7-D17304FD0531" name="PK_H_TTS">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_TTS</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>27CA453A-D840-BDDD-B97E-744E7210FA5A</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="822F3F79-BF08-0961-D2CF-58E89BF7F5A7"/>
+<colUsage columnID="8A8C2884-B09E-9CA4-5F95-C182F239419E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

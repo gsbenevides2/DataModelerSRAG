@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="H_MUNICIPIOS" directorySegmentName="seg_0" id="4A6BF18D-0FEC-8024-84DA-DE255D938E2C">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<schemaObject>7295380A-F22E-5F1C-6AD7-D17304FD0531</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>B9FD8609-2167-0A43-827F-335B6AAE0E71</segment>
+<tableSpace>C9DA92AE-06F3-8A51-2384-182B5251CD84</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="MUN_NOME" id="11F0FC8C-638A-4E68-9CFC-AFA5E8A30DA9">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MUN_COD_IBGE" id="15E1B4BB-08F9-17CC-D88C-7FE6271BED42">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MUN_DT_HIST" id="25C78568-8B47-EF5C-D6A4-B597FB9E0BDC">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MUN_ID" id="926541F9-13AD-9061-AC8E-9625022D1565">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MUN_EST_ID" id="CFC93E84-14D1-18C8-0BC0-45E7ED8A2203">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_H_MUN" id="39BD23AF-FE1D-42B5-D3CF-2F1AD9114D73">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<schemaObject>7295380A-F22E-5F1C-6AD7-D17304FD0531</schemaObject>
+<segment>BF7D5DD6-C9B3-9256-B3B6-E5F7EDA876B7</segment>
+<tableSpace>C9DA92AE-06F3-8A51-2384-182B5251CD84</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_H_MUN" id="AC6D2604-2D3A-BB47-E5B9-018B0DF99179">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<segment>BF7D5DD6-C9B3-9256-B3B6-E5F7EDA876B7</segment>
+<tableSpace>C9DA92AE-06F3-8A51-2384-182B5251CD84</tableSpace>
+<existingIndex>39BD23AF-FE1D-42B5-D3CF-2F1AD9114D73</existingIndex>
+<indexSegment>BF7D5DD6-C9B3-9256-B3B6-E5F7EDA876B7</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

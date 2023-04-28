@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="AE714DFB-0E97-DCCF-4AF5-0375B4690A9A" name="H_TIPOS_TESTE_ANTIGENO">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>H_TIPOS_TESTE_ANTIGENO</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de historiamento da tabela H_TIPOS_TESTE_ANTIGENO]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>24353C73-6813-8283-B09B-A6E6E9C80778</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TTA_ID" id="FE05E0FF-0FD2-4B6D-5F5C-D58085EC2924">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_TIPOS_TESTE_ANTIGENO</sourceObjSchema>
+<sourceObjName>TTA_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do tipo de teste para pesquisa de antígenos.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>206FB74E-C198-0BFB-5683-2EC7D8A99F66</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TTA_NOME" id="324CEE8B-60AF-E1BF-31F2-5918E1FFFB42">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_TIPOS_TESTE_ANTIGENO</sourceObjSchema>
+<sourceObjName>TTA_NOME</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome do tipo de teste para pesquisa de antígenos.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>7DF91EFF-C6E1-3219-C2E3-F29AF536E837</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TTA_DT_HIST" id="23D0EAC5-15E5-5EF2-0879-91AAEC7002ED">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_TIPOS_TESTE_ANTIGENO</sourceObjSchema>
+<sourceObjName>TTA_DT_HIST</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do historiamento.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>E982D629-9340-28A2-77B8-53D372D6D76B</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DD56F49D-D45E-F202-D8D9-AC8069BD941D" name="PK_H_TTA">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_TTA</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>37629B3D-C51B-F77E-4E3C-3D8F841BD13D</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FE05E0FF-0FD2-4B6D-5F5C-D58085EC2924"/>
+<colUsage columnID="23D0EAC5-15E5-5EF2-0879-91AAEC7002ED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1A259CCB-1279-F327-F6CF-7D0BCC0DB57E" schemaObject="7295380A-F22E-5F1C-6AD7-D17304FD0531" name="PK_H_TTA">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_TTA</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>0F3B193F-F074-D971-4C64-E5E1CC96CF41</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FE05E0FF-0FD2-4B6D-5F5C-D58085EC2924"/>
+<colUsage columnID="23D0EAC5-15E5-5EF2-0879-91AAEC7002ED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

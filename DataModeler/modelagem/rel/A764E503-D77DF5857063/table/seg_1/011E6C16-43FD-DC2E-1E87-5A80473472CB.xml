@@ -1,0 +1,135 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="011E6C16-43FD-DC2E-1E87-5A80473472CB" name="H_UNIDADES">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>H_UNIDADES</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de historiamento da tabela H_UNIDADES]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>29941AD2-9363-7707-CDF4-19177FC27DCE</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="UNI_ID" id="F0D4151F-1FC7-61D3-8970-70477B11F4DC">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_UNIDADES</sourceObjSchema>
+<sourceObjName>UNI_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador autoincremental da unidade de saúde.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>CB30DD9C-EB9B-F0FB-C69E-9B2F4A5FB84B</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UNI_COD_CNES" id="7FC16952-2CFC-D9F9-DCDE-79AA04F9579A">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_UNIDADES</sourceObjSchema>
+<sourceObjName>UNI_COD_CNES</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código do CNES(Cadastro Nacional de Estabelecimentos de Saúde)]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>1AB5F3F0-C6E6-A46B-091D-4DE52F45392B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UNI_NOME" id="5EF885BD-EDAA-E5F1-83C9-1940842E60BD">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_UNIDADES</sourceObjSchema>
+<sourceObjName>UNI_NOME</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome da unidade de saúde.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>96E3BAA3-D2A6-C478-AD21-B2EF108591E4</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UNI_MUN_ID" id="616B795B-DD77-8EFC-27D9-4FF58C2EC07A">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_UNIDADES</sourceObjSchema>
+<sourceObjName>UNI_MUN_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do município em que se encontra a unidade de saúde.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>770C5175-44E3-14FC-8648-96BA655333E3</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UNI_DT_HIST" id="7717864F-7170-C501-9DC3-F3C1B137C9AC">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_UNIDADES</sourceObjSchema>
+<sourceObjName>UNI_DT_HIST</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do historiamento.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>BBD255BC-6031-3B2A-7C9F-959F042606EB</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4809A9F2-6588-8105-435E-C94AD22D1242" name="PK_H_UNI">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_UNI</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>8D1159E5-FDC7-C43F-4586-7E1DB861FEDE</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F0D4151F-1FC7-61D3-8970-70477B11F4DC"/>
+<colUsage columnID="7717864F-7170-C501-9DC3-F3C1B137C9AC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="61C274F2-D6A0-4183-B789-BECBC0991D56" schemaObject="7295380A-F22E-5F1C-6AD7-D17304FD0531" name="PK_H_UNI">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_UNI</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>EB4C66F5-DC56-826B-95C9-C982BFF4EF35</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F0D4151F-1FC7-61D3-8970-70477B11F4DC"/>
+<colUsage columnID="7717864F-7170-C501-9DC3-F3C1B137C9AC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

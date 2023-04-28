@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="32628CAF-EF0C-C263-40BD-01E289122BD0" name="H_UTI">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>H_UTI</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de historiamento da tabela H_UTI]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>12DC16FA-DEE3-D8B6-1320-5D926885C769</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="UTI_CAS_ID" id="783FDCF1-1067-B7D4-C90F-5E8C27535FFD">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_UTI</sourceObjSchema>
+<sourceObjName>UTI_CAS_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do caso onde o paciente foi parar na UTI.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>6938A8C1-61D3-DD47-AE95-5E918F0C0DED</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UTI_DATA_ENTRADA" id="7D601057-BF05-8FAE-32CD-7065B85F2D79">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_UTI</sourceObjSchema>
+<sourceObjName>UTI_DATA_ENTRADA</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de entrada na UTI.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>79787C1C-D30E-6824-901B-C2AA7A7534E3</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UTI_DATA_SAIDA" id="AFC392A9-220A-FE10-A0B3-B0F41E4DC96F">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_UTI</sourceObjSchema>
+<sourceObjName>UTI_DATA_SAIDA</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de saída da UTI.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>D65F1BCE-252C-E34A-EBDC-7547F8E1A726</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UTI_DT_HIST" id="ED5B4F4B-4B55-4BCA-DC9B-89930CB53611">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_UTI</sourceObjSchema>
+<sourceObjName>UTI_DT_HIST</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do historiamento.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>B3103FF0-E189-DC4D-16ED-F1AEC6FBC730</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B4B5BDD0-5C6F-A5D0-2874-C1B698C51ED2" name="PK_H_UTI">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_UTI</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>22907632-E01A-DF50-C3AC-A08133627A89</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="783FDCF1-1067-B7D4-C90F-5E8C27535FFD"/>
+<colUsage columnID="ED5B4F4B-4B55-4BCA-DC9B-89930CB53611"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C0FD6948-01CB-1917-A018-705D7980AA73" schemaObject="7295380A-F22E-5F1C-6AD7-D17304FD0531" name="PK_H_UTI">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_UTI</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>831B9DE1-4990-6793-BBD9-D9559A0288FA</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="783FDCF1-1067-B7D4-C90F-5E8C27535FFD"/>
+<colUsage columnID="ED5B4F4B-4B55-4BCA-DC9B-89930CB53611"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,206 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="E8C7B0EF-E013-AFA2-854F-246E0A8EBCA6" name="H_TESTE_SOROLOGICOS">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>H_TESTE_SOROLOGICOS</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de historiamento da tabela H_TESTE_SOROLOGICOS]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>ABED8EFF-DA93-A280-2E9D-071FA38081FA</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TSO_CAS_ID" id="A2A50788-3278-935D-2C9B-4F1A622E4FCA">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_TESTE_SOROLOGICOS</sourceObjSchema>
+<sourceObjName>TSO_CAS_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do caso que realizou um teste sorológico para SARS-Cov-2.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>365645BC-340D-9489-ECF4-F38CEA35B8A9</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TSO_TAS_ID" id="1F38876E-8DD7-BAD2-E877-CC2A83C8752A">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_TESTE_SOROLOGICOS</sourceObjSchema>
+<sourceObjName>TSO_TAS_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do tipo de amostra usada no teste sorológico.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>FC2A953F-F628-6F91-1750-F12F54816D2D</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TSO_TTS_ID" id="1A5108AF-76B8-51BF-7FE4-665F720FEA6C">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_TESTE_SOROLOGICOS</sourceObjSchema>
+<sourceObjName>TSO_TTS_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do tipo de teste sorológico realizado.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>83F3EA4C-F550-2B3A-2292-DEC57042C382</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TSO_DATA_COLETA" id="ACA0196B-E48B-A5EB-3D28-3A7D219DF8D5">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_TESTE_SOROLOGICOS</sourceObjSchema>
+<sourceObjName>TSO_DATA_COLETA</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data da coleta da amostra para teste sorológico.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>AD28CA07-554C-B7EB-5AFA-C8AE995EF770</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TSO_DATA_RESULTADO" id="031A789F-9CC2-FB04-EA44-B14C50B8F881">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_TESTE_SOROLOGICOS</sourceObjSchema>
+<sourceObjName>TSO_DATA_RESULTADO</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do resultado do teste sorológico.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>6522869C-A85A-FC69-189C-8F342959D8E7</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TSO_RTS_IGG" id="599474E2-689F-3417-5FC6-C7B065C5C0FF">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_TESTE_SOROLOGICOS</sourceObjSchema>
+<sourceObjName>TSO_RTS_IGG</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Resultado do teste sorológico na busca de anticorpos IGG.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>515C94FC-D24F-F4D0-C290-5CC4CF7F144D</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TSO_RTS_IGM" id="70B23CAD-B08D-50C5-0990-9AA6DA568111">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_TESTE_SOROLOGICOS</sourceObjSchema>
+<sourceObjName>TSO_RTS_IGM</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Resultado do teste sorológico na busca de anticorpos IGM.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>A8CC9421-8EC0-7848-2B27-C642EEDD00D4</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TSO_RTS_IGA" id="936D7310-4308-7D51-DC4A-EDBCD320F0AC">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_TESTE_SOROLOGICOS</sourceObjSchema>
+<sourceObjName>TSO_RTS_IGA</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Resultado do teste sorológico na busca de anticorpos IGA.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>DB8F2B24-431E-1881-16B1-DF3702F2B574</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TSO_DT_HIST" id="1B89DE8C-7F56-AA9B-4CE9-5601B33D90BE">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_TESTE_SOROLOGICOS</sourceObjSchema>
+<sourceObjName>TSO_DT_HIST</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do historiamento.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>C6DCF473-B8A1-9E02-0003-533225F6FC36</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3B18D73B-D5CC-F336-BF2C-0286DF1AE3A2" name="PK_H_TSO">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_TSO</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>B5D1C13C-F1A0-505F-2C7B-010DE421D51C</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A2A50788-3278-935D-2C9B-4F1A622E4FCA"/>
+<colUsage columnID="1B89DE8C-7F56-AA9B-4CE9-5601B33D90BE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="74046876-773A-D772-8FE8-78F966A91F9B" schemaObject="7295380A-F22E-5F1C-6AD7-D17304FD0531" name="PK_H_TSO">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_TSO</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>CBB741BF-34D6-1DCB-F92E-09189E1C5FD4</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A2A50788-3278-935D-2C9B-4F1A622E4FCA"/>
+<colUsage columnID="1B89DE8C-7F56-AA9B-4CE9-5601B33D90BE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

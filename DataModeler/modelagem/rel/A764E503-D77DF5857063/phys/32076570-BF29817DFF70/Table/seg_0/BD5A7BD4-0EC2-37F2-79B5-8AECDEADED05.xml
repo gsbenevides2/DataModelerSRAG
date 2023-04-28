@@ -1,0 +1,69 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="H_VACINAS_COVID" directorySegmentName="seg_0" id="BD5A7BD4-0EC2-37F2-79B5-8AECDEADED05">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<schemaObject>7295380A-F22E-5F1C-6AD7-D17304FD0531</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>B9FD8609-2167-0A43-827F-335B6AAE0E71</segment>
+<tableSpace>C9DA92AE-06F3-8A51-2384-182B5251CD84</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="VAC_FAB_ID" id="1CF164E7-430F-4FC8-3289-F63834F1A808">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="VAC_LOTE" id="56FCB98F-1EDA-CB9C-65EF-523480114065">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="VAC_DATA_APLICACAO" id="6E1712F2-366F-1CED-33A6-1D5DE50499B0">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="VAC_CAS_ID" id="C1BE6815-182B-7C40-5D41-615384F97784">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="VAC_DOS_ID" id="C1BFCAC8-7990-2559-91B4-CEBB3FBCD845">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="VAC_DT_HIST" id="CEF3145A-CF30-4752-8D8E-3EB388AA6B76">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_H_VAC" id="8B295BA0-1615-7250-2D05-D6C65991639B">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<schemaObject>7295380A-F22E-5F1C-6AD7-D17304FD0531</schemaObject>
+<segment>BF7D5DD6-C9B3-9256-B3B6-E5F7EDA876B7</segment>
+<tableSpace>C9DA92AE-06F3-8A51-2384-182B5251CD84</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_H_VAC" id="363E0B72-68CD-60DC-869C-E72060BE065C">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<segment>BF7D5DD6-C9B3-9256-B3B6-E5F7EDA876B7</segment>
+<tableSpace>C9DA92AE-06F3-8A51-2384-182B5251CD84</tableSpace>
+<existingIndex>8B295BA0-1615-7250-2D05-D6C65991639B</existingIndex>
+<indexSegment>BF7D5DD6-C9B3-9256-B3B6-E5F7EDA876B7</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

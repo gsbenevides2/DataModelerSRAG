@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C94B77D9-F8A9-8490-BE6C-F24FF55A2FF0" name="H_CASOS_SINTOMAS">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>H_CASOS_SINTOMAS</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de historiamento da tabela H_CASOS_SINTOMAS]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>FF31E374-E9A8-E875-430E-A4E8FDA7C351</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CSI_SIN_ID" id="9B7092CB-ABE9-A9AC-F743-012E542B6DDF">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_CASOS_SINTOMAS</sourceObjSchema>
+<sourceObjName>CSI_SIN_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do sintoma relacionado à aquele caso.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>67EA614D-6805-2F53-635A-188079D621B3</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CSI_CAS_ID" id="C47C14D2-5893-F4F3-783B-CCAE71553766">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_CASOS_SINTOMAS</sourceObjSchema>
+<sourceObjName>CSI_CAS_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do caso que teve aquele sintoma.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>D32BAF17-BDF3-77F6-5EA0-B9D4F8533565</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CSI_DT_HIST" id="8A66FE84-062B-D3FE-6E2E-C5E5CD800EBA">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_CASOS_SINTOMAS</sourceObjSchema>
+<sourceObjName>CSI_DT_HIST</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do historiamento.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>8DA6251F-DA8B-FAEC-EC71-2C3A6819C080</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="18B7471E-C81F-7431-C2FD-A40C50C12ECB" name="PK_H_CSI">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_CSI</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>B524B207-7302-765D-7C2A-2AA7EE48E550</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9B7092CB-ABE9-A9AC-F743-012E542B6DDF"/>
+<colUsage columnID="C47C14D2-5893-F4F3-783B-CCAE71553766"/>
+<colUsage columnID="8A66FE84-062B-D3FE-6E2E-C5E5CD800EBA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DFA95E23-DE42-D7A0-5669-44E93498A9E6" schemaObject="7295380A-F22E-5F1C-6AD7-D17304FD0531" name="PK_H_CSI">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_CSI</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>248037DD-FAFB-B692-AD1C-CB02DCDF4AD8</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9B7092CB-ABE9-A9AC-F743-012E542B6DDF"/>
+<colUsage columnID="C47C14D2-5893-F4F3-783B-CCAE71553766"/>
+<colUsage columnID="8A66FE84-062B-D3FE-6E2E-C5E5CD800EBA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

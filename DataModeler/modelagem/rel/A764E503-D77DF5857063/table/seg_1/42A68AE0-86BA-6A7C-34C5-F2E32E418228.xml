@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="42A68AE0-86BA-6A7C-34C5-F2E32E418228" name="H_INTERNACOES">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>H_INTERNACOES</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de historiamento da tabela H_INTERNACOES]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>DDBD6824-9B51-328E-D375-5EE66ED41A38</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="INT_CAS_ID" id="916F7BD8-5F53-D9EA-831B-5A504B93C94E">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_INTERNACOES</sourceObjSchema>
+<sourceObjName>INT_CAS_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador autoincremental do caso da internação.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>116E3779-F65F-6E9E-3B79-869C1186B470</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INT_DATA" id="5266935E-85BE-0B78-B26E-1908B699B760">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_INTERNACOES</sourceObjSchema>
+<sourceObjName>INT_DATA</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data da internação.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>1B24A794-3AF3-18E7-3687-7505842FF9BD</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INT_MUN_ID" id="DE9AE0CC-9EF6-8D1B-CFE5-5B4F93AE2515">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_INTERNACOES</sourceObjSchema>
+<sourceObjName>INT_MUN_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Município em que ocorreu internação do paciente.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>115D50F0-06B7-947F-8D44-134622553400</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INT_DT_HIST" id="5BF9F478-11AD-49B2-472C-CB6F20F7665D">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_INTERNACOES</sourceObjSchema>
+<sourceObjName>INT_DT_HIST</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do historiamento.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>88E421B6-951D-BF57-F8CF-74A18FC02DA5</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="83DD994B-106A-0047-A8C9-994207A377DE" name="PK_H_INT">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_INT</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>7A606801-2E73-8A3D-1F9A-0A61195C7EFA</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="916F7BD8-5F53-D9EA-831B-5A504B93C94E"/>
+<colUsage columnID="5BF9F478-11AD-49B2-472C-CB6F20F7665D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="78290055-FFDD-101D-95E0-31F0B5ECB297" schemaObject="7295380A-F22E-5F1C-6AD7-D17304FD0531" name="PK_H_INT">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_INT</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>89BA8596-B6E6-3050-E5FA-F0833BF3C905</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="916F7BD8-5F53-D9EA-831B-5A504B93C94E"/>
+<colUsage columnID="5BF9F478-11AD-49B2-472C-CB6F20F7665D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

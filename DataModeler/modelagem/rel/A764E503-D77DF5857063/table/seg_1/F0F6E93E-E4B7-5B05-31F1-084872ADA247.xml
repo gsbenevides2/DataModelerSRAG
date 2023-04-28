@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="F0F6E93E-E4B7-5B05-31F1-084872ADA247" name="H_VACINAS_GRIPE">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>H_VACINAS_GRIPE</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de historiamento da tabela H_VACINAS_GRIPE]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>E9804461-01C3-6BA7-8253-9A4AA5F624CA</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="VAG_CAS_ID" id="6A5CBEA1-CEC6-B51D-5D8F-F0A26597DDC7">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_VACINAS_GRIPE</sourceObjSchema>
+<sourceObjName>VAG_CAS_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do caso que foi vacinado contra gripe.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>4B6CA9DB-3717-9392-B5AB-F2D51E5D22CD</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VAG_DATA" id="43DCFC0B-EC7C-9BA7-CF05-C500BC1C55CD">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_VACINAS_GRIPE</sourceObjSchema>
+<sourceObjName>VAG_DATA</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data da ultima dose de vacina contra gripe que o paciente tomou.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>DD676C81-0E93-ED9D-75E2-DF828A6F4987</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VAG_DT_HIST" id="6950C883-ADFD-FBBD-4A69-51179C6A055C">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_VACINAS_GRIPE</sourceObjSchema>
+<sourceObjName>VAG_DT_HIST</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do historiamento.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>D2FA15A4-C9BF-5BEE-D665-415BFB058E13</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="769507AE-AFD6-84A1-3909-4A937A3F1951" name="PK_H_VAG">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_VAG</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>DBC42E29-5BD3-1A4F-E5A5-0E94FC087D41</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6A5CBEA1-CEC6-B51D-5D8F-F0A26597DDC7"/>
+<colUsage columnID="6950C883-ADFD-FBBD-4A69-51179C6A055C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="335861D1-6801-3735-A461-67EE34634AC7" schemaObject="7295380A-F22E-5F1C-6AD7-D17304FD0531" name="PK_H_VAG">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_VAG</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>2B804C42-D524-9129-4EDD-E41A6F458E21</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6A5CBEA1-CEC6-B51D-5D8F-F0A26597DDC7"/>
+<colUsage columnID="6950C883-ADFD-FBBD-4A69-51179C6A055C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

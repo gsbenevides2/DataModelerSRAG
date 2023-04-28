@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="F8C1F6CD-1F5C-5A56-115A-E2FB51FD7BE1" name="H_SUPORTE_VENTILADOR">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>H_SUPORTE_VENTILADOR</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de historiamento da tabela H_SUPORTE_VENTILADOR]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>CCD0E20E-1DF5-C6DE-0ED0-B9EDB7623A69</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SVE_ID" id="BD71235A-CEAA-8C8F-B3F2-26551C938353">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_SUPORTE_VENTILADOR</sourceObjSchema>
+<sourceObjName>SVE_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do tipo de suporte ventilatório.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>17C24364-6DD5-DFBE-36F1-1541930D3581</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SVE_DESCRICAO" id="D4DC83B1-6BCC-90AB-E1D4-4B9B68FB1440">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_SUPORTE_VENTILADOR</sourceObjSchema>
+<sourceObjName>SVE_DESCRICAO</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição do tipo de suporte ventilatório.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>1DA73DA7-0013-D8F0-42D0-B2039FD8457D</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SVE_DT_HIST" id="2A8849E1-BE1F-BCA3-CC40-86B58DE23D23">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_SUPORTE_VENTILADOR</sourceObjSchema>
+<sourceObjName>SVE_DT_HIST</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do historiamento.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>B1B3ED81-0E38-FF78-A789-9FDD1A31AE87</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3FBA7CF8-4D24-38A1-7A72-C985EB92D19D" name="PK_H_SVE">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_SVE</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>42F7EF30-6D60-51BA-3AC7-8DBA9104D169</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BD71235A-CEAA-8C8F-B3F2-26551C938353"/>
+<colUsage columnID="2A8849E1-BE1F-BCA3-CC40-86B58DE23D23"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C4A55CC1-5C00-79D8-D933-9E73759095E2" schemaObject="7295380A-F22E-5F1C-6AD7-D17304FD0531" name="PK_H_SVE">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_SVE</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>B8946CB2-7B05-C192-0472-56E409FC90E5</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BD71235A-CEAA-8C8F-B3F2-26551C938353"/>
+<colUsage columnID="2A8849E1-BE1F-BCA3-CC40-86B58DE23D23"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

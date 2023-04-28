@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="75763982-BF1E-F292-5D78-0F0F5E4D56B6" name="H_DOSES">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>H_DOSES</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de historiamento da tabela H_DOSES]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>C81EF2AF-27E1-ED22-4082-DEFABC983814</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DOS_ID" id="7F48B7B9-5315-9DB0-FE4D-2CAFC1E4FDEF">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_DOSES</sourceObjSchema>
+<sourceObjName>DOS_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador unico e autoincremental do tipo de dose de vacina.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>0C708208-FA80-C243-EF4C-E5338FDD113D</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DOS_DES" id="9865A50E-B6D5-9B3D-C5EC-4275F44B339E">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_DOSES</sourceObjSchema>
+<sourceObjName>DOS_DES</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição do tipo de dose da vacina.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>CB44061A-0EBE-A6F6-AD13-7DED06DF200A</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DOS_DT_HIST" id="4C32524B-71BA-9236-9EF4-8AE0F0CC1C51">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_DOSES</sourceObjSchema>
+<sourceObjName>DOS_DT_HIST</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do historiamento.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>DC6AD830-18A3-9808-91A2-FB7B81DBB2BF</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9EC8800C-5068-4334-9AD3-3D105CF39CB8" name="PK_H_DOS">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_DOS</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>C3871942-751F-436E-7C09-FC163A2996DC</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7F48B7B9-5315-9DB0-FE4D-2CAFC1E4FDEF"/>
+<colUsage columnID="4C32524B-71BA-9236-9EF4-8AE0F0CC1C51"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AD9637C0-3BA1-2747-685F-C2F03DB1A15F" schemaObject="7295380A-F22E-5F1C-6AD7-D17304FD0531" name="PK_H_DOS">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_DOS</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>BFB461C8-FB66-216D-5C32-4A35582928C3</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7F48B7B9-5315-9DB0-FE4D-2CAFC1E4FDEF"/>
+<colUsage columnID="4C32524B-71BA-9236-9EF4-8AE0F0CC1C51"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1FD2076C-71DB-8F03-159C-E3AC044AAE67" name="H_CASOS_EVOLUCOES">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>H_CASOS_EVOLUCOES</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de historiamento da tabela H_CASOS_EVOLUCOES]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>976A1EC2-5AE9-B15D-464C-5564C6DA5ED6</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CEV_CAS_ID" id="E6EE533E-AB16-0673-EB1A-4FCE8991ADAF">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_CASOS_EVOLUCOES</sourceObjSchema>
+<sourceObjName>CEV_CAS_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do caso que teve uma evolução.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>12DD4718-C4ED-9A9C-6118-BAEC7CB62504</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CEV_EVO_ID" id="FEF6C26B-BB4C-18C5-8C44-34CEBF939B7C">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_CASOS_EVOLUCOES</sourceObjSchema>
+<sourceObjName>CEV_EVO_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do tipo de evolução que o caso teve.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>81AD240E-69EE-D5A1-EE5F-366B87EE05CB</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CEV_DATE" id="5C7B253C-792C-39DC-7E98-86C22A7F1876">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_CASOS_EVOLUCOES</sourceObjSchema>
+<sourceObjName>CEV_DATE</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data em que ocorreu aquela evolução.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>D9FCBA68-BCD1-A8B1-1604-807630B1D214</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CEV_DT_HIST" id="A3680FD0-E851-1CDC-DC4F-91B184DB352F">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_CASOS_EVOLUCOES</sourceObjSchema>
+<sourceObjName>CEV_DT_HIST</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do historiamento.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>EAF824D3-184E-B7B1-0720-39C9EF9A1E13</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6F3DC652-25AE-70A9-718D-B56205C5D6A7" name="PK_H_CEV">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_CEV</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>B1D52891-7511-3860-E289-6C02D98B1E3B</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E6EE533E-AB16-0673-EB1A-4FCE8991ADAF"/>
+<colUsage columnID="A3680FD0-E851-1CDC-DC4F-91B184DB352F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="389BB27B-368A-4C47-1EBF-D2A05CCDF644" schemaObject="7295380A-F22E-5F1C-6AD7-D17304FD0531" name="PK_H_CEV">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_CEV</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>07FEF1B0-B448-07F1-7792-C3A1F130D7BE</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E6EE533E-AB16-0673-EB1A-4FCE8991ADAF"/>
+<colUsage columnID="A3680FD0-E851-1CDC-DC4F-91B184DB352F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

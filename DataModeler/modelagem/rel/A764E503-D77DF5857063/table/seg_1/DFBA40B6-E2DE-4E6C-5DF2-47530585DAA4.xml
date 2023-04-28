@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="DFBA40B6-E2DE-4E6C-5DF2-47530585DAA4" name="H_TESTES_RTPCR_VIRUS">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>H_TESTES_RTPCR_VIRUS</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de historiamento da tabela H_TESTES_RTPCR_VIRUS]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>81B681A5-9710-06AF-DC3A-D405380D04B7</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TSR_TER_ID" id="ECFBBB84-E07A-F9E6-7938-57E125F249C0">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_TESTES_RTPCR_VIRUS</sourceObjSchema>
+<sourceObjName>TSR_TER_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do teste RT/PCR.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>73B47F55-3371-D6AE-12ED-9DE9750516C5</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TSR_VIR_ID" id="E927202B-F630-428F-FA79-10602A3BEB03">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_TESTES_RTPCR_VIRUS</sourceObjSchema>
+<sourceObjName>TSR_VIR_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do vírus encontrado no teste RT/PCR.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>2BAD20AF-3F6A-273B-9101-243DD3837CD7</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TSR_DT_HIST" id="82F1EA5F-B327-F539-AB67-F546AFB49672">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_TESTES_RTPCR_VIRUS</sourceObjSchema>
+<sourceObjName>TSR_DT_HIST</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do historiamento.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>DF14FA6B-34DE-C2C6-445D-7904C0A99FE3</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2385B713-5C12-C0E6-D180-ECF9036BD483" name="PK_H_TSR">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_TSR</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>8ADD2730-81D0-A9AD-5DAA-678DAAA3630F</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ECFBBB84-E07A-F9E6-7938-57E125F249C0"/>
+<colUsage columnID="E927202B-F630-428F-FA79-10602A3BEB03"/>
+<colUsage columnID="82F1EA5F-B327-F539-AB67-F546AFB49672"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FAC43E35-7359-DB6B-F98B-DE814D4DD3C6" schemaObject="7295380A-F22E-5F1C-6AD7-D17304FD0531" name="PK_H_TSR">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_TSR</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>7F456F48-1EEF-B473-D1FE-6E6E0F94FD56</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ECFBBB84-E07A-F9E6-7938-57E125F249C0"/>
+<colUsage columnID="E927202B-F630-428F-FA79-10602A3BEB03"/>
+<colUsage columnID="82F1EA5F-B327-F539-AB67-F546AFB49672"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

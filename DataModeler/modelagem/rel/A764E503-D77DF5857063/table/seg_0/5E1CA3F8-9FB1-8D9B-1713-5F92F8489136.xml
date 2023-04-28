@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5E1CA3F8-9FB1-8D9B-1713-5F92F8489136" name="H_CASOS_RAIOSX">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>H_CASOS_RAIOSX</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de historiamento da tabela H_CASOS_RAIOSX]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>1107D834-94CD-8E8C-92A2-DF21CAC3B7ED</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CRX_CAS_ID" id="42C31C6B-4635-B973-8C59-0E26853A25FB">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_CASOS_RAIOSX</sourceObjSchema>
+<sourceObjName>CRX_CAS_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do caso que realizou um exame de raios X.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>9552E44B-0EAB-0A04-873B-779281F56C7B</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CRX_RAI_ID" id="A401407E-5086-9571-7077-CF8986816114">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_CASOS_RAIOSX</sourceObjSchema>
+<sourceObjName>CRX_RAI_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do tipo de resultado do exame de raios X realizado.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>A7D144BA-AAEC-CD80-4E8F-52D3C49724A5</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CRX_DATE" id="3D736AF3-75D2-E6D4-B19A-43881D2764B2">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_CASOS_RAIOSX</sourceObjSchema>
+<sourceObjName>CRX_DATE</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data em que foi realizado o exame de raios X.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>DCBD0B3C-0F4C-E2E8-C095-C268BA7DF689</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CRX_DT_HIST" id="B7776475-291A-DF73-7E28-36AFE9F15A81">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_CASOS_RAIOSX</sourceObjSchema>
+<sourceObjName>CRX_DT_HIST</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do historiamento.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>FC437D9C-7386-D8C9-03E7-6D0A7E1F730B</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2C10C6C1-0E6E-221C-C4D2-7E70EFF7A807" name="PK_H_CRX">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_CRX</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>3CB1B5B5-4D33-F3F1-C327-0BB06B35CC78</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="42C31C6B-4635-B973-8C59-0E26853A25FB"/>
+<colUsage columnID="B7776475-291A-DF73-7E28-36AFE9F15A81"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3A965698-BF33-0B93-B539-734055168CD6" schemaObject="7295380A-F22E-5F1C-6AD7-D17304FD0531" name="PK_H_CRX">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_CRX</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>7306A65C-1FD7-6584-713B-653DEDF123D2</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="42C31C6B-4635-B973-8C59-0E26853A25FB"/>
+<colUsage columnID="B7776475-291A-DF73-7E28-36AFE9F15A81"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0FA03E03-19DC-5DFC-E344-3009159E70B0" name="H_CASOS_ANTIVIRAIS_GRIPE">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>H_CASOS_ANTIVIRAIS_GRIPE</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de historiamento da tabela H_CASOS_ANTIVIRAIS_GRIPE]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>D8D9A9EC-301A-6CAF-C736-302F389BC3FA</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CAG_CAS_ID" id="308EBD8D-927C-56E0-C45E-7157127E9FC7">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_CASOS_ANTIVIRAIS_GRIPE</sourceObjSchema>
+<sourceObjName>CAG_CAS_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do caso que fez uso de antiviral para gripe.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>480AD66A-62A1-64F1-A52F-80D683843AB0</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CAG_ANG_ID" id="89CD56F9-1C33-EB4D-2880-404E8EA10FF7">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_CASOS_ANTIVIRAIS_GRIPE</sourceObjSchema>
+<sourceObjName>CAG_ANG_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do antiviral para gripe utilizado naquele caso.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>BAF5AB69-85A3-5FD0-6751-12D04E73921E</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CAG_DATA" id="7E0BEE19-B5C6-CEAD-24D3-841A7BD464C1">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_CASOS_ANTIVIRAIS_GRIPE</sourceObjSchema>
+<sourceObjName>CAG_DATA</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data em que foi iniciado o tratamento com aquele antiviral para gripe.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>A37C48D6-3AC5-3041-EF1F-1D45DF5D6D64</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CAG_DT_HIST" id="D56F80D2-CCC5-C798-5B7C-E095A7EB383F">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_CASOS_ANTIVIRAIS_GRIPE</sourceObjSchema>
+<sourceObjName>CAG_DT_HIST</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do historiamento.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>13B9844B-DF7C-448A-DE02-03B7BCE7832B</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="708792B0-1FA6-4746-6CF5-8E099D9ACA21" name="PK_H_CAG">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_CAG</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>3A796D72-BD92-5F41-2389-73047B80C0C5</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="308EBD8D-927C-56E0-C45E-7157127E9FC7"/>
+<colUsage columnID="D56F80D2-CCC5-C798-5B7C-E095A7EB383F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3E3668ED-FEE0-CA66-E6D4-4D15F4AAEC8F" schemaObject="7295380A-F22E-5F1C-6AD7-D17304FD0531" name="PK_H_CAG">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_CAG</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>9D648CE7-D82E-24C8-1EC7-3DE609635657</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="308EBD8D-927C-56E0-C45E-7157127E9FC7"/>
+<colUsage columnID="D56F80D2-CCC5-C798-5B7C-E095A7EB383F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

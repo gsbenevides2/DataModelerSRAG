@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="5AD6D00A-3B5A-62C6-3E39-F6C901DBD42D" name="H_IDADES_GESTACIONAIS">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>H_IDADES_GESTACIONAIS</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de historiamento da tabela H_IDADES_GESTACIONAIS]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>F53CDF45-8718-2353-4163-CEC546ECCCA1</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IDG_ID" id="0AC5643C-87EA-13DA-9B34-F0911A2BB606">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_IDADES_GESTACIONAIS</sourceObjSchema>
+<sourceObjName>IDG_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do tipo de idade gestacional que o paciente possa ter.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>565DCF2B-CC67-D1FF-521D-7621A559893A</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IDG_DESCRICAO" id="DD7A0707-F803-443E-A3D3-F7F1836AD017">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_IDADES_GESTACIONAIS</sourceObjSchema>
+<sourceObjName>IDG_DESCRICAO</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição da idade gestacional que o paciente possa ter.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>525C7D42-1957-62E8-6D2C-82FCB20FAA8E</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IDG_DT_HIST" id="2B433F3F-3ED4-01F8-29AC-A07DBA42B307">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_IDADES_GESTACIONAIS</sourceObjSchema>
+<sourceObjName>IDG_DT_HIST</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do historiamento.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>F61A230A-F90C-B80D-1375-2510C3BC0DA5</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F601A6F4-EB4A-EB05-44E0-14D251FC7A12" name="PK_H_IDG">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_IDG</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>E914E198-9A8A-5377-1721-B0360D048EE6</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0AC5643C-87EA-13DA-9B34-F0911A2BB606"/>
+<colUsage columnID="2B433F3F-3ED4-01F8-29AC-A07DBA42B307"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="21BDAD5D-A4D9-55DC-1A8D-E534268E2853" schemaObject="7295380A-F22E-5F1C-6AD7-D17304FD0531" name="PK_H_IDG">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_IDG</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>D2FAADA9-2CFE-56E9-97B7-EF1FBA83D96E</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0AC5643C-87EA-13DA-9B34-F0911A2BB606"/>
+<colUsage columnID="2B433F3F-3ED4-01F8-29AC-A07DBA42B307"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="F69C1AE0-6012-43CA-B6DA-1162FD55DE64" name="H_RESULTADOS_RAIOX">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>H_RESULTADOS_RAIOX</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de historiamento da tabela H_RESULTADOS_RAIOX]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>92E290B4-F159-0631-FD22-F07B13E3D3A2</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="RAI_ID" id="A2BB9B82-3631-324E-1ECF-07CB3B73B891">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_RESULTADOS_RAIOX</sourceObjSchema>
+<sourceObjName>RAI_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do tipo de resultado para um exame de raios X]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>3CD5B600-09F2-6F6C-32D1-6D963C5DF518</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RAI_DESC" id="4F7290B0-15B6-5962-BC94-E4686396FA1D">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_RESULTADOS_RAIOX</sourceObjSchema>
+<sourceObjName>RAI_DESC</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição do tipo de resultado para um exame de raios X.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>5436B4E1-5C12-125B-DE40-6771E589FBE6</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RAI_DT_HIST" id="469877EE-CE88-8D48-1119-B927F469A917">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_RESULTADOS_RAIOX</sourceObjSchema>
+<sourceObjName>RAI_DT_HIST</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do historiamento.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>B2974ACA-1C24-6088-FB2C-894DF466CA43</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0996E61B-3471-2CEA-BA84-14C03EA4E841" name="PK_H_RAI">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_RAI</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>669C55DF-FC33-C4C6-03EB-E0BAB0EC5003</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A2BB9B82-3631-324E-1ECF-07CB3B73B891"/>
+<colUsage columnID="469877EE-CE88-8D48-1119-B927F469A917"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E3ECA5E3-5A96-0791-4FCD-504D2724B404" schemaObject="7295380A-F22E-5F1C-6AD7-D17304FD0531" name="PK_H_RAI">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_RAI</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>DEEFDAB3-6556-E525-2927-B5B6F106FAE5</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A2BB9B82-3631-324E-1ECF-07CB3B73B891"/>
+<colUsage columnID="469877EE-CE88-8D48-1119-B927F469A917"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

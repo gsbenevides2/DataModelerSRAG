@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="21B60AFC-F976-01EF-5977-766C9A3F8104" name="H_RACAS">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>H_RACAS</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de historiamento da tabela H_RACAS]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>5D200CF0-7752-1926-481E-04DF534860D6</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="RAC_ID" id="5495304B-6233-E6C5-F70D-06296FD767CA">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_RACAS</sourceObjSchema>
+<sourceObjName>RAC_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único de cada raça.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>B722D762-EF1D-A2CE-8479-3CB2DEA34CE4</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RAC_NOME" id="9C82318A-22E6-4625-0F6B-2C88DCECD184">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_RACAS</sourceObjSchema>
+<sourceObjName>RAC_NOME</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome de cada raça.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>17EA8C7D-1E79-B097-5F62-8312E729611C</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RAC_DT_HIST" id="42B47840-CBA8-37DF-D746-828710963C16">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_RACAS</sourceObjSchema>
+<sourceObjName>RAC_DT_HIST</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do historiamento.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>C351F249-3E9C-400A-B6DD-56BA9EB9A7B2</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D14D66BE-0ABF-F26F-5BD3-1CCF8EF27CAB" name="PK_H_RAC">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_RAC</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>2FC74636-0D0B-015A-3F92-18C06C45686F</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5495304B-6233-E6C5-F70D-06296FD767CA"/>
+<colUsage columnID="42B47840-CBA8-37DF-D746-828710963C16"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B24100F6-DCA3-CE3F-5D11-5365D8EC7E8D" schemaObject="7295380A-F22E-5F1C-6AD7-D17304FD0531" name="PK_H_RAC">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_RAC</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>3C57123F-7132-3EDF-BD4F-889B008A86C5</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5495304B-6233-E6C5-F70D-06296FD767CA"/>
+<colUsage columnID="42B47840-CBA8-37DF-D746-828710963C16"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

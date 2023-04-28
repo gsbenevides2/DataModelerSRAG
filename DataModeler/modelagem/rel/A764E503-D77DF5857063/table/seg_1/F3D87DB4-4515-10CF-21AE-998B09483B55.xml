@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="F3D87DB4-4515-10CF-21AE-998B09483B55" name="H_VIRUS_RESPIRATORIOS">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>H_VIRUS_RESPIRATORIOS</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de historiamento da tabela H_VIRUS_RESPIRATORIOS]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>53DDA2B7-8A0E-4642-2B1E-705910EDF937</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="VIR_ID" id="A9E52DE4-8846-7C9D-80D3-CFDE20563224">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_VIRUS_RESPIRATORIOS</sourceObjSchema>
+<sourceObjName>VIR_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do vírus respiratório.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>C77E48E9-8989-A92E-E146-3E2FC9306560</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VIR_DES" id="45F2AD5A-5D91-4A78-EA16-748F9B77D799">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_VIRUS_RESPIRATORIOS</sourceObjSchema>
+<sourceObjName>VIR_DES</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição do vírus respiratório.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>3B21BBAA-0305-8FA4-A932-958F8018745C</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VIR_DT_HIST" id="2244A25B-9DEA-CE2A-FBA1-9520C3472611">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_VIRUS_RESPIRATORIOS</sourceObjSchema>
+<sourceObjName>VIR_DT_HIST</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do historiamento.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>EB951519-A8C3-44CA-9374-6968AF3C935F</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B16FCD77-7A76-21F2-B713-7733759C2DCA" name="PK_H_VIR">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_VIR</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>CDBD19D9-E9DF-4F2C-A537-64074DD94AD8</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A9E52DE4-8846-7C9D-80D3-CFDE20563224"/>
+<colUsage columnID="2244A25B-9DEA-CE2A-FBA1-9520C3472611"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="466E299C-6AB3-4D37-53E4-2C22CE3B7473" schemaObject="7295380A-F22E-5F1C-6AD7-D17304FD0531" name="PK_H_VIR">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_VIR</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>D5601AF5-0273-2712-07AC-743C177B93F2</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A9E52DE4-8846-7C9D-80D3-CFDE20563224"/>
+<colUsage columnID="2244A25B-9DEA-CE2A-FBA1-9520C3472611"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

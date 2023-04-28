@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="0A5C855C-6C81-A801-B9A2-6D6F23B48E9C" name="H_RESULTADOS_TESTE_RTPC">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>H_RESULTADOS_TESTE_RTPC</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de historiamento da tabela H_RESULTADOS_TESTE_RTPC]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>B7AB3E55-B7BD-E5FA-A383-ACAFAFB7DFC6</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="RTR_ID" id="C6604F56-E951-E786-0B60-0CE682C6B3A6">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_RESULTADOS_TESTE_RTPC</sourceObjSchema>
+<sourceObjName>RTR_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do tipo de Resultado para um teste de RT/PCR.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>8F1F4AFD-CC09-9588-56E6-C7E0873A1941</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RTR_DES" id="EFB324E2-1442-F218-FD65-D6FB59B8844F">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_RESULTADOS_TESTE_RTPC</sourceObjSchema>
+<sourceObjName>RTR_DES</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição do tipo de resultado para um teste de RT/PCR.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>E6FB2E33-DE21-B54D-2FAA-1A6BE872AE91</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RTR_DT_HIST" id="4D522C07-A792-25D6-6B47-32AC46BA1D60">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_RESULTADOS_TESTE_RTPC</sourceObjSchema>
+<sourceObjName>RTR_DT_HIST</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do historiamento.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>6270BD8E-782E-9740-4F0E-2680D648BBAA</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="44C22F8A-5462-80F3-5D22-907484B76E07" name="PK_H_RTR">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_RTR</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>1E081A30-EF53-D0D5-C68F-0D5688777CDA</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C6604F56-E951-E786-0B60-0CE682C6B3A6"/>
+<colUsage columnID="4D522C07-A792-25D6-6B47-32AC46BA1D60"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D4EDFFF4-A418-58D1-5D96-36B83EDBCAC6" schemaObject="7295380A-F22E-5F1C-6AD7-D17304FD0531" name="PK_H_RTR">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_RTR</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>2E68B8BD-2E90-516D-428C-4499454E964D</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C6604F56-E951-E786-0B60-0CE682C6B3A6"/>
+<colUsage columnID="4D522C07-A792-25D6-6B47-32AC46BA1D60"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

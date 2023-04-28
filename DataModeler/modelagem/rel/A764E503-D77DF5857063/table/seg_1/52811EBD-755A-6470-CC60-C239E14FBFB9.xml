@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="52811EBD-755A-6470-CC60-C239E14FBFB9" name="H_SINTOMAS">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>H_SINTOMAS</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de historiamento da tabela H_SINTOMAS]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>0C7F3D59-46D7-8014-EA62-EEE4365AADD7</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SIN_ID" id="FF18F83D-3F2B-AA2F-9F7F-767F056D785F">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_SINTOMAS</sourceObjSchema>
+<sourceObjName>SIN_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único e autoincremental do sintoma.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>5FFA8973-145A-D3F8-6AE3-8BF7601D553E</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SIN_NOME" id="4331519A-73A7-0A06-C67A-76371DCBE3C8">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_SINTOMAS</sourceObjSchema>
+<sourceObjName>SIN_NOME</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome do sintoma.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>E5986599-35BC-BC47-F388-9914725A68C5</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SIN_DT_HIST" id="CE611FCD-96A0-5C21-37FB-63E2814ECCB3">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_SINTOMAS</sourceObjSchema>
+<sourceObjName>SIN_DT_HIST</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do historiamento.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>645E439C-7472-F95E-6AFE-C53D16B42514</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="428AFDDB-C54A-4D86-900E-2A562CA0E217" name="PK_H_SIN">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_SIN</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>F05C8D7D-9A97-08FD-F36E-9A9544DE223D</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF18F83D-3F2B-AA2F-9F7F-767F056D785F"/>
+<colUsage columnID="CE611FCD-96A0-5C21-37FB-63E2814ECCB3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1440C824-CCD2-63BB-C7AB-D25D855EDDF7" schemaObject="7295380A-F22E-5F1C-6AD7-D17304FD0531" name="PK_H_SIN">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_SIN</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>23C0317C-4B5C-E435-D866-7BCEBE7E8901</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF18F83D-3F2B-AA2F-9F7F-767F056D785F"/>
+<colUsage columnID="CE611FCD-96A0-5C21-37FB-63E2814ECCB3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

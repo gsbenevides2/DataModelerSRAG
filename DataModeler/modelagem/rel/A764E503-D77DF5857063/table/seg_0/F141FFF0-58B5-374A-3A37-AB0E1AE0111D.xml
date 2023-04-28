@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F141FFF0-58B5-374A-3A37-AB0E1AE0111D" name="H_EVOLUCOES">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>H_EVOLUCOES</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de historiamento da tabela H_EVOLUCOES]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>9D651D1F-47E6-9A90-0FF0-457F6105E0D2</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="EVO_ID" id="08D13896-0D21-384F-C464-693499ABE1D8">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_EVOLUCOES</sourceObjSchema>
+<sourceObjName>EVO_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador da evolução do caso que um caso possa possuir.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>78952059-34E5-E4D2-6C84-E0EA61B94D3E</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EVO_DESC" id="F54EB769-3CCC-1B56-6C2F-1AC0752B2092">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_EVOLUCOES</sourceObjSchema>
+<sourceObjName>EVO_DESC</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição da evolução que um caso possa possuir.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>C03D4007-8A33-6CEB-E219-FA4C25025807</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EVO_DT_HIST" id="5AE0C123-6EA4-586A-3DDB-A7FA5ED9D685">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_EVOLUCOES</sourceObjSchema>
+<sourceObjName>EVO_DT_HIST</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do historiamento.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>517AC51F-8CFF-ADBB-DC08-58AE44F71CA6</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4B9D4DC9-0C9A-1B8A-B8B3-5024487EFE2C" name="PK_H_EVO">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_EVO</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>8E0548E0-E5BD-86D7-5F71-6429CB2220A8</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="08D13896-0D21-384F-C464-693499ABE1D8"/>
+<colUsage columnID="5AE0C123-6EA4-586A-3DDB-A7FA5ED9D685"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A8599AA6-99C2-6D0D-2E99-79C68FCA9E16" schemaObject="7295380A-F22E-5F1C-6AD7-D17304FD0531" name="PK_H_EVO">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_EVO</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>1A948085-AB44-983C-BDF6-F9F5734C6539</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="08D13896-0D21-384F-C464-693499ABE1D8"/>
+<colUsage columnID="5AE0C123-6EA4-586A-3DDB-A7FA5ED9D685"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

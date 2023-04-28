@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="742BA12F-9FD7-F4D0-E251-67F8AAA7354D" name="H_CASOS_AMOSTRAS">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>H_CASOS_AMOSTRAS</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de historiamento da tabela H_CASOS_AMOSTRAS]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>DCDFFA49-47D8-4133-708A-D43288805BDA</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CAM_CAS_ID" id="B0BF563E-4641-6542-DCF4-23889CBFCF94">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_CASOS_AMOSTRAS</sourceObjSchema>
+<sourceObjName>CAM_CAS_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do caso que está relacionado a amostra coletada no teste diagnóstico.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>C513441F-60DA-A087-2E2B-1BDA0E5FCC36</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CAM_TAM_ID" id="1FE1B34C-584F-7E83-9416-04453BEF586D">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_CASOS_AMOSTRAS</sourceObjSchema>
+<sourceObjName>CAM_TAM_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do tipo de amostra que foi coletada.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>BC549924-E594-DFE4-2905-415CB4B40EAC</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CAM_DATA" id="50F7FF9C-EAD6-6B5C-94DF-D78970CF29E0">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_CASOS_AMOSTRAS</sourceObjSchema>
+<sourceObjName>CAM_DATA</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data da coleta da amostra para realização de teste diagnóstico.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>C1507408-A1DD-28DE-85CD-A93CFD3A101B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CAM_DT_HIST" id="51E266D8-D584-8776-83E7-AB3EF321970A">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_CASOS_AMOSTRAS</sourceObjSchema>
+<sourceObjName>CAM_DT_HIST</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do historiamento.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>0C8FEF4D-CB5F-DECF-EB19-81D9C362FC7D</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4CA25672-5A73-C4AD-AC3B-4DBB6976FA8B" name="PK_H_CAM">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_CAM</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>0E48F4F0-8F6E-88D5-4BF7-B6880A0868B5</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B0BF563E-4641-6542-DCF4-23889CBFCF94"/>
+<colUsage columnID="51E266D8-D584-8776-83E7-AB3EF321970A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="09FF1138-3330-3BA6-DAC8-E90464D83290" schemaObject="7295380A-F22E-5F1C-6AD7-D17304FD0531" name="PK_H_CAM">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_CAM</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>ADC5BE52-8E72-17C8-B61E-B73B12DCA034</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B0BF563E-4641-6542-DCF4-23889CBFCF94"/>
+<colUsage columnID="51E266D8-D584-8776-83E7-AB3EF321970A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

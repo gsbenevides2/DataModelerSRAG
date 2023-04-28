@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="BC86C116-B123-2EEA-8D1B-A8B16C0861E7" name="H_TIPOS_AMOSTRAS_SOROLOGICAS">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>H_TIPOS_AMOSTRAS_SOROLOGICAS</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de historiamento da tabela H_TIPOS_AMOSTRAS_SOROLOGICAS]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>C0E1ADAF-52DD-04EE-1EF2-E2DACE1C2BB3</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TAS_ID" id="AF23535A-F728-7A01-75BF-30728B81633D">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_TIPOS_AMOSTRAS_SOROLOGICAS</sourceObjSchema>
+<sourceObjName>TAS_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do tipo de amostra sorológica.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>EA5C2FEC-42F0-6D9E-34A4-3B6BBC3B7C8D</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TAS_NOME" id="3AE2C0B5-2D6F-0835-CA6B-F8BFF21446CA">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_TIPOS_AMOSTRAS_SOROLOGICAS</sourceObjSchema>
+<sourceObjName>TAS_NOME</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome do tipo de amostra sorológica.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>27ACED67-F843-51C5-B212-E57456F41698</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TAS_DT_HIST" id="F87340B8-BCC3-4521-1823-74AF2FBF37B3">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_TIPOS_AMOSTRAS_SOROLOGICAS</sourceObjSchema>
+<sourceObjName>TAS_DT_HIST</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do historiamento.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>C335AF85-D683-8299-A514-D4DC2A4F1A1F</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="91D3C7B8-23C2-BC02-DE18-A32B97FF4C81" name="PK_H_TAS">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_TAS</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>41B0CD68-5AE7-C100-D82B-EB7E400F36A6</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AF23535A-F728-7A01-75BF-30728B81633D"/>
+<colUsage columnID="F87340B8-BCC3-4521-1823-74AF2FBF37B3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DED2ADB8-6765-B7A0-08B6-48077B740421" schemaObject="7295380A-F22E-5F1C-6AD7-D17304FD0531" name="PK_H_TAS">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_TAS</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>252E0BB5-FF09-94DB-B325-DD1C90EDCF06</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AF23535A-F728-7A01-75BF-30728B81633D"/>
+<colUsage columnID="F87340B8-BCC3-4521-1823-74AF2FBF37B3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

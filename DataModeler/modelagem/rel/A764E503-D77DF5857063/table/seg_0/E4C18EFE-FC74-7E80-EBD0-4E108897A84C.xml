@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E4C18EFE-FC74-7E80-EBD0-4E108897A84C" name="H_CASOS_TOMOGRAFIA">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>H_CASOS_TOMOGRAFIA</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de historiamento da tabela H_CASOS_TOMOGRAFIA]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>6B271012-D9DA-AC93-EFF6-0C46DFBB2D06</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CTO_CAS_ID" id="4713E79F-D5F5-D13C-EC89-0C321B59E589">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_CASOS_TOMOGRAFIA</sourceObjSchema>
+<sourceObjName>CTO_CAS_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do casos onde foi realizado uma tomografia.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>2ECDC772-CB7D-4689-8AE3-62DDDBAEF438</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CTO_AST_ID" id="E31A4529-964F-0E7F-35BF-0C8E48976F19">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_CASOS_TOMOGRAFIA</sourceObjSchema>
+<sourceObjName>CTO_AST_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do tipo de resultado da tomografia do caso.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>99268B0E-C6FC-1627-F1F5-F0D2F7372A99</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CTO_DATE" id="DBC5AD37-21BF-D483-D57F-4E82D7AE3B25">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_CASOS_TOMOGRAFIA</sourceObjSchema>
+<sourceObjName>CTO_DATE</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data em que foi realizada a tomografia.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>09353DE0-A00A-FD69-217B-74A20A2C23E7</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CTO_DT_HIST" id="30A42B98-35D8-2630-EAAB-404A118B0A4D">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_CASOS_TOMOGRAFIA</sourceObjSchema>
+<sourceObjName>CTO_DT_HIST</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do historiamento.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>14E092FA-E37E-7198-C251-052C3D81F38E</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B92FB5BC-7914-8644-15AD-1FE8FB0CEE2D" name="PK_H_CTO">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_CTO</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>85B8DE0E-179B-10FD-1870-060999D1C468</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4713E79F-D5F5-D13C-EC89-0C321B59E589"/>
+<colUsage columnID="30A42B98-35D8-2630-EAAB-404A118B0A4D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F276B178-700C-CE12-8A93-14EBE804FEC9" schemaObject="7295380A-F22E-5F1C-6AD7-D17304FD0531" name="PK_H_CTO">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_CTO</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>442EDB5E-51C1-5294-2037-DA9B653B16CC</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4713E79F-D5F5-D13C-EC89-0C321B59E589"/>
+<colUsage columnID="30A42B98-35D8-2630-EAAB-404A118B0A4D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="775787F2-D8D6-B223-8566-F42D83250D45" name="H_ASPECTOS_TOMOGRAFIA">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>H_ASPECTOS_TOMOGRAFIA</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de historiamento da tabela H_ASPECTOS_TOMOGRAFIA]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>65EA6148-FB3E-9A8C-27AC-EF9F9EEFC3E5</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="AST_ID" id="DB5B214A-4658-1873-3A30-82CD68CFC9FE">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_ASPECTOS_TOMOGRAFIA</sourceObjSchema>
+<sourceObjName>AST_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do tipo de aspecto da tomografia.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>03ED8D62-1D72-6076-461D-8A03129096E3</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AST_DESCRICAO" id="0A4484E0-0FD2-E70B-E940-01DC27ABC4A4">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_ASPECTOS_TOMOGRAFIA</sourceObjSchema>
+<sourceObjName>AST_DESCRICAO</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição do aspecto da tomografia.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>C628997A-5AF3-EE31-0BE4-82457B7E6FF0</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AST_DT_HIST" id="3929CED9-60FF-1BCE-91AA-361BC63EB32E">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_ASPECTOS_TOMOGRAFIA</sourceObjSchema>
+<sourceObjName>AST_DT_HIST</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do historiamento.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>D7DF41DA-7622-8828-733B-228C5ED2A97B</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="765B0D58-0B91-3753-A65A-09F277265913" name="PK_H_AST">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_AST</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>B74524CF-B5E4-8730-2406-FF014CB9A8AB</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DB5B214A-4658-1873-3A30-82CD68CFC9FE"/>
+<colUsage columnID="3929CED9-60FF-1BCE-91AA-361BC63EB32E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="63C4D7EE-25D8-3F18-019E-35315AF46BEA" schemaObject="7295380A-F22E-5F1C-6AD7-D17304FD0531" name="PK_H_AST">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_AST</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>EBD51ECB-5BC7-69F3-52AF-5E31BE3D3FE4</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DB5B214A-4658-1873-3A30-82CD68CFC9FE"/>
+<colUsage columnID="3929CED9-60FF-1BCE-91AA-361BC63EB32E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="EDA36EE2-8148-D81F-93BE-95E58D5A10B7" name="H_TESTES_ANTIGENOS_VIRUS">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>H_TESTES_ANTIGENOS_VIRUS</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de historiamento da tabela H_TESTES_ANTIGENOS_VIRUS]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>013D0A54-644B-B5ED-5D13-9C9E2A364816</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TSA_TEA_ID" id="4A01BF53-9C77-3079-0DEB-AA74170C13C3">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_TESTES_ANTIGENOS_VIRUS</sourceObjSchema>
+<sourceObjName>TSA_TEA_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do teste antígeno.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>A0B730A8-587E-BACE-59DD-A11929D1986D</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TSA_VIR_ID" id="A18186A4-14FE-5D10-A32F-3C2115C125CF">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_TESTES_ANTIGENOS_VIRUS</sourceObjSchema>
+<sourceObjName>TSA_VIR_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do vírus encontrado no teste antígeno.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>664BA5BD-3085-2C94-9CBD-711E72517B61</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TSA_DT_HIST" id="C2660404-C6E9-B8E2-B867-A966C6633D98">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_TESTES_ANTIGENOS_VIRUS</sourceObjSchema>
+<sourceObjName>TSA_DT_HIST</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do historiamento.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>3C47E52D-3F9B-14A0-C3FC-3BD17A5B8F8F</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1D265B3A-0AEC-A5D5-C0FB-2F34A9754317" name="PK_H_TSA">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_TSA</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>6B8984EA-F3FD-0215-8B1A-661671E0A457</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4A01BF53-9C77-3079-0DEB-AA74170C13C3"/>
+<colUsage columnID="A18186A4-14FE-5D10-A32F-3C2115C125CF"/>
+<colUsage columnID="C2660404-C6E9-B8E2-B867-A966C6633D98"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AA6DB126-85FB-60DF-AC20-050D62227721" schemaObject="7295380A-F22E-5F1C-6AD7-D17304FD0531" name="PK_H_TSA">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_TSA</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>56EEB9E3-0D4D-F099-3639-765D9E536682</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4A01BF53-9C77-3079-0DEB-AA74170C13C3"/>
+<colUsage columnID="A18186A4-14FE-5D10-A32F-3C2115C125CF"/>
+<colUsage columnID="C2660404-C6E9-B8E2-B867-A966C6633D98"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

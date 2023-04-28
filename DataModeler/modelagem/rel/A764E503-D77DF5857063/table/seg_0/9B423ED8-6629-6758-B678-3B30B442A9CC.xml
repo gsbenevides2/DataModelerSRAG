@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9B423ED8-6629-6758-B678-3B30B442A9CC" name="H_ANTIVIRAIS_GRIPE">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>H_ANTIVIRAIS_GRIPE</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de historiamento da tabela H_ANTIVIRAIS_GRIPE]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>F3C07717-2CBB-6829-6B10-D837B53246B2</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ANG_ID" id="31868F53-A918-3611-8ECF-56AD85ADED46">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_ANTIVIRAIS_GRIPE</sourceObjSchema>
+<sourceObjName>ANG_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do antiviral para gripe.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>34C3D0C6-0A4D-1FBE-DA37-9DA28E4FEA29</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ANG_NOME" id="A6028D2D-5FDA-C2F5-D31C-620BD2BE03A9">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_ANTIVIRAIS_GRIPE</sourceObjSchema>
+<sourceObjName>ANG_NOME</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome do antiviral para gripe.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>3C2EC984-B3BF-4580-E4EF-69CFB2B161B3</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ANG_DT_HIST" id="15813734-4CB5-770B-C64A-48EA49C8B312">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_ANTIVIRAIS_GRIPE</sourceObjSchema>
+<sourceObjName>ANG_DT_HIST</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do historiamento.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>6711E512-94D8-0945-CB17-14DF57390C7F</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="138FEE73-26A4-C65B-31D0-B65C386D662B" name="PK_H_ANG">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_ANG</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>7F160B97-A1F7-C4E4-9995-B30CA69C73F4</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="31868F53-A918-3611-8ECF-56AD85ADED46"/>
+<colUsage columnID="15813734-4CB5-770B-C64A-48EA49C8B312"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="28AD778D-36FC-9D00-E462-3F16182EABAD" schemaObject="7295380A-F22E-5F1C-6AD7-D17304FD0531" name="PK_H_ANG">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_ANG</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>F270ACD9-2FB2-5A76-4508-5D156E503303</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="31868F53-A918-3611-8ECF-56AD85ADED46"/>
+<colUsage columnID="15813734-4CB5-770B-C64A-48EA49C8B312"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

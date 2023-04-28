@@ -1,0 +1,363 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="20CB65A4-9F6F-FE61-1854-DE8C249C506D" name="H_CASOS">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>H_CASOS</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de historiamento da tabela H_CASOS]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>E0F22C92-C6B8-6706-10BA-E29B98001FF2</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CAS_ID" id="71657D42-A147-A1EF-D779-D8C1BD231951">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_CASOS</sourceObjSchema>
+<sourceObjName>CAS_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador autoincremental de cada caso de síndrome respiratória aguda grave.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>653A2071-3864-C3FA-96E9-B309C6623661</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<ownDataTypeParameters>,22,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CAS_DATA_NOTIFICACAO" id="5B2EA1CF-BC03-6414-D908-5D5959D230B3">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_CASOS</sourceObjSchema>
+<sourceObjName>CAS_DATA_NOTIFICACAO</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do preenchimento da ficha de notificação.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>6083BAAD-FF17-2AA4-B766-C106B347A6B2</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CAS_DATA_PRIMEIROS_SINTOMAS" id="BD8774E4-B5A3-2F1B-B4DC-CC5FF377C372">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_CASOS</sourceObjSchema>
+<sourceObjName>CAS_DATA_PRIMEIROS_SINTOMAS</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de inicio dos primeiros sintomas do caso.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>B84D014C-8A7C-79B9-F764-24319CBC7ECB</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CAS_UNI_ID" id="201DDD92-39F1-2FA4-1EBB-274011BCBFBB">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_CASOS</sourceObjSchema>
+<sourceObjName>CAS_UNI_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador da unidade de saúde que realizou a notificação.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>A0821B06-8091-788B-2948-BC031A73B166</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CAS_ESTRANGEIRO" id="6B7481B5-C344-E77B-D692-D21E2088E3B1">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_CASOS</sourceObjSchema>
+<sourceObjName>CAS_ESTRANGEIRO</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Boleano que representa se o paciente é ou não estrangeiro.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>1192FD40-1743-4A86-BFD4-0C6BDB445317</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CAS_GEN_ID" id="AD93A7E8-4F1C-0F4E-CF66-5FAD9096516C">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_CASOS</sourceObjSchema>
+<sourceObjName>CAS_GEN_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do gênero do paciente.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>FDC65814-413D-88EA-127D-FF9244A5A2E5</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CAS_DATA_NASCIMENTO" id="629CDB75-0F75-BFA9-8DE9-083CE8FD0C55">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_CASOS</sourceObjSchema>
+<sourceObjName>CAS_DATA_NASCIMENTO</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de nascimento do paciente.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>F291BAB6-6B2C-2034-FC71-0F0BC16AAA94</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CAS_IDG_ID" id="881EAD9F-E364-7DA3-D5B1-BAF12DFDA84E">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_CASOS</sourceObjSchema>
+<sourceObjName>CAS_IDG_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador da idade gestacional do paciente.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>1258CE1C-88E9-1B4B-824F-D5C443FC550E</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CAS_RAC_ID" id="FA516A10-A1D5-D9FA-377E-B5DB4C0AA650">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_CASOS</sourceObjSchema>
+<sourceObjName>CAS_RAC_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador da raça declarada pelo paciente.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>4C32E32B-B0FA-A44E-D49C-B80093B41B63</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CAS_ESC_ID" id="0B6E0D19-B50A-D9AD-50A3-732C12093825">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_CASOS</sourceObjSchema>
+<sourceObjName>CAS_ESC_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do nível de escolaridade do paciente.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>F3D4CEE9-B5E0-9537-8622-2225CE9927C7</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CAS_MUN_ID" id="A1CAC925-AF35-46E9-4CAD-FC010AA6EDB1">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_CASOS</sourceObjSchema>
+<sourceObjName>CAS_MUN_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do município de residencia do paciente.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>2B051EA4-2391-CEB2-DA75-8CE9AA9EB070</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CAS_ZON_ID" id="0105F1BE-AB82-356A-64CF-EF3CE8EA2931">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_CASOS</sourceObjSchema>
+<sourceObjName>CAS_ZON_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador da zona geográfica do endereço do paciente.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>F9A1395D-11DC-45D5-6597-B79B78070DAE</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CAS_NOSOCOMIAL" id="BAAEC4AE-23E3-E6C9-9B33-1D7EC539BFDC">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_CASOS</sourceObjSchema>
+<sourceObjName>CAS_NOSOCOMIAL</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Boleano que diz se o caso de síndrome respiratória aguda grave adquirida em atendimento hospitalar.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>35A94540-D984-90D6-60E4-03981D1C9CCF</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CAS_SVE_ID" id="5061ABE8-D319-C2CE-4F8E-89F4FF2DEB3D">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_CASOS</sourceObjSchema>
+<sourceObjName>CAS_SVE_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do nível de suporte ventilatório utilizado.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>5E8359D1-0215-4DD1-7E0A-AF7D2EDE2DC4</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CAS_CLA_ID" id="41755686-C02D-98E2-0E1D-66DAB6A81F7A">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_CASOS</sourceObjSchema>
+<sourceObjName>CAS_CLA_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador da classificação do caso de síndrome respiratória aguda grave.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>1D4DC0A8-A7C4-FEAC-4E88-DDB921E47AE5</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CAS_DATA_DIGITACAO" id="B7847737-D3EE-94BB-799B-52E295E54E61">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_CASOS</sourceObjSchema>
+<sourceObjName>CAS_DATA_DIGITACAO</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de inserção do caso no sistema.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>106AEEB2-7C86-60E5-1A60-8EF03491A237</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CAS_TAN_ID" id="C49845F4-870A-B33C-503E-944A611D0106">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_CASOS</sourceObjSchema>
+<sourceObjName>CAS_TAN_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador se o paciente do caso trabalha com algum tipo de animal.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>870180B6-932E-ED7B-00DC-799D9DFAB2A7</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CAS_DT_HIST" id="22135F79-53B7-59B2-32E8-6FE2E12CB640">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_CASOS</sourceObjSchema>
+<sourceObjName>CAS_DT_HIST</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do historiamento.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>025F85D2-DDA1-162B-B315-0F37C5229D61</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F7AF2CD3-95B9-8646-6CBC-222F8B06B255" name="PK_H_CAS">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_CAS</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>A2C7090F-7FFE-57D6-DE9A-B97C48E380F5</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="71657D42-A147-A1EF-D779-D8C1BD231951"/>
+<colUsage columnID="22135F79-53B7-59B2-32E8-6FE2E12CB640"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BFE56DFA-EBCD-2455-6071-E069EB3405DA" schemaObject="7295380A-F22E-5F1C-6AD7-D17304FD0531" name="PK_H_CAS">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_CAS</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>9B1866DA-A6CC-A28C-3658-7F9056C8A899</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="71657D42-A147-A1EF-D779-D8C1BD231951"/>
+<colUsage columnID="22135F79-53B7-59B2-32E8-6FE2E12CB640"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9EEE1CF5-8E73-F4DB-2F36-E0BBFFEA55A0" name="H_CRITERIOS_ENCERRAMENTO">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>H_CRITERIOS_ENCERRAMENTO</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de historiamento da tabela H_CRITERIOS_ENCERRAMENTO]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>1ACDDC3B-545D-357F-3819-E5F4C6495683</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CRI_ID" id="0A954FCB-C688-8FB2-8476-E729B9064711">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_CRITERIOS_ENCERRAMENTO</sourceObjSchema>
+<sourceObjName>CRI_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do critério de encerramento do caso.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>9AFC6ED9-E7AC-F001-025B-90B0FDBB76AB</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CRI_DESC" id="69BA228F-8A40-6DA7-066D-58268B9848F2">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_CRITERIOS_ENCERRAMENTO</sourceObjSchema>
+<sourceObjName>CRI_DESC</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição do critério de encerramento.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>B631FC05-3504-DFBA-2419-86B02962116E</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CRI_DT_HIST" id="146C2055-69D0-C77D-8A16-C18B66A01F2C">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_CRITERIOS_ENCERRAMENTO</sourceObjSchema>
+<sourceObjName>CRI_DT_HIST</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do historiamento.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>D0C803DA-91C7-8C82-27EE-38B5090A9CA4</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="79A6DE28-EBB6-605C-E923-44D6F2E636D2" name="PK_H_CRI">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_CRI</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>AFCE97B0-EA66-A8D1-D622-1C6E8ECEAB4C</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0A954FCB-C688-8FB2-8476-E729B9064711"/>
+<colUsage columnID="146C2055-69D0-C77D-8A16-C18B66A01F2C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AF0DD6DF-A62A-BD52-CE04-FF4C60EE2D27" schemaObject="7295380A-F22E-5F1C-6AD7-D17304FD0531" name="PK_H_CRI">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_CRI</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>061404B8-B5D9-CF1D-3085-181E0D7685EB</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0A954FCB-C688-8FB2-8476-E729B9064711"/>
+<colUsage columnID="146C2055-69D0-C77D-8A16-C18B66A01F2C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

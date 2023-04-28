@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D1AFDD40-D781-93BD-78E7-7289D0D10D02" name="H_COMORBIDADES">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>H_COMORBIDADES</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de historiamento da tabela H_COMORBIDADES]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>780F830C-76D4-A6D6-4329-99A0E03ADE36</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COM_ID" id="C05B0D7B-1D1A-1AB4-12BC-CADEE15C2ECD">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_COMORBIDADES</sourceObjSchema>
+<sourceObjName>COM_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador autoincremental de cada comorbidade.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>0CCBCDF7-D845-38CC-1795-7DD3F5E99BE4</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COM_NOME" id="CD13229A-BC37-1536-8B48-20D68602AC6E">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_COMORBIDADES</sourceObjSchema>
+<sourceObjName>COM_NOME</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome de cada comorbidade.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>0B44F5A2-A763-34E3-AF76-9B7E0D0BF709</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COM_DT_HIST" id="219C5F86-1B44-FC9A-E502-9219B9A3E058">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_COMORBIDADES</sourceObjSchema>
+<sourceObjName>COM_DT_HIST</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do historiamento.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>2E94CB71-E678-CFCF-0153-C4C86ACDE2BC</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E94CBA07-30FC-8B8D-D8BF-FA5B8A8AB3C9" name="PK_H_COM">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_COM</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>AFE3F046-63D3-6072-C909-EECA6B55B176</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C05B0D7B-1D1A-1AB4-12BC-CADEE15C2ECD"/>
+<colUsage columnID="219C5F86-1B44-FC9A-E502-9219B9A3E058"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="243C03A5-DBAE-7F38-3049-EFBF8EE411B5" schemaObject="7295380A-F22E-5F1C-6AD7-D17304FD0531" name="PK_H_COM">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_COM</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>CE0059D4-FFA6-B1B4-DDAD-AC1428EC410F</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C05B0D7B-1D1A-1AB4-12BC-CADEE15C2ECD"/>
+<colUsage columnID="219C5F86-1B44-FC9A-E502-9219B9A3E058"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

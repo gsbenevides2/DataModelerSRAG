@@ -5,4 +5,9 @@
 <ownerDesignName>srag</ownerDesignName>
 <capitalNames>false</capitalNames>
 <designId>367F7A20-972B-02F6-FBD8-F69DFC1AE954</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="9BCC7385-0DEB-5AC9-0EB7-7D30D9064164">
+<designStoragePath>C:\Users\ewert\OneDrive\FATEC ADS\ADS 184\2 Sem - 2023-1\Lab Banco de Dados\Datasets\DataModelerSRAG\DataModeler</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
 </OSDM_Design>

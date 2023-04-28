@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="24577011-DFC1-1EE2-8DF6-5E28EB1FCF45" name="H_FABRICANTES">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>H_FABRICANTES</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de historiamento da tabela H_FABRICANTES]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>2E800A88-EB2F-75C7-E64C-1A0E7E66B04A</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="FAB_ID" id="4EF86835-CDEB-C10B-1525-B560870FFA28">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_FABRICANTES</sourceObjSchema>
+<sourceObjName>FAB_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do fabricante da vacina.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>F57ABE58-F2C4-DD92-5F33-D8852F23C5E1</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<ownDataTypeParameters>,22,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FAB_NOME" id="6823BC12-BF8C-8EE4-8A4A-BE9A5243DC34">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_FABRICANTES</sourceObjSchema>
+<sourceObjName>FAB_NOME</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome do fabricante da vacina.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>FFA79318-B736-5F2D-6D18-B28F4C393CD6</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FAB_DT_HIST" id="DE9A1B05-2CD4-F778-FA00-07D2C4D22AB3">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_FABRICANTES</sourceObjSchema>
+<sourceObjName>FAB_DT_HIST</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do historiamento.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>154634AA-E30A-89D3-7C4D-684634253903</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="86AA434B-8F41-5020-3455-F36948F5536D" name="PK_H_FAB">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_FAB</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>B71172B6-2AB3-B5D6-EC52-C4686242AFD4</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4EF86835-CDEB-C10B-1525-B560870FFA28"/>
+<colUsage columnID="DE9A1B05-2CD4-F778-FA00-07D2C4D22AB3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7AA1580C-13BB-4C7D-335B-2C904BB25001" schemaObject="7295380A-F22E-5F1C-6AD7-D17304FD0531" name="PK_H_FAB">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_FAB</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>41B12394-3F05-CE4A-0C8B-E3F282AF754D</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4EF86835-CDEB-C10B-1525-B560870FFA28"/>
+<colUsage columnID="DE9A1B05-2CD4-F778-FA00-07D2C4D22AB3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

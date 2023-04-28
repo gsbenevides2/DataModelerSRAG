@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SchemaObject class="oracle.dbtools.crest.model.design.relational.SchemaObject" name="APP" directorySegmentName="seg_0" id="7295380A-F22E-5F1C-6AD7-D17304FD0531">
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>C744659E-3D57-5853-A21F-1BACAAFE7AD8</importedID>
+</SchemaObject>

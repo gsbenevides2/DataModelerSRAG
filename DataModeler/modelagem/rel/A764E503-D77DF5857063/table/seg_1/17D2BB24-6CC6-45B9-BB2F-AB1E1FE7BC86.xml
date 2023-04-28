@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="17D2BB24-6CC6-45B9-BB2F-AB1E1FE7BC86" name="H_ZONAS">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>H_ZONAS</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de historiamento da tabela H_ZONAS]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>4BA64FA8-0D54-CD72-360A-5ACB682D36A6</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ZON_ID" id="8858C77C-181F-2D79-9332-FD5FE8F96A11">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_ZONAS</sourceObjSchema>
+<sourceObjName>ZON_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único da zona de residencias.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>98622208-CFE5-D3CE-5085-2E44AB131896</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ZON_DESCRICAO" id="6C04B445-F32D-08D5-6259-9A296A70C0A1">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_ZONAS</sourceObjSchema>
+<sourceObjName>ZON_DESCRICAO</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição do tipo de zona de residencias.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>748490AD-A34D-A78C-26C4-40FBFFCBA7DA</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ZON_DT_HIST" id="A6D54765-2A83-0922-16F9-BE7C22CC947A">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_ZONAS</sourceObjSchema>
+<sourceObjName>ZON_DT_HIST</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do historiamento.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>916C12E4-5CB8-4DFC-578B-4346161E99F4</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0876B4A1-D667-86E2-EF2E-91AD00616AD4" name="PK_H_ZON">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_ZON</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>88B1DFE2-5F81-7E57-5F55-745E591FC21D</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8858C77C-181F-2D79-9332-FD5FE8F96A11"/>
+<colUsage columnID="A6D54765-2A83-0922-16F9-BE7C22CC947A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D1EBDA77-C0D3-10F5-7D31-274AACA8B866" schemaObject="7295380A-F22E-5F1C-6AD7-D17304FD0531" name="PK_H_ZON">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_ZON</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>15675245-F8C9-8B36-9856-1AB8EDA637A1</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8858C77C-181F-2D79-9332-FD5FE8F96A11"/>
+<colUsage columnID="A6D54765-2A83-0922-16F9-BE7C22CC947A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

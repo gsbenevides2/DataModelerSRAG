@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="CFED2E4F-514B-70B0-8058-25C1347F2B34" name="H_RESULTADOS_TESTE_ANTIGENO">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>H_RESULTADOS_TESTE_ANTIGENO</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de historiamento da tabela H_RESULTADOS_TESTE_ANTIGENO]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>031E64C5-0265-2499-D5E4-DA8856C3DBDB</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="RTA_ID" id="E39FC446-0532-530E-3E76-46C2D2358CD6">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_RESULTADOS_TESTE_ANTIGENO</sourceObjSchema>
+<sourceObjName>RTA_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do tipo de resultado para um teste antígeno.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>84862A51-E332-E957-3F34-3F9946A93469</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RTA_DESCRICAO" id="5628A6B6-5A4D-FA0B-9287-EDF3C0DE1804">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_RESULTADOS_TESTE_ANTIGENO</sourceObjSchema>
+<sourceObjName>RTA_DESCRICAO</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição do tipo de resultado para um teste antígenos]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>DDA4215E-A3D3-D985-005D-D9BB4C444DF7</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RTA_DT_HIST" id="D62D6C88-212D-C4FE-4355-C05CD08CA749">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_RESULTADOS_TESTE_ANTIGENO</sourceObjSchema>
+<sourceObjName>RTA_DT_HIST</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do historiamento.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>AEB83FF4-3297-5AB9-6500-2D7E4856E0F1</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A2FC920D-84E0-D49F-64E4-884225B4088A" name="PK_H_RTA">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_RTA</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>6FB9678E-8AB4-0B2E-FAF8-CBF10879371D</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E39FC446-0532-530E-3E76-46C2D2358CD6"/>
+<colUsage columnID="D62D6C88-212D-C4FE-4355-C05CD08CA749"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="005D3445-D54A-E1B1-A7CF-2A6DF94880F2" schemaObject="7295380A-F22E-5F1C-6AD7-D17304FD0531" name="PK_H_RTA">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_RTA</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>40AE1D6F-E4A6-692B-EA53-297132F3264B</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E39FC446-0532-530E-3E76-46C2D2358CD6"/>
+<colUsage columnID="D62D6C88-212D-C4FE-4355-C05CD08CA749"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

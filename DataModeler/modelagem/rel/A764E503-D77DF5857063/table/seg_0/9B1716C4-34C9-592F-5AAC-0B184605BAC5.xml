@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9B1716C4-34C9-592F-5AAC-0B184605BAC5" name="H_ESCOLARIDADES">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>H_ESCOLARIDADES</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de historiamento da tabela H_ESCOLARIDADES]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>1DEB50DF-162D-C664-9415-2BDC48B0EF85</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ESC_ID" id="0B27C74A-7CF2-68C9-BC28-8C457AF65DA3">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_ESCOLARIDADES</sourceObjSchema>
+<sourceObjName>ESC_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único do tipo de escolaridade.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>FB8B801A-3254-4516-76BE-9B67B96B5CC9</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESC_DESCRICAO" id="627529C9-48C4-6A88-872E-5A77430B23FD">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_ESCOLARIDADES</sourceObjSchema>
+<sourceObjName>ESC_DESCRICAO</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição do tipo de escolaridade.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>AB69C612-6844-888F-F539-F80BF5D6CF92</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESC_DT_HIST" id="5552127C-63B5-495B-B58E-97B98E049A46">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_ESCOLARIDADES</sourceObjSchema>
+<sourceObjName>ESC_DT_HIST</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do historiamento.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>527E6A6C-12FB-A8DF-5720-1CC4BB1B628E</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C0EC4A9F-7D24-DA4E-272F-E3C7908BD672" name="PK_H_ESC">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_ESC</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>B8AE7819-6ABF-8B11-F195-8D12DEB9C07D</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0B27C74A-7CF2-68C9-BC28-8C457AF65DA3"/>
+<colUsage columnID="5552127C-63B5-495B-B58E-97B98E049A46"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B0964E18-1DA5-2B74-6CD9-D782ABD54FF1" schemaObject="7295380A-F22E-5F1C-6AD7-D17304FD0531" name="PK_H_ESC">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_ESC</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>72B5F6E0-1F3D-66CC-A15D-F2753C7FE4B0</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0B27C74A-7CF2-68C9-BC28-8C457AF65DA3"/>
+<colUsage columnID="5552127C-63B5-495B-B58E-97B98E049A46"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

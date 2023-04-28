@@ -1,0 +1,135 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="4A6BF18D-0FEC-8024-84DA-DE255D938E2C" name="H_MUNICIPIOS">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>H_MUNICIPIOS</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de historiamento da tabela H_MUNICIPIOS]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>CE8A907C-2803-9A11-E9E4-D3CF02460833</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MUN_ID" id="926541F9-13AD-9061-AC8E-9625022D1565">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_MUNICIPIOS</sourceObjSchema>
+<sourceObjName>MUN_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador autoincremental do município.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>4A28F88E-089A-6EDE-C143-CCDCDD9211B7</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MUN_COD_IBGE" id="15E1B4BB-08F9-17CC-D88C-7FE6271BED42">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_MUNICIPIOS</sourceObjSchema>
+<sourceObjName>MUN_COD_IBGE</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código IBGE do Múnicipio.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>6FDA8B9F-0050-81BD-C4CE-C4367209528D</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MUN_NOME" id="11F0FC8C-638A-4E68-9CFC-AFA5E8A30DA9">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_MUNICIPIOS</sourceObjSchema>
+<sourceObjName>MUN_NOME</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome do município no IBGE.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>A7F373EB-166E-A362-5224-E61CF65A82E9</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MUN_EST_ID" id="CFC93E84-14D1-18C8-0BC0-45E7ED8A2203">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_MUNICIPIOS</sourceObjSchema>
+<sourceObjName>MUN_EST_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do estado que pertence aquele município.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>A17DF5C7-BE1C-B229-5BFA-56EB0E1A475C</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MUN_DT_HIST" id="25C78568-8B47-EF5C-D6A4-B597FB9E0BDC">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_MUNICIPIOS</sourceObjSchema>
+<sourceObjName>MUN_DT_HIST</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do historiamento.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>40933AC4-E5BD-776A-FAEC-2EF01951ECBC</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AC6D2604-2D3A-BB47-E5B9-018B0DF99179" name="PK_H_MUN">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_MUN</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>7C591965-7BF9-32D9-B8F5-E3F5FE6C348F</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="926541F9-13AD-9061-AC8E-9625022D1565"/>
+<colUsage columnID="25C78568-8B47-EF5C-D6A4-B597FB9E0BDC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="39BD23AF-FE1D-42B5-D3CF-2F1AD9114D73" schemaObject="7295380A-F22E-5F1C-6AD7-D17304FD0531" name="PK_H_MUN">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_MUN</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>FDCCB3A6-96B9-C57E-5F9A-A0117E979378</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="926541F9-13AD-9061-AC8E-9625022D1565"/>
+<colUsage columnID="25C78568-8B47-EF5C-D6A4-B597FB9E0BDC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="CC720559-97A0-B2DE-A539-33F471AC4DE2" name="H_TRABALHA_ANIMAIS">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>H_TRABALHA_ANIMAIS</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de historiamento da tabela H_TRABALHA_ANIMAIS]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>0A56A6F1-9FD0-B772-D951-AF8D9FF131AE</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TAN_ID" id="EC0B3784-499F-ED3C-070E-92E3EB32850C">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_TRABALHA_ANIMAIS</sourceObjSchema>
+<sourceObjName>TAN_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do tipo da situação se o paciente trabalha com animais.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>049CB355-21A8-ADE5-0A06-66DD6CB08611</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TAN_DESCRICAO" id="159E6CA9-855B-CC52-4265-AC111DA9409A">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_TRABALHA_ANIMAIS</sourceObjSchema>
+<sourceObjName>TAN_DESCRICAO</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição do tipo da situação se o paciente trabalha com animais.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>EB54DDA9-BB81-7756-FFB7-66A85C3186EB</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TAN_DT_HIST" id="6F2DBCC2-885E-EDC2-9A77-6B6EE2FA173A">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_TRABALHA_ANIMAIS</sourceObjSchema>
+<sourceObjName>TAN_DT_HIST</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do historiamento.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>990F3C97-C731-5B6B-C30A-6E96C31EDED9</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="26ED28CB-CA14-837C-73F4-472257BFCC7B" name="PK_H_TAN">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_TAN</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>D8CAE423-9010-0B58-8547-BC99E04C0498</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EC0B3784-499F-ED3C-070E-92E3EB32850C"/>
+<colUsage columnID="6F2DBCC2-885E-EDC2-9A77-6B6EE2FA173A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CD563BE8-EB5F-DF61-1385-800DD606B265" schemaObject="7295380A-F22E-5F1C-6AD7-D17304FD0531" name="PK_H_TAN">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_TAN</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>78DC52E0-0267-3146-0FD5-DA3690A89EDC</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EC0B3784-499F-ED3C-070E-92E3EB32850C"/>
+<colUsage columnID="6F2DBCC2-885E-EDC2-9A77-6B6EE2FA173A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

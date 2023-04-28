@@ -1,0 +1,153 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="BD5A7BD4-0EC2-37F2-79B5-8AECDEADED05" name="H_VACINAS_COVID">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>H_VACINAS_COVID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela de historiamento da tabela H_VACINAS_COVID]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>3A7D3FDE-9667-1EEA-67C7-75C9A2FA83A1</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="VAC_CAS_ID" id="C1BE6815-182B-7C40-5D41-615384F97784">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_VACINAS_COVID</sourceObjSchema>
+<sourceObjName>VAC_CAS_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do caso do paciente que foi vacinado contra COVID.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>8F4FB16C-A2E6-3091-E03F-68BFD1B9AD4D</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VAC_DOS_ID" id="C1BFCAC8-7990-2559-91B4-CEBB3FBCD845">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_VACINAS_COVID</sourceObjSchema>
+<sourceObjName>VAC_DOS_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do tipo da dose da vacina contra COVID.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>7E056913-69A2-23CE-32FE-D4924BEA790A</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VAC_FAB_ID" id="1CF164E7-430F-4FC8-3289-F63834F1A808">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_VACINAS_COVID</sourceObjSchema>
+<sourceObjName>VAC_FAB_ID</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do fabricante da vacina contra COVID.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>24CAF102-AEF8-1F8B-9E95-23ACE58A5AD2</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VAC_LOTE" id="56FCB98F-1EDA-CB9C-65EF-523480114065">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_VACINAS_COVID</sourceObjSchema>
+<sourceObjName>VAC_LOTE</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificação do lote da vacina contra COVID.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>518014BB-9744-507F-B45C-B04CE7431C6D</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VAC_DATA_APLICACAO" id="6E1712F2-366F-1CED-33A6-1D5DE50499B0">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_VACINAS_COVID</sourceObjSchema>
+<sourceObjName>VAC_DATA_APLICACAO</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de aplicação da vacina contra COVID.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>5BFEB834-2D98-7D1E-3437-9CC4BF683498</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VAC_DT_HIST" id="CEF3145A-CF30-4752-8D8E-3EB388AA6B76">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>H_VACINAS_COVID</sourceObjSchema>
+<sourceObjName>VAC_DT_HIST</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do historiamento.]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>1B5CD741-1C19-FE38-CBAA-3691AF00486A</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="363E0B72-68CD-60DC-869C-E72060BE065C" name="PK_H_VAC">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_VAC</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>BA222D16-4D85-A7B3-BE93-812F191E8687</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C1BE6815-182B-7C40-5D41-615384F97784"/>
+<colUsage columnID="C1BFCAC8-7990-2559-91B4-CEBB3FBCD845"/>
+<colUsage columnID="CEF3145A-CF30-4752-8D8E-3EB388AA6B76"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8B295BA0-1615-7250-2D05-D6C65991639B" schemaObject="7295380A-F22E-5F1C-6AD7-D17304FD0531" name="PK_H_VAC">
+<sourceConnName>SRAG</sourceConnName>
+<sourceObjSchema>APP</sourceObjSchema>
+<sourceObjName>PK_H_VAC</sourceObjName>
+<createdBy>ewert</createdBy>
+<createdTime>2023-04-28 17:11:03 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>4E97CE8A-AA4C-ACB7-DC43-0861C9FC47A1</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C1BE6815-182B-7C40-5D41-615384F97784"/>
+<colUsage columnID="C1BFCAC8-7990-2559-91B4-CEBB3FBCD845"/>
+<colUsage columnID="CEF3145A-CF30-4752-8D8E-3EB388AA6B76"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
