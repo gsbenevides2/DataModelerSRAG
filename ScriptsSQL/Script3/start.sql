@@ -21,6 +21,14 @@
 @tables/fabricantes.sql
 @tables/genero.sql
 
+@tables/sintomas.sql
+@tables/suporte_ventilador.sql
+@tables/teste_sorologicos.sql
+@tables/testes_antigeno.sql
+@tables/testes_antigenos_virus.sql
+@tables/testes_rtpcr.sql
+@tables/testes_rtpcr_virus.sql
+@tables/tipos_amostra.sql
 @tables/tipos_amostras_sorologicas.sql
 @tables/tipos_teste_antigeno.sql
 @tables/tipos_testes_sorologicos.sql
