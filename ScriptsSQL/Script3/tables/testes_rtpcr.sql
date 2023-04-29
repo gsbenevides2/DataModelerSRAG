@@ -1,4 +1,4 @@
-CREATE TRIGGER tg_h_testes_rtpcr
+CREATE TRIGGER tg_h_ter
 AFTER UPDATE OR DELETE
 ON testes_rtpcr
 FOR EACH ROW

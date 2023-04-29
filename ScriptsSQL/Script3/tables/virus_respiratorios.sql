@@ -1,4 +1,4 @@
-CREATE TRIGGER tg_h_virus_respiratorios
+CREATE TRIGGER tg_h_vir
 AFTER UPDATE OR DELETE
 ON virus_respiratorios
 FOR EACH ROW

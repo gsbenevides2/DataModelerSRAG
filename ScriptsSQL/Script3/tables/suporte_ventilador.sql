@@ -1,4 +1,4 @@
-CREATE TRIGGER tg_h_suporte_ventilador
+CREATE TRIGGER tg_h_sve
 AFTER UPDATE OR DELETE
 ON suporte_ventilador
 FOR EACH ROW

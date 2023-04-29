@@ -20,7 +20,14 @@
 @tables/evolucoes.sql
 @tables/fabricantes.sql
 @tables/genero.sql
-
+@tables/idades_gestacionais.sql
+@tables/internacoes.sql
+@tables/municipios.sql
+@tables/racas.sql
+@tables/resultados_raiox.sql
+@tables/resultados_teste_antigeno.sql
+@tables/resultados_testes_rtpc.sql
+@tables/resultados_testes_sorologico.sql
 @tables/sintomas.sql
 @tables/suporte_ventilador.sql
 @tables/teste_sorologicos.sql

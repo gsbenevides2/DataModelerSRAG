@@ -1,4 +1,4 @@
-CREATE TRIGGER tg_h_tipos_amostra
+CREATE TRIGGER tg_h_tam
 AFTER UPDATE OR DELETE
 ON tipos_amostra
 FOR EACH ROW

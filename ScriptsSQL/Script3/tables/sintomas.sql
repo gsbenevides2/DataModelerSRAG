@@ -1,4 +1,4 @@
-CREATE TRIGGER tg_h_sintomas
+CREATE TRIGGER tg_h_sin
 AFTER UPDATE OR DELETE
 ON sintomas
 FOR EACH ROW
