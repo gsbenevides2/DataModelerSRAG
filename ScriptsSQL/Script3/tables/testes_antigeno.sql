@@ -1,4 +1,4 @@
-CREATE TRIGGER tg_h_testes_antigeno
+CREATE TRIGGER tg_h_tea
 AFTER UPDATE OR DELETE
 ON testes_antigeno
 FOR EACH ROW

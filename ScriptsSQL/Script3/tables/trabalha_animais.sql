@@ -1,4 +1,4 @@
-CREATE TRIGGER tg_h_trabalha_animais
+CREATE TRIGGER tg_h_tan
 AFTER UPDATE OR DELETE
 ON trabalha_animais
 FOR EACH ROW

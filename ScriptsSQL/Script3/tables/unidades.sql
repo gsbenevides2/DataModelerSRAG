@@ -1,4 +1,4 @@
-CREATE TRIGGER tg_h_unidades
+CREATE TRIGGER tg_h_uni
 AFTER UPDATE OR DELETE
 ON unidades
 FOR EACH ROW

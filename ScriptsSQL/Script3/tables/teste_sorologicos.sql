@@ -1,4 +1,4 @@
-CREATE TRIGGER tg_h_teste_sorologicos
+CREATE TRIGGER tg_h_tso
 AFTER UPDATE OR DELETE
 ON teste_sorologicos
 FOR EACH ROW

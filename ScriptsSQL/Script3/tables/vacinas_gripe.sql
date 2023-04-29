@@ -1,4 +1,4 @@
-CREATE TRIGGER tg_h_vacinas_gripe
+CREATE TRIGGER tg_h_vag
 AFTER UPDATE OR DELETE
 ON vacinas_gripe
 FOR EACH ROW
