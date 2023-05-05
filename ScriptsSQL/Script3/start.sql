@@ -12,7 +12,7 @@
 @tables/casos_tomografia.sql
 @tables/classificacoes.sql
 @tables/comorbidades.sql
-@tables/criteiros_encerramento.sql
+@tables/criteirios_encerramento.sql
 @tables/doses.sql
 @tables/encerramentos.sql
 @tables/escolaridades.sql
