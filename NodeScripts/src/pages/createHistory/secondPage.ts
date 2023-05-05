@@ -38,8 +38,11 @@ export async function secondPage(
         case Events.RUN_SQL:
           subTitle.setText("Executando SQL");
           break;
+        case Events.RUNNING_TRIGGERS:
+          subTitle.setText("Executando Triggers  de historiamento.");
+          break;
         case Events.FINISH:
-          subTitle.setText("Sucesso as tabelas foram criadas!");
+          subTitle.setText("Sucesso as tabelas e as triggers foram criadas!");
           progressBar.hide();
           backButton.show();
           break;

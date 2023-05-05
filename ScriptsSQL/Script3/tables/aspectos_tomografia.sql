@@ -6,3 +6,4 @@ BEGIN
     INSERT INTO h_aspectos_tomografia VALUES
         (:OLD.ast_id, :OLD.ast_descricao, SYSDATE);
 END;
+/

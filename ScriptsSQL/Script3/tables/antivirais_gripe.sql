@@ -6,3 +6,4 @@ BEGIN
     INSERT INTO h_antivirais_gripe VALUES
         (:OLD.ang_id, :OLD.ang_nome, SYSDATE);
 END;
+/

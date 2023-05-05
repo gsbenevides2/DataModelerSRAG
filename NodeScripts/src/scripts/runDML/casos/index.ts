@@ -23,7 +23,7 @@ import { insertUnidade } from "../insertUnidade";
 import { type SuportedYears, type Columns } from "../types";
 import { insertAntiviraisCovid } from "./insertAntiviraisCovid";
 
-const dataPath = path.resolve(process.cwd(), "data");
+const dataPath = path.resolve(process.cwd());
 
 export async function insertLine(
   row: Columns,

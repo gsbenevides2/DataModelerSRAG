@@ -11,7 +11,7 @@ export async function insertAntiviraisCovid(
   if (row.TRAT_COV !== "1") return;
 
   const cacAncId =
-    row.TIPO_TRAT != null && row.TIPO_TRAT.length > 0 ? row.TP_ANTIVIR : null;
+    row.TIPO_TRAT != null && row.TIPO_TRAT.length > 0 ? row.TIPO_TRAT : null;
   const cacDataInicio =
     row.DT_TRT_COV != null ? validateDateFormat(row.DT_TRT_COV) : null;
 

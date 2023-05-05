@@ -6,3 +6,4 @@ BEGIN
     INSERT INTO h_antivirais_covid VALUES
         (:OLD.anc_id, :OLD.anc_nome, SYSDATE);
 END;
+/

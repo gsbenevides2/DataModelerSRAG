@@ -2,6 +2,7 @@ import type OracleDB from "oracledb";
 import { createHistoryDbStructure } from "./createHistoryDbStructure";
 import { getDbStructure } from "./getDbStructure";
 import { parseDbStructureToSQL } from "./parseDbStructureToSQL";
+import { runTriggers } from "./runTriggers";
 export enum Events {
   GET_STRUCTURE = "get_structure",
   CREATE_SQL = "create_sql",
@@ -9,6 +10,7 @@ export enum Events {
   CREATE_STRUCTURE = "create_structure",
   FINISH = "finish",
   ERROR = "error",
+  RUNNING_TRIGGERS = "running_triggers",
 }
 async function runStatements(
   connection: OracleDB.Connection,
@@ -38,6 +40,8 @@ export function createHistoryTables(
       eventCb(Events.CREATE_SQL);
       const statements = parseDbStructureToSQL(historyDbStructure);
       await runStatements(connection, statements);
+      eventCb(Events.RUNNING_TRIGGERS);
+      await runTriggers(connection);
       eventCb(Events.FINISH);
     } catch (error) {
       eventCb(Events.ERROR);
