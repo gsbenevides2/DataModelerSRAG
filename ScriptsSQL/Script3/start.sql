@@ -12,7 +12,7 @@
 @tables/casos_tomografia.sql
 @tables/classificacoes.sql
 @tables/comorbidades.sql
-@tables/criteirios_encerramento.sql
+@tables/criterios_encerramento.sql
 @tables/doses.sql
 @tables/encerramentos.sql
 @tables/escolaridades.sql
@@ -26,8 +26,8 @@
 @tables/racas.sql
 @tables/resultados_raiox.sql
 @tables/resultados_teste_antigeno.sql
-@tables/resultados_testes_rtpc.sql
-@tables/resultados_testes_sorologico.sql
+@tables/resultados_teste_rtpc.sql
+@tables/resultados_teste_sorologico.sql
 @tables/sintomas.sql
 @tables/suporte_ventilador.sql
 @tables/teste_sorologicos.sql
