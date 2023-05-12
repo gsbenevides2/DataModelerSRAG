@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="e402d12f-9af0-4683-bd29-8958fce1e57e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../ScriptsSQL/Script3/start.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../ScriptsSQL/Script3/start.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ScriptsSQL/Script3/tables/casos_antivirais_covid.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../ScriptsSQL/Script3/tables/casos_antivirais_covid.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/insertDataToTable/thirthPage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/insertDataToTable/thirthPage.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/runDML/casos/insertAntiviraisCovid.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/runDML/casos/insertAntiviraisCovid.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +27,13 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/gsbenevides2/Documentos/DataModelerSRAG/NodeScripts",
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "ts.external.directory.path": "/home/gsbenevides2/Documentos/DataModelerSRAG/NodeScripts/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -37,6 +46,7 @@
       <option name="presentableId" value="Default" />
       <updated>1683134439823</updated>
       <workItem from="1683134448216" duration="198000" />
+      <workItem from="1683851089132" duration="5241000" />
     </task>
     <servers />
   </component>

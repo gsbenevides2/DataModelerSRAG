@@ -23,7 +23,7 @@ export async function insertAntiviraisCovid(
   try {
     await connection.execute(
       `INSERT INTO CASOS_ANTIVIRAIS_COVID (CAC_ANC_ID, CAC_CAS_ID, CAC_DATA_INICIO) 
-    VALUES (:cacAncId, :casId, :cagDataInicio)`,
+    VALUES (:cacAncId, :casId, :cacDataInicio)`,
       params
     );
   } catch (e: any) {
