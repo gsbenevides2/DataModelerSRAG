@@ -47,6 +47,5 @@
 @@tables/vacinas_gripe.sql
 @@tables/virus_respiratorios.sql
 @@tables/zonas.sql
-
 -- Create foreign keys.
 @@foreign_keys.sql
