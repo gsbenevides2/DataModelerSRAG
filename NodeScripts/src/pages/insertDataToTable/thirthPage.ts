@@ -84,7 +84,7 @@ class ThirthPage {
 
         if (this.length === 0) {
             this.length = length;
-            this.progressBar.setRange(0, length);
+            this.progressBar.setRange(0, 100);
         }
 
         try {
